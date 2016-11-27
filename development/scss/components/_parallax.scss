@@ -1,0 +1,47 @@
+/**
+ * PARALLAX SETTINGS FOR SECTIONS
+ */
+
+ .has-paralax {
+   width:100%;
+   position:relative;
+   overflow:hidden;
+
+ }
+ .parallax-overlay {
+    position: absolute;
+    width: 1920px;
+    height: 100%;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 0;
+
+
+  }
+
+   .parallax-element {
+    //  display:block;
+    //  width:100%;
+    //  height:100%;
+    //  background: left top;
+    //  background-size:cover;
+    //  position:absolute;
+    //  top:0;
+    //  left:0;
+
+          display: block;
+          left: 50%;
+          width: 1920px;
+          @include media(">1920px"){
+            min-width: 100%;
+          };
+          height: 100%;
+          transform: translateX(-50%);
+          position: absolute;
+          top: 0;
+
+          @include media("<tablet") {
+            display: none;
+          };
+
+   }
