@@ -19,7 +19,7 @@
   'vendor/swiper.min',
   'vendor/remodal',
   'vendor/lightgallery',
-  'vendor/jquery.qtip',
+  // 'vendor/jquery.qtip',
   // 'vendor/dropzone',
   'vendor/waves';
 
@@ -51,19 +51,22 @@
     'components/squareList';
 
 
-// 5. Layout-related sections
+// 5. Layout-related sections (for each page)
 @import
   'layout/header',
-  'layout/2',
-  'layout/3',
-  'layout/4',
-  'layout/5',
-  'layout/6',
-  'layout/7',
-  'layout/8',
-  'layout/9',
-  'layout/10',
-  'layout/11',
+  // HOME page sections
+  'layout/home/1',
+  'layout/home/2',
+  'layout/home/3',
+  'layout/home/4',
+  'layout/home/5',
+  'layout/home/6',
+  'layout/home/7',
+  'layout/home/8',
+  'layout/home/9',
+  'layout/home/10',
+  'layout/home/11',
+
   'layout/footer',
   'layout/responsive';
 
@@ -80,10 +83,10 @@
         'themes/datepicker--custom-theme';
 
 
-// // 6. Page-specific styles
-// @import
-//   'pages/home';
-//
+// 6. Page-specific styles
+@import
+  'pages/home';
+
 // // 7. Themes
 // @import
 //   'themes/default';

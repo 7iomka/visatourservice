@@ -1,0 +1,28 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the ECRAN 4  - assortiment - of the site/application.
+// -----------------------------------------------------------------------------
+//
+.social-comments {
+
+  .fb-container {
+      width: 90%;
+  }
+
+  .vk-container {
+    background: black;
+    width: 90%;
+    float: right;
+  }
+
+  @include media("<tablet") {
+    .fb-container,
+    .vk-container {
+      float: none;
+      width: 100%;
+    }
+
+      .fb-container {
+        margin-bottom: 40px;
+      }
+  };
+}

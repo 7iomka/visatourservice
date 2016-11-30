@@ -1,0 +1,71 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the ECRAN 7 - get-audit- of the site/application.
+// -----------------------------------------------------------------------------
+//
+.get-audit {
+  padding: 50px 0;
+  background-color:  #070707;
+
+
+  h2, p.subtitle {
+    text-align: left;
+    @include media("<tablet") {
+      text-align: center;
+    };
+  }
+  p.subtitle {
+      margin-bottom: 0;
+  }
+  .site-form--audit {
+      margin-top: 44px;
+      @include media("<tablet") {
+          max-width: 320px;
+          margin-left: auto;
+          margin-right: auto;
+      };
+  }
+  .audit-bg {
+    position: absolute;
+    bottom: 0;
+    right: -185px;
+    @include media("<960px") {
+      opacity: 0.6;
+    };
+    @include media("<tablet") {
+      opacity: 0.3;
+    };
+  }
+
+  label#user_phone--audit-error {
+      line-height: 16px;
+  }
+  .btn--action-submit {
+      margin-top: 15px;
+      @include media("<tablet") {
+          margin-top: 25px;
+      };
+  }
+
+  .container.container--absolute {
+    position: absolute;
+    top: 15px;
+    bottom: 0;
+    right: 0;
+    left: 25px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .container.container--relative {
+      z-index: 1;
+  }
+
+  .form-input-wrapper {
+      @include media("<tablet") {
+          width: 100%;
+      };
+  }
+
+
+
+}

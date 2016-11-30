@@ -1,0 +1,176 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the ECRAN 2 (grant) of the site/application.
+// -----------------------------------------------------------------------------
+
+.grant {
+    background: $white;
+    position: relative;
+
+
+  /*
+******************* share event title *****************
+   */
+
+  .share-event__title-wrappper {
+      max-width: 800px;
+      height: 250px;
+      margin: 50px auto 0;
+      border: 4px solid #a18b50;
+  }
+
+
+  .share-event__title {
+      position: relative;
+      font-family: "Bebas_Neue", sans-serif;
+  }
+
+  .p1 {
+      font-size: 80px;
+      line-height: 100%;
+      position: absolute;
+      left: 93px;
+      top: -40px;
+      background: white;
+      padding: 0 20px;
+  }
+
+
+  .p2 {
+      color: #a28b50;
+      font-size: 140px;
+      display: block;
+      position: relative;
+      left: 21px;
+      top: 29px;
+      line-height: 100%;
+  }
+
+  .p3 {
+      position: relative;
+      left: 44px;
+      top: -6px;
+      font-size: 40px;
+      line-height: 40px;
+      margin-right: 69px;
+  }
+
+  .p4 {
+      font-size: 70px;
+      line-height: 100%;
+      position: relative;
+      top: 15px;
+  }
+
+  @media screen and (max-width: 830px) {
+      .share-event__title-wrappper {
+        max-width: 100%;
+        height: auto;
+        padding-bottom: 25px;
+      }
+      .p1 {
+        text-align: center;
+        left: 0;
+        right: 0;
+        top: -25px;
+        width: 320px;
+        height: auto;
+        font-size: 50px;
+        margin: auto;
+        position: relative;
+        display: block;
+      }
+      .p2 {
+        left: 0;
+        font-size: 100px;
+        text-align: center;
+        display: block;
+        top: 0;
+        margin: -25px auto 0;
+      }
+      .p3, .p4 {
+        left: 0;
+        top: 0;
+        position: relative;
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        display: block;
+      }
+  }
+
+    @media screen and (max-width: 621px) {
+      .p2 {
+        font-size: 78px;
+      }
+      .p3 {
+        font-size: 35px;
+      }
+      .p4 {
+        font-size: 60px;
+      }
+
+    }
+
+    @media screen and (max-width: 480px) {
+      .p2 {
+        font-size: 57px;
+        font-size: 16vw;
+      }
+      .p4 {
+        font-size: 45px;
+        font-size: 14vw;
+      }
+
+    }
+    @media screen and (max-width: 375px) {
+      .share-event__title-wrappper {
+        padding-bottom: 15px;
+        padding-top: 15px;
+      }
+
+
+      .p1 {
+        top: 0;
+        background: none;
+        padding: 0;
+        width: 100%;
+      }
+
+      .p2 {
+          margin: 15px 0;
+      }
+
+      .p4 {
+        font-size: 45px;
+        font-size: 14vw;
+      }
+
+
+    }
+
+  /*
+**************** grant list *****************
+   */
+
+   .grant__item {
+     margin-bottom: 50px;
+   }
+
+   .grant__title {
+       font-family: "Bebas_Neue", sans-serif;
+       font-size: 50px;
+       color: $sep-brown;
+       line-height: 100%;
+   }
+
+
+   .grant__list {
+       margin: 88px 32px 0 26px;
+       text-align: center;
+   }
+
+   .grant__desc {
+        margin-top: 11px;
+    }
+
+}

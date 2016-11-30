@@ -1,11 +1,11 @@
 /********* Get site url (local) *********/
-var siteURL = 'http://seosintez.cc:8081';
+var siteURL = 'http://visa-tour-service.cc:8081';
 
 
 /********* Get invironment **********/
 var gutil = require('gulp-util');
-// var env = gutil.env.env || 'development';
-var env = gutil.env.env || 'production';
+var env = gutil.env.env || 'development';
+// var env = gutil.env.env || 'production';
 console.log(env);
 var _ = require('lodash');
 
@@ -29,6 +29,7 @@ var _ = require('lodash');
           jsdir: devSrc + 'js/',
           json: devSrc + 'js/json/**/*.json',
           jsLibDir: devSrc + 'js/libs/',
+          jsPagesDir: devSrc + 'js/pages/',
           lib: devSrc + 'lib/**/*',
           inc: devSrc + 'inc/**/*',
           sass: devSrc + 'scss/main.scss',
@@ -50,6 +51,7 @@ var _ = require('lodash');
 };
 
 var jsFiles = [
+  /*************** Libs *******************/
   // paths.src.jsLibDir + 'modernizr.min.js',
   paths.src.jsLibDir + 'jquery-1.12.4.min.js',
   // paths.src.jsLibDir + 'jquery-ui.min.js',
@@ -84,6 +86,12 @@ var jsFiles = [
   paths.src.jsLibDir + 'waves.js',
   // paths.src.jsLibDir + 'jquery.sweet-modal.js',
   paths.src.jsLibDir + '_helpers.js',
+
+/*************** Pages *****************/
+  paths.src.jsPagesDir + 'home.js',
+
+
+/************ Common scripts **********/
      paths.src.jsdir + 'main.js',
   ];
 
