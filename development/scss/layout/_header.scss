@@ -115,7 +115,7 @@ header.site-header {
     @include media("<640px") {
       float: none;
     };
-    @include ff('PT Sans');
+    // @include ff('PT Sans');
     font-size: 18px;
 
     .header-data__item {

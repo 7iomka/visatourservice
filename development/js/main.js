@@ -9,12 +9,15 @@ jQuery(document).ready(function($) {
       isLessThen960 = false;
 
 
+
           //init TimelineMax
           var tl = new TimelineMax();
           // Init Controller of ScrollMagic
           var scrollMagicController = new ScrollMagic.Controller({
               // addIndicators: true
           });
+
+        
 
           // Modernizr max-width
           function maxWidthCss(max) {
@@ -986,6 +989,4 @@ jQuery(document).ready(function($) {
 
       }
 
-
-
-});
+/** !! jQuery document ready is NOT closed (it will be closed in another file) **/

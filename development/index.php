@@ -1,48 +1,54 @@
 <?php require_once('inc/header.php'); ?>
-        <section class="grant s2">
+        <section class="home-banner s1 parallax-section parallax-section--home">
+            <div class="parallax-section__image"
+              style="background-image: url('img/parallax/home/header_parallax.jpg');"></div>
             <div class="container">
                 <div class="row">
-
-                    <div class="share-event__title-wrappper">
-                        <div class="share-event__title">
-                            <span class="p1">Получите грант</span>
-                            <span class="p2">100 000 &nbsp;рублей</span>
-                            <span class="p3">на развитие бизнеса</span>
-                            <span class="p4">всего за 1 репост</span>
-                        </div>
+                  <div class="home-banner__content">
+                    <div class="site-title-wrapper">
+                      <h1 class="site-title">
+                        <span class="site-title__part yellow">Visa</span><!--
+                        --><span class="site-title__part">tour</span><!--
+                        --><span class="site-title__part">service</span>
+                        <span class="site-title__subtitle yellow">Федеральная сеть</span>
+                      </h1>
                     </div>
-
-                    <div class="grant__list">
-                        <div class="col col--4-of-12 col--m-1-of-2 grant__item">
-                            <div class="grant__title">25 000 руб</div>
-                            <div class="grant__desc">На создание<br />Landing Page</div>
-                        </div>
-                        <div class="col col--4-of-12 col--m-1-of-2 grant__item">
-                            <div class="grant__title">50 000 руб</div>
-                            <div class="grant__desc">На поиск<br />продавца</div>
-                        </div>
-                        <div class="col col--4-of-12 col--m-1-of-2 grant__item">
-                            <div class="grant__title">5 000 руб</div>
-                            <div class="grant__desc">На настройку<br />рекламной кампании</div>
-                        </div>
-                        <div class="col col--4-of-12 col--m-1-of-2 grant__item">
-                            <div class="grant__title">4 000 руб</div>
-                            <div class="grant__desc">На аналитику<br />сайта и РК</div>
-                        </div>
-                        <div class="col col--4-of-12 col--m-1-of-2 grant__item">
-                            <div class="grant__title">10 000 руб</div>
-                            <div class="grant__desc">На мобильную<br />версию сайта</div>
-                        </div>
-                        <div class="col col--4-of-12 col--m-1-of-2 grant__item">
-                            <div class="grant__title">6 000 руб</div>
-                            <div class="grant__desc">На SEO<br />продвижение</div>
-                        </div>
+                    <div class="home-banner__btn-wrapper">
+                      <button class="btn btn--x-large btn--yellow home-banner__btn waves-effect waves-circle waves-float">Оставить заявку на оформлении визы</button>
                     </div>
-                    <!-- <h2 class="beforeAnim"><span>Наши услуги</span></h2> -->
-
+                    <!-- Advantages -->
+                    <div class="home-banner__advantages">
+                      <div class="col col--4-of-12 home-banner__advantage">
+                          <div class="home-banner__advantage-header">
+                          <i class="icon icon--passport home-banner__advantage-icon"></i>
+                        </div>
+                        <div class="home-banner__advantage-desc">
+                          Оформление <br>краткосрочных и долгосрочных виз <br>в 70 стран мира
+                        </div>
+                      </div>
+                      <div class="col col--4-of-12 home-banner__advantage">
+                          <div class="home-banner__advantage-header">
+                          <i class="icon icon--coliseum home-banner__advantage-icon"></i>
+                        </div>
+                        <div class="home-banner__advantage-desc">
+                          Полноценное <br>туристическое <br>агентство
+                        </div>
+                      </div>
+                      <div class="col col--4-of-12 home-banner__advantage">
+                          <div class="home-banner__advantage-header">
+                          <i class="icon icon--visa-extrance home-banner__advantage-icon"></i>
+                        </div>
+                        <div class="home-banner__advantage-desc">
+                          Оформление визы <br>онлайн.
+                          Посмотреть, как это работает
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /Advantages -->
+                  </div>
                 </div>
-
             </div>
+            <div class="home-banner__advantages-overlay"></div>
         </section>
         <section class="grant-faq s3 inverted">
             <div class="container">
@@ -285,7 +291,7 @@
                     </div>
                 </div>
             </div>
-            <div class="argument">
+
                 <div class="container">
                     <div class="row">
                         <div class="col col--6-of-12 col--am">
@@ -718,4 +724,4 @@
             </div>
         </section>
 
-  <?php require_once('inc/footer.php'); ?>  
+  <?php require_once('inc/footer.php'); ?>

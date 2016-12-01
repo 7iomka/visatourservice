@@ -1,0 +1,105 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the ECRAN 1 - home banner - of the home page
+// -----------------------------------------------------------------------------
+
+.home-banner {
+
+  @include ff('Museo Sans');
+}
+
+/**
+ * content wrapper
+ */
+.home-banner__content {
+  padding-top: 60px;
+}
+
+/**
+ * Site title styles
+ */
+.site-title-wrapper {
+    text-align: center;
+}
+
+.site-title {
+    text-align: center;
+    color: #393939;
+    display: inline-block;
+}
+
+.site-title__part {
+    text-transform: capitalize;
+    display: inline-block;
+    &.yellow {
+        text-shadow: 1px 1px #d78e00;
+    }
+}
+
+.site-title__subtitle {
+    font-size: 25px;
+    display: block;
+    text-align: right;
+}
+
+/**
+ * Btn
+ */
+ .home-banner__btn-wrapper {
+     margin: 60px 0;
+ }
+.home-banner__btn {
+      box-shadow: 0 8px 5px -5px #d78e00;
+}
+
+/**
+ * Advantages
+ */
+ .home-banner__advantages-overlay {
+     height: 250px;
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     background-color: rgba(3, 5, 1, 0.45);
+
+     width: 100%;
+ }
+
+
+
+.home-banner__advantages {
+    position: relative;
+    z-index: 1;
+}
+
+.home-banner__advantage {
+    text-align: center;
+}
+
+.home-banner__advantage-header {
+    padding: 23px;
+    padding: 23.5px;
+    width: 134px;
+    height: 134px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 0 -8px 25px -5px rgba(0, 0, 0, 0.48),0 8px 25px -5px rgba(0, 0, 0, 0.48);
+    margin: auto;
+}
+
+.home-banner__advantage-icon {
+      font-size: 83px;
+      color: #7eba32;
+}
+
+.home-banner__advantage-desc {
+    color: #fefffc;
+    font-size: 22px;
+    margin: 22px;
+    font-weight: 300;
+    line-height: normal;
+    @include media("<tablet") {
+      width: 480px;
+      margin: 25px auto;
+      max-width: 100%;
+    };
+}

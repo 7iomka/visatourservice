@@ -54,6 +54,7 @@ var jsFiles = [
   /*************** Libs *******************/
   // paths.src.jsLibDir + 'modernizr.min.js',
   paths.src.jsLibDir + 'jquery-1.12.4.min.js',
+  paths.src.jsLibDir + 'jquery.parallax-1.1.3.js',
   // paths.src.jsLibDir + 'jquery-ui.min.js',
   // paths.src.jsLibDir + 'jquery.ui.datepicker-ru.js',
   paths.src.jsLibDir + 'transition-events.js',
@@ -87,12 +88,23 @@ var jsFiles = [
   // paths.src.jsLibDir + 'jquery.sweet-modal.js',
   paths.src.jsLibDir + '_helpers.js',
 
-/*************** Pages *****************/
-  paths.src.jsPagesDir + 'home.js',
+
 
 
 /************ Common scripts **********/
      paths.src.jsdir + 'main.js',
+
+/**
+ *  !!! in file main.js "jQuery document ready" is not closed
+ *  this is for use variables defined in that file in
+ *  files of each page
+ */
+
+/*************** Pages *****************/
+     paths.src.jsPagesDir + 'home.js',
+
+/*************** close "jQuery document ready" **************/
+     paths.src.jsdir + 'close_jQueryDocumentReady.js',
   ];
 
 var jsFilesSeparated = [

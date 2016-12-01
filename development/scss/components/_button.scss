@@ -13,6 +13,7 @@
   border: none;
   outline: none;
   max-width: 100%;
+  @include ff('Museo Sans');
 
 // make text-align middle vertical
   // display: table-cell;
@@ -23,25 +24,22 @@
  line-height: normal;
 
  //specific styles
- letter-spacing: 0.2em;
- text-transform: uppercase;
+ // letter-spacing: 0.2em;
+ // text-transform: uppercase;
 
   // font-family: "Proxima_Nova", sans-serif;
   //by color
-  &.btn--brown {
+  &.btn--yellow {
     &.btn--bordered {
         background: none;
         background: transparent;
     }
-    background: $base-brown;
+    background: $yellow;
     // color: $text-color;
     color: $white;
-    box-shadow: 0 0 0 2px $base-brown;
+    // box-shadow: 0 0 0 2px $base-brown;
     &:hover {
-        background: darken($base-brown, 5%);
-        &.btn--bordered {
-          background: $base-brown;
-        }
+        background: darken($yellow, 5%);
         text-decoration: none;
         text-shadow: 1px 1px transparentize($black, 0.7);
     }
@@ -78,6 +76,25 @@
       // padding: 10px 20px;
       font-size: 11px;
       max-width: 100%;
+      @include media('>=phone', '<=480px') {
+        line-height: normal;
+        padding: 10px 20px;
+        height: auto;
+        line-height: 34px; //54-10*2
+        min-height: 54px;
+      }
+
+  }
+  &.btn--x-large{
+    width: auto;
+    height: 80px;
+    padding: 0 85px;
+    line-height: 80px;
+    max-width: 100%;
+    letter-spacing: 0.09em;
+    display: block;
+    margin: auto;
+    
       @include media('>=phone', '<=480px') {
         line-height: normal;
         padding: 10px 20px;

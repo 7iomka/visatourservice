@@ -5,7 +5,7 @@
 /// Container's maximum width
 /// @type Length
 
-$max-width: 960px !default;
+$max-width: 1170px !default;
 
 
 
@@ -15,7 +15,7 @@ $max-width: 960px !default;
 $text-font-stack: 'Roboto', sans-serif !default;
 /// Font-family for headers (h1,h2,h3..)
 /// @type List
-$header-font: 'Bebas_Neue', sans-serif !default;
+$header-font: 'Museo Sans', sans-serif !default;
 $label-font: 'Roboto', sans-serif !default;
 
 
@@ -78,7 +78,8 @@ $text-color: $default-dark !default;
 $dark-black: #141414 !default;
 
 /// @type Color
-$yellow: #ffd200 !default;
+// $yellow: #ffd200 !default;
+$yellow: #ffae1e !default;
 $red_base: #c5313d;
 $red-button-bg: $red_base;
 $yellow-button-bg: $yellow;
