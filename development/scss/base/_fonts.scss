@@ -59,28 +59,178 @@
   font-style: normal;
 }
 
-
+/** all icons **/
 @font-face {
-  font-family: 'Roboto';
-      src: font('Roboto/robotoregular.eot');
-      src: font('Roboto/robotoregular.eot?#iefix') format('embedded-opentype'),
-      font('Roboto/robotoregular.woff2') format('woff2'),
-      font('Roboto/robotoregular.woff') format('woff'),
-      font('Roboto/robotoregular.ttf') format('truetype'),
-      font('Roboto/robotoregular.svg#proxima_nova_rgregular') format('svg');
-      font-weight: 400;
-      font-style: normal
-
+  font-family: 'vts';
+  src: font('Vts/vts.eot?n1z373');
+  src: font('Vts/vts.eot?#iefix') format('embedded-opentype'),
+       font('Vts/vts.woff') format('woff'),
+       font('Vts/vts.ttf') format('truetype'),
+       font('Vts/vts.svg#vts') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
+/** Roboto light **/
 @font-face {
   font-family: 'Roboto';
-      src: font('Roboto/robotobold.eot');
-      src: font('Roboto/robotobold.eot?#iefix') format('embedded-opentype'),
-      font('Roboto/robotobold.woff2') format('woff2'),
-      font('Roboto/robotobold.woff') format('woff'),
-      font('Roboto/robotobold.ttf') format('truetype'),
-      font('Roboto/robotobold.svg#proxima_nova_rgregular') format('svg');
+      src: font('Roboto/roboto-light.eot');
+      src: font('Roboto/roboto-light.eot?#iefix') format('embedded-opentype'),
+      font('Roboto/roboto-light.woff2') format('woff2'),
+      font('Roboto/roboto-light.woff') format('woff'),
+      font('Roboto/roboto-light.ttf') format('truetype'),
+      font('Roboto/roboto-light.svg#roboto-light') format('svg');
+      font-weight: 300;
+      font-style: normal
+}
+/** Roboto regular **/
+@font-face {
+  font-family: 'Roboto';
+      src: font('Roboto/roboto-regular.eot');
+      src: font('Roboto/roboto-regular.eot?#iefix') format('embedded-opentype'),
+      font('Roboto/roboto-regular.woff2') format('woff2'),
+      font('Roboto/roboto-regular.woff') format('woff'),
+      font('Roboto/roboto-regular.ttf') format('truetype'),
+      font('Roboto/roboto-regular.svg#roboto-regular') format('svg');
+      font-weight: 400;
+      font-style: normal
+}
+/** Roboto medium **/
+@font-face {
+  font-family: 'Roboto';
+      src: font('Roboto/roboto-medium.eot');
+      src: font('Roboto/roboto-medium.eot?#iefix') format('embedded-opentype'),
+      font('Roboto/roboto-medium.woff2') format('woff2'),
+      font('Roboto/roboto-medium.woff') format('woff'),
+      font('Roboto/roboto-medium.ttf') format('truetype'),
+      font('Roboto/roboto-medium.svg#roboto-medium') format('svg');
+      font-weight: 500;
+      font-style: normal
+}
+/** Roboto bold **/
+@font-face {
+  font-family: 'Roboto';
+      src: font('Roboto/roboto-bold.eot');
+      src: font('Roboto/roboto-bold.eot?#iefix') format('embedded-opentype'),
+      font('Roboto/roboto-bold.woff2') format('woff2'),
+      font('Roboto/roboto-bold.woff') format('woff'),
+      font('Roboto/roboto-bold.ttf') format('truetype'),
+      font('Roboto/roboto-bold.svg#roboto-bold') format('svg');
       font-weight: 700;
       font-style: normal
+}
+/** Roboto black **/
+@font-face {
+  font-family: 'Roboto';
+      src: font('Roboto/roboto-black.eot');
+      src: font('Roboto/roboto-black.eot?#iefix') format('embedded-opentype'),
+      font('Roboto/roboto-black.woff2') format('woff2'),
+      font('Roboto/roboto-black.woff') format('woff'),
+      font('Roboto/roboto-black.ttf') format('truetype'),
+      font('Roboto/roboto-black.svg#roboto-black') format('svg');
+      font-weight: 900;
+      font-style: normal
+}
+
+// ----------------------------------------------------------------------------
+// PT Sans
+// ----------------------------------------------------------------------------
+
+/** Pt Sans regular **/
+@font-face {
+  font-family: 'PT Sans';
+      src: font('PT_Sans/PT_Sans-Regular.eot');
+      src: font('PT_Sans/PT_Sans-Regular.eot?#iefix') format('embedded-opentype'),
+      font('PT_Sans/PT_Sans-Regular.woff2') format('woff2'),
+      font('PT_Sans/PT_Sans-Regular.woff') format('woff'),
+      font('PT_Sans/PT_Sans-Regular.ttf') format('truetype'),
+      font('PT_Sans/PT_Sans-Regular.svg#PT_Sans-Regular') format('svg');
+      font-weight: 400;
+      font-style: normal
+}
+
+/** Pt Sans bold **/
+@font-face {
+  font-family: 'PT Sans';
+      src: font('PT_Sans/PT_Sans-Bold.eot');
+      src: font('PT_Sans/PT_Sans-Bold.eot?#iefix') format('embedded-opentype'),
+      font('PT_Sans/PT_Sans-Bold.woff2') format('woff2'),
+      font('PT_Sans/PT_Sans-Bold.woff') format('woff'),
+      font('PT_Sans/PT_Sans-Bold.ttf') format('truetype'),
+      font('PT_Sans/PT_Sans-Bold.svg#PT_Sans-Bold') format('svg');
+      font-weight: 700;
+      font-style: normal
+}
+
+// ----------------------------------------------------------------------------
+// PT_Sans_Caption
+// ----------------------------------------------------------------------------
+
+/** Pt Sans Caption regular **/
+@font-face {
+  font-family: 'PT Sans Caption';
+      src: font('PT_Sans_Caption/PT_Sans_Caption-Regular.eot');
+      src: font('PT_Sans_Caption/PT_Sans_Caption-Regular.eot?#iefix') format('embedded-opentype'),
+      font('PT_Sans_Caption/PT_Sans_Caption-Regular.woff2') format('woff2'),
+      font('PT_Sans_Caption/PT_Sans_Caption-Regular.woff') format('woff'),
+      font('PT_Sans_Caption/PT_Sans_Caption-Regular.ttf') format('truetype'),
+      font('PT_Sans_Caption/PT_Sans_Caption-Regular.svg#PT_Sans_Caption-Regular') format('svg');
+      font-weight: 400;
+      font-style: normal
+}
+
+/** Pt Sans Caption bold **/
+@font-face {
+  font-family: 'PT Sans Caption';
+      src: font('PT_Sans_Caption/PT_Sans_Caption-Bold.eot');
+      src: font('PT_Sans_Caption/PT_Sans_Caption-Bold.eot?#iefix') format('embedded-opentype'),
+      font('PT_Sans_Caption/PT_Sans_Caption-Bold.woff2') format('woff2'),
+      font('PT_Sans_Caption/PT_Sans_Caption-Bold.woff') format('woff'),
+      font('PT_Sans_Caption/PT_Sans_Caption-Bold.ttf') format('truetype'),
+      font('PT_Sans_Caption/PT_Sans_Caption-Bold.svg#PT_Sans_Caption-Bold') format('svg');
+      font-weight: 700;
+      font-style: normal
+}
+
+// ----------------------------------------------------------------------------
+// Museo Sans
+// ----------------------------------------------------------------------------
+
+/** Museo Sans light **/
+@font-face {
+  font-family: 'Museo Sans';
+  src: font('Museo_Sans/MuseoSansCyrl-300.eot');
+  src: font('Museo_Sans/MuseoSansCyrl-300.woff2') format('woff2'),
+       font('Museo_Sans/MuseoSansCyrl-300.woff') format('woff'),
+       font('Museo_Sans/MuseoSansCyrl-300.ttf') format('truetype'),
+       font('Museo_Sans/MuseoSansCyrl-300.svg#MuseoSansCyrl-300') format('svg'),
+       font('Museo_Sans/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/** Museo Sans Regular **/
+@font-face {
+  font-family: 'Museo Sans';
+  src: font('Museo_Sans/MuseoSansCyrl-500.eot');
+  src: font('Museo_Sans/MuseoSansCyrl-500.woff2') format('woff2'),
+       font('Museo_Sans/MuseoSansCyrl-500.woff') format('woff'),
+       font('Museo_Sans/MuseoSansCyrl-500.ttf') format('truetype'),
+       font('Museo_Sans/MuseoSansCyrl-500.svg#MuseoSansCyrl-500') format('svg'),
+       font('Museo_Sans/MuseoSansCyrl-500.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/** Museo Sans Bold **/
+@font-face {
+  font-family: 'Museo Sans';
+  src: font('Museo_Sans/MuseoSansCyrl-700.eot');
+  src: font('Museo_Sans/MuseoSansCyrl-700.woff2') format('woff2'),
+       font('Museo_Sans/MuseoSansCyrl-700.woff') format('woff'),
+       font('Museo_Sans/MuseoSansCyrl-700.ttf') format('truetype'),
+       font('Museo_Sans/MuseoSansCyrl-700.svg#MuseoSansCyrl-700') format('svg'),
+       font('Museo_Sans/MuseoSansCyrl-700.eot?#iefix') format('embedded-opentype');
+  font-weight: bold;
+  font-style: normal;
 }

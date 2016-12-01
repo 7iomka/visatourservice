@@ -1,15 +1,19 @@
-$hamburger-color: #fef0cc;
-$hamburger-bgColor: #5e4608;
+// $hamburger-color: #fef0cc;
+// $hamburger-color: #47a0ff;
+$hamburger-color: #148ec7;
+$hamburger-textColor: $hamburger-color;
+$hamburger-iconColor: $hamburger-color;
 
 .hamburger-text {
-    margin-left: -60px;
-    position: absolute;
-    color: wheat;
-    font-family: "Bebas_Neue", sans-serif;
-    font-size: 25px;
-    line-height: 60px;
-    display: inline-block;
-    cursor: pointer;
+  position: absolute;
+  color: $hamburger-textColor;
+  font-size: 18px;
+  line-height: 60px;
+  display: inline-block;
+  cursor: pointer;
+  text-transform: uppercase;
+  right: 60px;
+  top: 2px;
 }
 .hamburger {
   position: relative;
@@ -17,12 +21,12 @@ $hamburger-bgColor: #5e4608;
   width: 60px;
   height: 60px;
   transition-duration: 0.5s;
-  background: $hamburger-bgColor;
+  // background: $hamburger-bgColor;
   float: right;
   -webkit-tap-highlight-color: transparent;
 
   &.active {
-    border-radius: 0 0 0 15px;
+
   }
 
 
@@ -35,7 +39,7 @@ $hamburger-bgColor: #5e4608;
     width: 30px;
     display: block;
     top: 30px;
-    background-color: $hamburger-color;
+    background-color: $hamburger-iconColor;
     border-radius: 4px;
     left: 15px;
     &:before {
@@ -44,7 +48,7 @@ $hamburger-bgColor: #5e4608;
       position: absolute;
       width: 30px;
       height: 4px;
-      background-color: $hamburger-color;
+      background-color: $hamburger-iconColor;
       content: "";
       top: -10px;
       border-radius: 4px;
@@ -55,7 +59,7 @@ $hamburger-bgColor: #5e4608;
       position: absolute;
       width: 30px;
       height: 4px;
-      background-color: $hamburger-color;
+      background-color: $hamburger-iconColor;
       content: "";
       top: 10px;
       border-radius: 4px;

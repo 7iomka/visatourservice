@@ -1,12 +1,6 @@
 //DEFAULT STYLES FIXED MENU
 #header-nav {
-  position: fixed;
-  left: 0;
-  top: 0;
   display: block;
-  width: 100%;
-  width: 100vw;
-  background: #202020;
   z-index: 100;
   -webkit-transition: -webkit-transform 0.7s 0.3s ease;
   -moz-transition: -moz-transform 0.7s 0.3s ease;
@@ -47,19 +41,23 @@ nav[role=navigation] {
 nav[role=navigation] {
     text-align: center;
   &.active {
-    max-height: 15em;
+    max-height: 25em;
   }
   ul {
     margin: 0;
     padding: 0;
 
   }
-  li a {
+  /** Menu link styles **/
+  .menu__link {
     display: block;
     padding: 0.65em;
     font-size: 18px;
-    &:hover {
-      color: #ffefb5;
+    color: #494a4a;
+
+    &:hover,
+    &.menu__link--active {
+      color: $black
     }
   }
 }
@@ -114,14 +112,35 @@ nav[role=navigation] {
   }
 }
 
+/** styles for menu for tablets and phones **/
 @include media("<960px") {
   .menu__item {
     border-bottom: 1px solid rgba(186, 164, 133, 0.18);
-    box-shadow: 0 1px black;
+    position: relative;
+
   }
   nav[role=navigation] ul {
-    background-color: rgb(32, 32, 32);
-    background: linear-gradient(to bottom, rgb(32, 32, 32), #352f1e);
+    background-color: $white;
+
+  }
+  .icon--mobile-arrow {
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 42px;
+    padding-right: 10px;
+    width: 50px;
+    text-align: right;
+    font-size: 14px;
+    color: #494a4a;
+    &:before {
+      vertical-align: middle;
+    }
+  }
+
+  .menu__link {
+    position: relative;
+    z-index: 1;
   }
 }
 @include media(">=960px") {
@@ -132,6 +151,9 @@ nav[role=navigation] {
      }
 
   }
+  .icon--mobile-arrow {
+    display: none;
+  }
   .js nav[role=navigation] {
     max-height: none;
   }
@@ -141,26 +163,26 @@ nav[role=navigation] {
       margin: 0 0 0 -0.25em;
       border: 0;
     }
-    li {
+    .menu__item {
       display: inline-block;
       margin: 0 0.25em;
       position: relative;
       &:after {
-          content: "/";
-          color: #ac9455;
-          position: absolute;
-          top: 5px;
-          bottom: 0;
-          right: -20px;
-          height: 25px;
-          width: 25px;
-          margin: auto;
+        content: "";
+        background: #d6d6d6;
+        position: absolute;
+        top: 0px;
+        bottom: 0;
+        right: -7px;
+        height: 30px;
+        width: 1px;
+        margin: auto;
       }
       &.menu__item--last:after {
         display: none;
       }
 
-      a {
+      .menu__link {
         border: 0;
       }
     }

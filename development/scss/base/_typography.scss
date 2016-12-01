@@ -3,9 +3,9 @@
  */
 body {
   color: $text-color;
-  font: normal 125% / 1.4 $text-font-stack;
+  font: normal 125% / 1.4em $text-font-stack;
   // font: normal 20px $text-font-stack;
-
+  background: #f6f6f6;
 }
 
 span, p, div {

@@ -154,55 +154,63 @@
           <div class="container">
               <div class="row">
 
-                  <div class="col col--6-of-12 header-left">
-                      <a class="logo logo--large" href="/">
-                        <span class="logo__img"></span>
-                      </a>
+                  <div class="col col--6-of-12 col--m-1-of-2 header-left">
+                    <a class="logo logo--large" href="/">
+                      <!-- <span class="logo__img"></span> -->
+                      <span class="logo__icon"></span>
+                      <span class="logo__title-wrapper">
+                        <span class="logo__title-part logo__title-part--first">VisaTourService</span>
+                        <span class="logo__title-part logo__title-part--sep"></span>
+                        <span class="logo__title-part logo__title-part--last">Визовый консалтинг</span>
+                      </span>
+                    </a>
                   </div>
 
-                  <div class="col col--6-of-12 header-right">
+                  <div class="col col--6-of-12 col--m-1-of-2 header-right">
                       <ul class="header-data">
-                          <li class="header-data__item"><a href="#" class="header-data__geo">Москва</a></li>
-                          <li class="header-data__item"><a href="tel:88002508777" class="header-data__phone">8-800-250-87-77</a></li>
+                          <li class="header-data__item"><i class="icon icon--pinpoint header__icon"></i><a href="#" class="header-data__link header-data__geo">Москва</a></li>
+                          <li class="header-data__item"><i class="icon icon--phone_number header__icon"></i><a href="tel:88002508777" class="header-data__link header-data__phone">8-800-250-87-77</a></li>
                       </ul>
                   </div>
 
-                  <!-- Menu-->
-                  <div id="header-nav">
-                    <div class="container">
-                        <!-- Small screen menu button -->
-                         <div id="hamburger-icon" class="hamburger">
-                            <div class="icon"></div>
-                            <div class="hamburger-text">Меню</div>
-                        </div>
-                        <!-- /Small screen menu button -->
-
-                        <!-- Small screen logo in menu -->
-                        <div class="small-logo">
-                          <a href="/" class="small-logo-link">
-                            <span class="logo__title">
-                              VisaTourService
-                            </span>
-                          </a>
-                        </div>
-                        <!-- /Small screen logo in menu -->
-
-                        <!-- Menu Items -->
-                        <nav id="menu" role="navigation">
-                    			<ul>
-                    				<li class="menu__item"><a href="/about.php">О компании</a></li>
-                    				<li class="menu__item"><a href="/visa-c.php">Виза С</a></li>
-                    				<li class="menu__item"><a href="/visa-d.php">Виза D</a></li>
-                    				<li class="menu__item"><a href="/services.php">Услуги</a></li>
-                    				<li class="menu__item"><a href="/franchising.php">Франчайзинг</a></li>
-                    				<li class="menu__item"><a href="/news.php">Новости</a></li>
-                    				<li class="menu__item menu__item--last"><a href="/contacts.php">Контакты</a></li>
-                    			</ul>
-                    		</nav>
-                      <!-- /Menu Items -->
-                      </div>
-                	</div>
-                  <!-- /Menu -->
               </div>
           </div>
+          <div class="color-bar"></div>
+
+            <!-- Menu-->
+            <div id="header-nav">
+              <div class="container">
+                  <!-- Small screen menu button -->
+                   <div id="hamburger-icon" class="hamburger">
+                      <div class="icon"></div>
+                      <div class="hamburger-text">Меню</div>
+                  </div>
+                  <!-- /Small screen menu button -->
+
+                  <!-- Small screen logo in menu -->
+                  <div class="small-logo">
+                    <a href="/" class="small-logo-link">
+                      <span class="logo__title">
+                        VisaTourService
+                      </span>
+                    </a>
+                  </div>
+                  <!-- /Small screen logo in menu -->
+
+                  <!-- Menu Items -->
+                  <nav id="menu" role="navigation" >
+              			<ul>
+              				<li class="menu__item"><a class="menu__link" href="/about.php">О компании</a><span class="icon icon--arrow_right_flat icon--mobile-arrow"></span></li>
+              				<li class="menu__item"><a class="menu__link" href="/visa-c.php">Виза С</a><span class="icon icon--arrow_right_flat icon--mobile-arrow"></span></li>
+              				<li class="menu__item"><a class="menu__link" href="/visa-d.php">Виза D</a><span class="icon icon--arrow_right_flat icon--mobile-arrow"></span></li>
+              				<li class="menu__item"><a class="menu__link" href="/services.php">Услуги</a><span class="icon icon--arrow_right_flat icon--mobile-arrow"></span></li>
+              				<li class="menu__item"><a class="menu__link" href="/franchising.php">Франчайзинг</a><span class="icon icon--arrow_right_flat icon--mobile-arrow"></span></li>
+              				<li class="menu__item"><a class="menu__link" href="/news.php">Новости</a><span class="icon icon--arrow_right_flat icon--mobile-arrow"></span></li>
+              				<li class="menu__item menu__item--last"><a class="menu__link" href="/contacts.php">Контакты</a><span class="icon icon--arrow_right_flat icon--mobile-arrow"></span></li>
+              			</ul>
+              		</nav>
+                <!-- /Menu Items -->
+                </div>
+          	</div>
+            <!-- /Menu -->
         </header>

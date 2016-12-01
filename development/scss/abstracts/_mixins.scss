@@ -32,6 +32,13 @@
   }
 }
 
+
+@mixin ff($family, $weight: null) {
+  font-family: $family, sans-serif;
+  @if ($weight) {
+      font-weight: $weight;
+  }
+}
 // Gradients
 
 
