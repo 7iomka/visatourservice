@@ -76,7 +76,7 @@
       // padding: 10px 20px;
       font-size: 11px;
       max-width: 100%;
-      @include media('>=phone', '<=480px') {
+      @include media('<=480px') {
         line-height: normal;
         padding: 10px 20px;
         height: auto;
@@ -94,13 +94,18 @@
     letter-spacing: 0.09em;
     display: block;
     margin: auto;
-    
-      @include media('>=phone', '<=480px') {
-        line-height: normal;
-        padding: 10px 20px;
+      @include media("<tablet") {
+        padding: 0 30px;
+      };
+      @include media("<640px") {
+        font-size: 17px;
+        line-height: 60px;
         height: auto;
-        line-height: 34px; //54-10*2
-        min-height: 54px;
+      };
+      @include media("<480px") {
+        line-height: normal;
+        padding: 10px 15px;
+        width: 275px;
       }
 
   }

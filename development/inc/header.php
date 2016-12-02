@@ -191,7 +191,7 @@
                   <div class="small-logo">
                     <a href="/" class="small-logo-link">
                       <span class="logo__title">
-                        VisaTourService
+                        <!-- VisaTourService -->
                       </span>
                     </a>
                   </div>

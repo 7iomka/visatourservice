@@ -17,7 +17,7 @@ jQuery(document).ready(function($) {
               // addIndicators: true
           });
 
-        
+
 
           // Modernizr max-width
           function maxWidthCss(max) {

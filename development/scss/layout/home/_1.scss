@@ -28,7 +28,8 @@
 }
 
 .site-title__part {
-    text-transform: capitalize;
+    // text-transform: capitalize;
+    text-transform: uppercase;
     display: inline-block;
     &.yellow {
         text-shadow: 1px 1px #d78e00;
@@ -39,16 +40,33 @@
     font-size: 25px;
     display: block;
     text-align: right;
+    @include media("<tablet") {
+      font-size: 20px;
+    };
+    @include media("<480px") {
+      font-size: 16px;
+      font-weight: normal;
+      margin-top: 5px;
+    };
 }
 
 /**
  * Btn
  */
  .home-banner__btn-wrapper {
-     margin: 60px 0;
+    margin: 40px 0 110px;
  }
-.home-banner__btn {
-      box-shadow: 0 8px 5px -5px #d78e00;
+.btn.home-banner__btn {
+    box-shadow: 0 2px rgba(0,0,0,.3);
+    color: #393939;
+    text-shadow: 0px 1px #fff8aa;
+    font-family: 'Pt Sans';
+    text-transform: uppercase;
+    text-shadow: 0px 1px #fff8aa;
+
+    &:hover {
+        text-shadow: 0px 1px #ffea00;
+    }
 }
 
 /**
@@ -59,9 +77,16 @@
      position: absolute;
      left: 0;
      bottom: 0;
-     background-color: rgba(3, 5, 1, 0.45);
-
+    //  background-color: rgba(3, 5, 1, 0.45);
+    background-color: rgba(45, 66, 28, 0.59);
+    background: linear-gradient(to bottom, rgba(103, 75, 49, 0.59), rgba(45, 66, 28, 0.59));
      width: 100%;
+     @include media("<tablet") {
+      height: 525px;
+      background-color: rgba(45, 66, 28, 0.59);
+      background: linear-gradient(to bottom, rgba(103, 75, 49, 0.16) 0%, rgba(103, 75, 49, 0.59) 25%, rgba(45, 66, 28, 0.59));
+       width: 100%;
+     };
  }
 
 
@@ -76,19 +101,29 @@
 }
 
 .home-banner__advantage-header {
-    padding: 23px;
-    padding: 23.5px;
+    padding: 35px 0;
     width: 134px;
     height: 134px;
     border-radius: 50%;
     background-color: #ffffff;
     box-shadow: 0 -8px 25px -5px rgba(0, 0, 0, 0.48),0 8px 25px -5px rgba(0, 0, 0, 0.48);
     margin: auto;
+    @include media("<480px"){
+          width: 75px;
+          height: 75px;
+          padding: 20px 0;
+    };
 }
 
+
+
 .home-banner__advantage-icon {
-      font-size: 83px;
-      color: #7eba32;
+      font-size: 70px;
+      // color: #7eba32;
+      color: #c5313d;
+      @include media("<480px"){
+            font-size: 36px;
+      };
 }
 
 .home-banner__advantage-desc {
@@ -102,4 +137,16 @@
       margin: 25px auto;
       max-width: 100%;
     };
+    @include media("<480px") {
+      font-size: 18px;
+      margin: 10px auto 25px;
+    };
+}
+
+.home-banner__advantage-link {
+    color: #fefffc;
+    font-size: 0.8em;
+    display: block;
+    text-decoration: underline;
+    margin-top: 5px;
 }

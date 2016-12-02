@@ -8,5 +8,5 @@ var parallaxHomeScene = new ScrollMagic.Scene({
   duration: "200%",
   triggerHook: 1
 })
-.setTween('.parallax-section--home > .parallax-section__image', {y: "80%", ease: Linear.easeNone})
+.setTween('.parallax-section--home > .parallax-section__image', {y: "65%", ease: Linear.easeNone})
 .addTo(scrollMagicController);

@@ -5,7 +5,6 @@ body {
   color: $text-color;
   font: normal 125% / 1.4em $text-font-stack;
   // font: normal 20px $text-font-stack;
-  background: #f6f6f6;
 }
 
 span, p, div {
@@ -27,8 +26,17 @@ h1, h2, h3{
 h1 {
    font-size: 90px;
    line-height: 100%;
+   @include media("<880px") {
+      font-size: 60px;
+      font-size: 9vw;
+   };
    @include media("<tablet") {
-       font-size: 75px;
+     font-size: 45px;
+     font-size: 9vw;
+   };
+   @include media("<480px") {
+     font-size: 32px;
+     font-size: 9vw
    };
 }
 

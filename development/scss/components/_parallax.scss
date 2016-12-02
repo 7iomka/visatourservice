@@ -35,8 +35,16 @@
   };
 
   .parallax-section__image {
-      background-size: cover;
+      background-size: auto;
 
+      @include media("<tablet") {
+        background-size: 2560px auto;
+        background-position: center 0;
+        top: auto;
+        bottom: 0;
+        //temporar
+        transform: none!important;
+      };
   }
 }
 
