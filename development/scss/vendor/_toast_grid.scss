@@ -51,7 +51,8 @@ $toast-grid-column-namespace: "col" !default;
 $toast-col-groups: (1, 2, 3, 4, 5, 6, 8, 10, 12) !default;
 
 // Gutter width
-$toast-gutter-width: 0px !default;
+$toast-gutter-width: 30px !default;
+
 
 // Breakpoints
 
@@ -68,8 +69,13 @@ $toast-pulls: true !default;
 
 .#{$toast-grid-namespace} {
   list-style: none;
-  margin-left: $toast-gutter-width;
-  margin-right: $toast-gutter-width;
+  max-width: 1200px;
+  margin: 0 auto;
+  // margin-left: $toast-gutter-width;
+  // margin-right: $toast-gutter-width;
+  @include media("<x-small") {
+    // margin-left: 0;
+  };
 }
 
 %span-all       { width: percentage(1/1); }
@@ -249,6 +255,8 @@ $toast-pulls: true !default;
 
     &.#{$toast-grid-column-namespace}--m-1-of-1 {
       width: percentage(1/1);
+      margin-top: 10px;
+      margin-bottom: 10px;
     }
     &.#{$toast-grid-column-namespace}--m-1-of-2 {
       width: percentage(1/2);
@@ -295,6 +303,9 @@ $toast-pulls: true !default;
       display: block;
       margin-left: 0;
       margin-right: 0;
+      padding-left: 0;
+      padding-right: 0;
+      margin-bottom: ($toast-gutter-width)/2;
       width: auto;
 
     }
@@ -305,6 +316,8 @@ $toast-pulls: true !default;
 
     &.#{$toast-grid-column-namespace}--s-1-of-1 {
       width: percentage(1/1);
+      margin-top: 10px;
+    margin-bottom: 10px;
     }
 
     &.#{$toast-grid-column-namespace}--s-1-of-2 {
@@ -352,6 +365,8 @@ $toast-pulls: true !default;
 
       &.#{$toast-grid-column-namespace}--xs-1-of-1 {
         width: percentage(1/1);
+        margin-top: 10px;
+    margin-bottom: 10px;
       }
 
       &.#{$toast-grid-column-namespace}--xs-1-of-2 {
@@ -430,4 +445,100 @@ $toast-pulls: true !default;
 // Align column to the middle.
 .#{$toast-grid-column-namespace}--am {
   vertical-align: middle;
+}
+
+
+/**
+ * PORT FROM BOOTSTRAP V 4 alpha 5
+ */
+ .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: ($toast-gutter-width)/2;
+    padding-right: ($toast-gutter-width)/2;
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+@media (min-width: 576px) {
+    .container {
+        width:540px;
+        max-width: 100%
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width:720px;
+        max-width: 100%
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width:960px;
+        max-width: 100%
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width:1140px;
+        max-width: 100%
+    }
+}
+
+.container-fluid {
+    // hack
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: ($toast-gutter-width)/2;
+    padding-right: ($toast-gutter-width)/2;
+        // position: relative;
+}
+
+.container-fluid::after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media (min-width:576px) {
+    .row {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+}
+@media (min-width:768px) {
+    .row {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+}
+@media (min-width:992px) {
+    .row {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+}
+@media (min-width:1200px) {
+    .row {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
 }

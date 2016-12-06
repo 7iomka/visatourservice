@@ -2,7 +2,7 @@
         <section class="home-banner s1 parallax-section parallax-section--home">
             <div class="parallax-section__image"
               style="background-image: url('img/parallax/home/header_parallax.jpg');"></div>
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                   <div class="home-banner__content">
                     <div class="site-title-wrapper">
@@ -50,8 +50,9 @@
             </div>
             <div class="home-banner__advantages-overlay"></div>
         </section>
+        <!-- Visa-C -->
         <section class="visa-short-term s2">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col col--9-of-12 col--m-1-of-1 col--s-1-of-1 visa-short__search-column">
                       <h2 class="section-title sublined">Краткосрочные <strong>визы</strong></h2>
@@ -95,7 +96,7 @@
 
                     </div>
                     <div class="col col--3-of-12 col--m-hidden">
-                      <div class="info-block">
+                      <div class="info-block info-block--medium">
                         <div class="info-block__title">
                           <i class="icon icon--fingerprint_scan info-block__icon"></i><span class="info-block__title-span">Мобильная биометрия</span>
                         </div>
@@ -105,7 +106,8 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="country-list">
+                  <div class="col col--1-of-1">
+                      <div class="country-list">
                       <div class="country-list__wrapper">
                         <div class="country-list__slider">
                           <!-- country list slider -->
@@ -122,6 +124,7 @@
                       </div>
                     </div>
                     </div>
+                  </div>
 
                 </div>
 
@@ -131,14 +134,14 @@
                     <img class="country-preview__img" src="/img/home-coutries/at.jpg">
                     <div class="country-preview__short-desc-wrapper"></div>
                 </div>
-                <div class="container container-static">
+                <div class="container-fluid container-static">
                     <div class="row">
                         <div class="country-preview__short-desc"> Австрия - это чистейшие озера, величественные горы, сказочные австрийские городки, историческике замки и памятники архитектуры, лечебные курорты с чудлдейственными термальными источниками... </div>
                     </div>
                 </div>
-                <div class="container">
+                <div class="container-fluid">
                   <div class="row">
-                    <div class="col col--d-last col-m-1-of-1 country-preview__data-column">
+                    <div class="col col-m-1-of-1 country-preview__data-column">
                       <div class="country-preview__data-header">
 					              	<div class="country-preview__name">Австрия</div>
                      	    <div class="country-preview__subtitle">
@@ -207,21 +210,47 @@
 
                   </div>
                 </div>
-                <div class="col col--l-hidden col--m-1-of-2 col--s-1-of-2 col--m-visible col--centered visa-short__biometry-column">
-                  <div class="info-block">
-                    <div class="info-block__title">
-                      <i class="icon icon--fingerprint_scan info-block__icon"></i><span class="info-block__title-span">Мобильная биометрия</span>
+                <div class="row">
+                  <div class="col col--l-hidden col--m-1-of-1 col--s-1-of-1 col--m-visible col--centered visa-short__biometry-column">
+                    <div class="info-block info-block--small visa-short__info-block">
+                      <div class="info-block__title">
+                        <i class="icon icon--fingerprint_scan info-block__icon"></i><span class="info-block__title-span">Мобильная биометрия</span>
+                      </div>
+                      <div class="info-block__desc">Сдайте биометрию не выходя из дома</div>
+                      <div class="btn btn--yellow btn--small info-block__btn">Записаться</div>
                     </div>
-                    <div class="info-block__desc">Сдайте биометрию не выходя из дома</div>
-                    <div class="btn btn--yellow btn--small info-block__btn">Записаться</div>
                   </div>
                 </div>
             </div>
-            <div class="container">
-              <div class="row">
-
-              </div>
-            </div>
         </section>
+        <!-- /Visa-C -->
+
+        <!-- Visa-D -->
+        <section class="visa-long-term section-inverse s3">
+          <div class="parallax-section__image" style="background-image: url('img/section-bg/section-inverse-bg1.jpg');top: 0;"></div>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col col--7-of-12 col--m-1-of-1 col--s-1-of-1">
+                  <h2 class="section-title sublined">Долгосрочные <strong>визы</strong></h2>
+                  <p class="section-subtitle">Виза D. 25 стран</p>
+                  <div class="visa-long__excerpt">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis;
+                  </div>
+                </div>
+                <div class="col col--5-of-12 col--m-1-of-1 col--s-1-of-1 col--ab visa-long__consult-column">
+                  <div class="info-block info-block--medium visa-long__info-block">
+                    <div class="info-block__title">
+                      <i class="icon icon--customer_support info-block__icon"></i><span class="info-block__title-span">Консультация</span>
+                    </div>
+                    <div class="info-block__desc">Нужна консультация по оформлению долгосрочной визы? Запишитесь!</div>
+                    <div class="btn btn--yellow btn--large info-block__btn">Записаться на консультацию</div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </section>
+        <!-- /Visa-D -->
+
+
 
   <?php require_once('inc/footer.php'); ?>

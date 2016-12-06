@@ -66,6 +66,16 @@ body {
 }
 
 /**
+ * Section inverse (with white font)
+ */
+.section-inverse {
+  color: $white;
+  h2 {
+  color: $white;
+  }
+}
+
+/**
  * Basic styles for links
  */
 a {
