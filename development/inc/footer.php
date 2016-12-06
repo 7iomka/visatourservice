@@ -1,4 +1,4 @@
-<footer class="site-footer" id="contacts">
+<!-- <footer class="site-footer" id="contacts">
   <div class="container">
     <div class="row">
       <div class="footer-contacts">
@@ -29,7 +29,7 @@
       </div>
     </div>
   </div>
-</footer>
+</footer> -->
 
 
 <div class="remodal-bg">

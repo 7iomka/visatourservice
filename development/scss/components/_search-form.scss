@@ -1,0 +1,101 @@
+// -----------------------------------------------------------------------------
+// Component search-form
+// -----------------------------------------------------------------------------
+$search-form-base-color: #00a01a;
+
+.search-form {
+
+  .search-form__input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+  }
+
+  .search-form__input {
+    display: table-cell;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    margin-bottom: 0;
+    height: 60px;
+    padding: 6px 12px;
+    outline: none;
+    border: 1px solid #c0c0c0;
+    border-right: none;
+    transition: 0.25s ease all;
+
+    &:focus {
+        outline: 0;
+        background: $white;
+        border-color: $search-form-base-color;
+    }
+
+    &::-webkit-input-placeholder {
+       color: #999;
+       font-weight: 300;
+       @include media("<x-small") {
+          font-size: 16px;
+       };
+    }
+
+    &:-moz-placeholder {
+        color: #999;
+        font-weight: 300;
+        @include media("<x-small") {
+          font-size: 16px;
+        };
+    }
+
+    &:-ms-input-placeholder {
+        color: #999;
+        font-weight: 300;
+        @include media("<x-small") {
+          font-size: 16px;
+        };
+    }
+  }
+
+  .search-form__input-group-btn {
+    display: table-cell;
+    z-index: 2;
+    width: 1%;
+    vertical-align: middle;
+    position: relative;
+    font-size: 0;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .search-form__btn{
+    overflow: visible;
+    position: relative;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    width: 83px;
+    font-size: 36px;
+    height: 60px;
+    line-height: 57px;
+    color: #fff;
+    background: $search-form-base-color;
+    -moz-border-radius: 0 3px 3px 0;
+    -webkit-border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0;
+    text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+    margin-left: -1px;
+    &:hover {
+        background: darken($search-form-base-color, 5%);
+    }
+  }
+
+}
+.search-form__tips-toggler {
+    font-size: 18px;
+    padding: 10px 10px 15px;
+    background: #f3f3f3;
+    border: 1px solid rgb(220, 220, 220);
+    border-top: 0;
+    text-decoration: underline;
+    text-align: center;
+    cursor: pointer;
+}

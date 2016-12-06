@@ -12,7 +12,8 @@ $max-width: 1170px !default;
 /// Regular font family
 /// @type List
 // $text-font-stack: 'Proxima_Nova', sans-serif !default;
-$text-font-stack: 'Roboto', sans-serif !default;
+// $text-font-stack: 'Roboto', sans-serif !default;
+$text-font-stack: 'Museo Sans', sans-serif !default;
 /// Font-family for headers (h1,h2,h3..)
 /// @type List
 $header-font: 'Museo Sans', sans-serif !default;
@@ -110,4 +111,5 @@ $blue-gray: #263e4f;
 /// @type String
 /// @example scss - When using a CDN
 ///   $base-url: 'http://cdn.example.com/assets/';
-$base-url: '/' !default;
+// $base-url: '/' !default;
+$base-url: '../' !default;

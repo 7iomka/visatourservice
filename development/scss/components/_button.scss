@@ -15,6 +15,8 @@
   max-width: 100%;
   @include ff('Museo Sans');
 
+
+
 // make text-align middle vertical
   // display: table-cell;
  // vertical-align: middle;
@@ -22,7 +24,19 @@
  /* Reset */
  float: none;
  line-height: normal;
+// box-shadow: rgba(202, 202, 202, 0.156863) 0px 3px 10px, rgb(225, 225, 225) 0px 3px 10px;
+@include shadow(1);
+ text-shadow: 1px 1px transparentize($black, 0.7);
 
+
+ &:hover,&:focus {
+    @include shadow(3);
+    transform:translateY(-5px);
+  }
+  &:active {
+    // @include shadow(2);
+    transform:translateY(-2px);
+  }
  //specific styles
  // letter-spacing: 0.2em;
  // text-transform: uppercase;
@@ -41,7 +55,8 @@
     &:hover {
         background: darken($yellow, 5%);
         text-decoration: none;
-        text-shadow: 1px 1px transparentize($black, 0.7);
+        text-shadow: 1px 1px transparentize($black, 0.8);
+        box-shadow: rgba(0, 0, 0, 0.156863) 0px 3px 10px, rgba(0, 0, 0, 0.227451) 0px 3px 10px;
     }
   }
   &.btn--red {
@@ -66,16 +81,15 @@
     width: 239px;
     height: 49px;
     line-height: 49px;
-    font-size: 11px;
+    font-size: 16px;
   }
 
   &.btn--large{
-      width: 338px;
-      height: 54px;
-      line-height: 54px;
-      // padding: 10px 20px;
-      font-size: 11px;
-      max-width: 100%;
+    width: 338px;
+    height: 54px;
+    line-height: 54px;
+    max-width: 100%;
+    font-size: 18px;
       @include media('<=480px') {
         line-height: normal;
         padding: 10px 20px;
@@ -98,7 +112,7 @@
         padding: 0 30px;
       };
       @include media("<640px") {
-        font-size: 17px;
+        font-size: 16px;
         line-height: 60px;
         height: auto;
       };

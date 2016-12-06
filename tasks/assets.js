@@ -15,3 +15,12 @@ gulp.task('assets', function() {
   .pipe(debug({title:'assets'}))
   .pipe(gulp.dest(config.paths.dest.assets));
 });
+
+/** advanced compile svg to png (flags) **/
+var svg2png = require('gulp-svg2png');
+
+gulp.task('svg2png', function () {
+    gulp.src('development/assets/img/flags/**/*.svg')
+        .pipe(svg2png({ width: 72, height: 72 }))
+        .pipe(gulp.dest('development/assets/img/flags/'));
+});

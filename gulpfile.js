@@ -1,6 +1,6 @@
 /**
  * npm i --save-dev gulp gulp-sass gulp-print del gulp-newer gulp-remember gulp-cached path gulp-autoprefixer gulp-debug gulp-sourcemaps gulp-clean-css gulp-rename run-sequence last-run browser-sync gulp-concat gulp-uglify ngrok gulp-cached csso gulp-watch gulp-batch
- gulp-filter gulp-plumber localtunnel gulp-gzip gulp-jsonminify merge-stream*/
+ gulp-filter gulp-plumber localtunnel gulp-gzip gulp-jsonminify merge-stream gulp-svg2png */
 
 var gulp  = require('gulp'),
 		requireDir = require('require-dir'),

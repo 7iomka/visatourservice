@@ -54,8 +54,13 @@ $toast-col-groups: (1, 2, 3, 4, 5, 6, 8, 10, 12) !default;
 $toast-gutter-width: 0px !default;
 
 // Breakpoints
-$toast-breakpoint-medium: 767px !default;
-$toast-breakpoint-small: 479px !default;
+
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width
+$toast-breakpoint-large: 1199px !default;
+$toast-breakpoint-medium: 991px !default;
+$toast-breakpoint-small: 767px !default;
+$toast-breakpoint-x-small: 543px !default;
 
 // Pushes and pulls
 $toast-pushes: true !default;
@@ -190,19 +195,61 @@ $toast-pulls: true !default;
   padding-right: ($toast-gutter-width)/2;
   vertical-align: top;
 
-  @media (max-width: $toast-breakpoint-medium) {
-    display: block;
-    margin-left: 0;
-    margin-right: 0;
-    width: auto;
-  }
 
-  @media (max-width: $toast-breakpoint-medium) and (min-width: $toast-breakpoint-small) {
-    &[class*="#{$toast-grid-column-namespace}--m-"] {
+
+  /** add posibility to hide all elements less then max-width: 1199px and show necessary **/
+  @media (max-width: $toast-breakpoint-large) {
+    &.#{$toast-grid-column-namespace}--l-hidden {
+      display: none;
+    }
+    &.#{$toast-grid-column-namespace}--m-visible,
+    &.#{$toast-grid-column-namespace}--s-visible,
+    &.#{$toast-grid-column-namespace}--xs-visible {
       display: inline-block;
-      margin-right: -.24em;
+
+    }
+    // Centers the column in the grid and clears the row of all other columns
+    &.#{$toast-grid-column-namespace}--centered {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
 
+  }
+
+  &.#{$toast-grid-column-namespace}--l-hidden {
+    display: none;
+  }
+
+  /** add posibility to hide all elements less then max-width: 991px and show necessary **/
+  @media (max-width: $toast-breakpoint-medium) {
+
+
+    &.#{$toast-grid-column-namespace}--m-hidden {
+      display: none;
+    }
+    &.#{$toast-grid-column-namespace}--s-visible,
+    &.#{$toast-grid-column-namespace}--xs-visible {
+      display: inline-block;
+
+    }
+    // Centers the column in the grid and clears the row of all other columns
+    &.#{$toast-grid-column-namespace}--centered {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+
+
+
+  // styles for devices min-width: 767px and max-width: 991px
+  @media (max-width: $toast-breakpoint-medium) and (min-width: $toast-breakpoint-small) {
+
+    &.#{$toast-grid-column-namespace}--m-1-of-1 {
+      width: percentage(1/1);
+    }
     &.#{$toast-grid-column-namespace}--m-1-of-2 {
       width: percentage(1/2);
     }
@@ -226,12 +273,38 @@ $toast-pulls: true !default;
     &.#{$toast-grid-column-namespace}--m-3-of-4 {
       width: percentage(3/4);
     }
+
+    /** add posibility to hide elements only into max-width: 991px  and min-width: 767px **/
+    &.#{$toast-grid-column-namespace}--m-only-hidden {
+      display: none;
+    }
   }
 
-  @media (max-width: $toast-breakpoint-small) {
-    &[class*="#{$toast-grid-column-namespace}--s-"] {
-      display: inline-block;
-      margin-right: -.24em;
+
+
+    /** add posibility to hide all elements less to max-width: 991px **/
+    @media (max-width: $toast-breakpoint-medium) {
+      &.#{$toast-grid-column-namespace}--m-hidden {
+        display: none;
+      }
+    }
+
+
+  // break-styles for devices max-width: 767px
+    @media (max-width: $toast-breakpoint-x-small) {
+      display: block;
+      margin-left: 0;
+      margin-right: 0;
+      width: auto;
+
+    }
+
+
+  // styles for devices min-width: 543px and max-width: 767px
+  @media (max-width: $toast-breakpoint-small) and (min-width: $toast-breakpoint-x-small) {
+
+    &.#{$toast-grid-column-namespace}--s-1-of-1 {
+      width: percentage(1/1);
     }
 
     &.#{$toast-grid-column-namespace}--s-1-of-2 {
@@ -257,7 +330,63 @@ $toast-pulls: true !default;
     &.#{$toast-grid-column-namespace}--s-3-of-4 {
       width: percentage(3/4);
     }
+      /** add posibility to hide elements only into max-width: 767px  and min-width: 543px **/
+      &.#{$toast-grid-column-namespace}--s-only-hidden {
+        display: none;
+      }
   }
+
+  /** add posibility to hide all elements less to max-width: 767px **/
+  @media (max-width: $toast-breakpoint-small) {
+    &.#{$toast-grid-column-namespace}--s-hidden {
+      display: none;
+    }
+  }
+
+    // styles for xsmall devices max-width: 543px
+    @media (max-width: $toast-breakpoint-x-small) {
+      &[class*="#{$toast-grid-column-namespace}--xs-"] {
+        display: inline-block;
+        margin-right: -.24em;
+      }
+
+      &.#{$toast-grid-column-namespace}--xs-1-of-1 {
+        width: percentage(1/1);
+      }
+
+      &.#{$toast-grid-column-namespace}--xs-1-of-2 {
+        width: percentage(1/2);
+      }
+
+      &.#{$toast-grid-column-namespace}--xs-1-of-3 {
+        width: percentage(1/3);
+      }
+
+      &.#{$toast-grid-column-namespace}--xs-2-of-3 {
+        width: percentage(2/3);
+      }
+
+      &.#{$toast-grid-column-namespace}--xs-1-of-4 {
+        width: percentage(1/4);
+      }
+
+      &.#{$toast-grid-column-namespace}--xs-2-of-4 {
+        @extend .#{$toast-grid-column-namespace}--xs-1-of-2;
+      }
+
+      &.#{$toast-grid-column-namespace}--xs-3-of-4 {
+        width: percentage(3/4);
+      }
+
+      /** add posibility to hide all elements less to max-width: 543px **/
+      @media (max-width: $toast-breakpoint-x-small) {
+        &.#{$toast-grid-column-namespace}--xs-hidden {
+          display: none;
+        }
+      }
+
+    }
+
 }
 
 // Centers the column in the grid and clears the row of all other columns

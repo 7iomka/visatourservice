@@ -54,6 +54,26 @@
 }
 
 
+/** hidden and visibility togglers **/
+
+/**
+ * small
+ */
+ .x-small-only {
+   display: none;
+   @include media("<x-small") {
+      display: block;
+   };
+ }
+
+ .x-small-hidden {
+  //  display: block;
+   @include media("<x-small") {
+      display: none;
+   };
+ }
+
+
 
 
 

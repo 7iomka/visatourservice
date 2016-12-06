@@ -541,38 +541,7 @@ jQuery(document).ready(function($) {
 
 
 
-        // ----------------------------------------------------------------------------
-        // Reviews slider
-        // ----------------------------------------------------------------------------
-        var reviewsSlider = new Swiper('.swiper-container', {
-                nextButton: '.swiper-button-next',
-                 prevButton: '.swiper-button-prev',
-                   pagination: '.swiper-pagination',
-                //  loop: true,
-                effect: 'coverflow',
-                // autoHeight: true,
-                // nested: true,
-                // virtualTranslate: true,
-                // grabCursor: true,
-                initialSlide: 2,
-                //  loopAdditionalSlides: 5,
-                 paginationClickable: true,
-                 centeredSlides: true,
-                 slidesPerView: 'auto',
-                 slideToClickedSlide: true,
-                //  touchEventsTarget: "wrapper",
-                coverflow: {
-                    rotate: 0,
-                    stretch: 140,
-                    depth: 180,
-                    modifier: 1,
-                    slideShadows : false
-                },
-                onSlideChangeEnd: function (s) { s.fixLoop(); }
-
-
-            });
-
+        
 
       // ----------------------------------------------------------------------------
       // Init gallery for each review
@@ -989,4 +958,5 @@ jQuery(document).ready(function($) {
 
       }
 
+homeActions();
 /** !! jQuery document ready is NOT closed (it will be closed in another file) **/

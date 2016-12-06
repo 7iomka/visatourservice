@@ -1,0 +1,36 @@
+
+.flag-icon-background {
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-color: #f4fcff;
+}
+
+.flag-icon {
+  @extend .flag-icon-background;
+  position: relative;
+  display: inline-block;
+  width: 1em;
+  line-height: 1em;
+  &:before {
+    content: '\00a0';
+  }
+}
+
+@mixin flag-icon($country) {
+  .flag-icon--#{$country} {
+    // fallback for old browsers
+    background-image: image($flag-icon-css-path+ '/' + $country +'.png');
+    // svg background for all modern browser
+    background-image: image($flag-icon-css-path+ '/' + $country +'.svg'), none;
+    @if($country == 'mtn') {
+      background-color: #21428e;
+    }
+    @if($country == 'spm') {
+      background-color: #0092c8;
+    }
+    @if($country == 'glp') {
+      background-color: #da121a;
+    }
+  }
+}

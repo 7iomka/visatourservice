@@ -14,7 +14,8 @@ html, body {
 body {
   min-width: 100%;
   table-layout: fixed;
-  background: $white;
+  // background: $white;
+  background: #fdfdfd;
 }
 @include media('>=desktop') {
   ::-webkit-scrollbar-track
@@ -120,21 +121,31 @@ section {
     }
 
     h2 {
-      text-align: center;
+      // text-align: center;
       position: relative;
+      text-transform: uppercase;
       // color: $black;
       color:  #141414;
 
-      @include media('>=tablet', '<960px') {
-        font-size: 50px;
-        font-size: 8vw;
+      @include media("<medium") {
+        text-align: center;
+
+      };
+      @include media("<small") {
+        font-size: 51px;
+        font-size: 6.75vw;
+      };
+      // @include media('>=tablet', '<1200px') {
+      //   font-size: 50px;
+      //   font-size: 8vw;
+      // }
+
+      @include media('>=xx-small', '<x-small') {
+        font-size: 34px;
+        font-size: 6.75vw;
       }
-      @include media('>=480px', '<tablet') {
-        font-size: 50px;
-        font-size: 8vw;
-      }
-      @include media('<480px') {
-        font-size: 40px !important;
+      @include media('<xx-small') {
+        font-size: 32px !important;
         margin-bottom: 0.67em;
       }
       .brown {
@@ -148,20 +159,27 @@ section {
         &.reverse{
           color: $white;
         }
-        &:before {
-          content: "";
-          background-color: $yellow;
-          width: 201px;
-          height: 2px;
-          display: block;
-          position: absolute;
-          top: -10px;
-          left: 0;
-          right: 0;
-          margin: auto;
-          transition: 1s ease all;
-          transition-delay: 0.5s;
+        &.sublined {
+          margin-bottom: 20px;
+          margin-top: 0px;
+          &:before {
+            content: "";
+            background-color: $yellow;
+            width: 201px;
+            height: 2px;
+            display: block;
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            right: 0;
+            transition: 1s ease all;
+            transition-delay: 0.5s;
+            @include media("<medium") {
+              margin: auto;
+            };
+          }
         }
+
         &.beforeAnim:before {
             opacity: 0;
         }
@@ -173,6 +191,11 @@ section {
             background: #c5313d;
           }
         }
+    }
+    .section-subtitle {
+      @include media("<medium") {
+        text-align: center;
+      };
     }
 }
 

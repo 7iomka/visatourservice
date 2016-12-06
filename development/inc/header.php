@@ -200,13 +200,13 @@
                   <!-- Menu Items -->
                   <nav id="menu" role="navigation" >
               			<ul>
-              				<li class="menu__item"><a class="menu__link" href="/about.php">О компании</a><span class="icon icon--arrow_right_flat icon--mobile-arrow"></span></li>
-              				<li class="menu__item"><a class="menu__link" href="/visa-c.php">Виза С</a><span class="icon icon--arrow_right_flat icon--mobile-arrow"></span></li>
-              				<li class="menu__item"><a class="menu__link" href="/visa-d.php">Виза D</a><span class="icon icon--arrow_right_flat icon--mobile-arrow"></span></li>
-              				<li class="menu__item"><a class="menu__link" href="/services.php">Услуги</a><span class="icon icon--arrow_right_flat icon--mobile-arrow"></span></li>
-              				<li class="menu__item"><a class="menu__link" href="/franchising.php">Франчайзинг</a><span class="icon icon--arrow_right_flat icon--mobile-arrow"></span></li>
-              				<li class="menu__item"><a class="menu__link" href="/news.php">Новости</a><span class="icon icon--arrow_right_flat icon--mobile-arrow"></span></li>
-              				<li class="menu__item menu__item--last"><a class="menu__link" href="/contacts.php">Контакты</a><span class="icon icon--arrow_right_flat icon--mobile-arrow"></span></li>
+              				<li class="menu__item"><a class="menu__link" href="/about.php">О компании</a><span class="icon icon--arrow-right--flat icon--mobile-arrow"></span></li>
+              				<li class="menu__item"><a class="menu__link" href="/visa-c.php">Виза С</a><span class="icon icon--arrow-right--flat icon--mobile-arrow"></span></li>
+              				<li class="menu__item"><a class="menu__link" href="/visa-d.php">Виза D</a><span class="icon icon--arrow-right--flat icon--mobile-arrow"></span></li>
+              				<li class="menu__item"><a class="menu__link" href="/services.php">Услуги</a><span class="icon icon--arrow-right--flat icon--mobile-arrow"></span></li>
+              				<li class="menu__item"><a class="menu__link" href="/franchising.php">Франчайзинг</a><span class="icon icon--arrow-right--flat icon--mobile-arrow"></span></li>
+              				<li class="menu__item"><a class="menu__link" href="/news.php">Новости</a><span class="icon icon--arrow-right--flat icon--mobile-arrow"></span></li>
+              				<li class="menu__item menu__item--last"><a class="menu__link" href="/contacts.php">Контакты</a><span class="icon icon--arrow-right--flat icon--mobile-arrow"></span></li>
               			</ul>
               		</nav>
                 <!-- /Menu Items -->

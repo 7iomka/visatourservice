@@ -43,7 +43,7 @@
     @include media("<tablet") {
       font-size: 20px;
     };
-    @include media("<480px") {
+    @include media("<x-small") {
       font-size: 16px;
       font-weight: normal;
       margin-top: 5px;
@@ -81,7 +81,7 @@
     background-color: rgba(45, 66, 28, 0.59);
     background: linear-gradient(to bottom, rgba(103, 75, 49, 0.59), rgba(45, 66, 28, 0.59));
      width: 100%;
-     @include media("<tablet") {
+     @include media("<small") {
       height: 525px;
       background-color: rgba(45, 66, 28, 0.59);
       background: linear-gradient(to bottom, rgba(103, 75, 49, 0.16) 0%, rgba(103, 75, 49, 0.59) 25%, rgba(45, 66, 28, 0.59));
@@ -94,6 +94,7 @@
 .home-banner__advantages {
     position: relative;
     z-index: 1;
+    text-align: center;
 }
 
 .home-banner__advantage {
@@ -108,7 +109,7 @@
     background-color: #ffffff;
     box-shadow: 0 -8px 25px -5px rgba(0, 0, 0, 0.48),0 8px 25px -5px rgba(0, 0, 0, 0.48);
     margin: auto;
-    @include media("<480px"){
+    @include media("<x-small"){
           width: 75px;
           height: 75px;
           padding: 20px 0;
@@ -121,7 +122,7 @@
       font-size: 70px;
       // color: #7eba32;
       color: #c5313d;
-      @include media("<480px"){
+      @include media("<x-small"){
             font-size: 36px;
       };
 }
@@ -137,7 +138,7 @@
       margin: 25px auto;
       max-width: 100%;
     };
-    @include media("<480px") {
+    @include media("<x-small") {
       font-size: 18px;
       margin: 10px auto 25px;
     };

@@ -1,0 +1,110 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the prices-table component.
+// -----------------------------------------------------------------------------
+
+.prices-table {
+    margin-bottom: 25px;
+}
+.prices-table__row {
+    margin-bottom: 7px;
+}
+.prices-table__icon-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+    width: 10%;
+    margin-right: -0.24em;
+    text-align: center;
+}
+
+.prices-table__service {
+    display: inline-block;
+    vertical-align: middle;
+    width: 70%;
+    margin-right: -0.24em;
+    color: #464646;
+    font-size: 17px;
+    padding: 10px 10px 10px 0;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.prices-table__price-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20%;
+    margin-right: -0.24em;
+    border-bottom: 1px solid #d4d4d4;
+    padding: 10px 0;
+}
+
+.prices-table__price {
+    color: #464646;
+    font-size: 17px;
+}
+
+.prices-table__icon-bg {
+    padding: 10px;
+    width: 44px;
+    height: 44px;
+    display: inline-block;
+    background: #f7f7f7;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: #9c9c9c;
+    vertical-align: middle;
+    position: relative;
+}
+
+.prices-table__icon {
+    left: 0;
+    top: 50%;
+    position: absolute;
+    margin-top: -11px;
+    margin-left: 12px;
+}
+
+/** table layout for <large **/
+@include media("<large") {
+  .prices-table__row {
+      display: table;
+      width: 100%;
+  }
+
+  .prices-table__icon-wrapper {
+      display: table-cell;
+  }
+
+  .prices-table__service {
+      display: table-cell;
+  }
+
+  .prices-table__price-wrapper {
+      display: table-cell;
+  }
+
+};
+
+@include media("<x-small") {
+
+  .prices-table__price {
+      font-size: 15px;
+  }
+  .prices-table__service {
+      font-size: 15px;
+      width: 55%;
+  }
+  .prices-table__price-wrapper {
+    width: 25%;
+  }
+  .prices-table__icon-bg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .prices-table__icon {
+      margin-top: -8px;
+      margin-left: 9px;
+  }
+
+};
