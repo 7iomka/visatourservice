@@ -227,7 +227,7 @@
 
         <!-- Visa-D -->
         <section class="visa-long-term section-inverse s3">
-          <div class="parallax-section__image" style="background-image: url('img/section-bg/section-inverse-bg1.jpg');top: 0;"></div>
+            <div class="parallax-section__image" style="background-image: url('img/section-bg/section-inverse-bg1.jpg');top: 0;"></div>
             <div class="container-fluid">
               <div class="row">
                 <div class="col col--7-of-12 col--m-1-of-1 col--s-1-of-1">
@@ -246,8 +246,100 @@
                     <div class="btn btn--yellow btn--large info-block__btn">Записаться на консультацию</div>
                   </div>
                 </div>
+            </div>
+          </div>
+          <div class="visa-long__block">
+              <div class="visa-long__white-panel"></div>
+              <div class="container-fluid">
+                  <div class="row row--equal visa-long__row--equal">
+                      <div class="col col--6-of-12 col--m-1-of-1 col--s-1-of-1 col-equal visa-long__col--equal">
+                          <div class="visa-long__countries-wrapper">
+
+                                  <div class="countries-table visa-long__countries-table">
+
+
+                                  </div>
+                          </div>
+
+                      </div>
+
+                      <div class="col col--6-of-12 col--m-1-of-1 col--s-1-of-1 col-equal visa-long__col--equal visa-long__data-col">
+                      <div class="visa-long__country-preview_wrapper">
+                          <div class="country-preview__data-header visa-long__country-preview_data-header" style="
+                                    background: rgb(45, 90, 109);
+                                    background: #2b4e65;
+                                ">
+                              <div class="country-preview__name">Австрия</div>
+                              <div class="country-preview__subtitle">
+                                  <span class="country-preview__subtitle-header">Оформление визы</span>
+                                  <span class="country-preview__subtitle-desc">от <span id="visa-c__start-price">350</span> рублей</span>
+                              </div>
+                          </div>
+                          <div class="prices-table country-preview__prices-table visa-long__country-preview_prices-table">
+                              <div class="prices-table__row">
+                                  <div class="prices-table__icon-wrapper"><span class="prices-table__icon-bg visa-long__country-prices-table_icon-bg"><i class="icon icon--speech_bubble_filled prices-table__icon"></i></span></div>
+                                  <div class="prices-table__service visa-long__country-prices-table_service">Консультация</div>
+                                  <div class="prices-table__price-wrapper visa-long__country-prices-table_price-wrapper">
+                                      <div class="prices-table__price visa-long__country-prices-table_price">от <span id="visa-c__consult-price"><strong>500</strong></span> р. - </div>
+                                  </div>
+                              </div>
+                              <div class="prices-table__row">
+                                  <div class="prices-table__icon-wrapper"><span class="prices-table__icon-bg"><i class="icon icon--bullet_list_filled prices-table__icon"></i></span></div>
+                                  <div class="prices-table__service">Проверка документов</div>
+                                  <div class="prices-table__price-wrapper">
+                                      <div class="prices-table__price">от <span id="visa-c__doc-verif-price"><strong>450</strong></span> р. - </div>
+                                  </div>
+                              </div>
+                              <div class="prices-table__row">
+                                  <div class="prices-table__icon-wrapper"><span class="prices-table__icon-bg"><i class="icon icon--document_solid prices-table__icon"></i></span></div>
+                                  <div class="prices-table__service">Заполнение анкеты</div>
+                                  <div class="prices-table__price-wrapper">
+                                      <div class="prices-table__price">от <span id="visa-c__form-completing-price"><strong>300</strong></span> р. - </div>
+                                  </div>
+                              </div>
+                              <div class="prices-table__row">
+                                  <div class="prices-table__icon-wrapper"><span class="prices-table__icon-bg"><i class="icon icon--delivery_bus prices-table__icon"></i></span></div>
+                                  <div class="prices-table__service">Курьерская доставка</div>
+                                  <div class="prices-table__price-wrapper">
+                                      <div class="prices-table__price">от <span id="visa-c__express-delivery-price"><strong>500</strong></span> р. - </div>
+                                  </div>
+                              </div>
+                              <div class="prices-table__row">
+                                  <div class="prices-table__icon-wrapper"><span class="prices-table__icon-bg"><i class="icon icon--shield prices-table__icon"></i></span></div>
+                                  <div class="prices-table__service">Оформление страховки</div>
+                                  <div class="prices-table__price-wrapper">
+                                      <div class="prices-table__price">от <span id="visa-c__insurance-price"><strong>1000</strong></span> р. - </div>
+                                  </div>
+                              </div>
+                              <div class="prices-table__row">
+                                  <div class="prices-table__icon-wrapper"><span class="prices-table__icon-bg"><i class="icon icon--fingerprint prices-table__icon"></i></span></div>
+                                  <div class="prices-table__service">Мобильная биометрия</div>
+                                  <div class="prices-table__price-wrapper">
+                                      <div class="prices-table__price">от <span id="visa-c__moobile-biometrics-price"><strong>500</strong></span> р. - </div>
+                                  </div>
+                              </div>
+                              <div class="prices-table__row">
+                                  <div class="prices-table__icon-wrapper"><span class="prices-table__icon-bg"><i class="icon icon--docs-translate prices-table__icon"></i></span></div>
+                                  <div class="prices-table__service">Перевод сопроводительных документов</div>
+                                  <div class="prices-table__price-wrapper">
+                                      <div class="prices-table__price">от <span id="visa-c__docs-translate-price"><strong>1000</strong></span> р. - </div>
+                                  </div>
+                              </div>
+
+                          </div>
+
+                          <div class="country-preview__btn-wrapper">
+                              <a class="btn btn--yellow btn--large country-preview__btn visa-long__country-preview_btn">Начать оформление</a>
+                          </div>
+                          <div class="country-preview__total-ordered">Уже оформлено <span id="visa-c__total-ordered"><strong>356</strong></span> виз</div>
+                      </div>
+                  </div>
+
+
+                  </div>
               </div>
           </div>
+
         </section>
         <!-- /Visa-D -->
 

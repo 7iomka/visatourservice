@@ -31,3 +31,82 @@
     margin-right: auto;
   };
 }
+
+
+/** visa-long__preview block */
+
+.visa-long__country-block {
+    display: inline-block;
+    width: 33%;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.visa-long__countries-wrapper {
+    background: white;
+    color: #141414;
+    padding: 60px 0 40px;
+}
+
+.visa-long__white-panel {
+    position: absolute;
+    bottom: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.42) 0%,rgb(255, 255, 255) 70%,rgb(255, 255, 255) 100%);
+    z-index: -1;
+}
+
+.visa-long__block {
+    position: relative;
+}
+
+.visa-long__country-preview_wrapper {
+    padding: 60px 0 40px;
+}
+
+.row.row--equal {
+    display: table;
+    .col {
+        display: table-cell;
+        float: none;
+    }
+}
+
+
+
+.col-equal {
+    display: table-cell;
+    float: none;
+}
+
+.visa-long__data-col {
+    background: #335b75;
+}
+
+.visa-long__country-preview_data-header {
+    background: #2b4e65;
+}
+
+.visa-long__country-prices-table_icon-bg {
+    background: #2b4e65;
+    color: #ffffff;
+}
+
+.visa-long__country-prices-table_service {
+    border-bottom: 1px solid #2b4e65;
+    color: #ffffff;
+}
+
+.visa-long__country-prices-table_price-wrapper {
+    border-bottom: 1px solid #2b4e65;
+}
+
+
+
+.btn.visa-long__country-preview_btn {
+    color: #2b4e65;
+    text-shadow: none;
+}
