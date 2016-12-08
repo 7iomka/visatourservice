@@ -331,6 +331,43 @@
 //   }
 // }
 
+/**
+ * on small
+ */
+ @include media("<small") {
+   .country-list__nav-icon {
+     font-size: 18px;
+     width: 18px;
+     height: 18px;
+   }
+
+   .country-list__nav {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+    }
+   .country-list__nav--prev {
+       transform: translateX(-30px);
+   }
+
+   .country-list__nav--next {
+       transform: translateX(30px);
+   }
+
+   .country-block {
+       padding: 30px 15px;
+   }
+
+   .country-list__slider {
+       padding-bottom: 50px;
+   }
+
+   .coutry-action-link {
+       padding-top: 18px;
+   }
+
+
+ };
 
 
 } // end country list
@@ -413,59 +450,6 @@
  };
 
 
- /** country-preview data **/
- .country-preview__data-column {
-   width: 50%;
-  padding-left: 25px;
-  padding-top: 75px;
-  margin: auto 0 auto auto;
-  display: block;
- }
-
- .country-preview__name {
-     color: #464646;
-     font-size: 36px;
-     font-weight: bold;
-     display: inline-block;
-     vertical-align: middle;
-     padding-right: 15px;
-         max-width: 350px;
- }
-
-.country-preview__subtitle-header {
-     color: #464646;
-     font-size: 16px;
-     font-weight: 300;
-     text-transform: uppercase;
-     display: block;
- }
-
- .country-preview__subtitle {
-     display: inline-block;
-     padding-left: 25px;
-     border-left: 1px solid;
-     vertical-align: middle;
- }
-
- .country-preview__data-header {
-     padding: 10px 0;
-    //  border-bottom: 1px solid #ffae1e;
-    //  border-top: 1px solid #ffae1e;
-     margin-bottom: 25px;
-     background: #f7f7f7;
-     text-align: center;
- }
-
- .country-preview__btn-wrapper {
-    text-align: center;
-    margin-bottom: 25px;
-}
-
-.country-preview__total-ordered {
-    font-size: 32px;
-    color: #5a5a5a;
-    text-align: center;
-}
 
 
 /**
@@ -506,18 +490,7 @@
       max-width: 100%;
   }
 
-  .country-preview__data-column {
-      float: none;
-      margin: 0 auto;
-      padding: 0;
-      width: 100%;
-  }
-  .country-preview__data-header {
-      padding: 10px 0;
-      margin-bottom: 25px;
-      background: #f7f7f7;
-      text-align: center;
-  }
+
 
   .visa-short__biometry-column {
       margin-top: 50px;

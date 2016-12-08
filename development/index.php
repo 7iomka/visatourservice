@@ -227,17 +227,18 @@
 
         <!-- Visa-D -->
         <section class="visa-long-term section-inverse s3">
-            <div class="parallax-section__image" style="background-image: url('img/section-bg/section-inverse-bg1.jpg');top: 0;"></div>
-            <div class="container-fluid">
+            <div class="parallax-section__image" style="background-image: url('img/section-bg/section-inverse-bg2.jpg');top: 0;"></div>
+            <div class="parallax-section__overlay"></div>
+            <div class="container-fluid container-relative">
               <div class="row">
-                <div class="col col--7-of-12 col--m-1-of-1 col--s-1-of-1">
+                <div class="col col--6-of-12 col--m-1-of-1 col--s-1-of-1">
                   <h2 class="section-title sublined">Долгосрочные <strong>визы</strong></h2>
                   <p class="section-subtitle">Виза D. 25 стран</p>
                   <div class="visa-long__excerpt">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis;
                   </div>
                 </div>
-                <div class="col col--5-of-12 col--m-1-of-1 col--s-1-of-1 col--ab visa-long__consult-column">
+                <div class="col col--6-of-12 col--m-1-of-1 col--s-1-of-1 col--ab visa-long__consult-column">
                   <div class="info-block info-block--medium visa-long__info-block">
                     <div class="info-block__title">
                       <i class="icon icon--customer_support info-block__icon"></i><span class="info-block__title-span">Консультация</span>
@@ -250,11 +251,11 @@
           </div>
           <div class="visa-long__block">
               <div class="visa-long__white-panel"></div>
-              <div class="container-fluid">
+              <div class="container-fluid with-left-offset" >
                   <div class="row row--equal visa-long__row--equal">
-                      <div class="col col--6-of-12 col--m-1-of-1 col--s-1-of-1 col-equal visa-long__col--equal">
+                      <div class="col col--6-of-12 col--m-1-of-2 col--s-1-of-1 col-equal visa-long__col--equal visa-long__col--countries">
                           <div class="visa-long__countries-wrapper">
-
+                                  <h4 class="visa-long__header-action">Выберите страну</h4>
                                   <div class="countries-table visa-long__countries-table">
 
 
@@ -263,19 +264,16 @@
 
                       </div>
 
-                      <div class="col col--6-of-12 col--m-1-of-1 col--s-1-of-1 col-equal visa-long__col--equal visa-long__data-col">
+                      <div class="col col--6-of-12 col--m-1-of-2 col--s-1-of-1 country-preview__data-column country-preview__data-column--contrast col-equal visa-long__col--equal visa-long__data-col">
                       <div class="visa-long__country-preview_wrapper">
-                          <div class="country-preview__data-header visa-long__country-preview_data-header" style="
-                                    background: rgb(45, 90, 109);
-                                    background: #2b4e65;
-                                ">
+                          <div class="country-preview__data-header" >
                               <div class="country-preview__name">Австрия</div>
                               <div class="country-preview__subtitle">
                                   <span class="country-preview__subtitle-header">Оформление визы</span>
                                   <span class="country-preview__subtitle-desc">от <span id="visa-c__start-price">350</span> рублей</span>
                               </div>
                           </div>
-                          <div class="prices-table country-preview__prices-table visa-long__country-preview_prices-table">
+                          <div class="prices-table prices-table--contrast country-preview__prices-table visa-long__country-preview_prices-table">
                               <div class="prices-table__row">
                                   <div class="prices-table__icon-wrapper"><span class="prices-table__icon-bg visa-long__country-prices-table_icon-bg"><i class="icon icon--speech_bubble_filled prices-table__icon"></i></span></div>
                                   <div class="prices-table__service visa-long__country-prices-table_service">Консультация</div>
@@ -343,6 +341,73 @@
         </section>
         <!-- /Visa-D -->
 
+        <!-- Other-services -->
+        <section class="other-services">
+          <div class="container-fluid">
+            <div class="row">
+                <div class="col"><h2 class="section-title sublined">Дополнительные услуги</h2></div>
+                <div class="vtsgrid">
 
+                      <div class="col col--3-of-12 col--m-1-of-2 vtsgrid-item__wrap">
+                        <div class="vtsgrid__item">
+                            <div class="vtsgrid__item__top">
+                                <a href="#" class="vtsgrid__item__top__image"><img width="360" height="240" src="http://cdn-adventure-tours.themedelight.com/wp-content/uploads/2015/07/lake-tahoe-360x240.jpg" class="attachment-thumb_tour_listing_small size-thumb_tour_listing_small wp-post-image" alt="Lake Tahoe"></a>
+                            </div>
+                            <div class="vtsgrid__item__content">
+                                <h3 class="vtsgrid__item__title"><a href="#">Помощь в оформлении паспортов</a></h3>
+                                <div class="vtsgrid__item__description">Magna. Lectus. Ligula habitasse ut morbi velit</div>
+                            </div>
+                            <div class="item-attributes">
+                                <div class="item-attributes__item"><a href="#" class="item-attributes__link"><i class="icon icon--enter"></i> Подробнее</a></div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col col--3-of-12 col--m-1-of-2 vtsgrid-item__wrap">
+                        <div class="vtsgrid__item">
+                            <div class="vtsgrid__item__top">
+                                <a href="#" class="vtsgrid__item__top__image"><img width="360" height="240" src="http://cdn-adventure-tours.themedelight.com/wp-content/uploads/2015/07/lake-tahoe-360x240.jpg" class="attachment-thumb_tour_listing_small size-thumb_tour_listing_small wp-post-image" alt="Lake Tahoe"></a>
+                            </div>
+                            <div class="vtsgrid__item__content">
+                                <h3 class="vtsgrid__item__title"><a href="#">Оформление страховки</a></h3>
+                                <div class="vtsgrid__item__description">Magna. Lectus. Ligula habitasse ut morbi velit</div>
+                            </div>
+                            <div class="item-attributes">
+                                <div class="item-attributes__item"><a href="#" class="item-attributes__link"><i class="icon icon--enter"></i> Подробнее</a></div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col col--3-of-12 col--m-1-of-2 vtsgrid-item__wrap">
+                        <div class="vtsgrid__item">
+                            <div class="vtsgrid__item__top">
+                                <a href="#" class="vtsgrid__item__top__image"><img width="360" height="240" src="http://cdn-adventure-tours.themedelight.com/wp-content/uploads/2015/07/lake-tahoe-360x240.jpg" class="attachment-thumb_tour_listing_small size-thumb_tour_listing_small wp-post-image" alt="Lake Tahoe"></a>
+                            </div>
+                            <div class="vtsgrid__item__content">
+                                <h3 class="vtsgrid__item__title"><a href="#">Приглашение для иностранцев в Росию</a></h3>
+                                <div class="vtsgrid__item__description">Magna. Lectus. Ligula habitasse ut morbi velit</div>
+                            </div>
+                            <div class="item-attributes">
+                                <div class="item-attributes__item"><a href="#" class="item-attributes__link"><i class="icon icon--enter"></i> Подробнее</a></div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col col--3-of-12 col--m-1-of-2 vtsgrid-item__wrap">
+                        <div class="vtsgrid__item">
+                            <div class="vtsgrid__item__top">
+                                <a href="#" class="vtsgrid__item__top__image"><img width="360" height="240" src="http://cdn-adventure-tours.themedelight.com/wp-content/uploads/2015/07/lake-tahoe-360x240.jpg" class="attachment-thumb_tour_listing_small size-thumb_tour_listing_small wp-post-image" alt="Lake Tahoe"></a>
+                            </div>
+                            <div class="vtsgrid__item__content">
+                                <h3 class="vtsgrid__item__title"><a href="#">Бюро переводов</a></h3>
+                                <div class="vtsgrid__item__description">Magna. Lectus. Ligula habitasse ut morbi velit</div>
+                            </div>
+                            <div class="item-attributes">
+                                <div class="item-attributes__item"><a href="#" class="item-attributes__link"><i class="icon icon--enter"></i> Подробнее</a></div>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+          </div>
+        </section>
+        <!-- /Other-services -->
 
   <?php require_once('inc/footer.php'); ?>

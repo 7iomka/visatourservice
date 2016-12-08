@@ -2,9 +2,50 @@
 // This file contains all styles related to the prices-table component.
 // -----------------------------------------------------------------------------
 
-.prices-table {
-    margin-bottom: 25px;
+
+@mixin prices-table($type: null){
+
+  $prices-table__text-color: #464646;
+  $prices-table__icon-bg: #f7f7f7;
+  $prices-table__icon-color: #9c9c9c;
+  $prices-table__border-color: #d4d4d4;
+
+  @if($type == contrast) {
+    $prices-table__text-color: $white;
+    $prices-table__icon-bg: rgba(0, 0, 0, 0.15);
+    $prices-table__icon-color: $white;
+    $prices-table__border-color: rgba(255, 255, 255, 0.35);
+  }
+
+  /** Parent styles **/
+  color: $prices-table__text-color;
+
+  /** Child styles **/
+  .prices-table__service,
+  .prices-table__price-wrapper {
+      border-bottom: 1px solid $prices-table__border-color;
+  }
+  .prices-table__icon-bg {
+    background: $prices-table__icon-bg;
+  }
+
+  .prices-table__icon {
+    color: $prices-table__icon-color;
+  }
+
+
 }
+
+
+.prices-table {
+  margin-bottom: 25px;
+  @include prices-table();
+    &.prices-table--contrast {
+      @include prices-table(contrast);
+    }
+}
+
+/** Child styles **/
 .prices-table__row {
     margin-bottom: 7px;
 }
@@ -21,10 +62,9 @@
     vertical-align: middle;
     width: 70%;
     margin-right: -0.24em;
-    color: #464646;
+
     font-size: 17px;
     padding: 10px 10px 10px 0;
-    border-bottom: 1px solid #d4d4d4;
 }
 
 .prices-table__price-wrapper {
@@ -32,12 +72,11 @@
     vertical-align: middle;
     width: 20%;
     margin-right: -0.24em;
-    border-bottom: 1px solid #d4d4d4;
     padding: 10px 0;
 }
 
 .prices-table__price {
-    color: #464646;
+
     font-size: 17px;
 }
 
@@ -46,12 +85,11 @@
     width: 44px;
     height: 44px;
     display: inline-block;
-    background: #f7f7f7;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
     margin-right: 10px;
-    color: #9c9c9c;
+
     vertical-align: middle;
     position: relative;
 }
@@ -105,6 +143,7 @@
   .prices-table__icon {
       margin-top: -8px;
       margin-left: 9px;
+      font-size: 16px;
   }
 
 };

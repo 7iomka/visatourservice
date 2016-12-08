@@ -17,6 +17,20 @@ function homeActions() {
 
 
     /**
+     * parallax for sections
+     * @type {ScrollMagic}
+     */
+    var parallaxHomeScene = new ScrollMagic.Scene({
+      triggerElement: '.visa-long-term',
+      duration: "200%",
+      triggerHook: 1,
+      offset: -75
+    })
+    .setTween('.visa-long-term> .parallax-section__image', {y: "-10%", ease: Linear.easeNone})
+    .addTo(scrollMagicController);
+
+
+    /**
      * insertData__visa_c as callback for ajax query
      */
     function insertData__visa_c(category_slug, country_name, country_code){
@@ -25,7 +39,7 @@ function homeActions() {
             '<div class="swiper-slide country-list__slide">',
               '<div class="country-block">',
                   '<div class="country-label">',
-                    '<span title="' + country_name + '" alt="' + country_name + '" class="flag-icon flag-icon--' + country_code + ' country-icon" data-category=' + category_slug + '></span>',
+                    '<span title="' + country_name + '" alt="' + country_name + '" class="flag-icon flag-icon--squared flag-icon--' + country_code + ' country-icon" data-category=' + category_slug + '></span>',
                     '<span class="country-name" title="' + country_name + '">' + country_name + '</span>',
                   '</div>',
                   '<div class="country-action-panel">',
@@ -51,8 +65,10 @@ function homeActions() {
         [
           '<div class="country-block visa-long__country-block">',
             '<div class="country-label visa-long__country-label">',
-              '<span title="' + country_name + '" alt="' + country_name + '" class="flag-icon flag-icon--' + country_code + ' country-icon visa-long__country-icon" data-category=' + category_slug + '></span>',
-              '<span class="country-name visa-long__country-name" title="' + country_name + '">' + country_name + '</span>',
+              '<a href="/visa-d/' + country_code + '" class="visa-long__country-link">',
+                  '<span title="' + country_name + '" alt="' + country_name + '" class="flag-icon flag-icon--' + country_code + ' country-icon visa-long__country-icon" data-category=' + category_slug + '></span>',
+                  '<span class="country-name visa-long__country-name" title="' + country_name + '">' + country_name + '</span>',
+              '</a>',
             '</div>',
         '</div>'
         ].join('')
@@ -180,6 +196,13 @@ function homeActions() {
        */
 
 
+
+      /**
+       * safari and old browsers than not support @supports css
+       */
+       if ('webkitFlexWrap' in document.documentElement.style) {
+           document.documentElement.classList.add('supports-flex-wrap');
+       }
 
 
 // End home actions

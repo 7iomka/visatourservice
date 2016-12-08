@@ -500,8 +500,26 @@ $toast-pulls: true !default;
     padding-left: ($toast-gutter-width)/2;
     padding-right: ($toast-gutter-width)/2;
         // position: relative;
-}
 
+  // &.with-left-offset {
+  //   position: relative;
+  //   &:before {
+  //         right: 100%;
+  //         margin-right: -($toast-gutter-width)/2;
+  //         background: white;
+  //         content: "";
+  //         position: absolute;
+  //         top: 0;
+  //         bottom: 0;
+  //         width: 9999px;
+  //     }
+  // }
+
+}
+.container-relative {
+    position: relative;
+    z-index: 1;
+}
 .container-fluid::after {
     content: "";
     display: table;

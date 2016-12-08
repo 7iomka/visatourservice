@@ -26,6 +26,17 @@
     width: 100%;
     z-index: -1;
 }
+.parallax-section__overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    // background: rgba(40, 47, 96, 0.54);
+    background: #282f60;
+    opacity: 0.54;
+}
+
 
 /** settings **/
 .parallax-section--home {

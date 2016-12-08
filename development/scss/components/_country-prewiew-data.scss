@@ -1,0 +1,101 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the country-prewiew-data component.
+// -----------------------------------------------------------------------------
+
+/** Basic colors **/
+$country-prewiew__text-color: #464646;
+$country-prewiew__text-color--contrast: $white;
+
+$country-prewiew__column-bg: none;
+$country-prewiew__column-bg--contrast: #335b75;
+
+$country-preview__data-header-bg: #f7f7f7;
+$country-preview__data-header-bg--contrast: #2b4e65;
+
+// $country-preview__data-icon-bg:
+/** Default styles **/
+
+.country-preview__data-column {
+  width: 50%;
+ padding-left: 25px;
+ padding-top: 75px;
+ margin: auto 0 auto auto;
+ display: block;
+}
+
+.country-preview__name {
+
+    font-size: 36px;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 15px;
+        max-width: 350px;
+}
+
+.country-preview__subtitle-header {
+
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    display: block;
+}
+
+.country-preview__subtitle {
+    display: inline-block;
+    padding-left: 25px;
+    border-left: 1px solid;
+    vertical-align: middle;
+}
+
+.country-preview__data-header {
+    padding: 10px 0;
+   //  border-bottom: 1px solid #ffae1e;
+   //  border-top: 1px solid #ffae1e;
+    margin-bottom: 25px;
+    background: #f7f7f7;
+    text-align: center;
+}
+
+.country-preview__btn-wrapper {
+   text-align: center;
+   margin-bottom: 25px;
+}
+
+.country-preview__total-ordered {
+   font-size: 32px;
+  //  color: #5a5a5a;
+   text-align: center;
+}
+
+
+/** Contrast styles **/
+.country-preview__data-column--contrast {
+
+}
+
+
+/**
+ * all layout for < medium
+ */
+@include media("<medium") {
+  .country-preview__data-column {
+      float: none;
+      margin: 0 auto;
+      padding: 0;
+      width: 100%;
+  }
+  .country-preview__data-header {
+      padding: 10px 0;
+      margin-bottom: 25px;
+      background: #f7f7f7;
+      text-align: center;
+  }
+}
+
+@include media("<xx-small") {
+  .country-preview__total-ordered {
+    font-size: 20px;
+    line-height: normal;
+  }
+};
