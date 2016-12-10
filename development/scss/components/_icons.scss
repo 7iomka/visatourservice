@@ -1,64 +1,170 @@
 [class*='icon--'] {
   vertical-align: middle;
+    font-family: 'vts' !important;
   &:before{
-  	display: inline-block;
-     font-family: 'vts';
-     font-style: normal;
-     font-weight: normal;
-     line-height: 1;
-     -webkit-font-smoothing: antialiased;
-     -moz-osx-font-smoothing: grayscale
+    // speak: none;
+    display: inline-block;
+    font-style: normal;
+    // font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
-
-.icon--pinpoint:before{content:'\0041';}
-.icon--phone_number:before{content:'\0042';}
-.icon--speech_large_bubble:before{content:'\0043';}
-.icon--document_solid:before{content:'\0044';}
-.icon--make_note:before{content:'\0045';}
-.icon--delivery_bus:before{content:'\0046';}
-.icon--shield:before{content:'\0047';}
-.icon--fingerprint:before{content:'\0048';}
-.icon--docs-translate:before{content:'\0049';}
-.icon--fingerprint_big:before{content:'\004a';}
-.icon--car:before{content:'\004b';}
-.icon--mark_as_favorite:before{content:'\004c';}
-.icon--versions:before{content:'\004d';}
-.icon--calendar3:before{content:'\004e';}
-.icon--knowledge_sharing:before{content:'\004f';}
-.icon--zoom_icon:before{content:'\0050';}
-.icon--light-bulb:before{content:'\0051';}
-.icon--complex:before{content:'\0052';}
-.icon--customer_support:before{content:'\0053';}
-.icon--professor_consultation:before{content:'\0054';}
-.icon--fingerprint_scan:before{content:'\0055';}
-.icon--search:before{content:'\0056';}
-.icon--passport:before{content:'\0057';}
-.icon--visa-extrance:before{content:'\0058';}
-.icon--calendar7:before{content:'\0059';}
-.icon--calendar15:before{content:'\005a';}
-.icon--bill:before{content:'\0061';}
-.icon--pay_order:before{content:'\0062';}
-.icon--document:before{content:'\0063';}
-.icon--attention:before{content:'\0064';}
-.icon--bullet_list_filled:before{content:'\0065';}
-.icon--airport_filled:before{content:'\0066';}
-.icon--booking_filled:before{content:'\0067';}
-.icon--contract_job_filled:before{content:'\0068';}
-.icon--van_filled:before{content:'\0069';}
-.icon--speech_bubble_filled:before{content:'\006a';}
-.icon--plus:before{content:'\006b';}
-.icon--minus:before{content:'\006c';}
-.icon--last_24_hours:before{content:'\006d';}
-.icon--shake_phone:before{content:'\006e';}
-.icon--message:before{content:'\006f';}
-.icon--skype_contact:before{content:'\0070';}
-.icon--location_marker:before{content:'\0071';}
-.icon--location_marker_filled:before{content:'\0072';}
-.icon--arrow-left--rounded:before{content:'\0073';}
-.icon--arrow-right--rounded:before{content:'\0074';}
-.icon--coliseum:before{content:'\0075';}
-.icon--arrow-left--flat:before{content:'\0076';}
-.icon--arrow-right--flat:before{content:'\0077';}
-.icon--enter:before{content:'\0078';}
-.icon--preview:before{content:'\0079';}
+.icon--pinpoint:before {
+  content: "\41";
+}
+.icon--phone_number:before {
+  content: "\42";
+}
+.icon--speech_large_bubble:before {
+  content: "\43";
+}
+.icon--document_solid:before {
+  content: "\44";
+}
+.icon--make_note:before {
+  content: "\45";
+}
+.icon--delivery_bus:before {
+  content: "\46";
+}
+.icon--shield:before {
+  content: "\47";
+}
+.icon--fingerprint:before {
+  content: "\48";
+}
+.icon--docs-translate:before {
+  content: "\49";
+}
+.icon--fingerprint_big:before {
+  content: "\4a";
+}
+.icon--car:before {
+  content: "\4b";
+}
+.icon--mark_as_favorite:before {
+  content: "\4c";
+}
+.icon--versions:before {
+  content: "\4d";
+}
+.icon--calendar3:before {
+  content: "\4e";
+}
+.icon--knowledge_sharing:before {
+  content: "\4f";
+}
+.icon--zoom_icon:before {
+  content: "\50";
+}
+.icon--light-bulb:before {
+  content: "\51";
+}
+.icon--complex:before {
+  content: "\52";
+}
+.icon--customer_support:before {
+  content: "\53";
+}
+.icon--professor_consultation:before {
+  content: "\54";
+}
+.icon--fingerprint_scan:before {
+  content: "\55";
+}
+.icon--search:before {
+  content: "\56";
+}
+.icon--passport:before {
+  content: "\57";
+}
+.icon--visa-extrance:before {
+  content: "\58";
+}
+.icon--calendar7:before {
+  content: "\59";
+}
+.icon--calendar15:before {
+  content: "\5a";
+}
+.icon--bill:before {
+  content: "\61";
+}
+.icon--pay_order:before {
+  content: "\62";
+}
+.icon--document:before {
+  content: "\63";
+}
+.icon--attention:before {
+  content: "\64";
+}
+.icon--bullet_list_filled:before {
+  content: "\65";
+}
+.icon--airport_filled:before {
+  content: "\66";
+}
+.icon--booking_filled:before {
+  content: "\67";
+}
+.icon--contract_job_filled:before {
+  content: "\68";
+}
+.icon--van_filled:before {
+  content: "\69";
+}
+.icon--speech_bubble_filled:before {
+  content: "\6a";
+}
+.icon--plus:before {
+  content: "\6b";
+}
+.icon--minus:before {
+  content: "\6c";
+}
+.icon--last_24_hours:before {
+  content: "\6d";
+}
+.icon--shake_phone:before {
+  content: "\6e";
+}
+.icon--message:before {
+  content: "\6f";
+}
+.icon--skype_contact:before {
+  content: "\70";
+}
+.icon--location_marker:before {
+  content: "\71";
+}
+.icon--location_marker_filled:before {
+  content: "\72";
+}
+.icon--arrow-left--rounded:before {
+  content: "\73";
+}
+.icon--arrow-right--rounded:before {
+  content: "\74";
+}
+.icon--coliseum:before {
+  content: "\75";
+}
+.icon--arrow-left--flat:before {
+  content: "\76";
+}
+.icon--arrow-right--flat:before {
+  content: "\77";
+}
+.icon--readmore:before {
+  content: "\78";
+}
+.icon--preview:before {
+  content: "\79";
+}

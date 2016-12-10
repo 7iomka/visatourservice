@@ -342,65 +342,73 @@
         <!-- /Visa-D -->
 
         <!-- Other-services -->
-        <section class="other-services">
+        <section class="other-services s4">
           <div class="container-fluid">
             <div class="row">
-                <div class="col"><h2 class="section-title sublined">Дополнительные услуги</h2></div>
+                <div class="col col--1-of-1"><h2 class="section-title sublined">Дополнительные услуги</h2></div>
                 <div class="vtsgrid">
 
-                      <div class="col col--3-of-12 col--m-1-of-2 vtsgrid-item__wrap">
+                      <div class="col col--3-of-12 col--m-1-of-2 col--s-1-of-2 vtsgrid-item__wrap">
                         <div class="vtsgrid__item">
                             <div class="vtsgrid__item__top">
-                                <a href="#" class="vtsgrid__item__top__image"><img width="360" height="240" src="http://cdn-adventure-tours.themedelight.com/wp-content/uploads/2015/07/lake-tahoe-360x240.jpg" class="attachment-thumb_tour_listing_small size-thumb_tour_listing_small wp-post-image" alt="Lake Tahoe"></a>
+                                <a href="#" class="vtsgrid__item__top__image"><img width="360" height="240" src="img/other-services/help_with_passport.jpg" class="attachment-thumb_tour_listing_small size-thumb_tour_listing_small wp-post-image" alt="Lake Tahoe"></a>
                             </div>
                             <div class="vtsgrid__item__content">
                                 <h3 class="vtsgrid__item__title"><a href="#">Помощь в оформлении паспортов</a></h3>
                                 <div class="vtsgrid__item__description">Magna. Lectus. Ligula habitasse ut morbi velit</div>
                             </div>
                             <div class="item-attributes">
-                                <div class="item-attributes__item"><a href="#" class="item-attributes__link"><i class="icon icon--enter"></i> Подробнее</a></div>
+                                <div class="item-attributes__item">
+                                      <a href="#" class="item-attributes__link"><i class="icon icon--readmore"></i><span class="item-attributes__link-text">Подробнее</span></a>
+                                </div>
                             </div>
                         </div>
                       </div>
-                      <div class="col col--3-of-12 col--m-1-of-2 vtsgrid-item__wrap">
+                      <div class="col col--3-of-12 col--m-1-of-2 col--s-1-of-2 vtsgrid-item__wrap">
                         <div class="vtsgrid__item">
                             <div class="vtsgrid__item__top">
-                                <a href="#" class="vtsgrid__item__top__image"><img width="360" height="240" src="http://cdn-adventure-tours.themedelight.com/wp-content/uploads/2015/07/lake-tahoe-360x240.jpg" class="attachment-thumb_tour_listing_small size-thumb_tour_listing_small wp-post-image" alt="Lake Tahoe"></a>
+                                <a href="#" class="vtsgrid__item__top__image"><img width="360" height="240" src="img/other-services/help_with_passport.jpg" class="attachment-thumb_tour_listing_small size-thumb_tour_listing_small wp-post-image" alt="Lake Tahoe"></a>
                             </div>
                             <div class="vtsgrid__item__content">
                                 <h3 class="vtsgrid__item__title"><a href="#">Оформление страховки</a></h3>
                                 <div class="vtsgrid__item__description">Magna. Lectus. Ligula habitasse ut morbi velit</div>
                             </div>
                             <div class="item-attributes">
-                                <div class="item-attributes__item"><a href="#" class="item-attributes__link"><i class="icon icon--enter"></i> Подробнее</a></div>
+                                <div class="item-attributes__item">
+                                      <a href="#" class="item-attributes__link"><i class="icon icon--readmore"></i><span class="item-attributes__link-text">Подробнее</span></a>
+                                </div>
                             </div>
                         </div>
                       </div>
-                      <div class="col col--3-of-12 col--m-1-of-2 vtsgrid-item__wrap">
+                      <div class="col col--3-of-12 col--m-1-of-2 col--s-1-of-2 vtsgrid-item__wrap">
                         <div class="vtsgrid__item">
                             <div class="vtsgrid__item__top">
-                                <a href="#" class="vtsgrid__item__top__image"><img width="360" height="240" src="http://cdn-adventure-tours.themedelight.com/wp-content/uploads/2015/07/lake-tahoe-360x240.jpg" class="attachment-thumb_tour_listing_small size-thumb_tour_listing_small wp-post-image" alt="Lake Tahoe"></a>
+                                <a href="#" class="vtsgrid__item__top__image"><img width="360" height="240" src="img/other-services/help_with_passport.jpg" class="attachment-thumb_tour_listing_small size-thumb_tour_listing_small wp-post-image" alt="Lake Tahoe"></a>
                             </div>
                             <div class="vtsgrid__item__content">
                                 <h3 class="vtsgrid__item__title"><a href="#">Приглашение для иностранцев в Росию</a></h3>
                                 <div class="vtsgrid__item__description">Magna. Lectus. Ligula habitasse ut morbi velit</div>
                             </div>
                             <div class="item-attributes">
-                                <div class="item-attributes__item"><a href="#" class="item-attributes__link"><i class="icon icon--enter"></i> Подробнее</a></div>
+                                <div class="item-attributes__item">
+                                      <a href="#" class="item-attributes__link"><i class="icon icon--readmore"></i><span class="item-attributes__link-text">Подробнее</span></a>
+                                </div>
                             </div>
                         </div>
                       </div>
-                      <div class="col col--3-of-12 col--m-1-of-2 vtsgrid-item__wrap">
+                      <div class="col col--3-of-12 col--m-1-of-2 col--s-1-of-2 vtsgrid-item__wrap">
                         <div class="vtsgrid__item">
                             <div class="vtsgrid__item__top">
-                                <a href="#" class="vtsgrid__item__top__image"><img width="360" height="240" src="http://cdn-adventure-tours.themedelight.com/wp-content/uploads/2015/07/lake-tahoe-360x240.jpg" class="attachment-thumb_tour_listing_small size-thumb_tour_listing_small wp-post-image" alt="Lake Tahoe"></a>
+                                <a href="#" class="vtsgrid__item__top__image"><img width="360" height="240" src="img/other-services/help_with_passport.jpg" class="attachment-thumb_tour_listing_small size-thumb_tour_listing_small wp-post-image" alt="Lake Tahoe"></a>
                             </div>
                             <div class="vtsgrid__item__content">
                                 <h3 class="vtsgrid__item__title"><a href="#">Бюро переводов</a></h3>
                                 <div class="vtsgrid__item__description">Magna. Lectus. Ligula habitasse ut morbi velit</div>
                             </div>
                             <div class="item-attributes">
-                                <div class="item-attributes__item"><a href="#" class="item-attributes__link"><i class="icon icon--enter"></i> Подробнее</a></div>
+                                <div class="item-attributes__item">
+                                      <a href="#" class="item-attributes__link"><i class="icon icon--readmore"></i><span class="item-attributes__link-text">Подробнее</span></a>
+                                </div>
                             </div>
                         </div>
                       </div>
@@ -409,5 +417,77 @@
           </div>
         </section>
         <!-- /Other-services -->
+
+        <!-- Advantages -->
+        <section class="advantages section-inverse s5" style="display: none">
+          <div class="parallax-section__image" style="background-image: url(http://cdn2-adventure-tours.themedelight.com/wp-content/uploads/2015/09/mountain-690104_1920-optimized.jpg);"></div>
+          <div class="parallax-section__overlay"></div>
+          <div class="container-fluid container-relative">
+            <div class="row">
+              <div class="col col--1-of-1"><h2 class="section-title sublined"><span class="section-title__span">Компания Visatourservice - лидер </span><span class="section-title__span">в сфере услуг по оформлению виз</span></h2></div>
+            </div>
+            <div class="icons-set">
+                <div class="row icons-set__row">
+                  <div class="col col--4-of-12">
+                    <div class="icons-set__item">
+                                        <div class="icons-set__item__field icons-set__item__field--fix-size">
+                                  <div class="icons-set__item__icon-wrap"><i class="icon icon--fingerprint_big icons-set__item__icon"></i></div>        </div>
+                                        <div class="icons-set__item__field">
+                                  <h3 class="icons-set__item__title">Мобильная биометрия</h3>
+                                  </div>
+                                </div>
+                  </div>
+                  <div class="col col--4-of-12">
+                    <div class="icons-set__item">
+                                        <div class="icons-set__item__field icons-set__item__field--fix-size">
+                                  <div class="icons-set__item__icon-wrap"><i class="icon icon--fingerprint_big icons-set__item__icon"></i></div>        </div>
+                                        <div class="icons-set__item__field">
+                                  <h3 class="icons-set__item__title">Встреча и сопровождение клиентов (трансфер)</h3>
+                                  </div>
+                                </div>
+                  </div>
+                  <div class="col col--4-of-12">
+                    <div class="icons-set__item">
+                                        <div class="icons-set__item__field icons-set__item__field--fix-size">
+                                  <div class="icons-set__item__icon-wrap"><i class="icon icon--fingerprint_big icons-set__item__icon"></i></div>        </div>
+                                        <div class="icons-set__item__field">
+                                  <h3 class="icons-set__item__title">Уникальная услуга - виза D в 25 стран</h3>
+                                  </div>
+                                </div>
+                  </div>
+                  <div class="col col--4-of-12">
+                    <div class="icons-set__item">
+                                        <div class="icons-set__item__field icons-set__item__field--fix-size">
+                                  <div class="icons-set__item__icon-wrap"><i class="icon icon--fingerprint_big icons-set__item__icon"></i></div>        </div>
+                                        <div class="icons-set__item__field">
+                                  <h3 class="icons-set__item__title">Получение визы по трем документам</h3>
+                                  </div>
+                                </div>
+                  </div>
+                  <div class="col col--4-of-12">
+                    <div class="icons-set__item">
+                                        <div class="icons-set__item__field icons-set__item__field--fix-size">
+                                  <div class="icons-set__item__icon-wrap"><i class="icon icon--fingerprint_big icons-set__item__icon"></i></div>        </div>
+                                        <div class="icons-set__item__field">
+                                  <h3 class="icons-set__item__title">Срочность - от трех дней</h3>
+                                  </div>
+                                </div>
+                  </div>
+                  <div class="col col--4-of-12">
+                    <div class="icons-set__item">
+                    <div class="icons-set__item__field icons-set__item__field--fix-size">
+                        <div class="icons-set__item__icon-wrap"><i class="icon icon--fingerprint_big icons-set__item__icon"></i></div>
+                    </div>
+                    <div class="icons-set__item__field">
+                        <h3 class="icons-set__item__title"> Сопровождение клиентов до двери</h3>
+
+                    </div>
+                </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </section>
+        <!--/Advantages -->
 
   <?php require_once('inc/footer.php'); ?>

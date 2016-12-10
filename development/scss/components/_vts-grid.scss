@@ -2,8 +2,16 @@
 // This file contains all styles related to the vts-grid component.
 // -----------------------------------------------------------------------------
 
+$vtgrid__item-attributes-color: $base-green;
+$vtgrid__item-attributes__item-hover-bg: $base-green;
+$vtgrid__item-attributes__item-hover-color: $white;
 .vtsgrid {
     padding: 40px 0;
+}
+.vtsgrid-item__wrap {
+    @include media("<medium") {
+      margin-bottom: 25px;
+    };
 }
 .vtsgrid__item {
     background: #fff;
@@ -23,6 +31,10 @@ position: relative;
     text-align: center;
     transition: all 0.2s ease-in-out;
     border-bottom: none;
+    &:hover {
+        opacity: 0.8;
+        border-bottom: none;
+    }
 }
 
 .vtsgrid__item__top img {
@@ -77,12 +89,22 @@ position: relative;
 }
 .item-attributes__link {
     display: inline-block;
-    padding-right: 20px;
-    color: #47a0ff;
+    padding-right: 30px;
+    color: $vtgrid__item-attributes-color;
     text-transform: uppercase;
     position: relative;
     border-bottom: none;
 }
+
+
+
+.item-attributes__item:hover {
+    background: $vtgrid__item-attributes__item-hover-bg;
+  .item-attributes__link {
+       color: $vtgrid__item-attributes__item-hover-color;
+   }
+}
+
 
 .item-attributes__link i {
     margin: 0;

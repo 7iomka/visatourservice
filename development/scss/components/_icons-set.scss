@@ -1,0 +1,60 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the incons-set component.
+// -----------------------------------------------------------------------------
+.icons-set__item {
+    display: table;
+    width: 100%;
+    margin: 25px 0;
+}
+.icons-set__item__field--fix-size {
+    width: 85px;
+    padding-right: 25px;
+}
+
+.icons-set__item__icon-wrap {
+    width: 80px;
+    height: 80px;
+    background: #47a0ff;
+    border-radius: 100%;
+    position: relative;
+    color: #fff;
+}
+
+.icons-set__item__icon-wrap:before {
+    content: " ";
+    display: block;
+    width: 72px;
+    height: 72px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px dotted rgba(255,255,255,0.5);
+    border-radius: 100%;
+}
+
+.icons-set__item__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2em;
+}
+
+
+.icons-set__item__field {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.icons-set__item__title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.icons-set__item__description {
+    line-height: 1.6em;
+    color: #ffffff;
+    font-size: 17px;
+}

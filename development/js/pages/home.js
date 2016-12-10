@@ -44,7 +44,7 @@ function homeActions() {
                   '</div>',
                   '<div class="country-action-panel">',
                     '<a class="coutry-action-link"><i class="icon icon--preview coutry-action-link-icon"></i>Предпросмотр</a>',
-                    '<a href="/visa-c/' + country_code + '" class="coutry-action-link"><i class="icon icon--enter coutry-action-link-icon"></i>Перейти к оформлению</a>',
+                    '<a href="/visa-c/' + country_code + '" class="coutry-action-link"><i class="icon icon--readmore coutry-action-link-icon"></i>Перейти к оформлению</a>',
                   '</div>',
               '</div>',
             '</div>'
