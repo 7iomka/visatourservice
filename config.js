@@ -55,6 +55,7 @@ var jsFiles = [
   // paths.src.jsLibDir + 'modernizr.min.js',
   paths.src.jsLibDir + 'jquery-1.12.4.min.js',
   paths.src.jsLibDir + 'jquery.parallax-1.1.3.js',
+  paths.src.jsLibDir + 'jquery.typeahead.min.js',
   // paths.src.jsLibDir + 'jquery-ui.min.js',
   // paths.src.jsLibDir + 'jquery.ui.datepicker-ru.js',
   paths.src.jsLibDir + 'transition-events.js',

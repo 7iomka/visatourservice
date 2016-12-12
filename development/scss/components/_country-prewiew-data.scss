@@ -21,6 +21,7 @@ $country-preview__data-header-bg--contrast: #2b4e65;
  padding-top: 75px;
  margin: auto 0 auto auto;
  display: block;
+     padding-bottom: 48px;
 }
 
 .country-preview__name {
@@ -31,6 +32,22 @@ $country-preview__data-header-bg--contrast: #2b4e65;
     vertical-align: middle;
     padding-right: 15px;
         max-width: 350px;
+        /** if text is long **/
+        &.country-preview--long {
+          @include media(">=medium") {
+            font-size: 23px;
+            padding-left: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+          };
+        }
+        @include media("<medium") {
+          max-width: none;
+        };
+        @include media("<x-small"){
+          display: block;
+          padding-right: 0;
+        };
 }
 
 .country-preview__subtitle-header {
@@ -43,9 +60,15 @@ $country-preview__data-header-bg--contrast: #2b4e65;
 
 .country-preview__subtitle {
     display: inline-block;
-    padding-left: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
     border-left: 1px solid;
     vertical-align: middle;
+    @include media("<small") {
+      border-right: 1px solid;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    };
 }
 
 .country-preview__data-header {

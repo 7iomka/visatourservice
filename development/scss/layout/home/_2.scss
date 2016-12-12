@@ -23,6 +23,39 @@
     }
 }
 
+/** search-form typehead **/
+.typeahead__container {
+  .visa-short__input {
+    font-size: 18px;
+    /** placeholder stuff **/
+      &::-webkit-input-placeholder {
+         color: #999;
+         font-weight: 300;
+         opacity: 1;
+         @include media("<x-small") {
+            font-size: 16px;
+         };
+      }
+
+      &:-moz-placeholder {
+          color: #999;
+          font-weight: 300;
+          @include media("<x-small") {
+            font-size: 16px;
+          };
+      }
+
+      &:-ms-input-placeholder {
+          color: #999;
+          font-weight: 300;
+          @include media("<x-small") {
+            font-size: 16px;
+          };
+      }
+      /** end placeholder stuff **/
+  }
+}
+
 /** columns **/
 .visa-short__search-column {
   @include media('>=medium') {
@@ -159,6 +192,20 @@
       // display: inline-block;
       transition: all 0.5s cubic-bezier(.25,.8,.25,1);
       transition-delay: 0.3s;
+      @include media("<small") {
+        max-width: 70%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: inline-block;
+            margin-left: 15px;
+      };
+      @include media("<375px") {
+
+          // max-width: 180px;
+          //  max-width: calc(100% - 48px - 28px);
+
+
+      };
   }
 
 
@@ -181,8 +228,9 @@
         // background: #fff;
         height: 140px;
         /** responsive **/
-        @include media("<tablet") {
+        @include media("<small") {
           height: auto;
+          padding-top: 30px;
         };
         /* Center slide text vertically */
         display: -webkit-box;
@@ -281,13 +329,45 @@
     transform: translateY(100%);
     transition: all 0.5s cubic-bezier(.25,.8,.25,1);
 }
+
+/** action header **/
+.country-action-header {
+    padding: 5px;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background: #f7f7f7;
+    text-align: center;
+}
+
+.coutry-action-header-icon {
+    margin: auto;
+    border-radius: 50%;
+}
+.country-action-header-text {
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    @include media(">xx-small", "<640px") {
+      margin-left: 10px;
+      display: inline-block;
+      vertical-align: middle;
+      max-height: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: 14px;
+    };
+}
+
  .coutry-action-link {
     color: #141414;
     font-weight: bold;
     font-size: 16px;
     display: block;
-    padding-left: 30px;
-    padding-top: 30px;
+    padding: 15px 30px;
+    font-size: 15px;
     transition: 1s cubic-bezier(0.15, 1.14, 0.58, 1) all;
     transform: translateY(120px);
     &:nth-child(1){
@@ -308,9 +388,9 @@
     color: #141414;
     font-size: 25px;
     display: inline-block;
-    @include media(">=480px", "<601px") {
+    @include media("<601px") {
         float: left;
-        margin-top: -5px;
+        margin-top: -2px;
     };
 }
 
@@ -356,15 +436,37 @@
 
    .country-block {
        padding: 30px 15px;
+       overflow: visible;
    }
+
 
    .country-list__slider {
        padding-bottom: 50px;
    }
 
    .coutry-action-link {
-       padding-top: 18px;
+
    }
+
+   .country-action-content {
+      overflow: hidden;
+      text-align: left;
+  }
+
+  .country-action-header {
+    padding: 5px;
+    position: absolute;
+    top: -30px;
+    height: 30px;
+    width: 100%;
+    background: white;
+    color: #c5313d;
+    text-align: center;
+    box-shadow: 0 0px 0px 1px #00a01a;
+  }
+
+
+
 
 
  };
@@ -379,7 +481,8 @@
 
  .country-preview {
      position: relative;
-     min-height: 690px;
+    //  min-height: 690px;
+    overflow: hidden;
      background: $white;
  }
 

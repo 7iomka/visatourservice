@@ -1,7 +1,7 @@
 <?php require_once('inc/header.php'); ?>
         <section class="home-banner s1 parallax-section parallax-section--home">
             <div class="parallax-section__image"
-              style="background-image: url('img/parallax/home/header_parallax.jpg');"></div>
+              style="background-image: url('img/parallax/home/header_parallax.jpg'); height: 1350px;"></div>
             <div class="container-fluid">
                 <div class="row">
                   <div class="home-banner__content">
@@ -59,37 +59,56 @@
                       <p class="section-subtitle">Виза С. 72 страны</p>
                       <!-- Search form -->
                       <div class="search-form-wrapper visa-short__search-form-wrapper">
-                        <form class="search-form visa-short__search-form">
-                            <div class="search-form__input-group visa-short__input-group">
-                              <input type="text" placeholder="Введите название страны или региона..." class="search-form__input visa-short__input">
-                                <div class="search-form__input-group-btn visa-short__input-group-btn">
-                                  <button class="btn search-form__btn visa-short__btn waves-effect waves-circle waves-float" type="submit">
-                                    <i class="icon search-form__btn-icon icon--search"></i>
-                                  </button>
-                                </div>
+                        <!-- <form class="search-form visa-short__search-form">
+                            <div class="search-form__input-group visa-short__input-group typeahead__container">
+                              <div class="typehead__field">
+                                <span class="typeahead__query">
+                                  <input type="search" placeholder="Введите название страны или региона..." class="search-form__input visa-short__input" autocomplete="off">
+                                </span>
+                                  <div class="search-form__input-group-btn visa-short__input-group-btn typeahead__button">
+                                    <button class="btn search-form__btn visa-short__btn waves-effect waves-circle waves-float" type="submit">
+                                      <i class="icon search-form__btn-icon icon--search"></i>
+                                    </button>
+                                  </div>
+                              </div>
                             </div>
+                        </form> -->
+                        <form class="visa-short__search-form" name="visa-short__search-form">
+                         <div class="typeahead__container">
+                             <div class="typeahead__field">
+                                 <span class="typeahead__query">
+                                     <input class="visa-short__input" name="visa-short__input" type="search" placeholder="Введите название страны или региона..." autocomplete="off">
+                                 </span>
+                                 <span class="typeahead__button">
+                                     <button type="submit" class="btn visa-short__btn">
+                                         <i class="icon icon--search visa-short__btn-icon"></i>
+                                     </button>
+                                 </span>
+
+                             </div>
+                         </div>
                         </form>
                         <!-- Search form tips -->
                         <div class="search-form__tips-toggler x-small-only">или выберите категорию</div>
                         <div class="search-form__tips visa-short__search-form-tips x-small-hidden">
                           <div class="col col--1-of-5 col--s-1-of-2 visa-short__search-form-tip-col">
-                            <div class="search-form__tip visa-short__search-form-tip">Шенген</div>
-                            <div class="search-form__tip visa-short__search-form-tip">ЕвроПА</div>
-                            <div class="search-form__tip visa-short__search-form-tip">Америка</div>
+                            <div class="search-form__tip visa-short__search-form-tip" data-category="Schengen">Шенген</div>
+                            <div class="search-form__tip visa-short__search-form-tip" data-category="Europe">Европа</div>
+                            <div class="search-form__tip visa-short__search-form-tip" data-category="Central and South America">Америка</div>
                           </div>
                           <div class="col col--1-of-5 col--s-1-of-2 visa-short__search-form-tip-col">
-                            <div class="search-form__tip visa-short__search-form-tip">Азия</div>
-                            <div class="search-form__tip visa-short__search-form-tip">Океания</div>
-                            <div class="search-form__tip visa-short__search-form-tip">Северная Америка</div>
+                            <div class="search-form__tip visa-short__search-form-tip" data-category="Asia">Азия</div>
+                            <div class="search-form__tip visa-short__search-form-tip" data-category="Oceania">Океания</div>
+                            <div class="search-form__tip visa-short__search-form-tip" data-category="North America">Северная Америка</div>
                           </div>
                           <div class="col col--1-of-5 col--s-1-of-2 visa-short__search-form-tip-col">
-                            <div class="search-form__tip visa-short__search-form-tip">Африка</div>
-                            <div class="search-form__tip visa-short__search-form-tip">Ближний восток</div>
+                            <div class="search-form__tip visa-short__search-form-tip" data-category="Middle East">Африка</div>
+                            <div class="search-form__tip visa-short__search-form-tip" data-category="Africa">Ближний восток</div>
                           </div>
                           <div class="col col--2-of-5 col--s-1-of-2 visa-short__search-form-tip-col">
-                            <div class="search-form__tip visa-short__search-form-tip">Заморские территории Франции</div>
-                            <div class="search-form__tip visa-short__search-form-tip">Британские заморские территории</div>
-                            <div class="search-form__tip visa-short__search-form-tip">Бывшие нидерландские антильские острова</div>
+                            <div class="search-form__tip visa-short__search-form-tip" data-category="French Overseas Territories">Заморские территории Франции</div>
+                            <div class="search-form__tip visa-short__search-form-tip" data-category="British Overseas Territories">Британские заморские территории</div>
+                            <div class="search-form__tip visa-short__search-form-tip" data-category="Netherlands Antilles">Бывшие нидерландские антильские острова</div>
                           </div>
                         </div>
                       </div>
@@ -109,7 +128,7 @@
                   <div class="col col--1-of-1">
                       <div class="country-list">
                       <div class="country-list__wrapper">
-                        <div class="country-list__slider">
+                        <div class="country-list__slider visa-short__slider">
                           <!-- country list slider -->
                           <div class="swiper-container swiper-content">
                             <div class="swiper-wrapper">
@@ -129,9 +148,9 @@
                 </div>
 
               </div>
-              <div class="country-preview">
+              <div class="country-preview" style="display:none">
                 <div class="country-preview__img-wrapper">
-                    <img class="country-preview__img" src="/img/home-coutries/at.jpg">
+                    <img class="country-preview__img" src="/img/home-coutries/gr.jpg">
                     <div class="country-preview__short-desc-wrapper"></div>
                 </div>
                 <div class="container-fluid container-static">
@@ -419,9 +438,9 @@
         <!-- /Other-services -->
 
         <!-- Advantages -->
-        <section class="advantages section-inverse s5" style="display: none">
+        <section class="advantages section-inverse s5">
           <div class="parallax-section__image" style="background-image: url(http://cdn2-adventure-tours.themedelight.com/wp-content/uploads/2015/09/mountain-690104_1920-optimized.jpg);"></div>
-          <div class="parallax-section__overlay"></div>
+          <div class="parallax-section__overlay parallax-section__overlay--dark-green"></div>
           <div class="container-fluid container-relative">
             <div class="row">
               <div class="col col--1-of-1"><h2 class="section-title sublined"><span class="section-title__span">Компания Visatourservice - лидер </span><span class="section-title__span">в сфере услуг по оформлению виз</span></h2></div>
