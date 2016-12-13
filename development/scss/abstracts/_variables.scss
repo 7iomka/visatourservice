@@ -43,6 +43,26 @@ $accent-brown: #ffefb5;
 $sep-brown: #a18b50;
 $default-dark: #393939;
 
+
+/** yellow variations **/
+
+// $yellow: #ffae1e !default;
+$yellow: #ffba00 !default;
+
+
+$yellow-button-bg: $yellow;
+
+
+/** red variations **/
+$red_base: #c5313d;
+
+$red-button-bg: $red_base;
+
+
+// background: rgb(249, 185, 30);
+//     text-shadow: 0 2px 12px #faaf01;
+//     linear-gradient(135deg, rgb(249, 185, 30) 0%, rgb(249, 185, 30) 46%, rgb(249, 200, 30) 50%)
+
 /// Base colors
 
 
@@ -96,12 +116,7 @@ $gray: #3e3e3e !default;
 $text-color: $default-dark !default;
 $dark-black: #141414 !default;
 
-/// @type Color
-// $yellow: #ffd200 !default;
-$yellow: #ffae1e !default;
-$red_base: #c5313d;
-$red-button-bg: $red_base;
-$yellow-button-bg: $yellow;
+
 
 $blue-gray: #263e4f;
 

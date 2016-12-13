@@ -9,22 +9,15 @@
 
 }
 .parallax-section__image {
-    // width: 100%;
-    // height: 150%;
-    // background-attachment: fixed;
-    // position: absolute;
-    // top: 5%;
-    // left: 0;
-    // right: 0;
-    // bottom: 0;
-    // z-index: -3;
     background-size: cover;
     background-position: center center;
 
     position: absolute;
     top: -100%;
+    top: 0;
     width: 100%;
     z-index: -1;
+    min-height: 100%;
 }
 .parallax-section__overlay {
     position: absolute;
@@ -41,8 +34,14 @@
     /**
      * dark-green
      */
-     &.#{&}--dark-green {
+     &.parallax-section__overlay--dark-green {
        background-color: #2b352c;
+     }
+    /**
+     * dark-blue
+     */
+     &.parallax-section__overlay--dark-blue {
+       background-color: #171d2b;
      }
 
 }

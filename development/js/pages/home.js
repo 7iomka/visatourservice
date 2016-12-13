@@ -12,22 +12,22 @@ function homeActions() {
       duration: "200%",
       triggerHook: 1
     })
-    .setTween('.parallax-section--home > .parallax-section__image', {y: "65%", ease: Linear.easeNone})
-    .addTo(scrollMagicController);
+        .setTween('.parallax-section--home > .parallax-section__image', {y: "65%", ease: Linear.easeNone})
+        .addTo(scrollMagicController);
 
 
     /**
      * parallax for sections
      * @type {ScrollMagic}
      */
-    var parallaxHomeScene = new ScrollMagic.Scene({
-      triggerElement: '.visa-long-term',
-      duration: "200%",
-      triggerHook: 1,
-      offset: -75
-    })
-    .setTween('.visa-long-term> .parallax-section__image', {y: "-10%", ease: Linear.easeNone})
-    .addTo(scrollMagicController);
+    // var parallaxHomeScene = new ScrollMagic.Scene({
+    //   triggerElement: '.visa-long-term',
+    //   duration: "200%",
+    //   triggerHook: 1,
+    //   offset: -75
+    // })
+    // .setTween('.visa-long-term> .parallax-section__image', {y: "-10%", ease: Linear.easeNone})
+    // .addTo(scrollMagicController);
 
     var json__visa_c = [];
     var arrayOfCountryNames__visa_c = [];
@@ -229,16 +229,14 @@ function homeActions() {
 
     }
 
-
-
-
       /**
        * Get countries data for visa c
        */
       $.ajax({
           url: 'js/json/countries-c.json', type: "GET", dataType: 'json',
           // cache: true, // <-- turn ON on production
-      }).done(function(jsonData) {
+      })
+      .done(function(jsonData) {
           json__visa_c = jsonData;
           getDataCountries(jsonData, insertData__visa_c, function (coutriesDataObject) {
 
@@ -252,7 +250,7 @@ function homeActions() {
                     var countrySlider__visa_c = new Swiper('.visa-short__slider .swiper-container', {
                            prevButton: '.country-list__nav--prev',
                            nextButton: '.country-list__nav--next',
-                           pagination: '.swiper-pagination',
+                           pagination: false,
                            slidesPerView: 4,
                            slidesPerColumn: 2,
                            slidesPerColumnFill: 'row',
@@ -396,11 +394,13 @@ function homeActions() {
                     })
           });
 
-      }).fail(function(request, textStatus, errorThrown) {
+      })
+      .fail(function(request, textStatus, errorThrown) {
           // console.log(request.responseText);
           // console.log(textStatus);
           // console.log(errorThrown);
-      }).always(function() {
+      })
+      .always(function() {
           // console.log('always')
       });
 
@@ -423,8 +423,11 @@ function homeActions() {
       });
 
 
-
+      /** Wawes effect attach to slider nav **/
       Waves.attach('.country-list__nav', ['waves-circle', 'waves-float']);
+
+
+
 
 
       /**
@@ -432,7 +435,46 @@ function homeActions() {
        * all (except fi, se)
        */
 
+       // ----------------------------------------------------------------------------
+       // Testimonials
+       // ----------------------------------------------------------------------------
+       var testimonialSlider = new Swiper('.testimonials__slider .swiper-container', {
+           pagination: '.testimonials__slider .swiper-pagination',
+           slidesPerView: 3,
+           paginationClickable: true,
+           spaceBetween: 10,
+           grabCursor: true,
+           // Small screens, center to align and loop elements
+           breakpoints: {
+             900: {
+                slidesPerView: 2
+             },
+             640: {
+                slidesPerView: 1
+             }
+           }
+       });
 
+
+       // ----------------------------------------------------------------------------
+       // Certificates
+       // ----------------------------------------------------------------------------
+       var testimonialSlider = new Swiper('.certificates__slider .swiper-container', {
+           pagination: '.certificates__slider .swiper-pagination',
+           slidesPerView: 3,
+           paginationClickable: true,
+           spaceBetween: 70,
+           grabCursor: true,
+           // Small screens, center to align and loop elements
+           breakpoints: {
+             900: {
+                slidesPerView: 2
+             },
+             640: {
+                slidesPerView: 1
+             }
+           }
+       });
 
       /**
        * safari and old browsers than not support @supports css

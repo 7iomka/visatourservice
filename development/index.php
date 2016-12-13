@@ -1,7 +1,7 @@
 <?php require_once('inc/header.php'); ?>
         <section class="home-banner s1 parallax-section parallax-section--home">
             <div class="parallax-section__image"
-              style="background-image: url('img/parallax/home/header_parallax.jpg'); height: 1350px;"></div>
+              style="background-image: url('img/parallax/home/header_parallax.jpg'); top: -100%; height: 1350px;"></div>
             <div class="container-fluid">
                 <div class="row">
                   <div class="home-banner__content">
@@ -439,7 +439,7 @@
 
         <!-- Advantages -->
         <section class="advantages section-inverse s5">
-          <div class="parallax-section__image" style="background-image: url(http://cdn2-adventure-tours.themedelight.com/wp-content/uploads/2015/09/mountain-690104_1920-optimized.jpg);"></div>
+          <div class="parallax-section__image" style="background-image: url(img/parallax/home/advantages_parallax.jpg); height: 100%;"></div>
           <div class="parallax-section__overlay parallax-section__overlay--dark-green"></div>
           <div class="container-fluid container-relative">
             <div class="row">
@@ -447,7 +447,7 @@
             </div>
             <div class="icons-set">
                 <div class="row icons-set__row">
-                  <div class="col col--4-of-12">
+                  <div class="col col--4-of-12 col--m-1-of-2 col--s-1-of-2">
                     <div class="icons-set__item">
                                         <div class="icons-set__item__field icons-set__item__field--fix-size">
                                   <div class="icons-set__item__icon-wrap"><i class="icon icon--fingerprint_big icons-set__item__icon"></i></div>        </div>
@@ -456,46 +456,46 @@
                                   </div>
                                 </div>
                   </div>
-                  <div class="col col--4-of-12">
+                  <div class="col col--4-of-12 col--m-1-of-2 col--s-1-of-2 ">
                     <div class="icons-set__item">
                                         <div class="icons-set__item__field icons-set__item__field--fix-size">
-                                  <div class="icons-set__item__icon-wrap"><i class="icon icon--fingerprint_big icons-set__item__icon"></i></div>        </div>
+                                  <div class="icons-set__item__icon-wrap"><i class="icon icon--car icons-set__item__icon"></i></div>        </div>
                                         <div class="icons-set__item__field">
                                   <h3 class="icons-set__item__title">Встреча и сопровождение клиентов (трансфер)</h3>
                                   </div>
                                 </div>
                   </div>
-                  <div class="col col--4-of-12">
+                  <div class="col col--4-of-12 col--m-1-of-2 col--s-1-of-2 ">
                     <div class="icons-set__item">
                                         <div class="icons-set__item__field icons-set__item__field--fix-size">
-                                  <div class="icons-set__item__icon-wrap"><i class="icon icon--fingerprint_big icons-set__item__icon"></i></div>        </div>
+                                  <div class="icons-set__item__icon-wrap"><i class="icon icon--mark_as_favorite icons-set__item__icon"></i></div>        </div>
                                         <div class="icons-set__item__field">
                                   <h3 class="icons-set__item__title">Уникальная услуга - виза D в 25 стран</h3>
                                   </div>
                                 </div>
                   </div>
-                  <div class="col col--4-of-12">
+                  <div class="col col--4-of-12 col--m-1-of-2 col--s-1-of-2 ">
                     <div class="icons-set__item">
                                         <div class="icons-set__item__field icons-set__item__field--fix-size">
-                                  <div class="icons-set__item__icon-wrap"><i class="icon icon--fingerprint_big icons-set__item__icon"></i></div>        </div>
+                                  <div class="icons-set__item__icon-wrap"><i class="icon icon--versions icons-set__item__icon"></i></div>        </div>
                                         <div class="icons-set__item__field">
                                   <h3 class="icons-set__item__title">Получение визы по трем документам</h3>
                                   </div>
                                 </div>
                   </div>
-                  <div class="col col--4-of-12">
+                  <div class="col col--4-of-12 col--m-1-of-2 col--s-1-of-2 ">
                     <div class="icons-set__item">
                                         <div class="icons-set__item__field icons-set__item__field--fix-size">
-                                  <div class="icons-set__item__icon-wrap"><i class="icon icon--fingerprint_big icons-set__item__icon"></i></div>        </div>
+                                  <div class="icons-set__item__icon-wrap"><i class="icon icon--calendar3 icons-set__item__icon"></i></div>        </div>
                                         <div class="icons-set__item__field">
                                   <h3 class="icons-set__item__title">Срочность - от трех дней</h3>
                                   </div>
                                 </div>
                   </div>
-                  <div class="col col--4-of-12">
+                  <div class="col col--4-of-12 col--m-1-of-2 col--s-1-of-2 ">
                     <div class="icons-set__item">
                     <div class="icons-set__item__field icons-set__item__field--fix-size">
-                        <div class="icons-set__item__icon-wrap"><i class="icon icon--fingerprint_big icons-set__item__icon"></i></div>
+                        <div class="icons-set__item__icon-wrap"><i class="icon icon--knowledge_sharing icons-set__item__icon"></i></div>
                     </div>
                     <div class="icons-set__item__field">
                         <h3 class="icons-set__item__title"> Сопровождение клиентов до двери</h3>
@@ -508,5 +508,214 @@
           </div>
         </section>
         <!--/Advantages -->
+
+        <!-- Testimonials -->
+        <section class="testimonials s6">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col col--1-of-1"><h2 class="section-title sublined">Отзывы наших клиентов</h2></div>
+              <div class="col col--1-of-1">
+                <div class="testimonials__slider">
+                  <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide testimonials__slide">
+                        <div class="testimonial">
+                          <div class="testimonial__figure">
+                            <img src="img/testimonials/1.jpg" alt="" class="testimonial__avatar">
+                          </div>
+                          <div class="testimonial__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
+                          <button class="btn testimonial__readmore-btn">Далее</button>
+                          <div class="clearfix"></div>
+                          <div class="testimonial__client-details">
+                            <div class="testimonial__client-name">Ивнов Иван</div>
+                            <div class="testimonial__client-company">Seosintez Company</div>
+                            <div class="testimonial__client-post">Директор компании</div>
+                            <noindex><a href="" rel="nofollow" target="_blank" class="testimonial__client-site">seosintez.ru</a></noindex>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide testimonials__slide">
+                        <div class="testimonial">
+                          <div class="testimonial__figure">
+                            <img src="img/testimonials/1.jpg" alt="" class="testimonial__avatar">
+                          </div>
+                          <div class="testimonial__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
+                          <button class="btn testimonial__readmore-btn">Далее</button>
+                          <div class="clearfix"></div>
+                          <div class="testimonial__client-details">
+                            <div class="testimonial__client-name">Ивнов Иван</div>
+                            <div class="testimonial__client-company">Seosintez Company</div>
+                            <div class="testimonial__client-post">Директор компании</div>
+                            <noindex><a href="" rel="nofollow" target="_blank" class="testimonial__client-site">seosintez.ru</a></noindex>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide testimonials__slide">
+                        <div class="testimonial">
+                          <div class="testimonial__figure">
+                            <img src="img/testimonials/1.jpg" alt="" class="testimonial__avatar">
+                          </div>
+                          <div class="testimonial__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
+                          <button class="btn testimonial__readmore-btn">Далее</button>
+                          <div class="clearfix"></div>
+                          <div class="testimonial__client-details">
+                            <div class="testimonial__client-name">Ивнов Иван</div>
+                            <div class="testimonial__client-company">Seosintez Company</div>
+                            <div class="testimonial__client-post">Директор компании</div>
+                            <noindex><a href="" rel="nofollow" target="_blank" class="testimonial__client-site">seosintez.ru</a></noindex>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide testimonials__slide">
+                        <div class="testimonial">
+                          <div class="testimonial__figure">
+                            <img src="img/testimonials/1.jpg" alt="" class="testimonial__avatar">
+                          </div>
+                          <div class="testimonial__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
+                          <button class="btn testimonial__readmore-btn">Далее</button>
+                          <div class="clearfix"></div>
+                          <div class="testimonial__client-details">
+                            <div class="testimonial__client-name">Ивнов Иван</div>
+                            <div class="testimonial__client-company">Seosintez Company</div>
+                            <div class="testimonial__client-post">Директор компании</div>
+                            <noindex><a href="" rel="nofollow" target="_blank" class="testimonial__client-site">seosintez.ru</a></noindex>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide testimonials__slide">
+                        <div class="testimonial">
+                          <div class="testimonial__figure">
+                            <img src="img/testimonials/1.jpg" alt="" class="testimonial__avatar">
+                          </div>
+                          <div class="testimonial__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
+                          <button class="btn testimonial__readmore-btn">Далее</button>
+                          <div class="clearfix"></div>
+                          <div class="testimonial__client-details">
+                            <div class="testimonial__client-name">Ивнов Иван</div>
+                            <div class="testimonial__client-company">Seosintez Company</div>
+                            <div class="testimonial__client-post">Директор компании</div>
+                            <noindex><a href="" rel="nofollow" target="_blank" class="testimonial__client-site">seosintez.ru</a></noindex>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide testimonials__slide">
+                        <div class="testimonial">
+                          <div class="testimonial__figure">
+                            <img src="img/testimonials/1.jpg" alt="" class="testimonial__avatar">
+                          </div>
+                          <div class="testimonial__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
+                          <button class="btn testimonial__readmore-btn">Далее</button>
+                          <div class="clearfix"></div>
+                          <div class="testimonial__client-details">
+                            <div class="testimonial__client-name">Ивнов Иван</div>
+                            <div class="testimonial__client-company">Seosintez Company</div>
+                            <div class="testimonial__client-post">Директор компании</div>
+                            <noindex><a href="" rel="nofollow" target="_blank" class="testimonial__client-site">seosintez.ru</a></noindex>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--/Testimonials -->
+
+        <!-- certificates -->
+        <section class="certificates section-inverse s7">
+          <div class="parallax-section__overlay certificates__static-pattern"></div>
+          <div class="container-fluid container-relative">
+            <div class="row">
+              <div class="row">
+                <div class="col col--1-of-1"><h2 class="section-title sublined">Отзывы наших клиентов</h2></div>
+                <div class="col col--1-of-1">
+                  <div class="certificates__slider">
+                    <div class="swiper-container">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide certificates__slide">
+                          <div class="certificate">
+                            <a class="certificate__link" href="img/certificates/1.jpg">
+                              <img class="certificate__thumb" src="img/certificates/thumbs/1.jpg">
+                              <span class="certificate__overlay"><i class="icon icon--zoom_icon certificate__overlay-icon"></i></span>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide certificates__slide">
+                          <div class="certificate">
+                            <a class="certificate__link" href="img/certificates/2.jpg">
+                              <img class="certificate__thumb" src="img/certificates/thumbs/2.jpg">
+                              <span class="certificate__overlay"><i class="icon icon--zoom_icon certificate__overlay-icon"></i></span>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide certificates__slide">
+                          <div class="certificate">
+                            <a class="certificate__link" href="img/certificates/3.jpg">
+                              <img class="certificate__thumb" src="img/certificates/thumbs/3.jpg">
+                              <span class="certificate__overlay"><i class="icon icon--zoom_icon certificate__overlay-icon"></i></span>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide certificates__slide">
+                          <div class="certificate">
+                            <a class="certificate__link" href="img/certificates/4.jpg">
+                              <img class="certificate__thumb" src="img/certificates/thumbs/4.jpg">
+                              <span class="certificate__overlay"><i class="icon icon--zoom_icon certificate__overlay-icon"></i></span>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide certificates__slide">
+                          <div class="certificate">
+                            <a class="certificate__link" href="img/certificates/5.jpg">
+                              <img class="certificate__thumb" src="img/certificates/thumbs/5.jpg">
+                              <span class="certificate__overlay"><i class="icon icon--zoom_icon certificate__overlay-icon"></i></span>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide certificates__slide">
+                          <div class="certificate">
+                            <a class="certificate__link" href="img/certificates/6.jpg">
+                              <img class="certificate__thumb" src="img/certificates/thumbs/6.jpg">
+                              <span class="certificate__overlay"><i class="icon icon--zoom_icon certificate__overlay-icon"></i></span>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide certificates__slide">
+                          <div class="certificate">
+                            <a class="certificate__link" href="img/certificates/7.jpg">
+                              <img class="certificate__thumb" src="img/certificates/thumbs/7.jpg">
+                              <span class="certificate__overlay"><i class="icon icon--zoom_icon certificate__overlay-icon"></i></span>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide certificates__slide">
+                          <div class="certificate">
+                            <a class="certificate__link" href="img/certificates/8.jpg">
+                              <img class="certificate__thumb" src="img/certificates/thumbs/8.jpg">
+                              <span class="certificate__overlay"><i class="icon icon--zoom_icon certificate__overlay-icon"></i></span>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide certificates__slide">
+                          <div class="certificate">
+                            <a class="certificate__link" href="img/certificates/9.jpg">
+                              <img class="certificate__thumb" src="img/certificates/thumbs/9.jpg">
+                              <span class="certificate__overlay"><i class="icon icon--zoom_icon certificate__overlay-icon"></i></span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                   </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /certificates -->
 
   <?php require_once('inc/footer.php'); ?>

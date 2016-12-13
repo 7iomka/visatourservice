@@ -1,71 +1,70 @@
 // -----------------------------------------------------------------------------
-// This file contains all styles related to the ECRAN 7 - get-audit- of the site/application.
+// This file contains all styles related to the ECRAN 7 - certificates- of the site/application.
 // -----------------------------------------------------------------------------
 //
-.get-audit {
-  padding: 50px 0;
-  background-color:  #070707;
+.certificates {
+  background-color: #3b60ad;
+  background-image: linear-gradient(135deg, #3b60ad, #2b6627);
+}
+.certificates .certificates__static-pattern {
+  opacity: 1;
+  background-color: transparent;
+  background-image: image('/patterns/guilloche.png');
 
+}
 
-  h2, p.subtitle {
-    text-align: left;
-    @include media("<tablet") {
-      text-align: center;
-    };
-  }
-  p.subtitle {
-      margin-bottom: 0;
-  }
-  .site-form--audit {
-      margin-top: 44px;
-      @include media("<tablet") {
-          max-width: 320px;
-          margin-left: auto;
-          margin-right: auto;
-      };
-  }
-  .audit-bg {
-    position: absolute;
-    bottom: 0;
-    right: -185px;
-    @include media("<960px") {
-      opacity: 0.6;
-    };
-    @include media("<tablet") {
-      opacity: 0.3;
-    };
-  }
+.certificate__link {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    &:hover {
+      .certificate__thumb {
+        transform: scale(1.1,1.1);
+      }
+      .certificate__overlay {
+        // box-shadow: 0 0 0 2px rgb(248, 211, 71) inset;
+        background-color: rgba(0,0,0,.5);
+      }
+      .certificate__overlay-icon {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+}
+.certificate__thumb {
+    transform: scale(1);
+    transition: transform .75s ease 0s;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
-  label#user_phone--audit-error {
-      line-height: 16px;
-  }
-  .btn--action-submit {
-      margin-top: 15px;
-      @include media("<tablet") {
-          margin-top: 25px;
-      };
-  }
+.certificate__overlay {
+  background-color: rgba(0,0,0,.1);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  border: none;
+  right: 0;
+  top: 0;
+  transition: background-color .15s ease 0s;
+}
 
-  .container.container--absolute {
-    position: absolute;
-    top: 15px;
-    bottom: 0;
-    right: 0;
-    left: 25px;
-    height: 100%;
-    width: 100%;
-  }
-
-  .container.container--relative {
-      z-index: 1;
-  }
-
-  .form-input-wrapper {
-      @include media("<tablet") {
-          width: 100%;
-      };
-  }
-
-
-
+.certificate__overlay-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 40px;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  margin-left: -40px;
+  margin-top: -40px;
+  border-radius: 50%;
+  background: $base-green;
+  color: white;
+  opacity: 0;
+  transform: scale(1.5);
+  transition: transform .7s cubic-bezier(0.18, 0.89, 0.32, 1.28), opacity .3s ease 0s;
 }

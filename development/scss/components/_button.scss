@@ -55,10 +55,10 @@
     // color: $text-color;
     color: $white;
     // box-shadow: 0 0 0 2px $base-brown;
+    text-shadow: 0 4px 20px #db8700;
     &:hover {
-        background: darken($yellow, 5%);
+        background: lighten($yellow, 4%);
         text-decoration: none;
-        text-shadow: 1px 1px transparentize($black, 0.8);
         box-shadow: rgba(0, 0, 0, 0.156863) 0px 3px 10px, rgba(0, 0, 0, 0.227451) 0px 3px 10px;
     }
   }

@@ -221,6 +221,18 @@
   font-weight: normal;
   font-style: normal;
 }
+/** Museo Sans Regular italic**/
+@font-face {
+  font-family: 'Museo Sans';
+  src: font('Museo_Sans/MuseoSansCyrl-500Italic.eot');
+  src: font('Museo_Sans/MuseoSansCyrl-500Italic.woff2') format('woff2'),
+       font('Museo_Sans/MuseoSansCyrl-500Italic.woff') format('woff'),
+       font('Museo_Sans/MuseoSansCyrl-500Italic.ttf') format('truetype'),
+       font('Museo_Sans/MuseoSansCyrl-500Italic.svg#MuseoSansCyrl-500Italic') format('svg'),
+       font('Museo_Sans/MuseoSansCyrl-500Italic.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: italic;
+}
 
 /** Museo Sans Bold **/
 @font-face {

@@ -14,24 +14,30 @@
 .icons-set__item__icon-wrap {
     width: 80px;
     height: 80px;
-    background: #47a0ff;
+    background: rgba(0, 160, 17, 0.55);
     border-radius: 100%;
     position: relative;
     color: #fff;
+    box-shadow: 0 -2px 15px -5px rgba(0, 0, 0, 0.48), 0 2px 15px -5px rgba(0, 0, 0, 0.48);
+
+    @include media("<x-small") {
+      width: 75px;
+      height: 75px;
+    };
 }
 
-.icons-set__item__icon-wrap:before {
-    content: " ";
-    display: block;
-    width: 72px;
-    height: 72px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    border: 2px dotted rgba(255,255,255,0.5);
-    border-radius: 100%;
-}
+// .icons-set__item__icon-wrap:before {
+//     content: " ";
+//     display: block;
+//     width: 72px;
+//     height: 72px;
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%,-50%);
+//     border: 2px dotted rgba(255,255,255,0.5);
+//     border-radius: 100%;
+// }
 
 .icons-set__item__icon {
     position: absolute;
@@ -39,6 +45,9 @@
     left: 50%;
     transform: translate(-50%,-50%);
     font-size: 2em;
+    @include media("<x-small") {
+        font-size: 36px;
+    };
 }
 
 
@@ -51,6 +60,9 @@
     margin: 0;
     margin-bottom: 10px;
     font-size: 1.1em;
+    @include media("<small") {
+      font-size: 0.95em;
+    };
 }
 
 .icons-set__item__description {

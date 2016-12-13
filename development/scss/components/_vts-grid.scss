@@ -3,8 +3,10 @@
 // -----------------------------------------------------------------------------
 
 $vtgrid__item-attributes-color: $base-green;
+$vtgrid__item-attributes__item-bg: #f7f7f7;
 $vtgrid__item-attributes__item-hover-bg: $base-green;
 $vtgrid__item-attributes__item-hover-color: $white;
+
 .vtsgrid {
     padding: 40px 0;
 }
@@ -77,6 +79,7 @@ position: relative;
     font-style: normal;
     position: absolute;
     bottom: 0;
+    background: $vtgrid__item-attributes__item-bg;
 }
 
 .item-attributes__item {

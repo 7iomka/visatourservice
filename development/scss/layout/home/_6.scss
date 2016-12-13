@@ -1,148 +1,111 @@
 // -----------------------------------------------------------------------------
-// This file contains all styles related to the ECRAN 6 of the site/application.
+// This file contains all styles related to the ECRAN 6 - Testimonials -  of the site/application.
 // -----------------------------------------------------------------------------
-//
-.arguments {
-  padding-bottom: 0;
-  h2 {
-    margin-bottom: 100px;
-    @include media("<tablet") {
-       margin-bottom: 70px;
-    };
+
+/** testimonials slider settings **/
+
+.testimonials__slider {
+  .swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
   }
-
+  .swiper-container {
+      padding: 85px 5px 50px;
+  }
+  .swiper-wrapper {
+    box-sizing: border-box;
+  }
+  .swiper-pagination-bullet-active {
+      background: $blue-base1;
+  }
 }
-.argument {
-  padding: 90px 0;
-  @include media("<tablet") {
-    text-align: center;
-    padding: 45px 0;
 
-  };
-    &.arugument--with-parallax {
-      position: relative;
+
+.testimonials__slider {
+    position: relative;
+}
+
+.testimonials__slide {
+    position: relative;
+}
+
+
+
+
+/** One testimonial settings **/
+
+.testimonial {
+    background: white;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.09);
+    @include shadow(1, $blue-base1);
+    padding: 60px 40px 45px;
+    // width: 98%;
+    cursor: move;
+    cursor: -webkit-grab;
+    margin: auto;
+}
+
+.testimonial__figure {
+  width: 85px;
+  height: 85px;
+  position: absolute;
+  top: 0;
+  transform: translate(0,-50%);
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 7px 7px 27px transparentize($blue-base1, 0.62);
+}
+
+.testimonial__text {
+    max-height: 130px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    @extend .vtsgrid__item__description;
+    margin-top: 0;
+    text-align: justify;
+}
+
+
+.btn.testimonial__readmore-btn{
+    background: none;
+    width: 100px;
+    font-size: 16px;
+    float: right;
+    margin: 10px 0;
+    color: lighten($blue-base1, 1%);
+    text-shadow: none;
+}
+
+
+/** client details **/
+.testimonial__client-details {
+  color: #6e6e6e;
+    div, a {
+      font-size: 18px;
+      line-height: 1.4em;
     }
-    &.argument--first {
-      padding: 0 0 40px 0;
-      // parallax element - img position
-      .parallax-img {
-          right: 0;
-          position: absolute;
-          bottom: -40%;
-          animation-iteration-count: infinite;
-          animation-fill-mode: both;
-          animation-duration: 15s;
-          animation-name: spheres;
-      }
+}
 
-        @keyframes spheres {
-            0%,100%,50% {
-                transform: rotateY(25deg) translateX(42px) ;
-            }
+.testimonial__client-name {
+  @extend .vtsgrid__item__title;
+  color: $blue-base1;
+}
+.testimonial__client-post {
+    font-style: italic;
+}
 
-            25%,75% {
-                transform: rotateY(-25deg) translateX(42px) translateY(25px);
-            }
-        }
-    }
-
-    &.argument--4 {
-      .parallax-img {
-        position: absolute;
-        bottom: -60%;
-        animation-iteration-count: infinite;
-        animation-fill-mode: both;
-        animation-duration: 15s;
-        animation-name: spheres2;
-     }
-
-      @keyframes spheres2 {
-          0%,100%,50% {
-              transform: rotateY(25deg) translateX(-42px) ;
-          }
-
-          25%,75% {
-              transform: rotateY(-25deg) translateX(-42px) translateY(-55px);
-          }
-      }
-    }
-
-    // dark inverted styles
-    &.argument--inverted {
-      background-color: #141414;
-      background: radial-gradient(circle closest-side at 50%, #202020 0%, #141414 100%);
-
-      .argument__details {
-        color: #ddd;
-      }
-      .argument__title {
-        color: $white;
-      }
-
-      .argument__totals {
-        color: #f9f9f9;
-      }
-    }
-
-    .argument__title {
-      font-family: "Bebas_Neue", sans-serif;
-      font-size: 40px;
-      margin-bottom: 15px;
-    }
-
-    .argument__desc {
-      font-size: 15px;
-      line-height: 17px;
-      @include media("<tablet"){
-        font-size: 18px;
-        line-height: normal;
-      };
-      max-width: 360px;
-      p, span {
-        line-height: inherit;
-      }
-    }
-
-    .argument__details {
-      color: $black;
-      margin-bottom: 20px;
-    }
-
-    .argument__sep {
-      background-color: #705d2f;
-      width: 137px;
-      height: 1px;
-      margin: 20px 0;
-    }
-
-    .argument__desc,.argument__sep {
-        @include media("<tablet") {
-          margin-left: auto;
-          margin-right: auto;
-          text-align: left;
-        };
-    }
-
-
-    .argument__total {
-      font-size: 17px;
-      line-height: 20px;
-      margin-bottom: 0;
-      @include media("<tablet"){
-        font-size: 18px;
-        line-height: normal;
-      };
-    }
-    .argument__img-wrapper {
-        @include media(">=tablet", "<960px") {
-          margin-right: 20px;
-        };
-    }
-    .argument__img {
-      max-width: 100%;
-    }
+.testimonial__client-site {
+    color: #3B60ad;
+    text-decoration: underline;
+}
 
 
 
-
+.testimonial__avatar {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%);
 }
