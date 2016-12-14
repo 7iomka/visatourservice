@@ -12,11 +12,31 @@
   background-image: image('/patterns/guilloche.png');
 
 }
+/** certificates slider settings **/
+
+.certificates__slider {
+  .swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+  }
+  .swiper-container {
+      padding: 60px 5px;
+  }
+  .swiper-wrapper {
+    box-sizing: border-box;
+  }
+  .swiper-pagination-bullet-active {
+      background: $base-green;
+  }
+}
 
 .certificate__link {
     display: block;
     overflow: hidden;
     position: relative;
+    width: 380px;
+    max-width: 100%;
+    margin: auto;
     &:hover {
       .certificate__thumb {
         transform: scale(1.1,1.1);

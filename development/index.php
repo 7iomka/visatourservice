@@ -634,7 +634,7 @@
                 <div class="col col--1-of-1">
                   <div class="certificates__slider">
                     <div class="swiper-container">
-                      <div class="swiper-wrapper">
+                      <div class="swiper-wrapper certificates__gallery">
                         <div class="swiper-slide certificates__slide">
                           <div class="certificate">
                             <a class="certificate__link" href="img/certificates/1.jpg">
@@ -717,5 +717,43 @@
           </div>
         </section>
         <!-- /certificates -->
+
+        <!-- Our-team -->
+
+        <!-- /Our-team -->
+
+        <section class="home-contacts">
+          <div class="home-contacts__map-container">
+              <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (начало) -->
+<div style="width: 100%;height: 400px" id="map6ihbus3n"></div>
+<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyBwx-zz1AiuDBd8BE8BS1LzaDfsqEJZ2qE&callback=GoogleReadyHandler6ihbus3n" async defer></script>
+<script>
+  function GoogleReadyHandler6ihbus3n() {
+    var infowindow,
+    map = new google.maps.Map(document.getElementById("map6ihbus3n"), {
+        center: {lat: 55.717822634881905, lng: 37.61510516735075},
+        zoom: 18,
+        disableDefaultUI: true,
+        zoomControl: true,
+        mapTypeControl: true,
+        mapTypeId: "roadmap"
+    });
+    infowindow = new google.maps.InfoWindow();
+    (new google.maps.Marker({
+        position: {lat: 55.71770189367838, lng: 37.61219322681427},
+        map: map,
+        icon:'',
+        title: 'Заголовок'
+    }))
+    .addListener('click', function (e) {
+        infowindow.setContent('Ту будет контент');
+        infowindow.open(map, this);
+    });
+    return map;
+  }
+</script>
+
+          </div>
+        </section>
 
   <?php require_once('inc/footer.php'); ?>

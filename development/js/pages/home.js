@@ -443,7 +443,6 @@ function homeActions() {
            slidesPerView: 3,
            paginationClickable: true,
            spaceBetween: 10,
-           grabCursor: true,
            // Small screens, center to align and loop elements
            breakpoints: {
              900: {
@@ -464,7 +463,6 @@ function homeActions() {
            slidesPerView: 3,
            paginationClickable: true,
            spaceBetween: 70,
-           grabCursor: true,
            // Small screens, center to align and loop elements
            breakpoints: {
              900: {
@@ -475,6 +473,20 @@ function homeActions() {
              }
            }
        });
+       // ----------------------------------------------------------------------------
+       // Init gallery for each certificate
+       // ----------------------------------------------------------------------------
+       var certificatesGalleryScene = $('.certificates__gallery').lightGallery({
+            // selectWithin: $('.certificate'),
+            selector: ".certificate__link",
+            hash: false,
+            download: false,
+            thumbnail:true,
+             animateThumb: false,
+             showThumbByDefault: false
+        });
+
+      //  $('.certificates__slider').lightGallery({thumbnail:false,mode:'lg-fade',counter:false,download:false,startClass:'',speed:500})
 
       /**
        * safari and old browsers than not support @supports css
