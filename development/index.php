@@ -14,7 +14,7 @@
                       </h1>
                     </div>
                     <div class="home-banner__btn-wrapper">
-                      <button class="btn btn--x-large btn--yellow home-banner__btn waves-effect waves-circle waves-float">Оставить заявку на оформление визы</button>
+                      <button class="btn btn--x-large btn--yellow home-banner__btn" data-remodal-target="get_request_visa_online">Оставить заявку на оформление визы</button>
                     </div>
                     <!-- Advantages -->
                     <div class="home-banner__advantages">
@@ -725,33 +725,14 @@
         <section class="home-contacts">
           <div class="home-contacts__map-container">
               <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (начало) -->
-<div style="width: 100%;height: 400px" id="map6ihbus3n"></div>
-<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyBwx-zz1AiuDBd8BE8BS1LzaDfsqEJZ2qE&callback=GoogleReadyHandler6ihbus3n" async defer></script>
-<script>
-  function GoogleReadyHandler6ihbus3n() {
-    var infowindow,
-    map = new google.maps.Map(document.getElementById("map6ihbus3n"), {
-        center: {lat: 55.717822634881905, lng: 37.61510516735075},
-        zoom: 18,
-        disableDefaultUI: true,
-        zoomControl: true,
-        mapTypeControl: true,
-        mapTypeId: "roadmap"
-    });
-    infowindow = new google.maps.InfoWindow();
-    (new google.maps.Marker({
-        position: {lat: 55.71770189367838, lng: 37.61219322681427},
-        map: map,
-        icon:'',
-        title: 'Заголовок'
-    }))
-    .addListener('click', function (e) {
-        infowindow.setContent('Ту будет контент');
-        infowindow.open(map, this);
-    });
-    return map;
-  }
-</script>
+        <div class="home-contacts__map" id="home-map"></div>
+        <!-- <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyBwx-zz1AiuDBd8BE8BS1LzaDfsqEJZ2qE&callback=GoogleReadyHandler6ihbus3n" async defer>
+        </script> -->
+        <script>
+          /*function GoogleReadyHandler6ihbus3n() {
+            var infowindow, map = new google.maps.Map(document.getElementById("map6ihbus3n"), { center: {lat: 55.717822634881905, lng: 37.61510516735075}, zoom: 18, disableDefaultUI: true, zoomControl: true, mapTypeControl: true, mapTypeId: "roadmap" }); infowindow = new google.maps.InfoWindow(); (new google.maps.Marker({ position: {lat: 55.71770189367838, lng: 37.61219322681427}, map: map, icon:'', title: 'Заголовок' })) .addListener('click', function (e) { infowindow.setContent('Ту будет контент'); infowindow.open(map, this); }); return map;
+                    }*/
+          </script>
 
           </div>
         </section>

@@ -1,0 +1,20 @@
+{
+    "type": "FeatureCollection",
+    "features": [{
+        "type": "Feature",
+        "properties": {
+            "id": "marker-iwoiaqtd0",
+            "title": "Москва",
+            "description": "<div class=\"icons-set contacts-details\">\n    <div class=\"icons-set__item\">\n        <div class=\"icons-set__item__field \">\n            <div class=\"icons-set__item__icon-wrap\"><i class=\"icon icon--location_marker icons-set__item__icon\"></i>\n            </div>\n        </div>\n        <div class=\"icons-set__item__field\">\n            <h3 class=\"icons-set__item__title\">ул. Шухова 14, стр.9</h3>\n        </div>\n    </div>\n    <div class=\"icons-set__item\">\n        <div class=\"icons-set__item__field \">\n            <div class=\"icons-set__item__icon-wrap\"><i class=\"icon icon--shake_phone icons-set__item__icon\"></i>\n            </div>\n        </div>\n        <div class=\"icons-set__item__field\">\n            <h3 class=\"icons-set__item__title\">8-800-505-31-04</h3>\n        </div>\n    </div>\n    <div class=\"icons-set__item\">\n        <div class=\"icons-set__item__field \">\n            <div class=\"icons-set__item__icon-wrap\"><i class=\"icon icon--shake_phone icons-set__item__icon\"></i>\n            </div>\n        </div>\n        <div class=\"icons-set__item__field\">\n            <h3 class=\"icons-set__item__title\">+7 965-321-88-11 </h3>\n        </div>\n    </div>\n    <div class=\"icons-set__item\">\n        <div class=\"icons-set__item__field \">\n            <div class=\"icons-set__item__icon-wrap\"><i class=\"icon icon--message icons-set__item__icon\"></i>\n            </div>\n        </div>\n        <div class=\"icons-set__item__field\">\n            <h3 class=\"icons-set__item__title\">office@visatourservice.ru</h3>\n        </div>\n    </div>\n    <div class=\"icons-set__item\">\n        <div class=\"icons-set__item__field \">\n            <div class=\"icons-set__item__icon-wrap\"><i class=\"icon icon--skype_contact icons-set__item__icon\"></i>\n            </div>\n        </div>\n        <div class=\"icons-set__item__field\">\n            <h3 class=\"icons-set__item__title\">vts-consalting</h3>\n        </div>\n    </div>\n</div>",
+            "marker-size": "large",
+            "marker-color": "#00a011",
+            "marker-symbol": "star-stroked"
+        },
+        "geometry": {
+            "coordinates": [37.612407, 55.717519],
+            "type": "Point"
+        },
+        "id": "310fbc0b22e7bf01be275a5ca08ece04"
+    }],
+    "id": "7iomka.2cb6ie7e"
+}

@@ -4,6 +4,9 @@
 
 .visa-long-term {
     position: relative;
+    @include media("<medium") {
+      padding-bottom: 0;
+    };
 }
 
 .visa-long__excerpt {
@@ -124,8 +127,10 @@
     background: $blue-liliac;
     background: $blue-liliac2;
     background: $blue-base1;
+    @include media(">=small") {
+      box-shadow: -5px 0 50px rgba(68, 69, 71, 0.41);
+    };
 
-    box-shadow: -5px 0 50px rgba(68, 69, 71, 0.41);
 }
 
 .visa-long__country-name {

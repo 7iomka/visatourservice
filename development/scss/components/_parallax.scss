@@ -48,7 +48,7 @@
 }
 
 
-/** settings **/
+/** settings for home **/
 .parallax-section--home {
   height: 720px;
 
@@ -64,8 +64,9 @@
         background-position: center 0;
         top: auto;
         bottom: 0;
-        //temporar
+        //temporar - we will disable with js again
         transform: none!important;
+            top: auto!important;
       };
   }
 }

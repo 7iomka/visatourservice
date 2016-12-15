@@ -158,6 +158,9 @@ section {
         font-size: 32px !important;
         margin-bottom: 0.67em;
       }
+      @include media("<=375px") {
+        font-size: 27px !important;
+      };
       .brown {
          color: $sep-brown;
        }

@@ -114,6 +114,25 @@ jQuery(document).ready(function($) {
 
 
           // ------------------------------------------------------------------
+          // flatpickr initialisate
+          // ------------------------------------------------------------------
+          /** localise global **/
+          Flatpickr.localize(Flatpickr.l10ns.ru);
+
+          /** Basic ininialisation **/
+         var datetime_picker = flatpickr(".flatpickr", {
+              enableTime: true,
+              // defaultDate: Math.floor(Date.now() / 1000),
+              // create an extra input solely for display purposes
+              // altInput: true,
+              // altFormat: "F j, Y h:i",
+              dateFormat: "d.m.Y  H:i",
+              defaultDate: new Date(),
+              // utc: true
+              time_24hr: true
+          });
+
+          // ------------------------------------------------------------------
           // SETTINGS FOR ALL FORMS INSIDE REMODAL && INLINE
           // ------------------------------------------------------------------
     //

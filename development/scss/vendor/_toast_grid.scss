@@ -410,6 +410,9 @@ $toast-pulls: true !default;
   margin-left: auto;
   margin-right: auto;
 }
+.#{$toast-grid-column-namespace}--centered-inline {
+  text-align: center;
+}
 
 
 // Displays the column as the first in its row

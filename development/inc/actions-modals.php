@@ -26,6 +26,121 @@
     </div>
 
 
+    <!-- visa request online popup -->
+    <div class="remodal remodal--browser remodal--action" data-remodal-id="get_request_visa_online" data-remodal-options="hashTracking: false" role="dialog">
+
+        <div class="remodal__header-wrapper">
+            <ul class="c-controls">
+                <li class="c-control c-control--close"></li>
+                <li class="c-control c-control--min"></li>
+                <li class="c-control c-control--max"></li>
+            </ul>
+            <div data-remodal-action="close" class="remodal-close" aria-label="Close">
+                <?php echo $closeButtonHtml; ?>
+            </div>
+        </div>
+        <div class="remodal__content-wrapper">
+            <div class="remodal__content">
+                <div class="remodal__body">
+                  <div class="site-form site-form--basic-outlined site-form--callback site-form--action">
+                    <div class="site-form--basic-outlined__inner">
+                          <h3 class="site-form__header"><span>Связаться с менеджером</span></h3>
+                          <form method="POST" action="/ajax.php">
+                              <input type="hidden" name="form_task" value="get_request_visa_online">
+
+                            <div class="site-form__column-wrapper">
+                              <div class="col col--6-of-12 col--s-1-of-1">
+                                <div class="site-form__field">
+                                    <div class="site-form__field-control" >
+                                        <div class="site-form__field-id">
+                                          <input class="site-form__input required" type="text" id="user_name--visa-request" name="user_name--visa-request" required="">
+                                          <label for="user_name--visa-request" class="site-form__input-label">
+                                            <span class="site-form__input-label-content">Имя</span>
+                                          </label>
+                                        </div>
+                                    </div>
+                                    <div class="site-form__field-error">
+                                        <div class="site-form__error-text"></div>
+                                    </div>
+                                </div>
+                                <div class="site-form__field">
+                                    <div class="site-form__field-control" >
+                                        <div class="site-form__field-id">
+                                          <input class="site-form__input required" type="text" id="user_phone--visa-request" name="user_phone--visa-request" required="">
+                                          <label for="user_phone--visa-request" class="site-form__input-label">
+                                            <span class="site-form__input-label-content">Телефон</span>
+                                          </label>
+                                        </div>
+                                    </div>
+                                    <div class="site-form__field-error">
+                                        <div class="site-form__error-text"></div>
+                                    </div>
+                                </div>
+                                <div class="site-form__field">
+                                    <div class="site-form__field-control" >
+                                        <div class="site-form__field-id">
+                                          <input class="site-form__input required" type="text" id="user_email--visa-request" name="user_email--visa-request" required="">
+                                          <label for="user_email--visa-request" class="site-form__input-label">
+                                            <span class="site-form__input-label-content">Email</span>
+                                          </label>
+                                        </div>
+                                    </div>
+                                    <div class="site-form__field-error">
+                                        <div class="site-form__error-text"></div>
+                                    </div>
+                                </div>
+                                <div class="site-form__field">
+                                    <div class="site-form__field-control" >
+                                        <div class="site-form__field-id">
+                                          <input class="site-form__input required flatpickr valid" type="text" id="user_datetime--visa-request" name="user_datetime--visa-request" required="">
+                                          <label for="user_datetime--visa-request" class="site-form__input-label">
+                                            <span class="site-form__input-label-content">Дата/время</span>
+                                          </label>
+                                        </div>
+                                    </div>
+                                    <div class="site-form__field-error">
+                                        <div class="site-form__error-text"></div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="col col--6-of-12 col--s-1-of-1">
+
+                                <div class="site-form__field">
+                                    <div class="site-form__field-control" >
+                                        <div class="site-form__field-id">
+                                            <select class="site-form__selectbox wide" id="user_geo-point--visa-request" name="user_geo-point--visa-request">
+                                              <option value="1">Москва</option>
+                                              <option value="2">Новосибирск</option>
+                                              <option value="3">Троицк</option>
+                                              <option value="4">Кемерово</option>
+                                              <option value="5">Якутск</option>
+                                              <option value="6">Краснодар</option>
+                                              <option value="7">Ростов-на-Дону</option>
+                                              <option value="8">Прокопьевск</option>
+                                              <option value="9">УфаКазань</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="site-form__field-error">
+                                        <div class="site-form__error-text"></div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="col col--1-of-1 col--centered-inline">
+                                <button type="submit" name="submit-btn" class="btn btn--yellow btn--large btn--submit-action progress-button" data-loading="Отправка заявки.." data-finished="Заявка отправлена!">Отправить заявку</button>
+                              </div>
+                            </div>
+
+                          </form>
+
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <!-- IMAGES WITH ZOOM -->
     <div class="remodal remodal--action remodal--browser remodal--zoom-images" data-remodal-id="get_zoomable_image" data-remodal-options="hashTracking: false" role="dialog">

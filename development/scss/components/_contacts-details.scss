@@ -1,0 +1,54 @@
+.leaflet-control-attribution.leaflet-control {
+    display: none;
+}
+/** Customize popup content **/
+.leaflet-popup-content {
+    padding: 10px 30px 30px;
+    .marker-title {
+          color: $base-green;
+          font-size: 18px;
+          line-height: 1.4em;
+          // padding: 10px 0;
+          text-align: center;
+          margin-bottom: 5px;
+          background: #f7f7f7;
+          border-bottom: 1px solid #eaeaea;
+          margin: -11px -31px 20px;
+          padding: 15px 0;
+          border-radius: 3px 3px 0 0;
+
+      }
+
+  .contacts-details {
+
+      .icons-set__item__icon-wrap {
+          width: 36px;
+          height: 36px;
+          background: #43b74f;
+          box-shadow: none;
+      }
+
+      .icons-set__item__icon {
+          font-size: 1.4em;
+      }
+
+      .icons-set__item__title {
+          margin-bottom: 0;
+          margin-left: 10px;
+      }
+
+      .icons-set.contacts-details {
+          font-size: 15px;
+      }
+
+      .icons-set__item__field {
+          display: inline-block;
+          margin-right: -0.25em;
+      }
+
+      .icons-set__item {
+          display: block;
+          margin: 0 0 10px;
+      }
+  }
+}

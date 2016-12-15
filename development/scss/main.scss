@@ -19,7 +19,10 @@
   'vendor/swiper.min',
   'vendor/remodal',
   'vendor/lightgallery',
+  'vendor/mapbox',
   'vendor/jquery.typeahead-custom.scss',
+  'vendor/flatpickr.scss',
+  'vendor/nice-select.scss',
   // 'vendor/jquery.qtip',
   // 'vendor/dropzone',
   'vendor/waves';
@@ -44,6 +47,7 @@
     'components/country-prewiew-data',
     'components/vts-grid',
     'components/icons-set',
+    'components/contacts-details',
     // 'components/gallery',
     // 'components/galleryRemodal',
     // 'components/jQueryUploader',
@@ -89,7 +93,8 @@
         'themes/lightGallery--custom-theme',
         // 'themes/qtip--custom-theme',
         'themes/remodal--action-modal-theme',
-        'themes/datepicker--custom-theme';
+        // 'themes/datepicker--custom-theme',
+        'themes/flatpickr--material-theme';
 
 
 // 6. Page-specific styles

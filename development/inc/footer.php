@@ -1,35 +1,40 @@
-<!-- <footer class="site-footer" id="contacts">
-  <div class="container">
+<footer class="site-footer">
+  <div class="container-fluid container-relative">
     <div class="row">
-      <div class="footer-contacts">
-        <div class="footer__contact footer__adress">г.Москва, Гиляровского дом 68 корпус </div>
-        <div class="footer__contact footer__email"><a href="mailto:info@seosintez.ru" class="footer__link">info@seosintez.ru</a></div>
-        <div class="footer__contact footer__phone"><a href="tel:+74951252765" class="footer__link">+7 (495) 125-27-65</a></div>
-      </div>
-      <div class="footer-map-preview">
-        <button class="btn btn--brown btn--large btn--bordered footer-map-preview__btn">
-          <span class="footer-map-preview__btn__text footer-map-preview__btn__text-default">Развернуть карту</span>
-          <span class="footer-map-preview__btn__text footer-map-preview__btn__text-expanded">Свернуть карту</span>
-        </button>
-      </div>
-    </div>
-  </div>
-  <div class="footer-map-fullwidth-container">
-    <div class="footer-map-fullwidth">
-      <div class="footer-map-preloader-overlay hidden">
-        <div class="footer-map-preloader">
-          <div class="css_spinner wf">
-            <span class="side s_left"> <span class="fill"></span> </span>
-            <span class="side s_right"> <span class="fill"></span> </span>
+        <div class="col col--4-of-12 col--s-1-of-2">
+          <div class="site-footer__block">
+            <div class="site-footer__block-header">Услуги</div>
+            <div class="site-footer__block-item"><a href="#" class="site-footer__block-link">Виза C</a></div>
+            <div class="site-footer__block-item"><a href="#" class="site-footer__block-link">Виза Д</a></div>
+            <div class="site-footer__block-item"><a href="#" class="site-footer__block-link">Франшиза</a></div>
+            <div class="site-footer__block-item"><a href="#" class="site-footer__block-link">Дополнительные услуги</a></div>
           </div>
         </div>
-      </div>
-      <div class="footer-map-fullwidth__map">
-          <div id="site-map"></div>
-      </div>
+        <div class="col col--4-of-12 col--s-1-of-2">
+          <div class="site-footer__block">
+            <div class="site-footer__block-header">Реквизиты</div>
+            <div class="site-footer__block-item">ООО “ВИЗАТУРСЕРВИС”</div>
+            <div class="site-footer__block-item">ИНН 0000000000</div>
+            <div class="site-footer__block-item">ОГРН 00000000000000</div>
+          </div>
+        </div>
+        <div class="col col--4-of-12 col--s-1-of-1">
+          <div class="site-footer__block">
+              <div class="site-footer__block-header">Контакты</div>
+              <div class="site-footer__block-item"><a href="tel:88002508777" class="site-footer__block-link site-footer__phone-number"><i class="icon icon--shake_phone site-footer__block-item-icon"></i>8-800-250-87-77</a></div>
+              <div class="site-footer__block-item"><a href="mailto:office@visatourservice.ru" class="site-footer__block-link site-footer__email"><i class="icon icon--message site-footer__block-item-icon"></i>office@visatourservice.ru</a></div>
+              <div class="site-footer__block-item"> <a href="skype:vts-consalting" class="site-footer__block-link site-footer__skype"><i class="icon icon--skype_contact site-footer__block-item-icon"></i>vts-consalting</a></div>
+            </div>
+        </div>
+        <div class="col col--1-of-1 ">
+          <div class="site-footer__copyright">
+            © 2016 ООО “ВизаТурСервис”
+          </div>
+        </div>
     </div>
   </div>
-</footer> -->
+
+</footer>
 
 
 <div class="remodal-bg">
