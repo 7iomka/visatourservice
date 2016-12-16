@@ -70,8 +70,8 @@ body {
  */
 .section-inverse {
   color: $white;
-  h2 {
-  color: $white;
+  .section-title {
+    color: $white;
   }
 }
 
@@ -130,7 +130,7 @@ section {
       padding: 40px 0;
     }
 
-    h2 {
+    .section-title {
       // text-align: center;
       position: relative;
       text-transform: uppercase;
@@ -161,9 +161,7 @@ section {
       @include media("<=375px") {
         font-size: 27px !important;
       };
-      .brown {
-         color: $sep-brown;
-       }
+
         > span {
           display: block;
 
@@ -171,6 +169,27 @@ section {
         }
         &.reverse{
           color: $white;
+        }
+
+        &.section-title--with-link {
+
+          a {
+            transition: 0.5s ease;
+            text-decoration: none;
+            color: inherit;
+            &:hover {
+              color: $yellow;
+            }
+          }
+
+          &.sublined {
+            display: inline-block;
+            &:hover {
+              &:before {
+                width: 100%;
+              }
+            }
+          }
         }
         &.sublined {
           margin-bottom: 20px;
@@ -185,8 +204,7 @@ section {
             bottom: -10px;
             left: 0;
             right: 0;
-            transition: 1s ease all;
-            transition-delay: 0.5s;
+            transition: .5s ease all;
             @include media("<medium") {
               margin: auto;
             };

@@ -15,6 +15,9 @@
     -moz-osx-font-smoothing: grayscale;
   }
 }
+.icon--office-phone:before {
+  content: "\e900";
+}
 .icon--pinpoint:before {
   content: "\41";
 }

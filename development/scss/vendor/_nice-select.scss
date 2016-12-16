@@ -2,7 +2,7 @@
 $font_size: 18px !default;
 $font_size_small: 12px !default;
 
-$input_border_radius: 5px !default;
+$input_border_radius: 3px !default;
 $input_height: 42px !default;
 $input_height_small: 36px !default;
 $dropdown_padding: 18px !default;
@@ -11,7 +11,7 @@ $gray_dark: #444 !default;
 $gray: #999 !default;
 $gray_light: #e8e8e8 !default;
 $gray_lighter: #f6f6f6 !default;
-$primary_light: $gray !default;
+$primary_light: $yellow !default;
 $arrow_color: $gray !default;
 
 // Style the dropdown
@@ -19,7 +19,7 @@ $arrow_color: $gray !default;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   background-color: #fff;
   border-radius: $input_border_radius;
-  border: solid 1px $gray_light;
+  border: solid 1px #ccc;
   box-sizing: border-box;
   clear: both;
   cursor: pointer;
@@ -29,7 +29,7 @@ $arrow_color: $gray !default;
   font-size: $font_size;
   font-weight: normal;
   height: $input_height;
-  line-height: $input_height - 2;
+  line-height: $input_height;
   outline: none;
   padding-left: $dropdown_padding;
   padding-right: $dropdown_padding + 12;

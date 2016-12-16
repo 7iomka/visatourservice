@@ -3,7 +3,7 @@
 // -----------------------------------------------------------------------------
 .icons-set__item {
     display: table;
-    width: 100%;
+    // width: 100%;
     margin: 25px 0;
 }
 .icons-set__item__field--fix-size {
@@ -11,19 +11,147 @@
     padding-right: 25px;
 }
 
+
 .icons-set__item__icon-wrap {
-    width: 80px;
-    height: 80px;
-    background: rgba(0, 160, 17, 0.55);
+
+
     border-radius: 100%;
     position: relative;
-    color: #fff;
-    box-shadow: 0 -2px 15px -5px rgba(0, 0, 0, 0.48), 0 2px 15px -5px rgba(0, 0, 0, 0.48);
+
 
     @include media("<x-small") {
       width: 75px;
       height: 75px;
     };
+}
+
+// -----------------------------------------------------------------------------
+// By size
+// -----------------------------------------------------------------------------
+.icons-set {
+  font-size: 20px;
+
+  /** standart **/
+  .icons-set__item {
+    margin: 5px 0;
+  }
+  .icons-set__item__icon-wrap {
+    width: 36px;
+    height: 36px;
+  }
+ .icons-set__item__icon {
+   font-size: 1.35em;
+ }
+ .icons-set__item__title {
+   font-size: 16px;
+ }
+ 
+
+  /** big **/
+  &.icons-set--big {
+      .icons-set__item {
+          margin: 25px 0;
+      }
+      .icons-set__item__icon-wrap {
+        width: 80px;
+        height: 80px;
+      }
+      .icons-set__item__icon {
+        font-size: 2em;
+        @include media("<x-small") {
+            font-size: 36px;
+        };
+      }
+
+      .icons-set__item__title {
+        font-size: 1.1em;
+        @include media("<small") {
+          font-size: 0.95em;
+        };
+      }
+
+  }
+
+  // -----------------------------------------------------------------------------
+  // By direction
+  // -----------------------------------------------------------------------------
+    /** verical **/
+    &.icons-set--vertical {
+      .icons-set__item__field {
+          display: block;
+          margin: 0px auto 25px;
+          text-align: center;
+          padding: 0;
+      }
+
+
+      .icons-set__item, .icons-set__item__icon-wrap {
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+      }
+    }
+
+
+  // -----------------------------------------------------------------------------
+  // By color for icon
+  // -----------------------------------------------------------------------------
+  /** blue-toxic **/
+  &.icons-set--icon-color_blue-toxic {
+    .icons-set__item__icon-wrap {
+      color: $blue-toxic;
+    }
+  }
+
+  /** base-green **/
+  &.icons-set--icon-color_green {
+    .icons-set__item__icon-wrap {
+      color: $base-green;
+    }
+  }
+
+
+
+
+  // -----------------------------------------------------------------------------
+  // By background-color for icon
+  // -----------------------------------------------------------------------------
+
+  // by default - without bg
+  .icons-set__item__icon-wrap {
+    background: none;
+    box-shadow: none;
+  }
+
+  /** green semitransparent **/
+  &.icons-set--icon-bg_green-semitransparent {
+    .icons-set__item__icon-wrap {
+      background: rgba(0, 160, 17, 0.55);
+      box-shadow: 0 -2px 15px -5px rgba(0, 0, 0, 0.48), 0 2px 15px -5px rgba(0, 0, 0, 0.48);
+    }
+  }
+
+  &.icons-set--icon-bg_gray-light {
+    .icons-set__item__icon-wrap {
+      background: #f4f4f4;
+    }
+  }
+
+  // -----------------------------------------------------------------------------
+  // By type: dark - default ( color text and icon color) || light (white color )
+  // -----------------------------------------------------------------------------
+  .icons-set__item__field {
+    color: #393939;
+  }
+
+  &.icons-set--light {
+    .icons-set__item__field {
+      color: $white;
+    }
+  }
+
+
+
 }
 
 // .icons-set__item__icon-wrap:before {
@@ -44,10 +172,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    font-size: 2em;
-    @include media("<x-small") {
-        font-size: 36px;
-    };
+
 }
 
 
@@ -58,11 +183,8 @@
 
 .icons-set__item__title {
     margin: 0;
-    margin-bottom: 10px;
-    font-size: 1.1em;
-    @include media("<small") {
-      font-size: 0.95em;
-    };
+    // margin-bottom: 10px;
+
 }
 
 .icons-set__item__description {

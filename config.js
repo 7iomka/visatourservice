@@ -98,6 +98,9 @@ var jsFiles = [
   paths.src.jsLibDir + 'waves.js',
   // paths.src.jsLibDir + 'jquery.sweet-modal.js',
   paths.src.jsLibDir + '_helpers.js',
+  /** components will start with _ **/
+  paths.src.jsLibDir + '_jquery.vts-tabs.js',
+
 
 
 
@@ -113,6 +116,7 @@ var jsFiles = [
 
 /*************** Pages *****************/
      paths.src.jsPagesDir + 'home.js',
+     paths.src.jsPagesDir + 'visa-c-country.js',
 
 /*************** close "jQuery document ready" **************/
      paths.src.jsdir + 'close_jQueryDocumentReady.js',

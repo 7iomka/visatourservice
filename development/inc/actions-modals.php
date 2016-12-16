@@ -105,7 +105,7 @@
                               </div>
                               <div class="col col--6-of-12 col--s-1-of-1">
 
-                                <div class="site-form__field">
+                                <div class="site-form__field site-form__field--no-margin">
                                     <div class="site-form__field-control" >
                                         <div class="site-form__field-id">
                                             <select class="site-form__selectbox wide" id="user_geo-point--visa-request" name="user_geo-point--visa-request">
@@ -124,6 +124,55 @@
                                     <div class="site-form__field-error">
                                         <div class="site-form__error-text"></div>
                                     </div>
+                                </div>
+                                <div class="site-form__field">
+                                  <div class="icons-set icons-set--icon-color_blue-toxic contacts-details">
+                                      <div class="icons-set__item">
+                                          <div class="icons-set__item__field ">
+                                              <div class="icons-set__item__icon-wrap"><i class="icon icon--location_marker icons-set__item__icon"></i>
+                                              </div>
+                                          </div>
+                                          <div class="icons-set__item__field">
+                                              <h3 class="icons-set__item__title">ул. Шухова 14, стр.9</h3>
+                                          </div>
+                                      </div>
+                                      <div class="icons-set__item">
+                                          <div class="icons-set__item__field ">
+                                              <div class="icons-set__item__icon-wrap"><i class="icon icon--office-phone icons-set__item__icon"></i>
+                                              </div>
+                                          </div>
+                                          <div class="icons-set__item__field">
+                                              <h3 class="icons-set__item__title">8-800-505-31-04</h3>
+                                          </div>
+                                      </div>
+                                      <div class="icons-set__item">
+                                          <div class="icons-set__item__field ">
+                                              <div class="icons-set__item__icon-wrap"><i class="icon icon--shake_phone icons-set__item__icon"></i>
+                                              </div>
+                                          </div>
+                                          <div class="icons-set__item__field">
+                                              <h3 class="icons-set__item__title">+7 965-321-88-11 </h3>
+                                          </div>
+                                      </div>
+                                      <div class="icons-set__item">
+                                          <div class="icons-set__item__field ">
+                                              <div class="icons-set__item__icon-wrap"><i class="icon icon--message icons-set__item__icon"></i>
+                                              </div>
+                                          </div>
+                                          <div class="icons-set__item__field">
+                                              <h3 class="icons-set__item__title">office@visatourservice.ru</h3>
+                                          </div>
+                                      </div>
+                                      <div class="icons-set__item">
+                                          <div class="icons-set__item__field ">
+                                              <div class="icons-set__item__icon-wrap"><i class="icon icon--skype_contact icons-set__item__icon"></i>
+                                              </div>
+                                          </div>
+                                          <div class="icons-set__item__field">
+                                              <h3 class="icons-set__item__title">vts-consalting</h3>
+                                          </div>
+                                      </div>
+                                  </div>
                                 </div>
                               </div>
                               <div class="col col--1-of-1 col--centered-inline">

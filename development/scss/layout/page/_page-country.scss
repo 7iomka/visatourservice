@@ -1,0 +1,95 @@
+.page {
+
+  .country__section {
+    margin: 20px 0;
+    position: relative;
+  }
+
+
+  .country__list {
+
+  }
+
+
+  .country__block {
+      display: inline-block;
+      width: 110px;
+      vertical-align: top;
+      margin-bottom: 50px;
+  }
+
+  .country__label {
+      display: inline-block;
+  }
+  .country__icon {
+    width: 72px;
+     height: 72px;
+     border-radius: 50%;
+
+  }
+  .country__name {
+    display: block;
+    color: #393939;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 20px;
+  }
+
+
+
+  // .country__empty-block {
+  //     width: 135px; /*the width of the country-block*/
+  //     height:0;
+  // }
+
+
+.country__section-title {
+    position: relative;
+    margin-bottom: 40px;
+    margin-top: 0;
+    font-weight: normal;
+    font-size: 32px;
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 100%;
+
+    &:before {
+      content: "";
+      background-color: #ffba00;
+      width: 70px;
+      height: 2px;
+      display: block;
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      right: 0;
+  }
+}
+
+
+/** icons-set settings **/
+.icons-set__item__icon-prefix {
+   position: absolute;
+   bottom: 5px;
+   font-size: 16px;
+   color: inherit;
+   font-style: italic;
+   left: 5px;
+   right: 0;
+}
+.icons-set.icons-set--big {
+  .icons-set__item__icon-wrap {
+     width: 90px;
+     height: 90px;
+  }
+  .icons-set__item__icon-wrap {
+     font-size:25px;
+  }
+}
+
+  .icons-set__item__title {
+      font-weight: 300;
+  }
+
+
+}

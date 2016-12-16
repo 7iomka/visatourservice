@@ -1,5 +1,5 @@
 <footer class="site-footer">
-  <div class="container-fluid container-relative">
+  <div class="container container-relative">
     <div class="row">
         <div class="col col--4-of-12 col--s-1-of-2">
           <div class="site-footer__block">

@@ -104,6 +104,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endCo
   width: 1px;
 }
 
+@mixin base-shadow($type: 1) {
+    @if $type == 1 {box-shadow: 4px 4px 0 rgba(45,70,104,0.06), 0 0 0px 1px rgba(45,70,104,0.06);}
+    @else if $type == 2 {box-shadow: 4px 4px 0 rgba(45,70,104,0.06), 0 0 3px rgba(45,70,104,0.06);}
+}
 
 @mixin shadow($level: 1, $color: #000) {
   @if $level == 1 {box-shadow: 0 1px 3px transparentize($color, 0.88), 0 1px 2px transparentize($color, 0.76);}

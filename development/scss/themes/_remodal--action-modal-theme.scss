@@ -216,9 +216,10 @@ REMODAL with header like a browser --- CURRENT USE
         top: 10px;
         right: 15px;
         svg {
-                fill: #148ec7;
+                fill: #393939;
+                fill: #c8c8c8;
             &:hover {
-                fill: $blue-base1;
+                fill: $blue-toxic;
             }
         }
     }

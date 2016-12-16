@@ -226,8 +226,11 @@ $label-color: #6a6a6a;
  .site-form__field {
      position: relative;
      display: block;
-     margin: 0 0 30px;
-         font-size: 18px;
+     margin: 0 0 16px;
+     &.site-form__field--no-margin {
+       margin-bottom: 0;
+     }
+      font-size: 18px;
  }
  .site-form__field-id {
    position: relative;
@@ -237,11 +240,10 @@ $label-color: #6a6a6a;
    background-color: transparent;
    box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 10px 15px;
     width: 100%;
-    height: 32px;
-    border: none;
-    border-bottom: 1px solid #bbb;
+    height: 42px;
+    border: 1px solid #ccc;
     color: #000;
     vertical-align: middle;
     text-indent: 0;
@@ -250,7 +252,7 @@ $label-color: #6a6a6a;
     font-family: inherit;
     line-height: 1.8;
         display: block;
-        border-radius: 0;
+        border-radius: 3px;
     -webkit-appearance: none;
 
 
@@ -258,11 +260,11 @@ $label-color: #6a6a6a;
     &:valid,
     &.valid {
           border-color: $yellow;
-          border-bottom-color: $yellow;
           z-index: 2;
           color: #2b2e38;
           &+.site-form__input-label {
-            top: -21px;
+            top: -31px;
+            left: 0;
             font-size: 11px;
             // line-height: 3;
           }
@@ -271,9 +273,9 @@ $label-color: #6a6a6a;
  .site-form__input-label {
      position: absolute;
      top: 0;
-     left: 0;
+     left: 15px;
      height: 32px;
-     line-height: 32px;
+     line-height: 42px;
      color: #2b2e38;
      transition: .2s ease-in-out;
      white-space: nowrap;

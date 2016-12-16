@@ -978,4 +978,5 @@ jQuery(document).ready(function($) {
     //   }
 
 homeActions();
+visa_c_countryActions();
 /** !! jQuery document ready is NOT closed (it will be closed in another file) **/

@@ -1,0 +1,39 @@
+.page {
+  font: normal 400 15px/1.8em 'Museo Sans', sans-serif;
+  background-color: #f4f4f4;
+}
+.page-container {
+  margin: 40px auto 0;
+  padding-bottom: 40px
+}
+.page-action {
+  font-size: 30px;
+  font-weight: normal;
+  line-height: normal;
+  position: relative;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-white-box {
+    background: #fff;
+    // box-shadow: 0 2px 3px rgba(0,0,0,0.09);
+    @include base-shadow();
+    border-radius: 3px;
+}
+
+.padding-all {
+    padding: 20px;
+}
+.padding-left {
+    padding-left: 20px;
+}
+.padding-right {
+    padding-right: 20px;
+}
+
+/** table styles **/
+.table-striped {
+    border-collapse: collapse;
+    border-spacing: 0;
+}

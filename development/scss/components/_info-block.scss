@@ -75,7 +75,15 @@
     margin-right: -0.25em;
     max-width: 135px;
     vertical-align: middle;
-
+}
+.info-block__title.info-block__title--no-icon {
+    display: block;
+  .info-block__title-span {
+    max-width: 100%;
+    margin: 0;
+    display: block;
+    text-align: center;
+  }
 }
 
 .info-block__desc {
@@ -84,4 +92,10 @@
     font-size: 18px;
     line-height: 24px;
     text-align: center;
+}
+
+.info-block__content {
+  margin: 20px 0 25px;
+  color: #141414;
+  font-style: 100%;
 }

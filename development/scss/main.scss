@@ -46,7 +46,9 @@
     'components/prices-table',
     'components/country-prewiew-data',
     'components/vts-grid',
+    'components/vts-tabs',
     'components/icons-set',
+    'components/image-block',
     'components/contacts-details',
     // 'components/gallery',
     // 'components/galleryRemodal',
@@ -79,6 +81,14 @@
   'layout/home/9',
   'layout/home/10',
   'layout/home/11',
+
+  // EACH page
+  'layout/page/page-base',
+  'layout/page/page-country',
+  'layout/page/header-section',
+
+  // VISA C
+  'layout/visa-c/main',
 
   'layout/footer',
   'layout/responsive';

@@ -567,6 +567,8 @@ function homeActions() {
       // ----------------------------------------------------------------------------
       $('.site-form__selectbox').niceSelect();
 
+      
+
       /**
        * safari and old browsers than not support @supports css
        */

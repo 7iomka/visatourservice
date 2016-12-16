@@ -1,8 +1,9 @@
 <?php require_once('inc/header.php'); ?>
+
         <section class="home-banner s1 parallax-section parallax-section--home">
             <div class="parallax-section__image"
               style="background-image: url('img/parallax/home/header_parallax.jpg'); top: -100%; height: 1350px;"></div>
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
                   <div class="home-banner__content">
                     <div class="site-title-wrapper">
@@ -52,10 +53,10 @@
         </section>
         <!-- Visa-C -->
         <section class="visa-short-term s2">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
                     <div class="col col--9-of-12 col--m-1-of-1 col--s-1-of-1 visa-short__search-column">
-                      <h2 class="section-title sublined">Краткосрочные <strong>визы</strong></h2>
+                      <h2 class="section-title section-title--with-link sublined"><a href="visa-c.php">Краткосрочные <strong>визы</strong></a></h2>
                       <p class="section-subtitle">Виза С. 72 страны</p>
                       <!-- Search form -->
                       <div class="search-form-wrapper visa-short__search-form-wrapper">
@@ -153,12 +154,12 @@
                     <img class="country-preview__img" src="/img/home-coutries/gr.jpg">
                     <div class="country-preview__short-desc-wrapper"></div>
                 </div>
-                <div class="container-fluid container-static">
+                <div class="container container-static">
                     <div class="row">
                         <div class="country-preview__short-desc"> Австрия - это чистейшие озера, величественные горы, сказочные австрийские городки, историческике замки и памятники архитектуры, лечебные курорты с чудлдейственными термальными источниками... </div>
                     </div>
                 </div>
-                <div class="container-fluid">
+                <div class="container">
                   <div class="row">
                     <div class="col col-m-1-of-1 country-preview__data-column">
                       <div class="country-preview__data-header">
@@ -248,10 +249,10 @@
         <section class="visa-long-term section-inverse s3">
             <div class="parallax-section__image" style="background-image: url('img/section-bg/section-inverse-bg2.jpg');top: 0;"></div>
             <div class="parallax-section__overlay"></div>
-            <div class="container-fluid container-relative">
+            <div class="container container-relative">
               <div class="row">
                 <div class="col col--6-of-12 col--m-1-of-1 col--s-1-of-1">
-                  <h2 class="section-title sublined">Долгосрочные <strong>визы</strong></h2>
+                  <h2 class="section-title section-title--with-link sublined"><a href="visa-d.php">Долгосрочные <strong>визы</strong></a></h2>
                   <p class="section-subtitle">Виза D. 25 стран</p>
                   <div class="visa-long__excerpt">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis;
@@ -270,7 +271,7 @@
           </div>
           <div class="visa-long__block">
               <div class="visa-long__white-panel"></div>
-              <div class="container-fluid with-left-offset" >
+              <div class="container with-left-offset" >
                   <div class="row row--equal visa-long__row--equal">
                       <div class="col col--6-of-12 col--m-1-of-2 col--s-1-of-1 col-equal visa-long__col--equal visa-long__col--countries">
                           <div class="visa-long__countries-wrapper">
@@ -346,7 +347,7 @@
                           </div>
 
                           <div class="country-preview__btn-wrapper">
-                              <a class="btn btn--yellow btn--large country-preview__btn visa-long__country-preview_btn">Начать оформление</a>
+                              <a class="btn btn--yellow btn--large btn--contour country-preview__btn visa-long__country-preview_btn">Начать оформление</a>
                           </div>
                           <div class="country-preview__total-ordered">Уже оформлено <span id="visa-c__total-ordered"><strong>356</strong></span> виз</div>
                       </div>
@@ -362,7 +363,7 @@
 
         <!-- Other-services -->
         <section class="other-services s4">
-          <div class="container-fluid">
+          <div class="container">
             <div class="row">
                 <div class="col col--1-of-1"><h2 class="section-title sublined">Дополнительные услуги</h2></div>
                 <div class="vtsgrid">
@@ -441,11 +442,11 @@
         <section class="advantages section-inverse s5">
           <div class="parallax-section__image" style="background-image: url(img/parallax/home/advantages_parallax.jpg); height: 100%;"></div>
           <div class="parallax-section__overlay parallax-section__overlay--dark-green"></div>
-          <div class="container-fluid container-relative">
+          <div class="container container-relative">
             <div class="row">
               <div class="col col--1-of-1"><h2 class="section-title sublined"><span class="section-title__span">Компания Visatourservice - лидер </span><span class="section-title__span">в сфере услуг по оформлению виз</span></h2></div>
             </div>
-            <div class="icons-set">
+            <div class="icons-set icons-set--big icons-set--light icons-set--icon-bg_green-semitransparent">
                 <div class="row icons-set__row">
                   <div class="col col--4-of-12 col--m-1-of-2 col--s-1-of-2">
                     <div class="icons-set__item">
@@ -511,7 +512,7 @@
 
         <!-- Testimonials -->
         <section class="testimonials s6">
-          <div class="container-fluid">
+          <div class="container">
             <div class="row">
               <div class="col col--1-of-1"><h2 class="section-title sublined">Отзывы наших клиентов</h2></div>
               <div class="col col--1-of-1">
@@ -627,7 +628,7 @@
         <!-- certificates -->
         <section class="certificates section-inverse s7">
           <div class="parallax-section__overlay certificates__static-pattern"></div>
-          <div class="container-fluid container-relative">
+          <div class="container container-relative">
             <div class="row">
               <div class="row">
                 <div class="col col--1-of-1"><h2 class="section-title sublined">Отзывы наших клиентов</h2></div>

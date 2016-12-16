@@ -45,11 +45,20 @@
  // text-transform: uppercase;
 
   // font-family: "Proxima_Nova", sans-serif;
+
   //by color
   &.btn--yellow {
-    &.btn--bordered {
+    &.btn--contour {
         background: none;
         background: transparent;
+        color:$yellow;
+        text-shadow: none;
+        box-shadow: 0 0 0 2px $yellow inset;
+        &:hover {
+          color: $white;
+
+          text-shadow: 0 4px 20px #db8700;
+        }
     }
     background: $yellow;
     // color: $text-color;
