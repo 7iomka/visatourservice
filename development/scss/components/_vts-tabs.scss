@@ -1,7 +1,11 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the vts-tabs component.
 // -----------------------------------------------------------------------------
-
+$vts-tabs__tab__bg: #f7f7f7;
+$vts-tabs__tab__color: #393939;
+$vts-tabs__active-tab__bg: $blue-light;
+$vts-tabs__active-tab__color: $white;
+$vts-tabs__control-font-size: 20px;
 .vts-tabs {
 	display: table;
 	table-layout: fixed;
@@ -10,6 +14,7 @@
 	transform: translateY(5px);
 
 	>.vts-tabs__control {
+    font-size: $vts-tabs__control-font-size;
 		transition-duration: .25s;
 		display: table-cell;
 		list-style: none;
@@ -18,7 +23,8 @@
 		position: relative;
 		overflow: hidden;
 		cursor: pointer;
-		color: white;
+    background-color: $vts-tabs__tab__bg;
+		color: $vts-tabs__tab__color;
 
 		&:before{
 			z-index: -1;
@@ -43,7 +49,8 @@
 		}
 
 		&.active{
-			color: rgb(80, 85, 90);
+			color: $vts-tabs__active-tab__color;
+      background-color: $vts-tabs__active-tab__bg;
 
 			&:before{
 				transition-duration: .5s;
@@ -56,7 +63,7 @@
 }
 
 .vts-tabs__content {
-	background-color: white;
+	// background-color: white;
 	position: relative;
 	width: 100%;
 	border-radius: 5px;
@@ -75,7 +82,7 @@
 			border-radius: 5px;
 			width: 100%;
 			padding: 45px 40px 40px 40px;
-			background-color: white;
+			// background-color: white;
 		}
 	}
 }

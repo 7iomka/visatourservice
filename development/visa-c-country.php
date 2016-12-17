@@ -122,16 +122,40 @@
 				<div class="section-row">
 					<!-- Tabs -->
 					<div class="vts-tabs__wrapper">
-						<ul class="vts-tabs">
-							<li class="vts-tabs__control active">Colors</li>
-							<li class="vts-tabs__control">Favorite movies</li>
-
+						<ul class="vts-tabs vts-tabs--primary" id="vts-tabs--primary">
+							<li class="vts-tabs__control active">При отсутствии приглашения</li>
+							<li class="vts-tabs__control">При наличии приглашения</li>
 						</ul>
 
-						<ul class="vts-tabs__content">
+						<ul class="vts-tabs__content" data-instance="vts-tabs--primary">
 							<li class="vts-tabs__content-tab active">
 								<div class="vts-tabs__content-tab-wrapper">
-									<h2 class="text-color">Pick a color</h2>
+									<!-- Nested tabs -->
+										<div class="vts-tabs__inner-panel">
+											<ul class="vts-tabs vts-tabs--nested" id="vts-tabs--nested">
+												<li class="vts-tabs__control active">Туристическая</li>
+												<li class="vts-tabs__control">Гостевая / бизнес</li>
+												<li class="vts-tabs__control">Студенческая</li>
+											</ul>
+											<ul class="vts-tabs__content" data-instance="vts-tabs--nested">
+												<li class="vts-tabs__content-tab active">
+													<div class="vts-tabs__content-tab-wrapper">
+														Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id esse, minus saepe similique officiis blanditiis quas, nam laudantium ipsa quae!
+													</div>
+												</li>
+												<li class="vts-tabs__content-tab" >
+													<div class="vts-tabs__content-tab-wrapper">
+														Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quibusdam, delectus, aspernatur excepturi tempore itaque. Harum fugit saepe similique, quidem illum repellendus delectus quod iusto voluptatem. Quidem, ad iure magnam. Error natus vel aliquid at sunt dignissimos beatae, officia, delectus assumenda corporis fugit doloribus dicta commodi officiis quod debitis distinctio. Neque, quo porro mollitia ea eos vitae! Nihil voluptates blanditiis repellendus commodi, accusamus veniam, quidem ipsam ab dolorem vel nisi voluptatem quae praesentium dolores. Quis quod eius beatae sequi qui, aliquam repudiandae accusamus odit explicabo, quae molestias ex earum voluptate blanditiis libero. Adipisci, ipsum neque corrupti. Dolorum dolor, ex doloribus?
+													</div>
+												</li>
+												<li class="vts-tabs__content-tab" >
+													<div class="vts-tabs__content-tab-wrapper">
+														Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat dolores earum laudantium nemo sit dignissimos, deserunt sint inventore facilis atque iusto assumenda distinctio a, nam illo blanditiis voluptatibus suscipit? Cupiditate optio fugit ratione in commodi delectus ut, illum asperiores recusandae minima adipisci quae accusantium ducimus ad est animi sequi beatae maiores laboriosam at, vitae dolore ullam voluptatibus! Tempore unde, perspiciatis quibusdam repudiandae repellat at quas quia ad culpa saepe molestiae fugit facere neque error distinctio alias earum nihil consectetur natus. Facere adipisci nostrum minima sit cumque libero veritatis quasi odit sapiente animi non minus aut odio quos beatae dolor praesentium modi, deserunt nulla! Obcaecati, sint, molestiae. Eum laborum ad praesentium obcaecati, commodi dicta pariatur architecto animi optio, voluptatum quia assumenda laboriosam eaque vel ab nostrum temporibus quas error corporis enim perspiciatis illum earum nisi. Vitae quidem, voluptatum corrupti ullam consequatur possimus reprehenderit, numquam a esse animi magni ratione recusandae suscipit natus quis similique reiciendis doloribus amet et porro nam. Reiciendis, impedit dolorem quas, laboriosam animi non asperiores. Dolores aperiam praesentium excepturi sit in odit officia, cumque corporis accusantium quaerat voluptatem similique totam hic nemo necessitatibus iste quos consequatur. Cupiditate ea in ad veniam odit repellendus esse alias, est dolor, doloremque.
+													</div>
+												</li>
+											</ul>
+										</div>
+									<!-- /Nested tabs -->
 								</div>
 							</li>
 							<li class="vts-tabs__content-tab" >
@@ -141,7 +165,6 @@
 									<img src="http://lewihussey.com/codepen-img/her.jpg">
 								</div>
 							</li>
-
 						</ul>
 					</div>
 					<!-- /Tabs -->

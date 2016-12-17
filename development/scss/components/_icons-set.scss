@@ -1,30 +1,58 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the incons-set component.
 // -----------------------------------------------------------------------------
-.icons-set__item {
-    display: table;
-    // width: 100%;
-    margin: 25px 0;
+.icons-set {
+  .icons-set__item {
+      display: table;
+      // width: 100%;
+      margin: 25px 0;
+  }
+  .icons-set__item__field--fix-size {
+      width: 85px;
+      padding-right: 25px;
+  }
+
+
+  .icons-set__item__icon-wrap {
+
+
+      border-radius: 100%;
+      position: relative;
+
+
+      @include media("<x-small") {
+        width: 75px;
+        height: 75px;
+      };
+  }
+
+  .icons-set__item__icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+
+  }
+
+
+  .icons-set__item__field {
+      display: table-cell;
+      vertical-align: middle;
+  }
+
+  .icons-set__item__title {
+      margin: 0;
+      // margin-bottom: 10px;
+
+  }
+
+  .icons-set__item__description {
+      line-height: 1.6em;
+      color: #ffffff;
+      font-size: 17px;
+  }
+
 }
-.icons-set__item__field--fix-size {
-    width: 85px;
-    padding-right: 25px;
-}
-
-
-.icons-set__item__icon-wrap {
-
-
-    border-radius: 100%;
-    position: relative;
-
-
-    @include media("<x-small") {
-      width: 75px;
-      height: 75px;
-    };
-}
-
 // -----------------------------------------------------------------------------
 // By size
 // -----------------------------------------------------------------------------
@@ -44,8 +72,13 @@
  }
  .icons-set__item__title {
    font-size: 16px;
+   font-weight: 300;
+   @include media("<small") {
+     margin: 10px auto 25px;
+      line-height: normal;
+   };
  }
- 
+
 
   /** big **/
   &.icons-set--big {
@@ -55,6 +88,10 @@
       .icons-set__item__icon-wrap {
         width: 80px;
         height: 80px;
+        @include media("<x-small") {
+          width: 75px;
+          height: 75px;
+        };
       }
       .icons-set__item__icon {
         font-size: 2em;
@@ -166,29 +203,3 @@
 //     border: 2px dotted rgba(255,255,255,0.5);
 //     border-radius: 100%;
 // }
-
-.icons-set__item__icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-
-}
-
-
-.icons-set__item__field {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.icons-set__item__title {
-    margin: 0;
-    // margin-bottom: 10px;
-
-}
-
-.icons-set__item__description {
-    line-height: 1.6em;
-    color: #ffffff;
-    font-size: 17px;
-}

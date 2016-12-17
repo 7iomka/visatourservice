@@ -29,8 +29,10 @@ $base-blue: #335b75;
 
 $blue-liliac: #4e7ba4;
 $blue-liliac2: #506ac1;
-// $blue-base1: #3B60ad;
-$blue-base1: #12569b;
+
+$blue-light: #47a0ff;
+// $blue-base1: #12569b;
+$blue-base1: darken($blue-light, 29.5%);
 
 $blue--contrast: #2b4e65;
 $blue-toxic: #193dff;

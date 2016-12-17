@@ -448,7 +448,7 @@
             </div>
             <div class="icons-set icons-set--big icons-set--light icons-set--icon-bg_green-semitransparent">
                 <div class="row icons-set__row">
-                  <div class="col col--4-of-12 col--m-1-of-2 col--s-1-of-2">
+                  <div class="col col--4-of-12 col--m-1-of-2 col--s-1-of-2 col--am">
                     <div class="icons-set__item">
                                         <div class="icons-set__item__field icons-set__item__field--fix-size">
                                   <div class="icons-set__item__icon-wrap"><i class="icon icon--fingerprint_big icons-set__item__icon"></i></div>        </div>
@@ -457,7 +457,7 @@
                                   </div>
                                 </div>
                   </div>
-                  <div class="col col--4-of-12 col--m-1-of-2 col--s-1-of-2 ">
+                  <div class="col col--4-of-12 col--m-1-of-2 col--s-1-of-2 col--am ">
                     <div class="icons-set__item">
                                         <div class="icons-set__item__field icons-set__item__field--fix-size">
                                   <div class="icons-set__item__icon-wrap"><i class="icon icon--car icons-set__item__icon"></i></div>        </div>
@@ -466,7 +466,7 @@
                                   </div>
                                 </div>
                   </div>
-                  <div class="col col--4-of-12 col--m-1-of-2 col--s-1-of-2 ">
+                  <div class="col col--4-of-12 col--m-1-of-2 col--s-1-of-2 col--am ">
                     <div class="icons-set__item">
                                         <div class="icons-set__item__field icons-set__item__field--fix-size">
                                   <div class="icons-set__item__icon-wrap"><i class="icon icon--mark_as_favorite icons-set__item__icon"></i></div>        </div>
@@ -475,7 +475,7 @@
                                   </div>
                                 </div>
                   </div>
-                  <div class="col col--4-of-12 col--m-1-of-2 col--s-1-of-2 ">
+                  <div class="col col--4-of-12 col--m-1-of-2 col--s-1-of-2 col--am ">
                     <div class="icons-set__item">
                                         <div class="icons-set__item__field icons-set__item__field--fix-size">
                                   <div class="icons-set__item__icon-wrap"><i class="icon icon--versions icons-set__item__icon"></i></div>        </div>
@@ -484,7 +484,7 @@
                                   </div>
                                 </div>
                   </div>
-                  <div class="col col--4-of-12 col--m-1-of-2 col--s-1-of-2 ">
+                  <div class="col col--4-of-12 col--m-1-of-2 col--s-1-of-2 col--am ">
                     <div class="icons-set__item">
                                         <div class="icons-set__item__field icons-set__item__field--fix-size">
                                   <div class="icons-set__item__icon-wrap"><i class="icon icon--calendar3 icons-set__item__icon"></i></div>        </div>
@@ -493,7 +493,7 @@
                                   </div>
                                 </div>
                   </div>
-                  <div class="col col--4-of-12 col--m-1-of-2 col--s-1-of-2 ">
+                  <div class="col col--4-of-12 col--m-1-of-2 col--s-1-of-2 col--am ">
                     <div class="icons-set__item">
                     <div class="icons-set__item__field icons-set__item__field--fix-size">
                         <div class="icons-set__item__icon-wrap"><i class="icon icon--knowledge_sharing icons-set__item__icon"></i></div>
