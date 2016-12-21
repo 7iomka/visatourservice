@@ -8,14 +8,15 @@ gulp.task('browser-sync', ['styles', 'scripts'], function() {
         injectChanges: true,
 				proxy: config.constants.proxy, // localhost served url
 				notify: false,
-				reqHeaders: function (config) {
-                return {
-                    // prevent Host header overriding
-                    "host":            config.constants.proxy,
-                    "accept-encoding": "identity", // disable any compression
-                    "agent":           false
-                };
-        },
+				reloadDelay: 2000
+				// reqHeaders: function (config) {
+        //         return {
+        //             // prevent Host header overriding
+        //             "host":            config.constants.proxy,
+        //             "accept-encoding": "identity", // disable any compression
+        //             "agent":           false
+        //         };
+        // },
 
 		});
 });

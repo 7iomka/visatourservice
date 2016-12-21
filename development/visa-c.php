@@ -2,7 +2,7 @@
 <main class="page page--visa-c">
 
 	<div class="header-section header-section--with-banner parallax-section parallax-section--header">
-		<div class="parallax-image" style="background-image: url('http://cdn-adventure-tours.themedelight.com/wp-content/uploads/2015/07/alaska.jpg'); background-repeat: repeat; background-position: 50% 56px; opacity: 0.5;"></div>
+		<div class="parallax-image" style="background-image: url('http://cdn-adventure-tours.themedelight.com/wp-content/uploads/2015/07/alaska.jpg');"></div>
 		<div class="container">
 			<div class="breadcrumbs">
 				<ul>
@@ -40,7 +40,7 @@
 					<div class="col col--1-of-1">
 						<h2 class="page-action">Для оформления визы выберите страну</h2>
 					</div>
-					<div class="col col--8-of-12">
+					<div class="col col--8-of-12 col--m-1-of-1 col--s-1-of-1 ">
 						<div class="country__section">
 							<h2 class="country__section-title">Шенген</h2>
 
@@ -125,7 +125,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col col--4-of-12">
+					<div class="col col--4-of-12 col--m-hidden">
 						<div class="info-block info-block--exchange">
 							<div class="info-block__title info-block__title--no-icon">
 								<span class="info-block__title-span">Курсы валют ЦБ РФ</span>

@@ -24,6 +24,7 @@
     .parallax-section--header {
         height: 500px;
         background: #141414;
+        background-size: cover;
     }
 
 
@@ -39,12 +40,14 @@
      .parallax-image {
          width: 100%;
          background-attachment: fixed;
+         background-size: cover;
          position: absolute;
          top: 0;
          left: 0;
          right: 0;
          bottom: 0;
          z-index: -3;
+         opacity: 0.5;
      }
 
 

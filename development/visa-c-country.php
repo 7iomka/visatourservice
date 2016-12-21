@@ -2,7 +2,7 @@
 <main class="page page--visa-c-country">
 
 	<div class="header-section header-section--with-banner parallax-section parallax-section--header">
-		<div class="parallax-image" style="background-image: url('http://cdn-adventure-tours.themedelight.com/wp-content/uploads/2015/07/alaska.jpg'); background-repeat: repeat; background-position: 50% 0; opacity: 0.5;"></div>
+		<div class="parallax-image" style="background-image: url('http://cdn-adventure-tours.themedelight.com/wp-content/uploads/2015/07/alaska.jpg'); background-repeat: no-repeat; background-position: 50% 0;"></div>
 		<div class="container">
 			<div class="breadcrumbs">
 				<ul>
