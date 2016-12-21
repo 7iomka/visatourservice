@@ -10,4 +10,10 @@ function visa_c_countryActions(){
 vtsTabs('#vts-tabs--primary');
 vtsTabs('#vts-tabs--nested', true);
 
+// $('.documents-list__grid').masonry({
+//   // options
+//   itemSelector: '.documents-list__grid-item',
+//   columnWidth: '.documents-list__grid-item'
+// });
+
 }

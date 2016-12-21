@@ -15,6 +15,58 @@
     -moz-osx-font-smoothing: grayscale;
   }
 }
+
+.icon--guest:before {
+  content: "\e90f";
+}
+.icon--family:before {
+  content: "\e910";
+}
+.icon--workers:before {
+  content: "\e911";
+}
+.icon--contract_job:before {
+  content: "\e90e";
+}
+.icon--booking:before {
+  content: "\e90d";
+}
+.icon--airport:before {
+  content: "\e90c";
+}
+.icon--treatment:before {
+  content: "\e90b";
+}
+.icon--student:before {
+  content: "\e908";
+}
+.icon--visit:before {
+  content: "\e909";
+}
+.icon--airplane-flight:before {
+  content: "\e90a";
+}
+.icon--private-agreement:before {
+  content: "\e901";
+}
+.icon--test-passed:before {
+  content: "\e902";
+}
+.icon--medical-insurance:before {
+  content: "\e903";
+}
+.icon--solvency:before {
+  content: "\e904";
+}
+.icon--two-pictures-bold:before {
+  content: "\e905";
+}
+.icon--two-pictures:before {
+  content: "\e906";
+}
+.icon--passport-copy:before {
+  content: "\e907";
+}
 .icon--office-phone:before {
   content: "\e900";
 }

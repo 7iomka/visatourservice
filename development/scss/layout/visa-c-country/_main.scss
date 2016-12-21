@@ -3,7 +3,226 @@
     background-image: linear-gradient(to bottom, rgba(236, 233, 230, 0.19), rgb(255, 255, 255));
     .image-block__img {
         width: 250px;
+        max-width: 100%;
     }
   }
+
+}
+
+/** documents-list **/
+.documents-list {
+margin: 30px 0;
+.documents-list__grid-item {
+  position: relative;
+}
+.documents-list__action {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.icons-set__item:hover .documents-list__action-link{
+    transform: scale(1);
+    opacity: 1;
+}
+.documents-list__action-link {
+        background: $base-green;
+        display: block;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        color: white;
+        font-size: 1.35em;
+        font-size: 40px;
+        transition: 0.5s;
+        transform: scale(1.5);
+        transition: transform 0.7s cubic-bezier(0.18, 0.89, 0.32, 1.28),
+         opacity 0.3s ease 0s;
+        opacity: 0;
+
+        i {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+}
+
+.icons-set__item__field.icons-set__item__field--icon {
+    position: relative;
+}
+
+.documents-list__grid-item:hover .documents-list__action a:hover i {
+    color: $yellow;
+}
+
+  .icons-set__item__icon-wrap.icons-set__item__icon-wrap {
+      background: white;
+  }
+  .icons-set.icons-set--vertical {
+    .col {
+      margin-bottom: 75px;
+    }
+    .icons-set__item__field {
+  		padding-bottom: 0;
+  		margin-bottom: -50px;
+
+      &.icons-set__item__field--text {
+        background: $white;
+        box-shadow: rgba(4, 4, 4, 0.0784314) 0px 5px 50px 0px;
+    		padding: 70px 20px 30px;
+      }
+
+  	}
+  	.icons-set__item__icon-wrap {
+  		  box-shadow: rgba(4, 4, 4, 0.0784314) 0px 5px 50px 0px;
+  	}
+
+    .icons-set__item__title {
+        padding-bottom: 18px;
+        font-weight: bold;
+        font-size: 1.1em;
+        text-align: center;
+    }
+
+  	.icons-set__item__desc {
+  		font-size: 16px;
+  		text-align: left;
+  	}
+
+  	.icons-set__item__icon-wrap {
+  		width: 90px;
+      height: 90px;
+      font-size: 27px;
+  	}
+
+  	.icons-set__item__icon {
+      font-size: 1.35em;
+    }
+
+
+  }
+
+
+}
+
+
+.order-steps {
+  text-align: center;
+  /** icons set **/
+  .icons-set {
+    .icons-set__item__icon-wrap {
+       width: 64px;
+       height: 64px;
+       font-size: 27px;
+   }
+
+   .icons-set__item__field {
+       margin-bottom: 15px;
+   }
+  }
+  /** step **/
+  .order-steps__step {
+      position: relative;
+      @include media("<x-small") {
+        padding-bottom: 25px;
+      };
+      &:after {
+          content: "\77";
+          @extend [class*='icon--'];
+          top: 45px;
+          right: -30px;
+          position: absolute;
+          margin: auto;
+          display: block;
+          font-size: 30px;
+          color: #ffba00;
+          @include media("<x-small") {
+            right: 0;
+            bottom: 0;
+            top: auto;
+            left: 0;
+            transform: rotate(90deg);
+          };
+      }
+      @include media(">=x-small", "<medium") {
+        &.order-steps__step--second:after {
+          display: none;
+        }
+      };
+      &.order-steps__step--last:after {
+        display: none;
+      }
+  }
+
+
+}
+
+
+/**
+ * Attention block
+ */
+
+
+ .attention-block {
+     display: table;
+     .attention-block__icon-wrapper {
+         width: 100px;
+         height: 100px;
+         border-radius: 50%;
+         position: relative;
+         margin: 10px;
+         display: table-cell;
+     }
+
+
+    .attention-block__icon {
+         font-size: 100px;
+         color: #ff0000;
+         position: absolute;
+         left: 50%;
+         top: 50%;
+         transform: translate(-50%, -50%);
+     }
+
+     .attention-block__content {
+         display: table-cell;
+             padding: 15px 20px;
+     }
+
+     .attention-block__icon-content {
+         display: table-cell;
+         vertical-align: middle;
+         width: 130px;
+     }
+ }
+
+
+
+/** country-price-include  with country-preview block layout from homepage **/
+.country-price-include {
+  margin: 30px 0;
+
+  .country-preview__subtitle-header {
+       font-weight: normal;
+       font-size: 30px;
+       text-transform: none;
+   }
+
+   .country-preview__subtitle {
+       border: none;
+       display: block;
+       margin: 10px 0;
+   }
+
+   .country-preview__name {
+       max-width: none;
+       display: block;
+       padding-right: 0;
+   }
+   .prices-table__icon-bg {
+     font-size: 20px;
+   }
 
 }

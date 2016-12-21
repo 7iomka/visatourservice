@@ -48,6 +48,8 @@
 /** Child styles **/
 .prices-table__row {
     margin-bottom: 7px;
+    display: table;
+    width: 100%;
 }
 .prices-table__icon-wrapper {
     display: inline-block;
@@ -59,6 +61,7 @@
 
 .prices-table__service {
     display: inline-block;
+      display: table-cell;
     vertical-align: middle;
     width: 70%;
     margin-right: -0.24em;
@@ -69,6 +72,7 @@
 
 .prices-table__price-wrapper {
     display: inline-block;
+      display: table-cell;
     vertical-align: middle;
     width: 20%;
     margin-right: -0.24em;
@@ -95,11 +99,12 @@
 }
 
 .prices-table__icon {
-    left: 0;
+    left: 50%;
     top: 50%;
     position: absolute;
-    margin-top: -11px;
-    margin-left: 12px;
+    // margin-top: -11px;
+    // margin-left: 12px;
+    transform: translate(-50%, -50%);
 }
 
 /** table layout for <large **/
@@ -136,13 +141,13 @@
     width: 25%;
   }
   .prices-table__icon-bg {
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
   }
 
   .prices-table__icon {
-      margin-top: -8px;
-      margin-left: 9px;
+      // margin-top: -8px;
+      // margin-left: 9px;
       font-size: 16px;
   }
 

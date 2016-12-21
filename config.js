@@ -68,6 +68,7 @@ var jsFiles = [
   // paths.src.jsLibDir + 'DrawSVGPlugin.min.js',
   // paths.src.jsLibDir + 'CSSRulePlugin.min.js',
   paths.src.jsLibDir + 'ScrollToPlugin.min.js',
+  paths.src.jsLibDir + 'masonry.pkgd.min.js',
   // paths.src.jsLibDir + 'jquery.mixitup.min.js',
   // paths.src.jsLibDir + 'jquery.mixitup-pagination.js',
   // paths.src.jsLibDir + 'jquery.custom.mixitup.js',
