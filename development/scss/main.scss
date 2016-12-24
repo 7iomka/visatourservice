@@ -23,6 +23,8 @@
   'vendor/jquery.typeahead-custom.scss',
   'vendor/flatpickr.scss',
   'vendor/nice-select.scss',
+  // 'vendor/chosen',
+  'vendor/sumoselect',
   // 'vendor/jquery.qtip',
   // 'vendor/dropzone',
   'vendor/waves';
@@ -43,6 +45,7 @@
     'components/icons',
     'components/flag-icons',
     'components/formElements',
+    'components/form-check',
     'components/prices-table',
     'components/country-prewiew-data',
     'components/vts-grid',
@@ -90,6 +93,9 @@
   // VISA C
   'layout/visa-c/main',
   'layout/visa-c-country/main',
+
+  // ORDER ONLINE
+  'layout/order-online/main',
 
   'layout/footer',
   'layout/responsive';

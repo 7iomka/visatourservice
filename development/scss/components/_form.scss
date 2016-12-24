@@ -257,7 +257,7 @@ $label-color: #6a6a6a;
 
 
     &:focus,
-    &:valid,
+    // &:valid, 
     &.valid {
           border-color: $yellow;
           z-index: 2;

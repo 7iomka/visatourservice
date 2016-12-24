@@ -564,11 +564,7 @@ function homeActions() {
 
       //  $('.certificates__slider').lightGallery({thumbnail:false,mode:'lg-fade',counter:false,download:false,startClass:'',speed:500})
 
-      // ----------------------------------------------------------------------------
-      // Nice select
-      // ----------------------------------------------------------------------------
-      $('.site-form__selectbox').niceSelect();
-
+      
 
 
       /**

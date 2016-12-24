@@ -132,7 +132,52 @@ jQuery(document).ready(function($) {
               time_24hr: true
           });
 
+         var date_picker = flatpickr(".flatpickr--calendar-only", {
+              // enableTime: false,
+              // defaultDate: Math.floor(Date.now() / 1000),
+              // create an extra input solely for display purposes
+              // altInput: true,
+              // altFormat: "F j, Y h:i",
+              dateFormat: "d.m.Y",
+              defaultDate: new Date(),
+              // utc: true
+              // time_24hr: true
+          });
+
           // ------------------------------------------------------------------
+          // Global initialise input number with controls
+          // ------------------------------------------------------------------
+          $('[data-trigger="spinner"]').spinner();
+
+          // ------------------------------------------------------------------
+
+          // ------------------------------------------------------------------
+          // Global initialise sumoselect selectbox
+          // ------------------------------------------------------------------
+          $('.sumoselect').each(function() {
+            var params = {};
+            if($(this).hasClass('sumoselect--search')) {
+              params.search = true;
+              params.noMatch = 'Не найдено "{0}"';
+
+            }
+            if($(this).hasClass('site-form__selectbox--geopoint')) {
+              params.searchText = 'Выберите филиал';
+            }
+            if($(this).hasClass('site-form__selectbox--geocountry')) {
+              params.searchText = 'Выберите страну';
+            }
+
+            $(this).SumoSelect(params);
+
+          })
+
+
+
+
+          // ------------------------------------------------------------------
+
+
           // SETTINGS FOR ALL FORMS INSIDE REMODAL && INLINE
           // ------------------------------------------------------------------
     //
@@ -979,4 +1024,5 @@ jQuery(document).ready(function($) {
 
 homeActions();
 visa_c_countryActions();
+orderOnlineActions();
 /** !! jQuery document ready is NOT closed (it will be closed in another file) **/

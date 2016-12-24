@@ -1,0 +1,189 @@
+/**
+ * Order online
+ */
+
+fieldset {
+  border: none;
+  margin: 0;
+padding: 0;
+}
+.page .header-section.header-section--order {
+  border-radius: 0;
+}
+.page-container.order-container {
+     margin-top: 0;
+     .section-white-box {
+       border-radius: 0 0 3px 3px;
+       padding-top: 40px;
+       padding-bottom: 40px;
+     }
+ }
+
+ .step__identifier {
+     font-size: 14px;
+     color: #999;
+ }
+
+ .step__name {
+     margin: 15px 0;
+     font-weight: bold;
+     font-size: 32px;
+     color: #393939;
+ }
+
+/**
+ * progressbar
+ */
+ .step__progressbar {
+   counter-reset: step;
+   position: relative;
+   margin: 10px auto;
+   width: 75%;
+   display: table;
+ }
+
+ .step__progressbar-item {
+   list-style-type: none;
+   color: white;
+   text-transform: uppercase;
+   font-size: 14px;
+   width: 25%;
+   position: relative;
+   float: left;
+   display: inline-block;
+   &:before {
+     content: counter(step);
+     counter-increment: step;
+     width: 40px;
+     line-height: 40px;
+     display: block;
+     font-size: 14px;
+     text-align: center;
+     color: #333;
+     background: white;
+     -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+     border-radius: 50%;
+     margin: 0 auto 5px auto;
+     box-shadow: 0 0 0 1px #ccc;
+     z-index: 1;
+     position: relative;
+   }
+   &:after {
+     content: '';
+     width: 100%;
+     height: 1px;
+     background: #ccc;
+     position: absolute;
+     left: -50%;
+     top: 20px;
+     z-index: 0;
+   }
+
+   &:first-child:after {
+    	/*connector not needed before the first step*/
+    	content: none;
+   }
+   &.active {
+     &:before {
+       background: #00a01a;
+       color: white;
+       box-shadow: 0 0 0 1px #028710;
+     }
+     &:after {
+       background: #00a01a;
+       color: white;
+       box-shadow: 0 0 0 1px #028710;
+     }
+   }
+ }
+
+ /** order__questions **/
+ .order__question-title {
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-weight: normal;
+    font-size: 24px;
+    display: inline-block;
+    border-radius: 100%;
+    &:before {
+      content: "";
+      background-color: $yellow;
+      width: 70px;
+      height: 2px;
+      display: block;
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      right: 0;
+    }
+}
+
+/** step 2 **/
+.site-form__field {
+    width: 100%;
+    display: table;
+    margin: 40px auto;
+}
+
+.order__question-header {
+    display: table-cell;
+    width: 50%;
+    vertical-align: top;
+}
+
+.site-form__field-control {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.site-form__select-pre-text {
+    display: block;
+    font-size: 14px;
+    padding-bottom: 5px;
+    color: #949494;
+    margin-bottom: 10px;
+    position: absolute;
+    top: -25px;
+    left: 0;
+}
+.site-form__check-text {
+    display: block;
+    font-size: 14px;
+    padding-bottom: 5px;
+    color: #949494;
+    margin-bottom: 10px;
+}
+
+.site-form__field-id .spinner {
+    display: inline-block;
+    margin-right: 40px;
+    label {
+        margin-top: 0;
+    }
+}
+
+
+/** subtotal step 2 **/
+
+
+.order__subtotal-price-wrapper {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.site-form__column-wrapper.order__subtotal {
+    margin: 0 -20px;
+    border-top: 1px solid #e6e6e6;
+    padding: 25px 20px;
+}
+.order__subtotal-title {
+    margin: 15px 0;
+    font-weight: bold;
+    font-size: 28px;
+    color: $blue-base1;
+}
+.order__subtotal-price {
+    color: $base-green;
+}

@@ -108,7 +108,7 @@
                                 <div class="site-form__field site-form__field--no-margin">
                                     <div class="site-form__field-control" >
                                         <div class="site-form__field-id">
-                                            <select class="site-form__selectbox wide" id="user_geo-point--visa-request" name="user_geo-point--visa-request">
+                                            <select class="sumoselect sumoselect--search site-form__selectbox site-form__selectbox--geopoint" id="user_geo-point--visa-request" name="user_geo-point--visa-request">
                                               <option value="1">Москва</option>
                                               <option value="2">Новосибирск</option>
                                               <option value="3">Троицк</option>
