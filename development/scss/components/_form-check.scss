@@ -60,7 +60,7 @@
     $checkbox-animation-check: 0.3s;
     $lightbg-text: rgba(0,0,0,0.84);
     $checked-colour: $blue-base1;
-
+    $checkbox-disabled-color: #9e9e9e;
 
     &.site-form__check--checkbox {
       display: inline-block;
@@ -185,11 +185,17 @@
         }
         &:before{
           background-color: $checked-colour;
+
         }
       }
       input[type=checkbox]:checked + .checkbox-material {
         .check {
           color: $checked-colour;
+        }
+      }
+      input[type=checkbox]:disabled + .checkbox-material {
+        .check {
+          color: $checkbox-disabled-color;
         }
       }
       input[type=checkbox]:not(:checked) + .checkbox-material {

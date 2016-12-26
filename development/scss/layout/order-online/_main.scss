@@ -18,7 +18,7 @@ padding: 0;
      margin-top: 0;
      .section-white-box {
        border-radius: 0 0 3px 3px;
-      
+
      }
  }
 
@@ -235,4 +235,24 @@ padding: 0;
 
 .price-symbol-rub {
   font-size: 0.85em;
+}
+
+.payment-systems {
+  display: block;
+  max-width: 100%;
+  margin: 35px auto 0;
+}
+
+sup.sup-star {
+    font-weight: bold;
+    color: #c5313d;
+}
+
+.star-description {
+    padding: 15px;
+    color: #c5313d;
+    strong {
+        font-size: 1.4em;
+        vertical-align: middle;
+    }
 }

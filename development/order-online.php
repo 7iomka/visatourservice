@@ -1,5 +1,5 @@
 <?php require_once('inc/header.php'); ?>
-<main class="page page--visa-c-country">
+<main class="page page--order-online">
 
 	<div class="header-section header-section--with-banner parallax-section parallax-section--header">
 		<div class="parallax-image" style="background-image: url('http://cdn-adventure-tours.themedelight.com/wp-content/uploads/2015/07/alaska.jpg'); background-repeat: no-repeat; background-position: 50% 0;"></div>
@@ -337,13 +337,19 @@
 																		</div>
 																		<div class="site-form__field-control">
 																			<div class="site-form__field-id">
-																				<div class="site-form__check spinner" data-trigger="spinner">
+																				<div class="site-form__check spinner" id="adults-spinner" data-trigger="spinner">
 																					<label><span class="site-form__check-text">Взрослые и дети старше 6 лет </span><span class="input-number-decrement" data-spin="down">–</span><input class="site-form__check-input input-number" name="adults" id="adults" type="text" data-min="0" value="0" min="0" data-max="50" data-rule="quantity"><span class="input-number-increment" data-spin="up">+</span></label>
 																				</div>
-																				<div class="site-form__check spinner" data-trigger="spinner">
+																				<div class="site-form__check spinner" id="children-spinner" data-trigger="spinner">
 																					<label><span class="site-form__check-text">Количество детей до 6 лет </span><span class="input-number-decrement" data-spin="down">–</span><input class="site-form__check-input input-number" name="children" id="children" type="text" data-min="0" value="0" min="0" data-max="50" data-rule="quantity"><span class="input-number-increment" data-spin="up">+</span></label>
 																				</div>
 																			</div>
+																			<!-- This is prices per one of type of peoples -->
+																			<input type="hidden" id="adults_price" value="3000">
+																			<input type="hidden" id="children_price" value="2000">
+
+																			<!-- This is default basic price for one person without another peoples  -->
+																			<input type="hidden" id="basic_price" value="3000">
 																		</div>
 																		<div class="site-form__field-error">
 																			<div class="site-form__error-text"></div>
@@ -775,7 +781,7 @@
 																												</li>
 																												<li class="checkout__cart-item">
 																														<span class="checkout__item-name">Подтверждение проживания:</span>
-																														<div class="checkout__item-value"><span id="checkout__accommodation">Нет<span><span class="checkout__comma">, </span><span id="checkout__accommodation-vts">заказано оформление</span></div>
+																														<div class="checkout__item-value"><span id="checkout__accommodation">Нет</span><span class="checkout__comma hidden">, </span><span id="checkout__accommodation-vts" class=" hidden">заказано оформление</span></div>
 																												</li>
 																												<li class="checkout__cart-item">
 																														<span class="checkout__item-name">Статус:</span>
@@ -783,7 +789,7 @@
 																												</li>
 																												<li class="checkout__cart-item">
 																														<span class="checkout__item-name">Страховка:</span>
-																														<div class="checkout__item-value"><span id="checkout__insurance">Нет<span><span class="checkout__comma">, </span><span id="checkout__insurance-vts">заказано оформление</span></div>
+																														<div class="checkout__item-value"><span id="checkout__insurance">Нет</span><span class="checkout__comma hidden">, </span><span id="checkout__insurance-vts" class=" hidden">заказано оформление</span></div>
 																												</li>
 																												<li class="checkout__cart-item">
 																														<span class="checkout__item-name">Семейное положение </span>
@@ -798,18 +804,18 @@
 																												<li class="checkout__cart-item">
 																														<span class="checkout__index">1</span>
 																														<span class="checkout__item-name">Взрослые <span class="checkout__q">&#215; <span class="checkout__q-num" id="checkout__adults">2</span></span>
-																														<span class="checkout__per">(3500Р/чел.)</span></span>
-																														<span class="checkout__item-price">7000<span class="price-symbol-rub">р.</span></span>
+																														<span class="checkout__per">(<span id="checkout__adults-price-per">3000</span>Р/чел.)</span></span>
+																														<span class="checkout__item-price"><span id="checkout__adults-price-total">6000</span><span class="price-symbol-rub">р.</span></span>
 																												</li>
-																												<li class="checkout__cart-item">
+																												<li class="checkout__cart-item hidden" id="checkout__cart-item--children">
 																														<span class="checkout__index">2</span>
 																														<span class="checkout__item-name">Дети <span class="checkout__q">&#215; <span class="checkout__q-num" id="checkout__children">2</span></span>
-																														<span class="checkout__per">(2500Р/чел.)</span></span>
-																														<span class="checkout__item-price">5000<span class="price-symbol-rub">р.</span></span>
+																														<span class="checkout__per">(<span id="checkout__children-price-per">3000</span>Р/чел.)</span></span>
+																														<span class="checkout__item-price"><span id="checkout__children-price-total">6000</span><span class="price-symbol-rub">р.</span></span>
 																												</li>
 																												<li class="checkout__cart-item">
 																														<span class="checkout__cart-total">Сумма к оплате</span>
-																														<span class="checkout__item-price checkout__item-price--final">12000<span class="price-symbol-rub">р.</span></span>
+																														<span class="checkout__item-price checkout__item-price--final"><span id="checkout__price-final">12000</span><span class="price-symbol-rub">р.</span></span>
 																												</li>
 																										</ul>
 																										<div class="question question_form">
@@ -831,11 +837,15 @@
 																												</div>
 																							      	</div>
 																								    </div>
+																										<div class="star-description"><strong>*</strong> - обращаем ваше внимание, что стоимость консульского и сервисного сборов оплачивается отдельно!</div>
+
+
 																								</div>
 																								<div class="checkout__footer">
 																									<div class="pay__btn-wrapper">
 																										<a class="btn btn--large btn--yellow pay__btn">Перейти к оплате</a>
 																									</div>
+																									<img src="img/pages/payment-systems.jpg" alt="" class="payment-systems">
 																								</div>
 																						</div>
 																						<!-- /checkout -->

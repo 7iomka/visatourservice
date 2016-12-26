@@ -95,13 +95,83 @@ function orderOnlineActions(){
 
   }
 
+  // function bindCheckboxActions() {
+  //
+  //   /**
+  //    * Order accommodation
+  //    */
+  //   // $('#order-accomodation').on('click', function(e){
+  //   //   e.preventDefault();
+  //   // 	$('#accommodation2').prop('checked', true);
+  //   // });
+  //   // $('#accommodation1').on('click', function(e){
+  //   //   e.preventDefault();
+  //   // 	$('#order-accomodation').prop('disabled', true);
+  //   //   if($('#order-accomodation').prop('checked')) {
+  //   //     $('#order-accomodation').prop('checked', false);
+  //   //   }
+  //   // });
+  //   // $('#accommodation2').on('click', function(e){
+  //   //   e.preventDefault();
+  //   // 	$('#order-accomodation').prop('disabled', false);
+  //   // });
+  //
+  //   /**
+  //    * Order insurance
+  //    */
+  //   $('#order-insurance').on('click', function(){
+  //   	$('#insurance2').prop('checked', true);
+  //   });
+  //   $('#insurance1').on('click', function(){
+  //   	$('#order-insurance').prop('disabled', true).prop('checked', false);
+  //   });
+  //   $('#insurance2').on('click', function(){
+  //   	$('#order-insurance').prop('disabled checked', false);
+  //   });
+  // }
+  //
+  // bindCheckboxActions();
+
+  /**
+   * Make calculations with count of children and adults
+   *
+   */
+  function calcPrices() {
+    var adults_price = $('#adults_price').val();
+    var adults_count = $('#adults').val();
+    var children_price = $('#children_price').val();
+    var children_count = $('#children').val();
+    var basicPrice = +$('#basic_price').val();
+    var $subtotalPriceContainer = $('#subtotal-price');
+        $newSubtotalPrice = basicPrice + (adults_count * adults_price) + (children_count * children_price);
+        $subtotalPriceContainer.html($newSubtotalPrice);
+
+        if(children_count > 0) {
+          $('#checkout__cart-item--children').removeClass('hidden');
+        } else {
+          $('#checkout__cart-item--children').addClass('hidden');
+        }
+  }
+  /** call once **/
+  calcPrices();
+  /** recalculations for spinners **/
+  $('#adults-spinner, #children-spinner').spinner('changing', function(e, newCount, oldCount) {
+    calcPrices();
+  });
+
+
+  /**
+   * PREPARE DATA FOR ORDER AND STEP 4
+   *
+   */
   function preparePreviewData() {
     moment.locale('ru');
+    moment.tz.add('Europe/Moscow');
         //       TIMEZONES LIST https://github.com/moment/moment-timezone/blob/develop/data/packed/latest.json
-    var now = moment().tz('Europe/Moscow').format('DD.MM.YYYY HH:mm:ss');
+    var now = moment().format('DD.MM.YYYY HH:mm');
 
     var data_obj = {
-      order_data: now, 
+      order_data: now,
       order_number: 1211,
       user_surname: $('#user_surname').val(),
       user_name: $('#user_name').val(),
@@ -111,14 +181,16 @@ function orderOnlineActions(){
       selected_country: $('#geo-country option:selected').text(),
       purpose: $('[name=purpose]:checked').val(),
       accommodation: $('[name=accommodation]:checked').val(),
-      accommodation_vts: $('#order-accomodation').val(),
+      accommodation_vts: $('#order-accomodation').prop("checked"),
       employment: $('[name=employment]:checked').val(),
       insurance: $('[name=insurance]:checked').val(),
-      insurance_vts: $('#order-insurance').val(),
-      marital_status: $('[name=marital_status]:checked').val(),
-      adults: $('#adults').val(),
+      insurance_vts: $('#order-insurance:checked').prop("checked"),
+      marital_status: $('[name=marital_status]').val(),
+      adults: +$('#adults').val() + 1,
       children: $('#children').val(),
-      birthday_date: $('#birthday-date').val()
+      birthday_date: $('#birthday-date').val(),
+      adults_price_per: $('#adults_price').val(),
+      children_price_per: $('#children_price').val(),
     };
 
     var corresponded_obj = {
@@ -139,7 +211,9 @@ function orderOnlineActions(){
       marital_status: $('#checkout__marital-status'),
       adults: $('#checkout__adults'),
       children: $('#checkout__children'),
-      birthday_date: $('#checkout__birthdate')
+      birthday_date: $('#checkout__birthdate'),
+      adults_price_per: $('#checkout__adults-price-per'),
+      children_price_per: $('#checkout__children-price-per'),
     };
 
     $.each(corresponded_obj, function (key, selector) {
@@ -148,12 +222,46 @@ function orderOnlineActions(){
               selected_country_icon_classname = 'flag-icon--' + selected_country_icon;
           $('#checkout__selected-country-icon').alterClass('flag-icon--*').addClass(selected_country_icon_classname);
           $(selector).text(data_obj[key]);
+
+        } else if(key == 'accommodation_vts' || key == 'insurance_vts') {
+          var isCheckedVts = data_obj[key];
+          if(isCheckedVts) {
+            $(selector).removeClass('hidden');
+            $(selector).siblings('.checkout__comma').removeClass('hidden');
+          }
+          else {
+            $(selector).addClass('hidden');
+            $(selector).siblings('.checkout__comma').addClass('hidden');
+          }
         }
         else {
           $(selector).text(data_obj[key]);
         }
     });
 
+    // inermeddiate calculations
+    var adultsPriceFinal = data_obj.adults * data_obj.adults_price_per;
+    var childrenPriceFinal = data_obj.children * data_obj.children_price_per;
+    var priceFinal = adultsPriceFinal + childrenPriceFinal;
+    $('#checkout__adults-price-total').text(adultsPriceFinal);
+    $('#checkout__children-price-total').text(childrenPriceFinal);
+    $('#checkout__price-final').text(priceFinal);
+
+
+    /** MAKE ORDER ACTIONS **/
+
+
+
+  }
+
+  /**
+   * Send to handler all attached photo-dosc from step 3
+   *
+   */
+  function grabAttachedDocuments(){
+      /**
+       * See Upload actions below
+       */
   }
 
   // ----------------------------------------------------------------------------
@@ -166,9 +274,13 @@ function orderOnlineActions(){
     var slideIndex = slideRefNum - 1;
     var $self = $(this);
     validateStepOnClick(this, function () {
-        if(slideRefNum == 3) {
+        if(slideRefNum > 2) {
           preparePreviewData();
         }
+        if(slideRefNum == 4) {
+          grabAttachedDocuments();
+        }
+
         $('.step__identifier').fadeOut("slow", function(){
           $('#step__id',this).html(slideRefNum);
           $(this).fadeIn("slow");
@@ -208,6 +320,14 @@ function orderOnlineActions(){
     var $self = $(this);
 
     validateStepOnClick(this, function () {
+        console.log(slideRefNum);
+        if(slideRefNum > 2) {
+          preparePreviewData();
+        }
+        if(slideRefNum == 4) {
+          grabAttachedDocuments();
+        }
+
         $('.step__identifier').fadeOut("slow", function(){
           $('#step__id',this).html(slideRefNum);
           $(this).fadeIn("slow");

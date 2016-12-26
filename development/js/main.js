@@ -396,6 +396,18 @@ jQuery(document).ready(function($) {
           };
 
 homeActions();
-visa_c_countryActions();
-orderOnlineActions();
+
+/** Actions for each inner page **/
+var $mainContainer = $('main.page');
+
+if($mainContainer.hasClass('page--visa-c-country')) {
+  visa_c_countryActions();
+}
+if($mainContainer.hasClass('page--order-online')) {
+  orderOnlineActions();
+}
+
+
+
+
 /** !! jQuery document ready is NOT closed (it will be closed in another file) **/
