@@ -147,21 +147,28 @@
     }
 
 
-    window.onload = function() {
-
-        load_script('/js/modernizr.min.js');
-
-        importScr('/js/all.package.min.js', function () {
-          // after load document script - will load vk/fb & other need scripts or functions
-          console.log('all.packege.min.js is loaded');
-        });
-
-    }
+    // window.onload = function() {
+    //
+    //     load_script('/js/modernizr.min.js');
+    //
+    //     importScr('/js/all.package.min.js', function () {
+    //       // after load document script - will load vk/fb & other need scripts or functions
+    //       console.log('all.packege.min.js is loaded');
+    //     });
+    //
+    // }
 
 </script>
 
-
-
+<script src="/js/modernizr.min.js" charset="utf-8"></script>
+<script src="/js/all.package.min.js" charset="utf-8"></script>
+<script src="js/jquery.knob.min.js"></script>
+<!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
+<script src="js/jquery.ui.widget.js"></script>
+<!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
+<script src="js/jquery.iframe-transport.js"></script>
+<!-- The basic File Upload plugin -->
+<script src="js/jquery.fileupload.js"></script>
 
 </div>
 <!-- END OF SITE WRAPPER -->

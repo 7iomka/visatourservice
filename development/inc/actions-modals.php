@@ -53,7 +53,7 @@
                                 <div class="site-form__field">
                                     <div class="site-form__field-control" >
                                         <div class="site-form__field-id">
-                                          <input class="site-form__input required" type="text" id="user_name--visa-request" name="user_name--visa-request" required="">
+                                          <input class="site-form__input floatLabel required" type="text" id="user_name--visa-request" name="user_name--visa-request" required="">
                                           <label for="user_name--visa-request" class="site-form__input-label">
                                             <span class="site-form__input-label-content">Имя</span>
                                           </label>
@@ -66,7 +66,7 @@
                                 <div class="site-form__field">
                                     <div class="site-form__field-control" >
                                         <div class="site-form__field-id">
-                                          <input class="site-form__input required" type="text" id="user_phone--visa-request" name="user_phone--visa-request" required="">
+                                          <input class="site-form__input floatLabel required" type="text" id="user_phone--visa-request" name="user_phone--visa-request" required="">
                                           <label for="user_phone--visa-request" class="site-form__input-label">
                                             <span class="site-form__input-label-content">Телефон</span>
                                           </label>
@@ -79,7 +79,7 @@
                                 <div class="site-form__field">
                                     <div class="site-form__field-control" >
                                         <div class="site-form__field-id">
-                                          <input class="site-form__input required" type="text" id="user_email--visa-request" name="user_email--visa-request" required="">
+                                          <input class="site-form__input floatLabel required" type="text" id="user_email--visa-request" name="user_email--visa-request" required="">
                                           <label for="user_email--visa-request" class="site-form__input-label">
                                             <span class="site-form__input-label-content">Email</span>
                                           </label>
@@ -92,7 +92,7 @@
                                 <div class="site-form__field">
                                     <div class="site-form__field-control" >
                                         <div class="site-form__field-id">
-                                          <input class="site-form__input required flatpickr valid" type="text" id="user_datetime--visa-request" name="user_datetime--visa-request" required="">
+                                          <input class="site-form__input floatLabel required flatpickr valid" type="text" id="user_datetime--visa-request" name="user_datetime--visa-request" required="">
                                           <label for="user_datetime--visa-request" class="site-form__input-label">
                                             <span class="site-form__input-label-content">Дата/время</span>
                                           </label>

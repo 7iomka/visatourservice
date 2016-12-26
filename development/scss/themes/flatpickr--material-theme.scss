@@ -85,7 +85,7 @@
       border-bottom-color: #e6e6e6;
     }
     &:after {
-      border-bottom-color: #42a5f5;
+      border-bottom-color: #029de0;
     }
   }
   &.arrowBottom {
@@ -96,14 +96,14 @@
       border-top-color: #e6e6e6;
     }
     &:after {
-      border-top-color: #42a5f5;
+      border-top-color: #029de0;
     }
   }
 }
 
 .flatpickr-month {
   border-radius: 5px 5px 0 0;
-  background: #42a5f5;
+  background: #029de0;
   color: #fff;
   fill: #fff;
   height: 28px;
@@ -316,7 +316,7 @@
 }
 
 .flatpickr-weekdays {
-  background: #42a5f5;
+  background: #029de0;
   text-align: center;
   overflow: hidden;
 }
@@ -370,9 +370,9 @@
     }
   }
   &.selected, &.startRange, &.endRange, &.selected:focus, &.startRange:focus, &.endRange:focus, &.selected:hover, &.startRange:hover, &.endRange:hover, &.selected.prevMonthDay, &.startRange.prevMonthDay, &.endRange.prevMonthDay, &.selected.nextMonthDay, &.startRange.nextMonthDay, &.endRange.nextMonthDay {
-    background: #42a5f5;
+    background: #029de0;
     color: #fff;
-    border-color: #42a5f5;
+    border-color: #029de0;
   }
   &.selected.startRange, &.startRange.startRange, &.endRange.startRange {
     border-radius: 50px 0 0 50px;
@@ -419,11 +419,11 @@
 span.flatpickr-weekday {
   cursor: default;
   font-size: 90%;
-  color: rgba(0, 0, 0, 0.54);
+  color: #2b2e38;
   height: 24px;
   line-height: 24px;
   margin: 0;
-  background: #42a5f5;
+  background: #029de0;
   text-align: center;
   display: block;
   float: left;

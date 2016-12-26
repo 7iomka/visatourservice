@@ -25,7 +25,7 @@
   'vendor/nice-select.scss',
   // 'vendor/chosen',
   'vendor/sumoselect',
-  // 'vendor/jquery.qtip',
+  'vendor/jquery.qtip',
   // 'vendor/dropzone',
   'vendor/waves';
 
@@ -53,6 +53,8 @@
     'components/icons-set',
     'components/image-block',
     'components/contacts-details',
+    'components/upload-form',
+    'components/checkout',
     // 'components/gallery',
     // 'components/galleryRemodal',
     // 'components/jQueryUploader',
@@ -108,7 +110,7 @@
         'themes/remodal--custom-theme',
         'themes/remodal--gallery-theme',
         'themes/lightGallery--custom-theme',
-        // 'themes/qtip--custom-theme',
+        'themes/qtip--custom-theme',
         'themes/remodal--action-modal-theme',
         // 'themes/datepicker--custom-theme',
         'themes/flatpickr--material-theme';

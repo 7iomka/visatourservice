@@ -54,6 +54,7 @@ var jsFiles = [
   /*************** Libs *******************/
   // paths.src.jsLibDir + 'modernizr.min.js',
   paths.src.jsLibDir + 'jquery-1.12.4.min.js',
+  // paths.src.jsLibDir + 'jquery-ui.min.js',
   paths.src.jsLibDir + 'jquery.parallax-1.1.3.js',
   paths.src.jsLibDir + 'jquery.typeahead.min.js',
   // paths.src.jsLibDir + 'jquery-ui.min.js',
@@ -89,21 +90,28 @@ var jsFiles = [
   paths.src.jsLibDir + 'mapbox.js',
   paths.src.jsLibDir + 'flatpickr.min.js',
   paths.src.jsLibDir + 'flatpickr-ru.js',
-  paths.src.jsLibDir + 'jquery.nice-select.min.js',
+  // paths.src.jsLibDir + 'jquery.nice-select.min.js',
   paths.src.jsLibDir + 'jquery.mousewheel.min.js',
-  paths.src.jsLibDir + 'openseadragon.min.js',
+  // paths.src.jsLibDir + 'openseadragon.min.js',
   // paths.src.jsLibDir + 'lazyYT.js',
-  // paths.src.jsLibDir + 'jquery.qtip.min.js',
+  paths.src.jsLibDir + 'jquery.qtip.min.js',
+  paths.src.jsLibDir + 'moment-with-locales.js',
+  paths.src.jsLibDir + 'moment-timezone.js',
   // paths.src.jsLibDir + 'owl.carousel.min.js',
   // paths.src.jsLibDir + 'slick.js',
   paths.src.jsLibDir + 'swiper.jquery.min.js',
   paths.src.jsLibDir + 'progress-button.js',
+
+
+
+
   // paths.src.jsLibDir + 'dropzone.min.js',
   paths.src.jsLibDir + 'waves.js',
   // paths.src.jsLibDir + 'jquery.sweet-modal.js',
   paths.src.jsLibDir + '_helpers.js',
   /** components will start with _ **/
   paths.src.jsLibDir + '_jquery.vts-tabs.js',
+
 
 
 
@@ -128,7 +136,17 @@ var jsFiles = [
   ];
 
 var jsFilesSeparated = [
-    paths.src.jsLibDir + 'modernizr.min.js'
+    paths.src.jsLibDir + 'modernizr.min.js',
+    /** FILE UPLOAD STUFF  **/
+
+    // File Upload plugin depended plugin -->
+      paths.src.jsLibDir + 'jquery.knob.min.js',
+    // The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
+        paths.src.jsLibDir + 'jquery.ui.widget.js',
+    // The Iframe Transport is required for browsers without support for XHR file uploads -->
+      paths.src.jsLibDir + 'jquery.iframe-transport.js',
+    // The basic File Upload plugin -->
+      paths.src.jsLibDir + 'jquery.fileupload.js',
 ];
 
 

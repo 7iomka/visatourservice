@@ -1,0 +1,120 @@
+// ----------------------------------------------------------------------------
+// UPLOAD form
+//
+/*----------------------------
+    The file upload form
+-----------------------------*/
+.upload-form {
+  width: 400px;
+  max-width: 100%;
+  padding: 30px;
+  border-radius: 3px;
+  margin: 25px auto;
+  background-color: #fafafa;
+  border: 1px solid rgba(148, 148, 148, 0.2);
+  position: relative;
+}
+
+.upload-form__drop {
+  background-color: rgba(255, 255, 255, 0.65);
+  padding: 40px 20px;
+
+  border: 3px dashed #00a011;
+  border-radius: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  color: #7f858a;
+  a {
+    margin-top: 12px;
+    width: 100%;
+    text-transform: none;
+    &:hover {
+      /* background-color:#0986a3; */
+    }
+  }
+  input {
+    display: none;
+  }
+}
+
+.upload-form ul {
+  list-style: none;
+  margin: 0 -30px;
+  margin-top: 30px;
+  box-shadow: 0 1px #e6e6e6, 0 -1px #e6e6e6;
+  li {
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 15px;
+    height: 52px;
+    position: relative;
+    list-style: none;
+    margin-left: 0;
+    margin-bottom: 0;
+    text-align: left;
+    input {
+      display: none;
+    }
+    p {
+      width: 144px;
+      overflow: hidden;
+      white-space: nowrap;
+      color: #0055b0;
+      font-size: 16px;
+      position: absolute;
+      top: auto;
+      left: 100px;
+      margin-bottom: 0;
+    }
+    i {
+      font-weight: normal;
+      font-style: normal;
+      color: #999;
+      display: block;
+      font-size: 14px;
+    }
+    canvas {
+      top: 15px;
+      left: 32px;
+      position: absolute;
+      height: 28px;
+      width: 28px;
+    }
+    span {
+      width: 15px;
+      height: 12px;
+      background: image("upload-form-icons.png") no-repeat;
+      position: absolute;
+      top: 20px;
+      right: 33px;
+      cursor: pointer;
+      transition: 0.35s ease all;
+    }
+    &.working span {
+      height: 16px;
+      background-position: 0 -12px;
+    }
+    &.error p {
+      color: #c5313d;
+    }
+    &:hover span {
+      background-position: 0px -13px;
+    }
+  }
+}
+
+.dragging-up {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: auto;
+    left: 0;
+    background: #00a011;
+    box-shadow: rgba(4, 4, 4, 0.0784314) 0px 5px 50px 0px;
+    padding: 6px;
+    border-radius: 3px;
+}

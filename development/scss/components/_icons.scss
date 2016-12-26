@@ -15,6 +15,10 @@
     -moz-osx-font-smoothing: grayscale;
   }
 }
+
+.icon--dragging-up:before {
+  content: "\e914";
+}
 .icon--upload:before {
   content: "\e912";
 }
