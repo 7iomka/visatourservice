@@ -61,7 +61,7 @@ $toast-gutter-width: 30px !default;
 $toast-breakpoint-large: 1199px !default;
 $toast-breakpoint-medium: 991px !default;
 $toast-breakpoint-small: 767px !default;
-$toast-breakpoint-x-small: 543px !default;
+$toast-breakpoint-x-small: 544px !default;
 
 // Pushes and pulls
 $toast-pushes: true !default;
@@ -539,7 +539,7 @@ $toast-pulls: true !default;
     display: table;
     clear: both;
 }
-@media (min-width:576px) {
+@media (min-width:544px) {
     .row {
         margin-right: -15px;
         margin-left: -15px;

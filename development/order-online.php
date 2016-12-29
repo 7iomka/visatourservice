@@ -731,7 +731,7 @@
 													</div>
 													<div class="swiper-slide step__slide step__slide--4">
 														<fieldset data-check-id="4" class="hidden">
-															<div class="site-form__column-wrapper" style="position: relative; padding: 40px 20px;">
+															<div class="site-form__column-wrapper">
 																<div class="col col--1-of-1">
 																	<div class="country-destination-bg" style="background-image: url(img/section-bg/section-inverse-bg2.jpg);"></div>
 

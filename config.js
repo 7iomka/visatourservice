@@ -4,8 +4,8 @@ var siteURL = 'http://visa-tour-service.cc:8081';
 
 /********* Get invironment **********/
 var gutil = require('gulp-util');
-// var env = gutil.env.env || 'development';
-var env = gutil.env.env || 'production';
+var env = gutil.env.env || 'development';
+// var env = gutil.env.env || 'production';
 console.log(env);
 var _ = require('lodash');
 
@@ -130,6 +130,7 @@ var jsFiles = [
      paths.src.jsPagesDir + 'home.js',
      paths.src.jsPagesDir + 'visa-c-country.js',
      paths.src.jsPagesDir + 'order-online.js',
+     paths.src.jsPagesDir + 'passports-registration.js',
 
 /*************** close "jQuery document ready" **************/
      paths.src.jsdir + 'close_jQueryDocumentReady.js',

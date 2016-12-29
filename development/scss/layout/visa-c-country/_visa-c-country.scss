@@ -9,103 +9,7 @@
 
 }
 
-/** documents-list **/
-.documents-list {
-margin: 30px 0;
-.documents-list__grid-item {
-  position: relative;
-}
-.documents-list__action {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 
-}
-.icons-set__item:hover .documents-list__action-link{
-    transform: scale(1);
-    opacity: 1;
-}
-.documents-list__action-link {
-        background: $base-green;
-        display: block;
-        border-radius: 50%;
-        width: 80px;
-        height: 80px;
-        color: white;
-        font-size: 1.35em;
-        font-size: 40px;
-        transition: 0.5s;
-        transform: scale(1.5);
-        transition: transform 0.7s cubic-bezier(0.18, 0.89, 0.32, 1.28),
-         opacity 0.3s ease 0s;
-        opacity: 0;
-
-        i {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-        }
-}
-
-.icons-set__item__field.icons-set__item__field--icon {
-    position: relative;
-}
-
-.documents-list__grid-item:hover .documents-list__action a:hover i {
-    color: $yellow;
-}
-
-  .icons-set__item__icon-wrap.icons-set__item__icon-wrap {
-      background: white;
-  }
-  .icons-set.icons-set--vertical {
-    .col {
-      margin-bottom: 75px;
-    }
-    .icons-set__item__field {
-  		padding-bottom: 0;
-  		margin-bottom: -50px;
-
-      &.icons-set__item__field--text {
-        background: $white;
-        box-shadow: rgba(4, 4, 4, 0.0784314) 0px 5px 50px 0px;
-    		padding: 70px 20px 30px;
-      }
-
-  	}
-  	.icons-set__item__icon-wrap {
-  		  box-shadow: rgba(4, 4, 4, 0.0784314) 0px 5px 50px 0px;
-  	}
-
-    .icons-set__item__title {
-        padding-bottom: 18px;
-        font-weight: bold;
-        font-size: 1.1em;
-        text-align: center;
-    }
-
-  	.icons-set__item__desc {
-  		font-size: 16px;
-  		text-align: left;
-  	}
-
-  	.icons-set__item__icon-wrap {
-  		width: 90px;
-      height: 90px;
-      font-size: 27px;
-  	}
-
-  	.icons-set__item__icon {
-      font-size: 1.35em;
-    }
-
-
-  }
-
-
-}
 
 
 .order-steps {
@@ -155,8 +59,6 @@ margin: 30px 0;
         display: none;
       }
   }
-
-
 }
 
 

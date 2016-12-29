@@ -1,6 +1,15 @@
 // ----------------------------------------------------------------------------
 // checkout component
 // ----------------------------------------------------------------------------
+.checkout-preview {
+  position: relative;
+  background: #f8f8f8;
+  background: linear-gradient(to bottom, white,rgba(0, 48, 93, 0.37));
+  width: 75%;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.21) 0px 5px 50px 0px;
+  border-radius: 3px;
+}
 
 .checkout {
   background: white;
@@ -250,4 +259,61 @@
 
 .checkout__item-value-link {
     color: inherit;
+}
+
+
+/** media **/
+@include media("<small") {
+  .checkout-preview {
+      width: 98%;
+  }
+};
+@include media("<640px") {
+  .checkout__item-value, .checkout__item-price {
+    float: none;
+    margin: 15px 0;
+    position: relative;
+    display: block;
+    &:before {
+      content: "-";
+      left: 0;
+      padding-right: 10px;
+    }
+  }
+  .checkout__cart-total {
+    display: block;
+    text-align: center;
+  }
+
+  .checkout__item-price--final {
+    text-align: center;
+  }
+
+};
+
+@include media("<x-small") {
+
+
+    .checkout__supheader-wrapper {
+      margin: 0 -25px;
+    }
+
+
+};
+@include media("<xx-small") {
+  .checkout__header,.checkout__subheader,.checkout__cart,.question_form {
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+  .checkout__cart-list {
+    padding: 0;
+  }
+};
+@include media("<420px") {
+  .checkout__per {
+      display: block;
+      margin: 10px 0;
+      padding-left: 0;
+  }
+
 }

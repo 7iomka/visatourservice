@@ -22,7 +22,7 @@
   'vendor/mapbox',
   'vendor/jquery.typeahead-custom.scss',
   'vendor/flatpickr.scss',
-  'vendor/nice-select.scss',
+  // 'vendor/nice-select.scss',
   // 'vendor/chosen',
   'vendor/sumoselect',
   'vendor/jquery.qtip',
@@ -55,6 +55,8 @@
     'components/contacts-details',
     'components/upload-form',
     'components/checkout',
+    'components/document-lists',
+    'components/responsive-table',
     // 'components/gallery',
     // 'components/galleryRemodal',
     // 'components/jQueryUploader',
@@ -93,14 +95,16 @@
   'layout/page/header-section',
 
   // VISA C
-  'layout/visa-c/main',
-  'layout/visa-c-country/main',
+  'layout/visa-c/visa-c',
+  'layout/visa-c-country/visa-c-country',
 
   // ORDER ONLINE
-  'layout/order-online/main',
+  'layout/order-online/order-online',
 
-  'layout/footer',
-  'layout/responsive';
+  // passport-registration
+  'layout/passports-registration/passports-registration',
+
+  'layout/footer';
 
 
 

@@ -18,8 +18,10 @@ padding: 0;
      margin-top: 0;
      .section-white-box {
        border-radius: 0 0 3px 3px;
-
      }
+     @include media("<x-small") {
+       padding: 0 0 40px;
+     };
  }
 
  .step__identifier {
@@ -43,6 +45,9 @@ padding: 0;
    margin: 10px auto;
    width: 75%;
    display: table;
+   @include media("<medium", ">=small") {
+     width: 85%;
+   };
  }
 
  .step__progressbar-item {
@@ -133,6 +138,9 @@ padding: 0;
     width: 100%;
     display: table;
     margin: 40px auto;
+    @include media("<small") {
+      margin: 20px auto;
+    };
 }
 
 .order__question-header {
@@ -196,15 +204,6 @@ padding: 0;
 }
 
 /** step 4 **/
-.checkout-preview {
-  position: relative;
-  background: #f8f8f8;
-  background: linear-gradient(to bottom, white,rgba(0, 48, 93, 0.37));
-  width: 75%;
-  margin: auto;
-  box-shadow: rgba(0, 0, 0, 0.21) 0px 5px 50px 0px;
-  border-radius: 3px;
-}
 
 .country-destination-bg {
     position: absolute;
@@ -256,3 +255,146 @@ sup.sup-star {
         vertical-align: middle;
     }
 }
+
+.flatpickr-input.flatpickr-mobile {
+    @extend .site-form__input;
+}
+
+.step__slide--4 .site-form__column-wrapper {
+    position: relative;
+    padding: 40px 20px;
+}
+/**
+ * Media
+ */
+ @include media("<x-small"){
+
+   .step__slide-nav-control {
+     padding: 20px;
+   }
+
+   .step__slide-nav-control {
+     padding: 20px 0;
+   }
+
+   .step__slide-nav-control .btn {
+       font-size: 15px;
+       width: auto;
+       display: inline-block;
+       height: auto;
+       max-width: none;
+       padding: 13px 25px;
+       line-height: normal;
+   }
+
+
+   .SumoSelect.sumo_geo-country {
+       width: 100%;
+   }
+
+   .site-form__field-id .spinner {
+       margin-right: 0;
+   }
+
+   .site-form__field-id .spinner label {
+       margin: 4px 0 15px;
+   }
+
+   .site-form__check.site-form__check--checkbox {
+       padding: 10px 0;
+   }
+ };
+
+.btn.pay__btn {
+  width: 100%;
+}
+
+
+  @include media("<medium") {
+    .SumoSelect {
+        width: 100%;
+    }
+  };
+
+ @include media(">=640px", "<medium"){
+    .order__question-title {
+        font-size: 20px;
+    }
+
+    .order__question-header {
+        padding-right: 30px;
+    }
+
+    .step__slide--2 .site-form__field-control {
+        width: 50%;
+    }
+
+
+};
+
+@include media("<small"){
+  .step__slide--1 {
+    .site-form__field {
+      display: block;
+    }
+    .site-form__field-control {
+      display: block;
+      max-width: 480px;
+      margin: auto;
+    }
+  }
+  .order__subtotal-title {
+      margin: 0;
+      text-align: center;
+  }
+
+  .order__subtotal-price {
+      text-align: center;
+  }
+  .step__slide-nav-control {
+      padding: 20px;
+  }
+  .btn.upload-form__btn {
+      font-size: 15px;
+      width: auto;
+      font-weight: normal;
+      padding: 13px 20px;
+      height: auto;
+      line-height: normal;
+  }
+
+};
+
+ @include media("<640px"){
+    .site-form__field {
+      display: block;
+    }
+
+    .order__question-header {
+        display: block;
+        width: auto;
+    }
+
+    .site-form__field-control {
+        display: block;
+    }
+
+    .site-form__select-pre-text {
+        position: relative;
+        top: 0;
+        margin-bottom: 5px;
+    }
+
+    .flatpickr-input.flatpickr-mobile {
+
+        width: auto;
+    }
+
+
+};
+
+@include media("<xx-small") {
+  .step__slide--4 .site-form__column-wrapper {
+      padding: 20px 10px;
+  }
+};

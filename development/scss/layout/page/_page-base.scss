@@ -5,7 +5,10 @@
   //   line-height: inherit;
   // }
 
-
+  /** responsive image **/
+  .responsive-img {
+    max-width: 100%;
+  }
 
   /** styles for info-blocks **/
   .info-block {
@@ -23,6 +26,13 @@
       &:before {
             opacity: 0;
       }
+      &.info-block--no-borders {
+        box-shadow: none;
+        &:before,
+        &:after {
+          display: none;
+        }
+      }
       .info-block__title {
           text-align: center;
       }
@@ -34,6 +44,8 @@
       .info-block__desc {
           text-align: left;
       }
+
+
     }
   }
 

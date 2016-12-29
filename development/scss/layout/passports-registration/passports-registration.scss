@@ -1,0 +1,13 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related or first used on page: passports-registration
+// -----------------------------------------------------------------------------
+
+/** small page action **/
+h3.page-action {
+    font-size: 24px;
+    color: $base-green;
+    &:after {
+      background-color: #e0e0e0;
+      width: 120px;
+    }
+}

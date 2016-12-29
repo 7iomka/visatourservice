@@ -22,7 +22,7 @@ function orderOnlineActions(){
       });
 
   step__slider.disableTouchControl();
-
+  setInterval(step__slider.onResize, 3000);
 
   function validateStepOnClick(selector, callback){
 
@@ -31,7 +31,7 @@ function orderOnlineActions(){
       var rules = {},
           messages = {};
 
-      var namespaces = [ "user_surname", "user_name", "user_patronymic", "user_phone", "user_email", "birthday-date"];
+      var namespaces = [ "user_surname", "user_name", "user_patronymic", "user_phone", "user_email"];
       $.each(namespaces, function(i, value) {
           var $form_elements = $('input[name^="' + value + '"], textarea[name^="' + value + '"]', $form);
 
@@ -55,9 +55,9 @@ function orderOnlineActions(){
                   case "user_email":
                       message = "Укажите корректный email";
                       break;
-                  case "birthday-date":
-                      message = "Укажите дату Вашего рождения";
-                      break;
+                  // case "birthday-date":
+                  //     message = "Укажите дату Вашего рождения";
+                  //     break;
                   default:
                       message = "Заполните данное поле";
                       break;
@@ -80,10 +80,13 @@ function orderOnlineActions(){
       $form.validate({
           rules: rules,
           messages: messages,
-          ignore:":not(.swiper-slide-active input)",
+          ignore:':not(.swiper-slide-active input), input[type="date"]',
           errorPlacement: function(error, element) {
              error.insertAfter($(element).next('label'));
          },
+         invalidHandler: function(form, validator) {
+                step__slider.onResize();
+         }
       });
 
 
@@ -249,7 +252,7 @@ function orderOnlineActions(){
 
 
     /** MAKE ORDER ACTIONS **/
-
+    
 
 
   }

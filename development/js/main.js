@@ -79,36 +79,36 @@ jQuery(document).ready(function($) {
                 return false;
               });
 
-              // goToTarget
-              $menuLink.on('click', function (e) {
-                e.preventDefault();
-                if($menuHamburger.hasClass('active')) {
-                  $menuHamburger.add($menu).removeClass('active');
-                }
-                goToTarget($(this).attr('href'));
-              })
-
-              function goToTarget(target) {
-                  var target = target || "#home";
-
-                  var offset = isLessThen960 ? 60 : 43;
-                  console.log(offset);
-
-                  if (isMobile.apple.device || is_android_default_bro) {
-                      $('html, body').animate({
-                          scrollTop: $(target).offset().top - offset
-                      }, 400);
-                      return;
-
-                  }
-                  TweenMax.to(window, 1.5, {
-                      scrollTo: {
-                          y: target,
-                          offsetY: offset
-                      },
-                      ease: Expo.easeInOut
-                  })
-              }
+              // // goToTarget
+              // $menuLink.on('click', function (e) {
+              //   e.preventDefault();
+              //   if($menuHamburger.hasClass('active')) {
+              //     $menuHamburger.add($menu).removeClass('active');
+              //   }
+              //   goToTarget($(this).attr('href'));
+              // })
+              //
+              // function goToTarget(target) {
+              //     var target = target || "#home";
+              //
+              //     var offset = isLessThen960 ? 60 : 43;
+              //     console.log(offset);
+              //
+              //     if (isMobile.apple.device || is_android_default_bro) {
+              //         $('html, body').animate({
+              //             scrollTop: $(target).offset().top - offset
+              //         }, 400);
+              //         return;
+              //
+              //     }
+              //     TweenMax.to(window, 1.5, {
+              //         scrollTo: {
+              //             y: target,
+              //             offsetY: offset
+              //         },
+              //         ease: Expo.easeInOut
+              //     })
+              // }
 
 
 
@@ -405,6 +405,9 @@ if($mainContainer.hasClass('page--visa-c-country')) {
 }
 if($mainContainer.hasClass('page--order-online')) {
   orderOnlineActions();
+}
+if($mainContainer.hasClass('page--passports-registration')) {
+  passports_registrationActions();
 }
 
 
