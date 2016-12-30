@@ -20,6 +20,9 @@ $vts-tabs__nested__control-font-size: 18px;
 	display: table;
 	table-layout: fixed;
 	width: 100%;
+	// position: relative;
+	// z-index: 2;
+	// overflow: hidden;
 	// border-spacing: 10px 0;
 	&.vts-tabs--primary {
 	    margin-top: -56px;

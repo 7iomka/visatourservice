@@ -100,3 +100,23 @@ $label-color: #6a6a6a;
     font-size: 10px;
     line-height: 15px;
 }
+
+.site-form__input-label--small {
+    position: absolute;
+    top: -20px;
+    font-size: 14px;
+    color: $blue-toxic;
+    // padding-left: 15px;
+}
+
+.site-form__field-control--with-sibling:first-child {
+  padding-right: 15px;
+}
+@include media("<640px") {
+  .site-form__field-control--with-sibling {
+    margin: 30px auto;
+    &:first-child {
+      padding-right: 0;
+    }
+  }
+};

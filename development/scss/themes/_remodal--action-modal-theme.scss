@@ -4,7 +4,10 @@
 
 /** Skeleton styles for actions remodal **/
 .remodal--action {
+  &.remodal--action_large {
       width: 960px;
+  }
+  width: 530px;
   border-radius: 5px;
   // width: 440px;
   max-width: 100%;

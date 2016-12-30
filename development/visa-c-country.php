@@ -593,7 +593,7 @@
                 <i class="icon icon--fingerprint_scan info-block__icon"></i><span class="info-block__title-span">Мобильная биометрия</span>
               </div>
               <div class="info-block__desc">Сдайте биометрию не выходя из дома</div>
-              <div class="btn btn--yellow btn--small info-block__btn waves-effect waves-circle waves-float">Записаться</div>
+              <div class="btn btn--yellow btn--small info-block__btn" data-target-remodal="get_request_biometry">Записаться</div>
             </div>
 						<!-- <button class="btn btn--large btn--yellow btn--page-btn" data-remodal-target="get_request_visa_online">Мобильная биометрия</button> -->
 					</div>
@@ -703,7 +703,7 @@
 							<li>В аэропорты</li>
 							<li>Заказчик<>офис</li>
 						</ul>
-						<a class="btn btn--large btn--page-btn btn--yellow" data-remodal-target="get_request_visa_online">Вызвать курьера</a>
+						<a class="btn btn--large btn--page-btn btn--yellow" data-remodal-target="get_request_courier">Вызвать курьера</a>
 					</div>
 					<div class="col col--6-of-12">
 						<h2 class="page-action">Частые вопросы</h2>

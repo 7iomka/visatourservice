@@ -15,7 +15,7 @@
                       </h1>
                     </div>
                     <div class="home-banner__btn-wrapper">
-                      <button class="btn btn--x-large btn--yellow home-banner__btn" data-remodal-target="get_request_visa_online">Оставить заявку на оформление визы</button>
+                      <button class="btn btn--x-large btn--yellow home-banner__btn get_request_visa_online" data-subject="Запись на оформление визы C в офисе (заявка на оформление визы с главной страницы)" data-remodal-target="get_request_visa_online">Оставить заявку на оформление визы</button>
                     </div>
                     <!-- Advantages -->
                     <div class="home-banner__advantages">
@@ -121,7 +121,7 @@
                           <i class="icon icon--fingerprint_scan info-block__icon"></i><span class="info-block__title-span">Мобильная биометрия</span>
                         </div>
                         <div class="info-block__desc">Сдайте биометрию не выходя из дома</div>
-                        <div class="btn btn--yellow btn--small info-block__btn">Записаться</div>
+                        <div class="btn btn--yellow btn--small info-block__btn" data-remodal-target="get_request_biometry">Записаться</div>
                       </div>
                     </div>
                 </div>
@@ -237,7 +237,7 @@
                         <i class="icon icon--fingerprint_scan info-block__icon"></i><span class="info-block__title-span">Мобильная биометрия</span>
                       </div>
                       <div class="info-block__desc">Сдайте биометрию не выходя из дома</div>
-                      <div class="btn btn--yellow btn--small info-block__btn">Записаться</div>
+                      <div class="btn btn--yellow btn--small info-block__btn" data-remodal-target="get_request_biometry">Записаться</div>
                     </div>
                   </div>
                 </div>
@@ -264,7 +264,7 @@
                       <i class="icon icon--customer_support info-block__icon"></i><span class="info-block__title-span">Консультация</span>
                     </div>
                     <div class="info-block__desc">Нужна консультация по оформлению долгосрочной визы? Запишитесь!</div>
-                    <div class="btn btn--yellow btn--large info-block__btn">Записаться на консультацию</div>
+                    <div class="btn btn--yellow btn--large info-block__btn get_request_visa_online" data-subject="Запись на оформление визы D в офисе (запись на консультацию)" data-remodal-target="get_request_visa_online">Записаться на консультацию</div>
                   </div>
                 </div>
             </div>

@@ -120,18 +120,32 @@ jQuery(document).ready(function($) {
           Flatpickr.localize(Flatpickr.l10ns.ru);
 
           /** Basic ininialisation **/
-         var datetime_picker = flatpickr(".flatpickr", {
-              enableTime: true,
+        //  var datetime_picker = flatpickr(".flatpickr", {
+        //       enableTime: true,
+        //       // defaultDate: Math.floor(Date.now() / 1000),
+        //       // create an extra input solely for display purposes
+        //       // altInput: true,
+        //       // altFormat: "F j, Y h:i",
+        //       dateFormat: "d.m.Y  H:i",
+        //       defaultDate: new Date(),
+        //       // utc: true
+        //       time_24hr: true
+        //   });
+
+         var time_picker = flatpickr(".flatpickr--time-only", {
+              // enableTime: false,
               // defaultDate: Math.floor(Date.now() / 1000),
               // create an extra input solely for display purposes
               // altInput: true,
               // altFormat: "F j, Y h:i",
-              dateFormat: "d.m.Y  H:i",
+              dateFormat: "H:i",
               defaultDate: new Date(),
+              noCalendar: true,
+              time_24hr: true,
+              enableTime: true,
               // utc: true
-              time_24hr: true
+              // time_24hr: true
           });
-
          var date_picker = flatpickr(".flatpickr--calendar-only", {
               // enableTime: false,
               // defaultDate: Math.floor(Date.now() / 1000),
@@ -345,7 +359,10 @@ jQuery(document).ready(function($) {
                   messages: messages,
                   submitHandler: function(form) {
                       submitRemodalForm(form, $context, task);
-                  }
+                  },
+                  errorPlacement: function(error, element) {
+                     error.insertAfter($(element).next('label'));
+                 },
               });
 
           });

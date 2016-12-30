@@ -27,7 +27,7 @@
 
 
     <!-- visa request online popup -->
-    <div class="remodal remodal--browser remodal--action" data-remodal-id="get_request_visa_online" data-remodal-options="hashTracking: false" role="dialog">
+    <div class="remodal remodal--browser remodal--action remodal--action_large" data-remodal-id="get_request_visa_online" data-remodal-options="hashTracking: false" role="dialog">
 
         <div class="remodal__header-wrapper">
             <ul class="c-controls">
@@ -44,9 +44,10 @@
                 <div class="remodal__body">
                   <div class="site-form site-form--basic-outlined site-form--callback site-form--action">
                     <div class="site-form--basic-outlined__inner">
-                          <h3 class="site-form__header"><span>Связаться с менеджером</span></h3>
+                          <h3 class="site-form__header"><span>Запись на оформление визы в офисе</span></h3>
                           <form method="POST" action="/ajax.php">
                               <input type="hidden" name="form_task" value="get_request_visa_online">
+                              <input type="hidden" name="form_subject" class="form_subject">
 
                             <div class="site-form__column-wrapper">
                               <div class="col col--6-of-12 col--s-1-of-1">
@@ -59,9 +60,7 @@
                                           </label>
                                         </div>
                                     </div>
-                                    <div class="site-form__field-error">
-                                        <div class="site-form__error-text"></div>
-                                    </div>
+
                                 </div>
                                 <div class="site-form__field">
                                     <div class="site-form__field-control" >
@@ -72,9 +71,7 @@
                                           </label>
                                         </div>
                                     </div>
-                                    <div class="site-form__field-error">
-                                        <div class="site-form__error-text"></div>
-                                    </div>
+
                                 </div>
                                 <div class="site-form__field">
                                     <div class="site-form__field-control" >
@@ -85,22 +82,26 @@
                                           </label>
                                         </div>
                                     </div>
-                                    <div class="site-form__field-error">
-                                        <div class="site-form__error-text"></div>
-                                    </div>
+
                                 </div>
                                 <div class="site-form__field">
-                                    <div class="site-form__field-control" >
+                                    <div class="site-form__field-control site-form__field-control--with-sibling" >
                                         <div class="site-form__field-id">
-                                          <input class="site-form__input floatLabel required flatpickr valid" type="text" id="user_datetime--visa-request" name="user_datetime--visa-request" required="">
-                                          <label for="user_datetime--visa-request" class="site-form__input-label">
-                                            <span class="site-form__input-label-content">Дата/время</span>
+                                          <input class="site-form__input floatLabel flatpickr flatpickr--calendar-only" type="text" id="user_date--visa-request" name="user_date--visa-request">
+                                          <label for="user_datetime--visa-request" class="site-form__input-label--small">
+                                            <span class="site-form__input-label-content">Дата</span>
                                           </label>
                                         </div>
                                     </div>
-                                    <div class="site-form__field-error">
-                                        <div class="site-form__error-text"></div>
+                                    <div class="site-form__field-control site-form__field-control--with-sibling" >
+                                        <div class="site-form__field-id">
+                                          <input class="site-form__input floatLabel flatpickr flatpickr--time-only" type="text" id="user_time--visa-request" name="user_time--visa-request">
+                                          <label for="user_datetime--visa-request" class="site-form__input-label--small">
+                                            <span class="site-form__input-label-content">Удобное для Вас время звонка</span>
+                                          </label>
+                                        </div>
                                     </div>
+
                                 </div>
                               </div>
                               <div class="col col--6-of-12 col--s-1-of-1">
@@ -121,9 +122,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="site-form__field-error">
-                                        <div class="site-form__error-text"></div>
-                                    </div>
+
                                 </div>
                                 <div class="site-form__field">
                                   <div class="icons-set icons-set--icon-color_blue-toxic contacts-details">
@@ -175,6 +174,99 @@
                                   </div>
                                 </div>
                               </div>
+                              <div class="col col--1-of-1 col--centered-inline">
+                                <button type="submit" name="submit-btn" class="btn btn--yellow btn--large btn--submit-action progress-button" data-loading="Отправка заявки.." data-finished="Заявка отправлена!">Отправить заявку</button>
+                              </div>
+                            </div>
+
+                          </form>
+
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- biometry popup -->
+    <div class="remodal remodal--browser remodal--action" data-remodal-id="get_request_courier" data-remodal-options="hashTracking: false" role="dialog">
+
+        <div class="remodal__header-wrapper">
+            <ul class="c-controls">
+                <li class="c-control c-control--close"></li>
+                <li class="c-control c-control--min"></li>
+                <li class="c-control c-control--max"></li>
+            </ul>
+            <div data-remodal-action="close" class="remodal-close" aria-label="Close">
+                <?php echo $closeButtonHtml; ?>
+            </div>
+        </div>
+        <div class="remodal__content-wrapper">
+            <div class="remodal__content">
+                <div class="remodal__body">
+                  <div class="site-form site-form--basic-outlined site-form--callback site-form--action">
+                    <div class="site-form--basic-outlined__inner">
+                          <h3 class="site-form__header"><span>Вызвать курьера</span></h3>
+                          <form method="POST" action="/ajax.php">
+                              <input type="hidden" name="form_task" value="get_request_courier">
+                              <input type="hidden" name="form_subject" value="Заявка: Вызов курьера">
+
+                            <div class="site-form__column-wrapper">
+                              <div class="col col--centered">
+                                <div class="site-form__field">
+                                    <div class="site-form__field-control" >
+                                        <div class="site-form__field-id">
+                                          <input class="site-form__input floatLabel required" type="text" id="user_name--courier-request" name="user_name--courier-request" required="">
+                                          <label for="user_name--courier-request" class="site-form__input-label">
+                                            <span class="site-form__input-label-content">Имя</span>
+                                          </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="site-form__field">
+                                    <div class="site-form__field-control" >
+                                        <div class="site-form__field-id">
+                                          <input class="site-form__input floatLabel required" type="text" id="user_phone--courier-request" name="user_phone--courier-request" required="">
+                                          <label for="user_phone--courier-request" class="site-form__input-label">
+                                            <span class="site-form__input-label-content">Телефон</span>
+                                          </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="site-form__field">
+                                    <div class="site-form__field-control" >
+                                        <div class="site-form__field-id">
+                                          <input class="site-form__input floatLabel required" type="text" id="user_city--courier-request" name="user_city--courier-request" required="">
+                                          <label for="user_city--courier-request" class="site-form__input-label">
+                                            <span class="site-form__input-label-content">Город</span>
+                                          </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="site-form__field">
+                                    <div class="site-form__field-control site-form__field-control--with-sibling" >
+                                        <div class="site-form__field-id">
+                                          <input class="site-form__input floatLabel flatpickr flatpickr--calendar-only" type="text" id="user_date--courier-request" name="user_date--courier-request">
+                                          <label for="user_datetime--courier-request" class="site-form__input-label--small">
+                                            <span class="site-form__input-label-content">Дата</span>
+                                          </label>
+                                        </div>
+                                    </div>
+                                    <div class="site-form__field-control site-form__field-control--with-sibling" >
+                                        <div class="site-form__field-id">
+                                          <input class="site-form__input floatLabel flatpickr flatpickr--time-only" type="text" id="user_time--courier-request" name="user_time--courier-request">
+                                          <label for="user_datetime--courier-request" class="site-form__input-label--small">
+                                            <span class="site-form__input-label-content">время</span>
+                                          </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                              </div>
+
                               <div class="col col--1-of-1 col--centered-inline">
                                 <button type="submit" name="submit-btn" class="btn btn--yellow btn--large btn--submit-action progress-button" data-loading="Отправка заявки.." data-finished="Заявка отправлена!">Отправить заявку</button>
                               </div>

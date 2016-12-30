@@ -7,8 +7,7 @@ function visa_c_countryActions(){
  * Go initialize VTS tabs component
  */
 
-vtsTabs('#vts-tabs--primary');
-vtsTabs('#vts-tabs--nested', true);
+vtsTabs();
 
 // $('.documents-list__grid').masonry({
 //   // options

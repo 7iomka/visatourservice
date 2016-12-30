@@ -428,6 +428,9 @@ function homeActions() {
 
 
 
+      $('.get_request_visa_online').on('click', function (e) {
+        $('[data-remodal-id="get_request_visa_online"]').find('.form_subject').val($(this).data('subject'));
+      })
 
 
       /**
@@ -564,7 +567,7 @@ function homeActions() {
 
       //  $('.certificates__slider').lightGallery({thumbnail:false,mode:'lg-fade',counter:false,download:false,startClass:'',speed:500})
 
-      
+
 
 
       /**

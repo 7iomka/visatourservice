@@ -525,7 +525,7 @@
 																				</div>
 																			</div>
 																			<div class="icons-set__item__field icons-set__item__field--text">
-																				<div class="icons-set__item__desc icons-set__item__desc--only">Копия 1-й страницы предыдущего ОЗП</div>
+																				<div class="icons-set__item__desc icons-set__item__desc--only">Копия 1-й страницы предыдущего ОЗП (при оформлении 2-го паспорта - отсканированная цветная копия всех страниц)</div>
 																			</div>
 																		</div>
 																	</div>
@@ -533,12 +533,12 @@
 																		<div class="icons-set__item">
 																			<div class="icons-set__item__field icons-set__item__field--icon">
 																				<div class="icons-set__item__icon-wrap">
-																					<i class="icon icon--photo-stack icons-set__item__icon"></i>
+																					<i class="icon icon--two-pictures-bold icons-set__item__icon"></i>
 																					<div class="documents-list__action"><a class="documents-list__action-link" href="#" ><i class="icon icon--search"></i></a></div>
 																				</div>
 																			</div>
 																			<div class="icons-set__item__field icons-set__item__field--text">
-																				<div class="icons-set__item__desc icons-set__item__desc--only">4 фото 3.5х4.5, на белом фоне, матовые в овале</div>
+																				<div class="icons-set__item__desc icons-set__item__desc--only">2 фото 3.5х4.5 (без других требований)</div>
 																			</div>
 																		</div>
 																	</div>
@@ -551,7 +551,8 @@
 																				</div>
 																			</div>
 																			<div class="icons-set__item__field icons-set__item__field--text">
-																				<div class="icons-set__item__desc icons-set__item__desc--only">Копия трудовой книжки (без заверения по месту работы).<br/>При отсутствии работы по трудовой книжке в данное время необходимо предоставить ее оригинал</div>
+																				<div class="icons-set__item__desc icons-set__item__desc--only">Копия трудовой книжки (без заверения по месту работы). При отсутствии работы по трудовой книжке в данное время необходимо предоставить ее оригинал
+																				</div>
 																			</div>
 																		</div>
 																	</div>
@@ -703,12 +704,12 @@
 																		<div class="icons-set__item">
 																			<div class="icons-set__item__field icons-set__item__field--icon">
 																				<div class="icons-set__item__icon-wrap">
-																					<i class="icon icon--photo-stack icons-set__item__icon"></i>
+																					<i class="icon icon--two-pictures-bold icons-set__item__icon"></i>
 																					<div class="documents-list__action"><a class="documents-list__action-link" href="#" ><i class="icon icon--search"></i></a></div>
 																				</div>
 																			</div>
 																			<div class="icons-set__item__field icons-set__item__field--text">
-																				<div class="icons-set__item__desc icons-set__item__desc--only">4 фото 3.5х4.5, на белом фоне, матовые в овале</div>
+																				<div class="icons-set__item__desc icons-set__item__desc--only">2 фото 3,5х4,5 (без других требований);</div>
 																			</div>
 																		</div>
 																	</div>
@@ -734,7 +735,7 @@
 																				</div>
 																			</div>
 																			<div class="icons-set__item__field icons-set__item__field--text">
-																				<div class="icons-set__item__desc icons-set__item__desc--only">Свидетельство о гражданстве (для детей до 14 лет, рожденных до 2003 года);</div>
+																				<div class="icons-set__item__desc icons-set__item__desc--only">Свидетельство о гражданстве (для детей до 14 лет)</div>
 																			</div>
 																		</div>
 																	</div>
