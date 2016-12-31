@@ -189,6 +189,98 @@
     </div>
 
     <!-- biometry popup -->
+    <div class="remodal remodal--browser remodal--action" data-remodal-id="get_request_biometry" data-remodal-options="hashTracking: false" role="dialog">
+
+        <div class="remodal__header-wrapper">
+            <ul class="c-controls">
+                <li class="c-control c-control--close"></li>
+                <li class="c-control c-control--min"></li>
+                <li class="c-control c-control--max"></li>
+            </ul>
+            <div data-remodal-action="close" class="remodal-close" aria-label="Close">
+                <?php echo $closeButtonHtml; ?>
+            </div>
+        </div>
+        <div class="remodal__content-wrapper">
+            <div class="remodal__content">
+                <div class="remodal__body">
+                  <div class="site-form site-form--basic-outlined site-form--callback site-form--action">
+                    <div class="site-form--basic-outlined__inner">
+                          <h3 class="site-form__header"><span>Записаться на биометрию</span></h3>
+                          <form method="POST" action="/ajax.php">
+                              <input type="hidden" name="form_task" value="get_request_biometry">
+                              <input type="hidden" name="form_subject" value="Заявка: Запись на биометрию">
+
+                            <div class="site-form__column-wrapper">
+                              <div class="col col--centered">
+                                <div class="site-form__field">
+                                    <div class="site-form__field-control" >
+                                        <div class="site-form__field-id">
+                                          <input class="site-form__input floatLabel required" type="text" id="user_name--biometry-request" name="user_name--biometry-request" required="">
+                                          <label for="user_name--biometry-request" class="site-form__input-label">
+                                            <span class="site-form__input-label-content">Имя</span>
+                                          </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="site-form__field">
+                                    <div class="site-form__field-control" >
+                                        <div class="site-form__field-id">
+                                          <input class="site-form__input floatLabel required" type="text" id="user_phone--biometry-request" name="user_phone--biometry-request" required="">
+                                          <label for="user_phone--biometry-request" class="site-form__input-label">
+                                            <span class="site-form__input-label-content">Телефон</span>
+                                          </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="site-form__field">
+                                    <div class="site-form__field-control" >
+                                        <div class="site-form__field-id">
+                                          <input class="site-form__input floatLabel required" type="text" id="user_city--biometry-request" name="user_city--biometry-request" required="">
+                                          <label for="user_city--biometry-request" class="site-form__input-label">
+                                            <span class="site-form__input-label-content">Город</span>
+                                          </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="site-form__field">
+                                    <div class="site-form__field-control site-form__field-control--with-sibling" >
+                                        <div class="site-form__field-id">
+                                          <input class="site-form__input floatLabel flatpickr flatpickr--calendar-only" type="text" id="user_date--biometry-request" name="user_date--biometry-request">
+                                          <label for="user_datetime--biometry-request" class="site-form__input-label--small">
+                                            <span class="site-form__input-label-content">Дата</span>
+                                          </label>
+                                        </div>
+                                    </div>
+                                    <div class="site-form__field-control site-form__field-control--with-sibling" >
+                                        <div class="site-form__field-id">
+                                          <input class="site-form__input floatLabel flatpickr flatpickr--time-only" type="text" id="user_time--biometry-request" name="user_time--biometry-request">
+                                          <label for="user_datetime--courier-request" class="site-form__input-label--small">
+                                            <span class="site-form__input-label-content">время</span>
+                                          </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                              </div>
+
+                              <div class="col col--1-of-1 col--centered-inline">
+                                <button type="submit" name="submit-btn" class="btn btn--yellow btn--large btn--submit-action progress-button" data-loading="Отправка заявки.." data-finished="Заявка отправлена!">Отправить заявку</button>
+                              </div>
+                            </div>
+
+                          </form>
+
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- courier popup -->
     <div class="remodal remodal--browser remodal--action" data-remodal-id="get_request_courier" data-remodal-options="hashTracking: false" role="dialog">
 
         <div class="remodal__header-wrapper">

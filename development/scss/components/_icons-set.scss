@@ -6,12 +6,15 @@
       display: table;
       // width: 100%;
       margin: 25px 0;
+
   }
   .icons-set__item__field--fix-size {
       width: 85px;
       padding-right: 25px;
   }
-
+  .icons-set__item__field {
+    padding-right: 15px;
+  }
 
   .icons-set__item__icon-wrap {
 
@@ -68,7 +71,7 @@
     height: 36px;
   }
  .icons-set__item__icon {
-   font-size: 1.35em;
+  //  font-size: 1.35em;
  }
  .icons-set__item__title {
    font-size: 16px;
@@ -109,6 +112,8 @@
 
   }
 
+
+
   // -----------------------------------------------------------------------------
   // By direction
   // -----------------------------------------------------------------------------
@@ -146,6 +151,11 @@
       color: $base-green;
     }
   }
+  &.icons-set--icon-color_white {
+    .icons-set__item__icon-wrap {
+      color: $white;
+    }
+  }
 
 
 
@@ -165,6 +175,12 @@
     .icons-set__item__icon-wrap {
       background: rgba(0, 160, 17, 0.55);
       box-shadow: 0 -2px 15px -5px rgba(0, 0, 0, 0.48), 0 2px 15px -5px rgba(0, 0, 0, 0.48);
+    }
+  }
+  /** green semitransparent **/
+  &.icons-set--icon-bg_green {
+    .icons-set__item__icon-wrap {
+      background: $base-green;
     }
   }
 

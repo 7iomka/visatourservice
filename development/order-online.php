@@ -883,5 +883,5 @@
 
 
 </main>
-
+<script src="js/order-online.js" charset="utf-8"></script>
 <?php require_once('inc/footer.php'); ?>

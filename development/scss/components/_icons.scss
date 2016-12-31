@@ -16,7 +16,9 @@
   }
 }
 
-
+.icon--close:before {
+  content: "\e920";
+}
 .icon--id-card:before {
   content: "\e91d";
 }

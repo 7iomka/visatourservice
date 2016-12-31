@@ -2,7 +2,7 @@
 // Actions for order-online page
 // ----------------------------------------------------------------------------
 //
-function orderOnlineActions(){
+function orderOnlineActions(loadQTips){
 
   // ----------------------------------------------------------------------------
   // Step__slider
@@ -252,7 +252,7 @@ function orderOnlineActions(){
 
 
     /** MAKE ORDER ACTIONS **/
-    
+
 
 
   }

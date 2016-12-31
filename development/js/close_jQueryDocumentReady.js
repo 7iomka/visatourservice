@@ -1,2 +1,0 @@
-// close jQuery document ready
-});

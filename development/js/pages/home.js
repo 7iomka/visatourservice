@@ -1,7 +1,7 @@
 // ----------------------------------------------------------------------------
 // Scripts for Home page
 // ----------------------------------------------------------------------------
-function homeActions() {
+function homeActions(scrollMagicController) {
 
     /**
      * parallaxHomeScene

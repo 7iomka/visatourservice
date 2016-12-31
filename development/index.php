@@ -737,5 +737,5 @@
 
           </div>
         </section>
-
+        <script src="js/home.js" charset="utf-8"></script>
   <?php require_once('inc/footer.php'); ?>

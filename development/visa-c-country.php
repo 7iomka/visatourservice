@@ -721,8 +721,6 @@
 
 		</div>
 	</div>
-
-
-
 </main>
+<script src="js/visa-c-country.js" charset="utf-8"></script>
 <?php require_once('inc/footer.php'); ?>

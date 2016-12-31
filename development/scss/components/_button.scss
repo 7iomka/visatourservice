@@ -71,11 +71,21 @@
         box-shadow: rgba(0, 0, 0, 0.156863) 0px 3px 10px, rgba(0, 0, 0, 0.227451) 0px 3px 10px;
     }
   }
+
   &.btn--red {
     background: $red-button-bg;
     color: $white;
     &:hover {
       background: darken($red-button-bg, 10%);
+      color: $white;
+      text-decoration: none;
+    }
+  }
+  &.btn--green {
+    background: $base-green;
+    color: $white;
+    &:hover {
+      background: darken($base-green, 10%);
       color: $white;
       text-decoration: none;
     }

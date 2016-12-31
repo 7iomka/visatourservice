@@ -847,8 +847,6 @@
 			</div>
 		</div>
 	</div>
-
-
-
 </main>
+<script src="js/passports-registration.js" charset="utf-8"></script>
 <?php require_once('inc/footer.php'); ?>

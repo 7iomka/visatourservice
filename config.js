@@ -120,34 +120,33 @@ var jsFiles = [
 /************ Common scripts **********/
      paths.src.jsdir + 'main.js',
 
-/**
- *  !!! in file main.js "jQuery document ready" is not closed
- *  this is for use variables defined in that file in
- *  files of each page
- */
 
-/*************** Pages *****************/
-     paths.src.jsPagesDir + 'home.js',
-     paths.src.jsPagesDir + 'visa-c-country.js',
-     paths.src.jsPagesDir + 'order-online.js',
-     paths.src.jsPagesDir + 'passports-registration.js',
-
-/*************** close "jQuery document ready" **************/
-     paths.src.jsdir + 'close_jQueryDocumentReady.js',
   ];
 
 var jsFilesSeparated = [
     paths.src.jsLibDir + 'modernizr.min.js',
     /** FILE UPLOAD STUFF  **/
+        // File Upload plugin depended plugin -->
+          paths.src.jsLibDir + 'jquery.knob.min.js',
+        // The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
+            paths.src.jsLibDir + 'jquery.ui.widget.js',
+        // The Iframe Transport is required for browsers without support for XHR file uploads -->
+          paths.src.jsLibDir + 'jquery.iframe-transport.js',
+        // The basic File Upload plugin -->
+          paths.src.jsLibDir + 'jquery.fileupload.js',
 
-    // File Upload plugin depended plugin -->
-      paths.src.jsLibDir + 'jquery.knob.min.js',
-    // The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
-        paths.src.jsLibDir + 'jquery.ui.widget.js',
-    // The Iframe Transport is required for browsers without support for XHR file uploads -->
-      paths.src.jsLibDir + 'jquery.iframe-transport.js',
-    // The basic File Upload plugin -->
-      paths.src.jsLibDir + 'jquery.fileupload.js',
+    /** end FILE UPLOAD STUFF  **/
+
+    /** switcher plugin for page CONTACTS **/
+    paths.src.jsLibDir + 'switcher.js',
+
+  /*************** Pages *****************/
+     paths.src.jsPagesDir + 'home.js',
+     paths.src.jsPagesDir + 'visa-c-country.js',
+     paths.src.jsPagesDir + 'order-online.js',
+     paths.src.jsPagesDir + 'passports-registration.js',
+
+
 ];
 
 
