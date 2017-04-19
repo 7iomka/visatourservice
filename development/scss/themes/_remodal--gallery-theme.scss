@@ -49,11 +49,11 @@
           box-shadow: 0 15px 50px black;
       }
 
-      @for $nth_short from 1 through 5 {
-        .short_hidden:nth-child($nth_short) {
-          transition-delay: (0.1*$nth_short)s;
-        }
-      }
+      // @for $nth_short from 1 through 5 {
+      //   .short_hidden:nth-child(#{$nth_short}) {
+      //     transition-delay: (0.1*$nth_short)s;
+      //   }
+      // }
 
       .remodal__title {
           margin-top: 0;

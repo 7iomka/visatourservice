@@ -162,6 +162,7 @@
 
 <script src="/js/modernizr.min.js" charset="utf-8"></script>
 <script src="/js/all.package.min.js" charset="utf-8"></script>
+<script src="/js/main.js" charset="utf-8"></script>
 <script src="js/jquery.knob.min.js"></script>
 <!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
 <script src="js/jquery.ui.widget.js"></script>

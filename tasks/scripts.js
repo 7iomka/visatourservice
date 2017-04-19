@@ -24,12 +24,12 @@ gulp.task('scripts', function() {
     .pipe(debug({title:'scripts - compile completed'}));
 
 	 var jsSeparatedStream = gulp.src(config.plugin.js.jsFilesSeparated)
-		.pipe(config.run.js.wrap ? wrap(config.plugin.js.wrap) : next())
+		// .pipe(config.run.js.wrap ? wrap(config.plugin.js.wrap) : next())
 		// .pipe(concat('scripts.js'))
-		.pipe(config.run.js.uglify ? uglify() : next())
+		// .pipe(config.run.js.uglify ? uglify() : next())
 		.pipe(gulp.dest(config.paths.dest.js))
-    .pipe(config.run.js.gzip ? gzip({append: true}) : next())
-    .pipe(gulp.dest(config.paths.dest.js))
+    // .pipe(config.run.js.gzip ? gzip({append: true}) : next())
+    // .pipe(gulp.dest(config.paths.dest.js))
     .pipe(debug({title:'scripts SEPARATED - compile completed'}));
 
 

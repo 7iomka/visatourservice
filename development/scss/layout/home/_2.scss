@@ -130,7 +130,8 @@
         background: rgba(243, 243, 243, 0.42);
         box-shadow: 0 0 0 1px #00a01a;
       }
-      &.active {
+      &.active,
+      &:hover {
           box-shadow: 0 0 0 1px #00a01a;
           background: rgba(243, 243, 243, 0.42);
           .country-label {
@@ -250,7 +251,7 @@
   /**
    * Country slider nav
    */
-   .country-list__nav {
+   &__nav {
      background: #00a01a;
      position: absolute;
      top: 50%;
@@ -275,7 +276,7 @@
     }
  }
 
- .country-list__nav-icon {
+ &__nav-icon {
      display: inline-block;
      color: white;
      font-size: 24px;
@@ -288,7 +289,7 @@
      }
  }
 
- .country-list__nav--prev {
+ &__nav--prev {
      left: -85px;
      right: auto;
      @include media("<1366px"){
@@ -302,7 +303,7 @@
      }
  }
 
- .country-list__nav--next {
+ &__nav--next {
      right: -85px;
      left: auto;
      @include media("<1366px"){
@@ -542,9 +543,8 @@
 
  @include media(">=xx-large") {
    .country-preview__img {
-        height: auto;
-        bottom: 0;
-        width: 100%;
+     height: auto;
+     bottom: 0;
     }
 
     .country-preview__img-wrapper {
@@ -612,4 +612,148 @@
       transform: translateX(-50%);
       left: 50%;
   }
+};
+
+
+/** select category for x-small **/
+@include media("<x-small") {
+    .search-form__tips-toggler {
+        font-size: 18px;
+        margin-top: 10px;
+        text-align: center;
+        text-decoration: underline;
+        margin-bottom: 10px;
+    }
+    .visa-short__search-form-tips {
+      background: $white;
+    }
+    .visa-short__search-form-tip {
+        position: relative;
+        display: table;
+        border: 0;
+        text-align: left;
+        text-decoration: none;
+        padding: 10px;
+        width: 100%;
+        border-bottom: 1px solid #ededed;
+        margin-bottom: 0;
+        &:before {
+            content: "\77";
+            font-family: 'vts' !important;
+            font-style: normal;
+            font-variant: normal;
+            text-transform: none;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            padding-right: 10px;
+            display:table-cell;
+            text-decoration: none;
+            vertical-align: middle;
+            width: 1%;
+        }
+    }
+
+    .visa-short__search-form-tip-col {
+        margin-bottom: 0;
+    }
+};
+
+
+
+/** slider **/
+.infographics__slider {
+  &__nav {
+    @extend .country-list__nav;
+    @include media("<1366px") {
+        top: 50%;
+        bottom: auto;
+        margin-top: -30px;
+    };
+    @include media("<960px"){
+      top: auto;
+      bottom: 0;
+      margin: auto;
+     };
+     @include media("<small") {
+       width: 45px;
+       height: 45px;
+       line-height: 45px;
+     }
+    &--prev {
+      @extend .country-list__nav--prev;
+      left: 0;
+      @include media("<1366px") {
+        left: 0;
+        right: auto;
+        transform: none;
+      };
+      @include media("<960px"){
+       left: 0;
+       right: 0;
+       transform: translateX(-40px);
+     };
+     @include media("<small") {
+      transform: translateX(-30px);
+     };
+    }
+    &--next {
+      @extend .country-list__nav--next;
+      right: 0;
+      @include media("<1366px") {
+          right: 0;
+          left: auto;
+          transform: none;
+      };
+      @include media("<960px"){
+        left: 0;
+        right: 0;
+        transform: translateX(40px);
+      };
+      @include media("<small") {
+       transform: translateX(30px);
+      };
+    }
+    &-icon {
+      @extend .country-list__nav-icon;
+      @include media("<small") {
+        font-size: 18px;
+        width: 18px;
+        height: 18px;
+      };
+    }
+
+  }
+  .infographics__slide {
+      text-align: center;
+  }
+
+  .infographics__img {
+      max-width: 100%;
+  }
+  .swiper-container {
+    @include media(">=960px"){
+      margin: 0 70px;
+     };
+
+    @include media("<960px") {
+        padding-bottom: 70px;
+    };
+      position: relative;
+  }
+
+
+
+}
+
+
+@include media("<small") {
+  .remodal--action.remodal--infographics {
+    .remodal__body {
+          min-height: auto;
+    }
+    .remodal__content-wrapper {
+      padding-bottom: 15px;
+    }
+  }
+
 };

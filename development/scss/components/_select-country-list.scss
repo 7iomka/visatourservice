@@ -1,0 +1,32 @@
+ul.select-country-list {
+    text-align: left;
+    min-height: 220px;
+    margin-top: 25px;
+    padding: 0 20px;
+    li {
+        width: 33.333%;
+        @include media("<x-small") {
+          width: 50%;
+        };
+        @include media("<xx-small") {
+          width: 100%;
+        };
+        display: inline-block;
+        margin-right: -0.24em;
+        background: rgba(247, 247, 247, 0.51);
+        border: 1px solid white;
+        transition: 0.3s cubic-bezier(0.09, 0.53, 0.58, 1);
+        &:hover,
+        &.selected {
+            background: $yellow;
+        }
+        a {
+          display: inline-block;
+          width: 100%;
+          padding: 10px;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+    }
+}

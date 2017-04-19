@@ -128,3 +128,34 @@
    }
 
 }
+
+
+.documents-list__content {
+    text-align: left;
+    margin-top: 30px;
+    a {
+        color: #0055b0;
+        font-weight: bold;
+    }
+    ul li {
+      list-style: outside disc;
+      padding-left: .5em;
+      margin-left: 1.5em;
+      margin-bottom: .5em;
+      list-style-image: image('li-icon.png');
+      font-size: 16px;
+    }
+}
+
+
+.info-block__desc .vts-list a {
+  font-weight: bold;
+  color: #0055b0;
+}
+
+.vts-list__answer {
+    padding: 10px;
+    background: #f4f4f4;
+    margin: 10px 0;
+    display: none;
+}

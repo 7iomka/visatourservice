@@ -15,10 +15,14 @@ $label-color: #6a6a6a;
  * Material form
  */
 
+
+
+
  .site-form__field {
      position: relative;
-     display: block;
-     margin: 0 0 16px;
+     width: 100%;
+     display: table;
+    margin: 40px auto;
      &.site-form__field--no-margin {
        margin-bottom: 0;
      }
@@ -104,19 +108,31 @@ $label-color: #6a6a6a;
 .site-form__input-label--small {
     position: absolute;
     top: -20px;
+    left: 0;
     font-size: 14px;
     color: $blue-toxic;
     // padding-left: 15px;
 }
-
+.site-form__field-control {
+  display: table-cell;
+  vertical-align: top;
+}
 .site-form__field-control--with-sibling:first-child {
   padding-right: 15px;
 }
-@include media("<640px") {
+@include media("<x-small") {
   .site-form__field-control--with-sibling {
     margin: 30px auto;
-    &:first-child {
+    padding-top: 15px;
+  }
+};
+
+@include media("<xx-small") {
+  .site-form__field-control--with-sibling:first-child {
+    
       padding-right: 0;
-    }
+      .flatpickr-input.flatpickr-mobile {
+        width: 90%;
+      }
   }
 };

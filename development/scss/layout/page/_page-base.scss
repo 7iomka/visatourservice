@@ -150,10 +150,12 @@
 }
 
 .margin-top {
-  margin-top: 60px;
+  // margin-top: 60px;
+  margin-top: 30px;
 }
 .margin-bottom {
-  margin-bottom: 60px;
+  // margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 /** table styles **/
 .table-striped {
@@ -163,7 +165,7 @@
 
 @include media(">=x-small") {
   .section-with-tabs {
-    margin-top: 200px;
+    margin-top: 170px;
     padding-top: 0;
 
     .page-action.page-action--before-tabs {

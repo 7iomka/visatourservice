@@ -24,6 +24,11 @@ function orderOnlineActions(loadQTips){
   step__slider.disableTouchControl();
   setInterval(step__slider.onResize, 3000);
 
+/**
+ * Validate each step
+ * @param  {String}   selector Jquery string
+ * @param  {Function} callback function
+ */
   function validateStepOnClick(selector, callback){
 
   		var $form = $("#order-online-form");
@@ -80,7 +85,7 @@ function orderOnlineActions(loadQTips){
       $form.validate({
           rules: rules,
           messages: messages,
-          ignore:':not(.swiper-slide-active input), input[type="date"]',
+          ignore:':not(.swiper-slide-active input), input[type="date"],input[type="time"]',
           errorPlacement: function(error, element) {
              error.insertAfter($(element).next('label'));
          },
@@ -98,42 +103,6 @@ function orderOnlineActions(loadQTips){
 
   }
 
-  // function bindCheckboxActions() {
-  //
-  //   /**
-  //    * Order accommodation
-  //    */
-  //   // $('#order-accomodation').on('click', function(e){
-  //   //   e.preventDefault();
-  //   // 	$('#accommodation2').prop('checked', true);
-  //   // });
-  //   // $('#accommodation1').on('click', function(e){
-  //   //   e.preventDefault();
-  //   // 	$('#order-accomodation').prop('disabled', true);
-  //   //   if($('#order-accomodation').prop('checked')) {
-  //   //     $('#order-accomodation').prop('checked', false);
-  //   //   }
-  //   // });
-  //   // $('#accommodation2').on('click', function(e){
-  //   //   e.preventDefault();
-  //   // 	$('#order-accomodation').prop('disabled', false);
-  //   // });
-  //
-  //   /**
-  //    * Order insurance
-  //    */
-  //   $('#order-insurance').on('click', function(){
-  //   	$('#insurance2').prop('checked', true);
-  //   });
-  //   $('#insurance1').on('click', function(){
-  //   	$('#order-insurance').prop('disabled', true).prop('checked', false);
-  //   });
-  //   $('#insurance2').on('click', function(){
-  //   	$('#order-insurance').prop('disabled checked', false);
-  //   });
-  // }
-  //
-  // bindCheckboxActions();
 
   /**
    * Make calculations with count of children and adults
@@ -460,6 +429,6 @@ function orderOnlineActions(loadQTips){
   // ----------------------------------------------------------------------------
   // Attach qtip to form questions
   // ----------------------------------------------------------------------------
-      loadQTips('.question_form');
+    loadQTips('.question_form');
 
 }

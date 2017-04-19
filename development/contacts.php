@@ -65,7 +65,7 @@
 								<div class="icons-set__item">
 									<div class="icons-set__item__field">
 										<div class="icons-set__item__icon-wrap">
-											<i class="icon icon--skype_contact icons-set__item__icon"></i>
+											<i class="icon icon--location_marker icons-set__item__icon"></i>
 										</div>
 									</div>
 									<div class="icons-set__item__field">
@@ -430,9 +430,19 @@
                          // её центр и коэффициент масштабирования.
                          center: [56.326944, 44.0075], // Нижний Новгород
                          zoom: 12,
-                     controls: ['zoomControl', 'typeSelector']
+                     controls: []
                      });
-
+										 var zoomControl = new ymaps.control.ZoomControl({
+										     options: {
+										         size: "auto",
+														 adjustMapMargin: true,
+														 position: {
+															 right: 10,
+															 top: 200
+														 }
+										     }
+										 });
+										 myMap.controls.add(zoomControl);
                     var myCollection = new ymaps.GeoObjectCollection();
 
                     $('.level2 .sublevel').click(function () {

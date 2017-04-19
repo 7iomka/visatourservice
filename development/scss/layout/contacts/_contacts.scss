@@ -4,6 +4,12 @@
 
 .filial-shop {
   width: 360px;
+  @include media("<small") {
+    height: 575px;
+    overflow: hidden;
+    margin: auto auto 60px;
+    box-shadow: 4px 4px 0 rgba(45, 70, 104, 0.06), 0 0 0px 1px rgba(45, 70, 104, 0.06);
+  };
 }
 .our-filial {
 

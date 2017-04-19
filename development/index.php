@@ -738,4 +738,55 @@
           </div>
         </section>
         <script src="js/home.js" charset="utf-8"></script>
+        <!-- Infographics -->
+        <div class="remodal remodal--browser remodal--action remodal--action_large remodal--infographics" data-remodal-id="getInfographics" data-remodal-options="hashTracking: false" role="dialog">
+
+            <div class="remodal__header-wrapper">
+                <ul class="c-controls">
+                    <li class="c-control c-control--close"></li>
+                    <li class="c-control c-control--min"></li>
+                    <li class="c-control c-control--max"></li>
+                </ul>
+                <div data-remodal-action="close" class="remodal-close" aria-label="Close">
+                    <?php echo $closeButtonHtml; ?>
+                </div>
+            </div>
+            <div class="remodal__content-wrapper">
+                <div class="remodal__content">
+                    <div class="remodal__body">
+                      <div class="infographics__slider">
+                        <div class="swiper-container">
+                          <div class="swiper-wrapper infographics__gallery">
+
+                              <div class="swiper-slide infographics__slide">
+                                <img src="img/infographics/step1.png" alt="Шаг 1" class="infographics__img">
+                              </div>
+                              <div class="swiper-slide infographics__slide">
+                                <img src="img/infographics/step2.png" alt="Шаг 2" class="infographics__img">
+                              </div>
+                              <div class="swiper-slide infographics__slide">
+                                <img src="img/infographics/step3.png" alt="Шаг 3" class="infographics__img">
+                              </div>
+                              <div class="swiper-slide infographics__slide">
+                                <img src="img/infographics/step4.png" alt="Шаг 4" class="infographics__img">
+                              </div>
+                              <div class="swiper-slide infographics__slide">
+                                <img src="img/infographics/step5.png" alt="Шаг 5" class="infographics__img">
+                              </div>
+
+                          </div>
+
+
+                        </div>
+                        <div class="infographics__slider__nav infographics__slider__nav--prev">
+                          <i class="icon icon--arrow-left--flat infographics__slider__nav-icon"></i>
+                        </div>
+                        <div class="infographics__slider__nav infographics__slider__nav--next">
+                         <i class="icon icon--arrow-right--flat infographics__slider__nav-icon"></i>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
   <?php require_once('inc/footer.php'); ?>

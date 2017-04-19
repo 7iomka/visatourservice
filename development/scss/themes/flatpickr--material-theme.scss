@@ -13,6 +13,14 @@
   padding: 0;
 }
 
+.flatpickr-input.flatpickr-mobile {
+  @extend .site-form__input;
+  padding: 0 0 0 10px;
+
+}
+
+
+
 .flatpickr-calendar {
   background: transparent;
   overflow: hidden;
@@ -29,6 +37,9 @@
   border-radius: 5px;
   position: absolute;
   width: 293.75px;
+  &.hasTime {
+    max-width: 155px;
+  }
   box-sizing: border-box;
   box-shadow: 0 3px 13px rgba(0, 0, 0, 0.08);
   &.open, &.inline {
@@ -322,7 +333,7 @@
 }
 
 .flatpickr-days {
-  padding: 0 2.375px;
+  padding: 2.375px;
   outline: 0;
   text-align: left;
   width: 293.75px;

@@ -97,7 +97,7 @@
                                         <div class="site-form__field-id">
                                           <input class="site-form__input floatLabel flatpickr flatpickr--time-only" type="text" id="user_time--visa-request" name="user_time--visa-request">
                                           <label for="user_datetime--visa-request" class="site-form__input-label--small">
-                                            <span class="site-form__input-label-content">Удобное для Вас время звонка</span>
+                                            <span class="site-form__input-label-content">Удобное время</span>
                                           </label>
                                         </div>
                                     </div>

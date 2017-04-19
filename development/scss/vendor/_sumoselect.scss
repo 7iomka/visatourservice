@@ -50,7 +50,7 @@
 
             .SumoSelect > .optWrapper > .options li label { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; display: block;cursor: pointer;}
             .SumoSelect > .optWrapper > .options li span { display: none; }
-            .SumoSelect > .optWrapper > .options li.group > label {cursor: default;padding: 8px 6px;font-weight: bold;}
+            .SumoSelect > .optWrapper > .options li.group > label {cursor: default;padding: 8px 6px;}
 
         /*Floating styles*/
         .SumoSelect > .optWrapper.isFloating { position: fixed; top: 0; left: 0; right: 0; width: 90%; bottom: 0; margin: auto; max-height: 90%; }
@@ -104,8 +104,8 @@
 
 /** CUSTOM SETTINGS **/
 .SumoSelect {
-    width: 400px;
-    max-width: 100%;
+    min-width: 260px;
+    width: 100%;
 }
 
 .SumoSelect {
@@ -289,4 +289,23 @@
 .SumoSelect .no-match {
     padding: 6px 30px 6px 18px;
     line-height: 40px;
+}
+
+
+
+/** styling groups **/
+.SumoSelect > .optWrapper > .options > li.opt, .SumoSelect > .optWrapper > .options > li.group {
+    font-size: 18px;
+}
+
+.SumoSelect > .optWrapper > .options > li.group > label {
+    padding-left: 18px;
+}
+
+.SumoSelect > .optWrapper > .options > li.group > ul li.opt {
+    padding-left: 36px;
+}
+
+.SumoSelect > .optWrapper > .options li.opt.selected {
+    color: #193dff;
 }

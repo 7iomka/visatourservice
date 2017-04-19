@@ -13,9 +13,9 @@
 			</div>
 		</div>
 		<div class="header-section__content">
-			<h1 class="header-section__title">
-				<span class="header-section__title-text">Австрия</span>
+			<h1 class="header-section__title header-section__title--with-flag">
 				<span class="header-section__icon-wrapper"><span title="Австрия" alt="Австрия" class="flag-icon flag-icon--at header-section__icon "></span></span>
+				<span class="header-section__title-text">Австрия</span>
 			</h1>
 			<div class="header-section__subtitle">Оформление краткосрочной визы</div>
 		</div>
@@ -168,7 +168,7 @@
 																			</div>
 																			<div class="icons-set__item__field icons-set__item__field--text">
 																				<div class="icons-set__item__title">Заграничный паспорт</div>
-																				<div class="icons-set__item__desc">Срок действия должен быть не менее 3 месяцев c момента возвращения в РФ. Наличие подписи владельца в загранпаспорте обязательно; ксерокопия страниц с визами предыдущего загранпаспорта (при наличии)</div>
+
 																			</div>
 																		</div>
 																	</div>
@@ -182,7 +182,7 @@
 																			</div>
 																			<div class="icons-set__item__field icons-set__item__field--text">
 																				<div class="icons-set__item__title">Копия внутреннего паспорта</div>
-																				<div class="icons-set__item__desc">(страницы с биографическими данными заявителя, отметками о выданном загранпаспорте, регистрации, браке и пр.)</div>
+
 																			</div>
 																		</div>
 																	</div>
@@ -196,7 +196,7 @@
 																			</div>
 																			<div class="icons-set__item__field icons-set__item__field--text">
 																				<div class="icons-set__item__title">2 цветные фотографии</div>
-																				<div class="icons-set__item__desc">2 цветные фотографии размером 3, 5х4,5 на светлом фоне, лицо 70-80%, без овалов и углов</div>
+
 																			</div>
 																		</div>
 																	</div>
@@ -210,7 +210,7 @@
 																			</div>
 																			<div class="icons-set__item__field icons-set__item__field--text">
 																				<div class="icons-set__item__title">Справка от работодателя</div>
-																				<div class="icons-set__item__desc">Справка от работодателя с указанием срока работы в должности, среднемесячной заработной платы и гарантии предоставления отпуска в сроки предполагаемой поездки (необходимо также указать, является ли отпуск оплачиваемым), а также гарантии приема на работу после возвращения из поездки с подписью генерального директора/ главного бухгалтера, синей печатью); для пенсионеров - копия пенсионного удостоверения, для студентов-справка с места учебы, для безработных - спонсорское письмо. Для предпринимателей: копия свидетельства о регистрации, о постановке на налоговый учёт, о внесении в ЕГРИП/ЕГРЮЛ, выписка из банка о состоянии денежных средств предприятия. Внимание!!! Заявитель- индивидуальный предприниматель не имеет права подписи в справке с места работы!</div>
+
 																			</div>
 																		</div>
 																	</div>
@@ -224,7 +224,7 @@
 																			</div>
 																			<div class="icons-set__item__field icons-set__item__field--text">
 																				<div class="icons-set__item__title">Финансовые гарантии</div>
-																				<div class="icons-set__item__desc">Выписка из банка о движении денежных средств за последние 3 месяца/справка о покупке валюты или кредитная карта; из рассчета 60 Евро на день пребывания в стране (минимальная сумма 500Евро)</div>
+
 																			</div>
 																		</div>
 																	</div>
@@ -238,7 +238,7 @@
 																			</div>
 																			<div class="icons-set__item__field icons-set__item__field--text">
 																				<div class="icons-set__item__title">Медицинская страховка</div>
-																				<div class="icons-set__item__desc">Медицинская страховка (индивидуальная или групповая) на период поездки, действительная в странах Шенгена, с минимальным покрытием в 30 000 евро. Выписывается в офисе, стоимость оформления 1 евро в сутки. В случае, если Вы планируете поездку в период с ноября по апрельне и не планируете заниматься зимними видами спортаспортом (в том числе и горными лыжами), то вам необходимо заполнить форму обязательства не заниматься зимними видами спорта.</div>
+
 																			</div>
 																		</div>
 																	</div>
@@ -252,7 +252,7 @@
 																			</div>
 																			<div class="icons-set__item__field icons-set__item__field--text">
 																				<div class="icons-set__item__title">Анкета в п.№ 37</div>
-																				<div class="icons-set__item__desc">Незаполненная и подписанная заявителем анкета в п.№ 37</div>
+
 																			</div>
 																		</div>
 																	</div>
@@ -339,7 +339,7 @@
 																			</div>
 																			<div class="icons-set__item__field icons-set__item__field--text">
 																				<div class="icons-set__item__title">Заграничный паспорт</div>
-																				<div class="icons-set__item__desc">Срок действия должен быть не менее 3 месяцев c момента возвращения в РФ. Наличие подписи владельца в загранпаспорте обязательно; ксерокопия страниц с визами предыдущего загранпаспорта (при наличии)</div>
+
 																			</div>
 																		</div>
 																	</div>
@@ -353,7 +353,7 @@
 																			</div>
 																			<div class="icons-set__item__field icons-set__item__field--text">
 																				<div class="icons-set__item__title">Копия внутреннего паспорта</div>
-																				<div class="icons-set__item__desc">(страницы с биографическими данными заявителя, отметками о выданном загранпаспорте, регистрации, браке и пр.)</div>
+
 																			</div>
 																		</div>
 																	</div>
@@ -367,7 +367,7 @@
 																			</div>
 																			<div class="icons-set__item__field icons-set__item__field--text">
 																				<div class="icons-set__item__title">2 цветные фотографии</div>
-																				<div class="icons-set__item__desc">2 цветные фотографии размером 3, 5х4,5 на светлом фоне, лицо 70-80%, без овалов и углов</div>
+
 																			</div>
 																		</div>
 																	</div>
@@ -381,7 +381,7 @@
 																			</div>
 																			<div class="icons-set__item__field icons-set__item__field--text">
 																				<div class="icons-set__item__title">Справка от работодателя</div>
-																				<div class="icons-set__item__desc">Справка от работодателя с указанием срока работы в должности, среднемесячной заработной платы и гарантии предоставления отпуска в сроки предполагаемой поездки (необходимо также указать, является ли отпуск оплачиваемым), а также гарантии приема на работу после возвращения из поездки с подписью генерального директора/ главного бухгалтера, синей печатью); для пенсионеров - копия пенсионного удостоверения, для студентов-справка с места учебы, для безработных - спонсорское письмо. Для предпринимателей: копия свидетельства о регистрации, о постановке на налоговый учёт, о внесении в ЕГРИП/ЕГРЮЛ, выписка из банка о состоянии денежных средств предприятия. Внимание!!! Заявитель- индивидуальный предприниматель не имеет права подписи в справке с места работы!</div>
+
 																			</div>
 																		</div>
 																	</div>
@@ -395,7 +395,7 @@
 																			</div>
 																			<div class="icons-set__item__field icons-set__item__field--text">
 																				<div class="icons-set__item__title">Финансовые гарантии</div>
-																				<div class="icons-set__item__desc">Выписка из банка о движении денежных средств за последние 3 месяца/справка о покупке валюты или кредитная карта; из рассчета 60 Евро на день пребывания в стране (минимальная сумма 500Евро)</div>
+
 																			</div>
 																		</div>
 																	</div>
@@ -409,7 +409,7 @@
 																			</div>
 																			<div class="icons-set__item__field icons-set__item__field--text">
 																				<div class="icons-set__item__title">Медицинская страховка</div>
-																				<div class="icons-set__item__desc">Медицинская страховка (индивидуальная или групповая) на период поездки, действительная в странах Шенгена, с минимальным покрытием в 30 000 евро. Выписывается в офисе, стоимость оформления 1 евро в сутки. В случае, если Вы планируете поездку в период с ноября по апрельне и не планируете заниматься зимними видами спортаспортом (в том числе и горными лыжами), то вам необходимо заполнить форму обязательства не заниматься зимними видами спорта.</div>
+
 																			</div>
 																		</div>
 																	</div>
@@ -423,7 +423,7 @@
 																			</div>
 																			<div class="icons-set__item__field icons-set__item__field--text">
 																				<div class="icons-set__item__title">Анкета в п.№ 37</div>
-																				<div class="icons-set__item__desc">Незаполненная и подписанная заявителем анкета в п.№ 37</div>
+
 																			</div>
 																		</div>
 																	</div>
@@ -437,7 +437,7 @@
 																			</div>
 																			<div class="icons-set__item__field icons-set__item__field--text">
 																				<div class="icons-set__item__title">Опросный лист</div>
-																				<div class="icons-set__item__desc"></div>
+
 																			</div>
 																		</div>
 																	</div>
@@ -451,7 +451,7 @@
 																			</div>
 																			<div class="icons-set__item__field icons-set__item__field--text">
 																				<div class="icons-set__item__title">Согласие на обработку персональных данных</div>
-																				<div class="icons-set__item__desc"></div>
+
 																			</div>
 																		</div>
 																	</div>

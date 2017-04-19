@@ -357,6 +357,7 @@ jQuery(document).ready(function($) {
       $form.validate({
           rules: rules,
           messages: messages,
+           ignore:'input[type="date"],input[type="time"]',
           submitHandler: function(form) {
               submitRemodalForm(form, $context, task);
           },

@@ -149,7 +149,7 @@ $vts-tabs__nested__control-font-size: 18px;
 	}
 	.vts-tabs__content-tab-wrapper {
 
-		padding: 20px 0;
+		padding: 20px 0 0;
 		// background-color: white;
 	}
 }
@@ -192,10 +192,16 @@ $vts-tabs__nested__control-font-size: 18px;
 .vts-tabs.vts-tabs--nested > .vts-tabs__control.active {
     color: #00a011;
     background: #fdfdfd;
+		background: #f4f4f4;
+		 border: 1px solid;
+	 @include media(">=large") {
+		 border-top: 0;
+	 };
+
 }
 
 .vts-tabs.vts-tabs--nested > .vts-tabs__control:last-child {
-    border-right: none;
+    // border-right: none;
 }
 
 
@@ -269,7 +275,7 @@ $vts-tabs__nested__control-font-size: 18px;
 	}
 
 	.vts-tabs__content {
-	    padding: 15px 0;
+	    padding: 15px 0 0;
 	}
 
 	.vts-tabs.vts-tabs--nested {

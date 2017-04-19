@@ -53,7 +53,7 @@ var _ = require('lodash');
 var jsFiles = [
   /*************** Libs *******************/
   // paths.src.jsLibDir + 'modernizr.min.js',
-  paths.src.jsLibDir + 'jquery-1.12.4.min.js',
+
   // paths.src.jsLibDir + 'jquery-ui.min.js',
   paths.src.jsLibDir + 'jquery.parallax-1.1.3.js',
   paths.src.jsLibDir + 'jquery.typeahead.min.js',
@@ -115,15 +115,10 @@ var jsFiles = [
 
 
 
-
-
-/************ Common scripts **********/
-     paths.src.jsdir + 'main.js',
-
-
   ];
 
 var jsFilesSeparated = [
+    paths.src.jsLibDir + 'jquery-1.12.4.min.js',
     paths.src.jsLibDir + 'modernizr.min.js',
     /** FILE UPLOAD STUFF  **/
         // File Upload plugin depended plugin -->
@@ -145,6 +140,9 @@ var jsFilesSeparated = [
      paths.src.jsPagesDir + 'visa-c-country.js',
      paths.src.jsPagesDir + 'order-online.js',
      paths.src.jsPagesDir + 'passports-registration.js',
+
+     /************ Common scripts **********/
+          paths.src.jsdir + 'main.js',
 
 
 ];
@@ -225,8 +223,9 @@ var jsFilesSeparated = [
             minify: true
         },
         styles: {
-            maps: false,
-            minify: true,
+            maps: true,
+            minify: false,
+            // minify: true,
             gzip: false
         },
         img: {
@@ -287,7 +286,8 @@ var jsFilesSeparated = [
 
         styles: {
             sass: {
-              style: 'compressed'
+              style: 'expanded'
+              // style: 'compressed'
             },
             autoprefixer: {
               cascade: false

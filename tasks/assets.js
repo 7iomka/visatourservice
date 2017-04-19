@@ -4,7 +4,10 @@ var gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
     cache = require('gulp-cached'),
     debug = require('gulp-debug'),
-    config = require('../config');
+    config = require('../config'),
+    rename = require('gulp-rename');
+var del = require('del');
+var vinylPaths = require('vinyl-paths');
 
 gulp.task('assets', function() {
   var next = gutil.noop;
@@ -24,3 +27,18 @@ gulp.task('svg2png', function () {
         .pipe(svg2png({ width: 72, height: 72 }))
         .pipe(gulp.dest('development/assets/img/flags/'));
 });
+
+// gulp.task('mergeSvgFlags', function () {
+//     gulp.src('development/assets/img/flags/**/*.svg')
+//         .pipe(gulp.dest('development/test/img/flags/'));
+// });
+
+gulp.task('renameSvg', function () {
+  // rename via function
+gulp.src("development/test/img/flags-png/**/*.svg")
+  .pipe(vinylPaths(del))
+  .pipe(rename(function (path) {
+    path.extname = ".png"
+  }))
+  .pipe(gulp.dest("development/test/img/flags-png/"));
+})

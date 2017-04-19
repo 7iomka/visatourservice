@@ -189,6 +189,9 @@ section {
                 width: 100%;
               }
             }
+            @include media("<medium") {
+              display: block;
+            };
           }
         }
         &.sublined {

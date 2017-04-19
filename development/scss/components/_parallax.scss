@@ -58,6 +58,9 @@
 
   .parallax-section__image {
       background-size: auto;
+      @include media(">xx-large") {
+        background-size: 100%;
+      };
 
       @include media("<tablet") {
         background-size: 2560px auto;

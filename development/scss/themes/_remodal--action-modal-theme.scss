@@ -4,6 +4,13 @@
 
 /** Skeleton styles for actions remodal **/
 .remodal--action {
+  &.remodal--documents_gallery {
+    color: #2b2e38!important;
+    img {
+      max-width: 100%;
+    }
+  }
+
   &.remodal--action_large {
       width: 960px;
   }

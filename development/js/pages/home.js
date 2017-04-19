@@ -286,12 +286,28 @@ function homeActions(scrollMagicController) {
                       $('.coutry-action-preview').on('click', function (e) {
                           e.preventDefault();
                           e.stopPropagation();
-                          console.log('CLICKED')
-                          $('.country-preview').slideUp(200).slideDown(1500).afterTransition(function () {
-                            console.log('CLICKED - transition end')
-                          });
+
+                          if($('.country-preview').is('visible')){
+                            $('.country-preview').fadeOut(1000).fadeIn(1000).afterTransition(function () {
+                              /** call get data func**/
+                            })
+                          }
+                          else {
+                            $('.country-preview').slideUp(200).slideDown(1500).afterTransition(function () {
+                              /** call get data func**/
+                            });
+                          }
+
                       });
                     }
+
+                    var mobileTogglerInitialized = false;
+                    $('.search-form__tips-toggler').on('click', function(){
+                      $('.search-form__tips').slideToggle();
+                      mobileTogglerInitialized = true;
+                    });
+
+
 
                     // ----------------------------------------------------------------------------
                     // Search actions
@@ -380,12 +396,24 @@ function homeActions(scrollMagicController) {
 
 
                     });
-
+                    var mobileTogglerInitialized = false;
+                    $('.search-form__tips-toggler').on('click', function(){
+                      $('.search-form__tips').slideToggle();
+                      mobileTogglerInitialized = true;
+                    });
                     // ----------------------------------------------------------------------------
                     // Search form-tips actions (search by category)
                     // ----------------------------------------------------------------------------
                     $('.visa-short__search-form-tip').on('click', function () {
-
+                      if(mobileTogglerInitialized) {
+                          console.log("loolololo")
+                          TweenMax.to(window, 1.5, {
+                              scrollTo: {
+                                  y: $('.visa-short__slider'),
+                              },
+                              ease: Expo.easeInOut
+                          });
+                      }
                       $('.visa-short__search-form-tip.active').removeClass('active');
                       $(this).addClass('active');
                       var category_slug = $(this).data('category');
@@ -427,7 +455,7 @@ function homeActions(scrollMagicController) {
       Waves.attach('.country-list__nav', ['waves-circle', 'waves-float']);
 
 
-
+      /** request visa online **/
       $('.get_request_visa_online').on('click', function (e) {
         $('[data-remodal-id="get_request_visa_online"]').find('.form_subject').val($(this).data('subject'));
       })
@@ -492,82 +520,6 @@ function homeActions(scrollMagicController) {
         // ----------------------------------------------------------------------------
         // Home map settings
         // ----------------------------------------------------------------------------
-        if($('#home-map').length) {
-          var home_map = L.mapbox.map('home-map')
-              .setView([55.717532, 37.612476], 20);
-          L.mapbox.accessToken = 'pk.eyJ1IjoiN2lvbWthIiwiYSI6ImNpd29jdzRjaTAwMDcydHFmaWQ5YmhueWMifQ.Ub1up1-cL1j07j3Fg_0GRA';
-
-          // Use styleLayer to add a Mapbox style created in Mapbox Studio
-          L.mapbox.styleLayer('mapbox://styles/7iomka/ciwodxkjf007h2qqy025o1c1g').addTo(home_map);
-
-          // Here we don't use the second argument to map, since that would automatically
-          // load in non-clustered markers from the layer. Instead we add just the
-          // backing tileLayer, and then use the featureLayer only for its data.
-
-
-          // Since featureLayer is an asynchronous method, we use the `.on('ready'`
-          // call to only use its marker data once we know it is actually loaded.
-
-          var myLayer = L.mapbox.featureLayer()
-            .loadURL('/js/json/contact-list.json')
-            .on('ready', function(e) {
-              myLayer.eachLayer(function(layer) {
-                layer.openPopup();
-                home_map.fitBounds(myLayer.getBounds(), {
-                    paddingTopLeft: [0, 320],
-                });
-                // Fetch you featurecollection
-                var geojson = e.target.getGeoJSON().features;
-                console.log(geojson);
-              });
-            })
-            .addTo(home_map);
-            if (home_map.scrollWheelZoom) {
-              home_map.scrollWheelZoom.disable();
-            }
-          // var featureLayer = L.mapbox.featureLayer().addTo(home_map);
-          //
-          //       .on('ready', function(e) {
-          //       // create a new MarkerClusterGroup that will show special-colored
-          //       // numbers to indicate the type of rail stations it contains
-          //       e.target.eachLayer(function(layer) {
-          //         console.log(layer)
-          //         // add each rail station to its specific group.
-          //         // groups[layer.feature.properties.line].addLayer(layer);
-          //       });
-          //         // console.log('i am ready', e.target)
-          //       // e.target.eachLayer(function(layer) {
-          //       //   // add each rail station to its specific group.
-          //       //   groups[layer.feature.properties.line].addLayer(layer);
-          //       // });
-          //   });
-          //   featureLayer.setGeoJSON({
-          //     type: "FeatureCollection",
-          //     features: [{
-          //         type: "Feature",
-          //         geometry: {
-          //             type: "Point",
-          //             coordinates: [55.717532, 37.612476]
-          //         },
-          //         properties: { }
-          //     }]
-          // });
-          //
-          // // L.marker is a low-level marker constructor in Leaflet.
-          // L.marker([55.717532, 37.612476], {
-          //     icon: L.mapbox.marker.icon({
-          //         'marker-size': 'large',
-          //         'marker-symbol': 'bus',
-          //         'marker-color': '#fa0'
-          //     })
-          // }).addTo(map);
-
-        }
-
-
-      //  $('.certificates__slider').lightGallery({thumbnail:false,mode:'lg-fade',counter:false,download:false,startClass:'',speed:500})
-
-
 
 
       /**
