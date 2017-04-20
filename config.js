@@ -60,6 +60,8 @@ var jsFiles = [
   // paths.src.jsLibDir + 'jquery-ui.min.js',
   // paths.src.jsLibDir + 'jquery.ui.datepicker-ru.js',
   paths.src.jsLibDir + 'transition-events.js',
+  paths.src.jsLibDir + 'waypoints.min.js',
+  paths.src.jsLibDir + 'jquery.counterup.min.js',
   paths.src.jsLibDir + 'TweenMax.min.js',
   paths.src.jsLibDir + 'ScrollMagic.min.js',
   // paths.src.jsLibDir + 'debug.addIndicators.min.js',
@@ -140,6 +142,7 @@ var jsFilesSeparated = [
      paths.src.jsPagesDir + 'visa-c-country.js',
      paths.src.jsPagesDir + 'order-online.js',
      paths.src.jsPagesDir + 'passports-registration.js',
+     paths.src.jsPagesDir + 'about.js',
 
      /************ Common scripts **********/
           paths.src.jsdir + 'main.js',

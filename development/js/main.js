@@ -433,6 +433,9 @@ if($mainContainer.hasClass('page--order-online')) {
 if($mainContainer.hasClass('page--passports-registration')) {
   passports_registrationActions();
 }
+if($mainContainer.hasClass('page--about')) {
+  aboutActions();
+}
 
 
 
