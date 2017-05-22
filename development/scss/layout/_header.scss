@@ -110,7 +110,7 @@ header.site-header {
    *  header data (right part)
    */
    .header-data {
-    float: right;
+
     @include media("<640px") {
       float: none;
     };
@@ -234,16 +234,20 @@ header.site-header {
    */
 
   &-office {
-    &__details {
+
       text-align: right;
       border-top: 1px solid #ffb900;
       margin-top: 5px;
       padding-top: 5px;
+
       > div {
         padding: 5px 0;
       }
-    }
 
+    &__days-wrapper {
+        display: inline-block;
+        margin: 0 5px;
+    }
     &__adress-days {
       display: inline-block;
     }

@@ -189,11 +189,12 @@
                             </li>
                         </ul>
                         <!-- end header-data (office data) -->
-                        <div class="header-office" >
+                        <div class="header-office">
                             <div class="header-office__adress">ул. Ленина 12, офис 1101/2, </div>
-                            <div class="header-office__adress-days">Пн-Пт,</div>
-                            <div class="header-office__adress-hourds">09<sup>00</sup>-18<sup>00</sup></div>
-                        </div>
+                            <div class="header-office__days-wrapper"><div class="header-office__adress-days">Пн-Пт,</div><div class="header-office__adress-hourds">09<sup>00</sup>-18<sup>00</sup></div></div>
+
+                        <div class="header-office__days-wrapper"><div class="header-office__adress-days">Пн-Пт,</div><div class="header-office__adress-hourds">09<sup>00</sup>-18<sup>00</sup></div></div>
+                      </div>
                     </div>
                   </div>
 
