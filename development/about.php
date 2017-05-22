@@ -248,7 +248,7 @@
 					</div>
 					<!--3 -->
 					<div class="content-block section-white-box">
-						<div class="col col--5-of-12 col--s-1-of-1"><img src="img/pages/about-detail1.jpg" class="responsive-img"></div>
+						<div class="col col--5-of-12 col--s-1-of-1"><img src="img/pages/about-detail3.jpg" class="responsive-img"></div>
 						<div class="col col--7-of-12 col--s-1-of-1">
 							<div class="description">
 								<h3 class="description-header">Сервис:</h3>

@@ -207,3 +207,16 @@
 }
 
 }
+
+.contacts-country-name {
+    text-align: center;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 22px;
+    margin: 0 auto;
+    span {
+        border-bottom: 1px solid $base-green;
+        padding: 10px;
+        display: inline-block;
+    }
+}

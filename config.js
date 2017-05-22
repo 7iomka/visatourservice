@@ -4,8 +4,8 @@ var siteURL = 'http://visa-tour-service.cc:8081';
 
 /********* Get invironment **********/
 var gutil = require('gulp-util');
-var env = gutil.env.env || 'development';
-// var env = gutil.env.env || 'production';
+// var env = gutil.env.env || 'development';
+var env = gutil.env.env || 'production';
 console.log(env);
 var _ = require('lodash');
 
@@ -113,6 +113,7 @@ var jsFiles = [
   paths.src.jsLibDir + '_helpers.js',
   /** components will start with _ **/
   paths.src.jsLibDir + '_jquery.vts-tabs.js',
+  paths.src.jsLibDir + '_jquery.tabs.js',
 
 
 
@@ -227,7 +228,7 @@ var jsFilesSeparated = [
         },
         styles: {
             maps: true,
-            minify: false,
+            minify: true,
             // minify: true,
             gzip: false
         },

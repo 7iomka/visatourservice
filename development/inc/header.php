@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
     <meta charset="utf-8">
@@ -167,10 +167,34 @@
                   </div>
 
                   <div class="col col--6-of-12 col--m-1-of-2 header-right">
-                      <ul class="header-data">
-                          <li class="header-data__item"><i class="icon icon--pinpoint header__icon"></i><a href="#" class="header-data__link header-data__geo">Москва</a></li>
-                          <li class="header-data__item"><i class="icon icon--phone_number header__icon"></i><a href="tel:88002508777" class="header-data__link header-data__phone">8-800-250-87-77</a></li>
-                      </ul>
+                    <div class="header-data-wrapper">
+                      <!-- begin header-data  (main data )-->
+                        <ul class="header-data">
+                            <li class="header-data__item header-data__item--geo">
+                                <div class="header-data__tooltip">
+                                    <div class="drop-tooltip">
+                                        <p>Мы угадали<br>ваш регион?</p>
+                                        <div class="drop-tooltip__nav"><button class="btn btn--x-small btn--yellow header-data__geo-confirm">Да</button> <button data-remodal-target="change_city" class="btn btn--x-small btn--yellow header-data__geo-decline">Нет</button></div>
+                                    </div>
+                                </div>
+                                <div class="header-data__item-content"><i class="icon icon--pinpoint header__icon"></i><a href="#" data-remodal-target="change_city" class="header-data__link header-data__geo">Новосибирск</a></div>
+                            </li>
+                            <li class="header-data__item">
+                                <div class="header-data__item-phones">
+                                    <div class="header-data__item-phone">
+                                        <i class="icon icon--phone_number header__icon" style="color: #193dff;"></i>
+                                            <a href="tel:89237771166" class="header-data__link header-data__phone" style=" color:#193dff; ">8-923-777-11-66</a> </div>
+                                    <div class="header-data__item-phone"><i class="icon icon--phone_number header__icon"></i><a href="tel:88002508777" class="header-data__link header-data__phone">8-800-250-87-77</a></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- end header-data (office data) -->
+                        <div class="header-office" >
+                            <div class="header-office__adress">ул. Ленина 12, офис 1101/2, </div>
+                            <div class="header-office__adress-days">Пн-Пт,</div>
+                            <div class="header-office__adress-hourds">09<sup>00</sup>-18<sup>00</sup></div>
+                        </div>
+                    </div>
                   </div>
 
               </div>

@@ -3,7 +3,8 @@ var gulp = require('gulp'),
     maps = require('gulp-sourcemaps'),
     sass         = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
-    cleanCSS     = require('gulp-clean-css'),
+    // cleanCSS     = require('gulp-clean-css'),
+    csso = require('gulp-csso');
     gzip = require('gulp-gzip'),
     debug = require('gulp-debug'),
     config = require('../config');
@@ -19,7 +20,7 @@ gulp.task('styles', function () {
 	.pipe(sass(config.plugin.styles.sass).on('error', sass.logError))
 	// .pipe(rename({suffix: '.min', prefix : ''}))
 	.pipe(autoprefixer(config.plugin.styles.autoprefixer))
-	.pipe(config.run.styles.minify ? cleanCSS() : next())
+	.pipe(config.run.styles.minify ? csso() : next())
 	.pipe(config.run.styles.maps ? maps.write() : next())
 	.pipe(gulp.dest(config.paths.dest.css))
   .pipe(config.run.styles.gzip ? gzip({append: true}) : next())
