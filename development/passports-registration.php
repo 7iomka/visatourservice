@@ -115,23 +115,34 @@
 							<div class="vts-tabs__control active">Оформление заграничного паспорта старого образца на 5 лет</div>
 							<div class="vts-tabs__control">Оформление биометрического заграничного паспорта на 10 лет</div>
 						</div>
+						<!-- Group -->
+						<div class="vts-tabs__group">
+							<div class="vts-tabs__group-item">
+								<div class="vts-tabs vts-tabs--nested">
+									<div class="vts-tabs__control active"><i class="icon icon--adults icons-set__item__icon"></i><span class="vts-tabs__control-text">Для взрослых (18+)</span></div>
+									<div class="vts-tabs__control "><i class="icon icon--children icons-set__item__icon"></i><span class="vts-tabs__control-text">Для детей до 18</span></div>
 
+								</div>
+							</div>
+							<div class="vts-tabs__group-item"  style="display: none;">
+									<div class="vts-tabs vts-tabs--nested">
+										<div class="vts-tabs__control"><i class="icon icon--adults icons-set__item__icon"></i><span class="vts-tabs__control-text">Для взрослых (18+)</span></div>
+										<div class="vts-tabs__control"><i class="icon icon--children icons-set__item__icon"></i><span class="vts-tabs__control-text">Для детей до 18</span></div>
+								</div>
+							</div>
+						</div>
+						<!-- / Group -->
 						<div class="vts-tabs__content" data-instance="vts-tabs--primary">
 							<!-- Оформление старого образца на 5 лет -->
 							<div class="vts-tabs__content-tab active" >
 								<div class="vts-tabs__content-tab-wrapper">
 									<!-- Nested tabs -->
 										<div class="vts-tabs__inner-panel">
-											<div class="vts-tabs vts-tabs--nested" id="vts-tabs--nested">
-												<div class="vts-tabs__control active"><i class="icon icon--adults icons-set__item__icon"></i><span class="vts-tabs__control-text">Для взрослых (18+)</span></div>
-												<div class="vts-tabs__control"><i class="icon icon--children icons-set__item__icon"></i><span class="vts-tabs__control-text">Для детей до 18</span></div>
-
-											</div>
 											<div class="vts-tabs__content" data-instance="vts-tabs--nested">
 												<!-- Adults -->
 												<div class="vts-tabs__content-tab active">
 													<div class="vts-tabs__content-tab-wrapper">
-
+														ВЗРОСЛЫЕ 5 лет
 														<div class="documents-list__btn-wrapper">
 															<a class="btn btn--large btn--yellow btn--has-sibling documents-list__btn"><i class="icon icon--download btn__icon"></i><span class="btn__text">Скачать пакет документов</span></a>
 															<a class="btn btn--large btn--yellow btn--has-sibling documents-list__btn" data-remodal-target="get_request_visa_online"><i class="icon icon--private-agreement btn__icon"></i><span class="btn__text">Оформить онлайн</span></a>
@@ -297,7 +308,7 @@
 												<!-- Children -->
 												<div class="vts-tabs__content-tab">
 													<div class="vts-tabs__content-tab-wrapper">
-
+														ДЕТИ 5 лет
 														<div class="documents-list__btn-wrapper">
 															<a class="btn btn--large btn--yellow btn--has-sibling documents-list__btn"><i class="icon icon--download btn__icon"></i><span class="btn__text">Скачать пакет документов</span></a>
 															<a class="btn btn--large btn--yellow btn--has-sibling documents-list__btn" data-remodal-target="get_request_visa_online"><i class="icon icon--private-agreement btn__icon"></i><span class="btn__text">Оформить онлайн</span></a>
@@ -472,7 +483,6 @@
 													</div>
 												</div>
 												<!-- /Children -->
-
 											</div>
 										</div>
 									<!-- /Nested tabs -->
@@ -485,16 +495,11 @@
 								<div class="vts-tabs__content-tab-wrapper">
 									<!-- Nested tabs -->
 										<div class="vts-tabs__inner-panel">
-											<div class="vts-tabs vts-tabs--nested" id="vts-tabs--nested">
-												<div class="vts-tabs__control active"><i class="icon icon--adults icons-set__item__icon"></i><span class="vts-tabs__control-text">Для взрослых (18+)</span></div>
-												<div class="vts-tabs__control"><i class="icon icon--children icons-set__item__icon"></i><span class="vts-tabs__control-text">Для детей до 18</span></div>
-
-											</div>
 											<div class="vts-tabs__content" data-instance="vts-tabs--nested">
 												<!-- Adults -->
-												<div class="vts-tabs__content-tab active">
+												<div class="vts-tabs__content-tab ">
 													<div class="vts-tabs__content-tab-wrapper">
-
+														ВЗРОСЛЫЕ 10 лет
 														<div class="documents-list__btn-wrapper">
 															<a class="btn btn--large btn--yellow btn--has-sibling documents-list__btn"><i class="icon icon--download btn__icon"></i><span class="btn__text">Скачать пакет документов</span></a>
 															<a class="btn btn--large btn--yellow btn--has-sibling documents-list__btn" data-remodal-target="get_request_visa_online"><i class="icon icon--private-agreement btn__icon"></i><span class="btn__text">Оформить онлайн</span></a>
@@ -665,7 +670,7 @@
 												<!-- Children -->
 												<div class="vts-tabs__content-tab">
 													<div class="vts-tabs__content-tab-wrapper">
-
+														ДЕТИ 10 лет
 														<div class="documents-list__btn-wrapper">
 															<a class="btn btn--large btn--yellow btn--has-sibling documents-list__btn"><i class="icon icon--download btn__icon"></i><span class="btn__text">Скачать пакет документов</span></a>
 															<a class="btn btn--large btn--yellow btn--has-sibling documents-list__btn" data-remodal-target="get_request_visa_online"><i class="icon icon--private-agreement btn__icon"></i><span class="btn__text">Оформить онлайн</span></a>

@@ -11,3 +11,75 @@ h3.page-action {
       width: 120px;
     }
 }
+.vts-tabs__group {
+  display: flex;
+  justify-content: space-between;
+  .vts-tabs--nested {
+      display: block;
+  }
+
+  .vts-tabs__group-item {
+      flex-grow: 1;
+      @include media("<x-small"){
+        transition: 0.4s ease;
+
+      };
+  }
+  .vts-tabs.vts-tabs--nested {
+      width: 100%;
+      display: flex;
+      align-items: stretch;
+      height: 100%;
+      border-right: 1px solid #ebebeb;
+      @include media("<large"){
+        margin-top: 0;
+        padding: 0;
+      };
+      >.vts-tabs__control {
+        flex-grow: 1;
+        text-align: center;
+        @include media("<large"){
+            border-right: 1px solid #ebebeb;
+          border-left: 1px solid #ebebeb;
+        };
+      }
+
+  }
+  @include media("<x-small"){
+    display: block;
+    padding-top: 20px;
+    max-width: 320px;
+    margin: auto;
+
+    .vts-tabs.vts-tabs--nested {
+      &, &>.vts-tabs__control {
+        display: block;
+      }
+      >.vts-tabs__control {
+        border-left: 1px solid #ebebeb;
+        border-top: 1px solid #ebebeb;
+      }
+    }
+
+  };
+}
+
+
+
+
+.vts-tabs__group
+
+.vts-tabs__group .vts-tabs__group-item .vts-tabs__control {
+    flex-grow: 1;
+    border-right: 1px solid #ebebeb;
+}
+
+.vts-tabs__group .vts-tabs__group-item:last-child .vts-tabs--nested {
+     border-right: none;
+}
+
+.vts-tabs.vts-tabs--nested>.vts-tabs__control.active {
+    background: #00a011;
+    color: white;
+    border-color: #00a011;
+}
