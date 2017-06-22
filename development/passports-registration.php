@@ -2,7 +2,8 @@
 <main class="page page--passports-registration">
 
 	<div class="header-section header-section--with-banner parallax-section parallax-section--header">
-		<div class="parallax-image" style="background-image: url('http://cdn-adventure-tours.themedelight.com/wp-content/uploads/2015/07/alaska.jpg');"></div>
+		<div class="parallax-image" style="background-position: 0 100%;
+    background-image: url('img/pages/passport__paralax-bg.jpg');"></div>
 		<div class="container">
 			<div class="breadcrumbs">
 				<ul>
@@ -85,21 +86,22 @@
 			</div>
 
 			<div class="section-white-box padding-all margin-top">
-				<div class="section-row">
-					<div class="col col--6-of-12 col--s-1-of-1 col--am"><img src="img/pages/passport-img.jpg" class="responsive-img" width="580"></div><div class="col col--6-of-12 col--s-1-of-1 col--am">
-						<div class="info-block info-block--medium info-block--like-section info-block--no-borders" >
+							<div class="section-row">
+								<div class="col col--6-of-12 col--m-1-of-1 col--s-1-of-1 col--am" style=" text-align: center; ">
+									<img src="img/pages/passport-img.jpg" class="responsive-img" width="580">
+								</div>
+								<div class="col col--6-of-12 col--m-1-of-1 col--s-1-of-1 col--am">
+						<div class="info-block info-block--medium info-block--like-section info-block--no-borders">
 							<div class="info-block__title">
-
 							<h2 class="page-action page-action--middle">Ограничения по получению заграничных паспортов</h2></div>
 							<div class="info-block__desc">
 								<ul class="vts-list">
 									<li>отслужившим в армии за последние 5 лет и имеющим допуск секретности;</li>
 									<li>с непогашенной судимостью;</li>
-									<li>с задолжностью перед Федеральной службой судебных приставов (можно проверить на главной стр. сайта http://fssprus.ru/);</li>
+									<li>с задолжностью перед Федеральной службой судебных приставов (можно проверить на главной стр. сайта <noindex><a rel="nofollow" href="http://fssprus.ru/">http://fssprus.ru</a></noindex>);</li>
 									<li>с регистрацией в Кавказском Федеральном округе (кроме  Ставропольского края).</li>
 								</ul>
 							</div>
-
 						</div>
 					</div>
 				</div>
@@ -110,7 +112,7 @@
 				<div class="col col--1-of-1">
 					<h2 class="page-action page-action--middle page-action--before-tabs">Список необходимых документов</h2>
 					<!-- Tabs -->
-					<div class="vts-tabs__wrapper">
+					<div class="vts-tabs__wrapper vts-tabs__wrapper--tabs-with-group">
 						<div class="vts-tabs vts-tabs--primary" id="vts-tabs--primary">
 							<div class="vts-tabs__control active">Оформление заграничного паспорта старого образца на 5 лет</div>
 							<div class="vts-tabs__control">Оформление биометрического заграничного паспорта на 10 лет</div>
@@ -142,7 +144,7 @@
 												<!-- Adults -->
 												<div class="vts-tabs__content-tab active">
 													<div class="vts-tabs__content-tab-wrapper">
-														ВЗРОСЛЫЕ 5 лет
+														<!-- ВЗРОСЛЫЕ 5 лет -->
 														<div class="documents-list__btn-wrapper">
 															<a class="btn btn--large btn--yellow btn--has-sibling documents-list__btn"><i class="icon icon--download btn__icon"></i><span class="btn__text">Скачать пакет документов</span></a>
 															<a class="btn btn--large btn--yellow btn--has-sibling documents-list__btn" data-remodal-target="get_request_visa_online"><i class="icon icon--private-agreement btn__icon"></i><span class="btn__text">Оформить онлайн</span></a>
@@ -308,7 +310,7 @@
 												<!-- Children -->
 												<div class="vts-tabs__content-tab">
 													<div class="vts-tabs__content-tab-wrapper">
-														ДЕТИ 5 лет
+														<!-- ДЕТИ 5 лет -->
 														<div class="documents-list__btn-wrapper">
 															<a class="btn btn--large btn--yellow btn--has-sibling documents-list__btn"><i class="icon icon--download btn__icon"></i><span class="btn__text">Скачать пакет документов</span></a>
 															<a class="btn btn--large btn--yellow btn--has-sibling documents-list__btn" data-remodal-target="get_request_visa_online"><i class="icon icon--private-agreement btn__icon"></i><span class="btn__text">Оформить онлайн</span></a>
@@ -499,7 +501,7 @@
 												<!-- Adults -->
 												<div class="vts-tabs__content-tab ">
 													<div class="vts-tabs__content-tab-wrapper">
-														ВЗРОСЛЫЕ 10 лет
+														<!-- ВЗРОСЛЫЕ 10 лет -->
 														<div class="documents-list__btn-wrapper">
 															<a class="btn btn--large btn--yellow btn--has-sibling documents-list__btn"><i class="icon icon--download btn__icon"></i><span class="btn__text">Скачать пакет документов</span></a>
 															<a class="btn btn--large btn--yellow btn--has-sibling documents-list__btn" data-remodal-target="get_request_visa_online"><i class="icon icon--private-agreement btn__icon"></i><span class="btn__text">Оформить онлайн</span></a>
@@ -670,7 +672,7 @@
 												<!-- Children -->
 												<div class="vts-tabs__content-tab">
 													<div class="vts-tabs__content-tab-wrapper">
-														ДЕТИ 10 лет
+														<!-- ДЕТИ 10 лет -->
 														<div class="documents-list__btn-wrapper">
 															<a class="btn btn--large btn--yellow btn--has-sibling documents-list__btn"><i class="icon icon--download btn__icon"></i><span class="btn__text">Скачать пакет документов</span></a>
 															<a class="btn btn--large btn--yellow btn--has-sibling documents-list__btn" data-remodal-target="get_request_visa_online"><i class="icon icon--private-agreement btn__icon"></i><span class="btn__text">Оформить онлайн</span></a>

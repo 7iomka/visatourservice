@@ -1,6 +1,16 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related or first used on page: passports-registration
 // -----------------------------------------------------------------------------
+.page.page--passports-registration {
+  .parallax-image:after {
+      opacity: 0.7;
+          background: linear-gradient(45deg, rgba(43, 46, 56, 0.42), rgba(43, 70, 40, 0.81), rgba(0, 85, 176, 0.4));
+  }
+
+// end for page
+}
+
+// common
 
 /** small page action **/
 h3.page-action {
@@ -11,75 +21,128 @@ h3.page-action {
       width: 120px;
     }
 }
-.vts-tabs__group {
-  display: flex;
-  justify-content: space-between;
-  .vts-tabs--nested {
-      display: block;
+
+
+// al styles only for tabs contains tabs with group
+.vts-tabs__wrapper--tabs-with-group {
+
+  .vts-tabs > .vts-tabs__control.active {
+//       margin-right: -1px;
   }
 
-  .vts-tabs__group-item {
-      flex-grow: 1;
-      @include media("<x-small"){
-        transition: 0.4s ease;
-
-      };
-  }
-  .vts-tabs.vts-tabs--nested {
-      width: 100%;
+  .vts-tabs.vts-tabs--primary {
       display: flex;
-      align-items: stretch;
-      height: 100%;
-      border-right: 1px solid #ebebeb;
       @include media("<large"){
         margin-top: 0;
-        padding: 0;
+        box-shadow: rgba(4, 4, 4, 0.0784314) 0px 5px 50px 0px;
       };
-      >.vts-tabs__control {
-        flex-grow: 1;
-        text-align: center;
-        @include media("<large"){
-            border-right: 1px solid #ebebeb;
-          border-left: 1px solid #ebebeb;
-        };
+      > .vts-tabs__control {
+          flex-basis: 50%;
+          max-width: 50%;
       }
-
   }
-  @include media("<x-small"){
-    display: block;
-    padding-top: 20px;
-    max-width: 320px;
-    margin: auto;
+  // for vts tabs with group
+  .vts-tabs__group {
+    display: flex;
+    justify-content: space-between;
 
-    .vts-tabs.vts-tabs--nested {
-      &, &>.vts-tabs__control {
+    .vts-tabs--nested {
         display: block;
-      }
-      >.vts-tabs__control {
-        border-left: 1px solid #ebebeb;
-        border-top: 1px solid #ebebeb;
-      }
+        > .vts-tabs__control.active {
+           background: $base-green;
+           color: white;
+           border-color: $base-green;
+           border-left: none;
+           // next in group need to be underlined
+           +.vts-tabs__control {
+                 box-shadow: 0px -1px #00a011 inset, -1px 0 #00a011 inset;
+                 background: rgba(0, 160, 17, 0);
+           }
+        }
     }
 
-  };
-}
+    .vts-tabs__group-item {
+      max-width: 50%;
+      flex-basis: 50%;
 
+        &:first-child {
+          .vts-tabs--nested {
+//             margin-right: -2px;
+          }
+        }
+        // &:last-child {
+        //   .vts-tabs--nested {
+        //     border-right: none;
+        //   }
+        // }
+        @include media("<x-small"){
+          flex-basis: 100%;
+          max-width: 100%;
+          transition: 0.4s ease;
+        };
+        .vts-tabs__control {
+            flex-grow: 1;
+            // border-right: 1px solid #ebebeb;
+        }
+      // if group has active child
+      &.has-active .vts-tabs__control:first-child:not(.active) {
+          box-shadow: 0px -1px #00a011 inset, 1px 0 #00a011 inset;
+          background: rgba(0, 160, 17, 0);
+          border-right: none;
+      }
 
+    }
+    .vts-tabs.vts-tabs--nested {
+        width: 100%;
+        display: flex;
+        align-items: stretch;
+        height: 100%;
+//         border-right: 1px solid #ebebeb;
+        @include media("<large"){
+          margin-top: 0;
+          padding: 0;
+        };
+        >.vts-tabs__control {
+          text-align: center;
+          flex-basis: 50%;
+          max-width: 50%;
+          // border-right: 1px solid #ebebeb;
+          &:first-child {
+            &.active {
+               border-left: none;
+            }
+          }
+          &:last-child.active {
+              border-right: none;
+              border-left: none;
+          }
+          // @include media("<large"){
+          //     border-right: 1px solid #ebebeb;
+          //   border-left: 1px solid #ebebeb;
+          // };
+        }
 
+    }
+    @include media("<x-small"){
+      display: block;
+      padding-top: 20px;
+      max-width: 320px;
+      margin: auto;
 
-.vts-tabs__group
+      .vts-tabs.vts-tabs--nested {
+        &, &>.vts-tabs__control {
+          display: block;
+        }
+        >.vts-tabs__control {
+          max-width: 100%;
+          border: none!important;
+          box-shadow: 0px 0 0 1px $base-green!important;
+          &:not(.active) {
+            background: #ffffff!important;
+          }
+        }
+      }
 
-.vts-tabs__group .vts-tabs__group-item .vts-tabs__control {
-    flex-grow: 1;
-    border-right: 1px solid #ebebeb;
-}
-
-.vts-tabs__group .vts-tabs__group-item:last-child .vts-tabs--nested {
-     border-right: none;
-}
-
-.vts-tabs.vts-tabs--nested>.vts-tabs__control.active {
-    background: #00a011;
-    color: white;
-    border-color: #00a011;
+    };
+  }
 }

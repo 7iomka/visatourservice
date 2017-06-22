@@ -113,6 +113,9 @@
     width: 360px;
     &.btn--has-sibling{
       margin: 15px;
+      @include media("<x-small"){
+        margin: 15px 0;
+      };
     }
   }
   .btn__icon {

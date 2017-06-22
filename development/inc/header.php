@@ -6,7 +6,8 @@
     <title>Создание и продвижение сайтов. Реклама сайтов в Яндекс Директ и Google AdWords</title>
     <meta name="keywords" content="создание и продвижение сайтов. реклама сайтов в яндекс директ" />
     <meta name="description" content="Агентство  интернет-маркетинга SEOSINTEZ. Создание сайтов любой тематики и сложности. SEO продвижение сайтов. Настройка и сопровождение рекламных кампаний в Яндекс Директ и Google AdWords" />
-    <meta name=viewport content="width=device-width, initial-scale=1">
+    <!-- <meta name=viewport content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta content="yes" name="apple-mobile-web-app-capable">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">

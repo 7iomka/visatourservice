@@ -31,7 +31,8 @@ function vtsTabs() {
         var $currentGroupItem = $groupItem.eq(index);
 
         // add active class to first group item control
-
+        $currentGroupItem.addClass('has-active');
+        $groupItem.not($currentGroupItem).removeClass('has-active');
        $currentGroupItem.find('.vts-tabs__control').eq(tabIndex).addClass('active').siblings().removeClass('active');
 
         // remove active class from another primary control
