@@ -1,0 +1,142 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related or first used on page: news-item
+// -----------------------------------------------------------------------------
+
+.page.page--news-item {
+    .parallax-section {
+        height: 250px;
+    }
+
+    .parallax-image {
+        &:after {
+            background: #5a4a22;
+            opacity: 0.3;
+        }
+    }
+
+    .news-item {
+        &__img {
+            max-width: 100%;
+            margin-bottom: 20px;
+            @include media(">=small") {
+                float: left;
+                padding: 0 15px 15px 0;
+                max-width: 50%;
+                margin-bottom: 0;
+            };
+        }
+
+        &__date {
+            text-align: center;
+            margin-top: -15px;
+            margin-bottom: 30px;
+
+            &-inner {
+                display: inline-block;
+                padding: 10px 25px;
+                background: #f7f7f7;
+            }
+
+            svg {
+                vertical-align: middle;
+                margin-right: 6px;
+                fill: #00a011;
+                width: 30px;
+                height: 30px;
+            }
+
+            &-value {
+                vertical-align: middle;
+                font-size: 20px;
+                color: #00a011;
+            }
+        }
+
+
+
+          &__nav {
+                margin-top: 50px;
+            li {
+              display: inline;
+                text-align: center;
+                @include media("<small"){
+                  box-shadow: none!important;
+                  width: 100%;
+                };
+                width: 50%;
+
+                i {
+                  color: #ccc;
+                  font-size: 1.125em;
+                  position: absolute;
+                  top: 50%;
+                  font-weight: bold;
+                  margin-top: -10px;
+                  transition: all .2s ease-out;
+                }
+                &:hover i {
+                    color: $blue-base1;
+                }
+                a {
+                  position: relative;
+                  min-height: 4.56em;
+                  display: block;
+                  padding: 1em 40px 1.5em;
+                  transition: all .2s ease-out;
+                  text-decoration: none!important;
+                  @include media("<small"){
+                    min-height: 0;
+                  };
+                  strong {
+                    display: block;
+                    font-size: .75em;
+                    color: #ac9455;
+                    letter-spacing: .5px;
+                    margin-bottom: 0.3em;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    line-height: normal;
+                  }
+                  span {
+                    font-size: .9375em;
+                    color: #667;
+                  }
+                }
+                a:hover {
+                  span {
+                      color: $blue-base1;
+                  }
+                }
+                &.next {
+                    float: right;
+                    -webkit-box-shadow: -1px 0 0 #eee,inset 1px 0 0 #eee;
+                    box-shadow: -1px 0 0 #eee,inset 1px 0 0 #eee;
+                    &.single {
+                      width: 100%!important;
+                    }
+                    i {
+                          right: 10px;
+                    }
+                    a {
+                      padding-left: 24px;
+                    }
+                }
+                &.previous {
+                    float: left;
+                    -webkit-box-shadow: 1px 0 0 #eee,inset -1px 0 0 #eee;
+                    box-shadow: 1px 0 0 #eee,inset -1px 0 0 #eee;
+                    &.single {
+                      width: 100%!important;
+                    }
+                    i {
+                          left: 10px;
+                    }
+                    a {
+                      padding-right: 24px;
+                    }
+                }
+            }
+          }
+
+    }
+}

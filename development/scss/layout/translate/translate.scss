@@ -1,0 +1,25 @@
+
+// -----------------------------------------------------------------------------
+// This file contains all styles related or first used on page: translate
+// -----------------------------------------------------------------------------
+.page.page--translate {
+  .parallax-image:after {
+    background-color: #050403;
+    background-image: linear-gradient(135deg, #050403 0%, #212f3d 50%, #312525 100%);
+    opacity: 0.6;
+  }
+
+// end for page
+}
+
+// common
+//
+// /** small page action **/
+// h3.page-action {
+//     font-size: 24px;
+//     color: $base-green;
+//     &:after {
+//       background-color: #e0e0e0;
+//       width: 120px;
+//     }
+// }
