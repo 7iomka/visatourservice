@@ -114,6 +114,7 @@ var jsFiles = [
   /** components will start with _ **/
   paths.src.jsLibDir + '_jquery.vts-tabs.js',
   paths.src.jsLibDir + '_jquery.tabs.js',
+  paths.src.jsLibDir + '_jquery.accordion.js',
 
 
 

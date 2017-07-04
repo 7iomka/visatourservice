@@ -1,0 +1,95 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related or first used on page: insurance
+// -----------------------------------------------------------------------------
+
+.page.page--insurance {
+
+  .an1 {
+    margin: 0 0 20px;
+    font-size: 23px;
+    line-height: 1.375;
+    color: $blue-base1;
+    font-weight: bold;
+  }
+  .page-action {
+      color: $blue-base1;
+  }
+
+  .header-section__anonce p {
+      line-height: 1.375;
+  }
+  .vts-list.vts-list--large {
+    li {
+      font-size: 18px;
+      line-height: normal;
+      margin-left: 1em;
+    }
+  }
+  .description p{
+    line-height: 1.375;
+  }
+
+  .responsive-iframe {
+      margin-top: 20px;
+  }
+
+  .responsive-iframe iframe {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      width: 100%;
+      max-width: 440px;
+  }
+
+  .info-block--options {
+    h3.page-action {
+      font-size: 24px;
+      font-weight: bold;
+      color: #0055b0;
+      margin-bottom: 15px;
+      text-align: left;
+      &:after {
+        content: none;
+        display: none;
+      }
+    }
+  }
+
+  .option-name {
+    display: inline-block;
+    font-weight: 600;
+    color: #333;
+  }
+
+  .option-desc {
+      font-size: 15px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+  }
+  .insurance-links a {
+    display: inline-block;
+    text-decoration: underline;
+    line-height: 1.5;
+    margin-bottom: 5px;
+    &:hover {
+      color: $blue-base1;
+    }
+
+  }
+  .insurance-links__icon {
+      margin-right: 5px;
+  }
+
+  .page-action--insurance-links {
+    color: $blue-base1;
+    margin-bottom: 1em;
+  }
+  small.partner-title {
+      font-size: 11px;
+      text-align: center;
+      display: block;
+      margin-top: 1em;
+      color: #ddd;
+  }
+
+}

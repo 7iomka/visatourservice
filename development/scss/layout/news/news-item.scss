@@ -52,10 +52,10 @@
             }
         }
 
-
-
-          &__nav {
+        &__nav {
                 margin-top: 50px;
+                border-top: 2px solid #eee;
+                border-bottom: 2px solid #eee;
             li {
               display: inline;
                 text-align: center;
@@ -138,5 +138,8 @@
             }
           }
 
+        span, p, div {
+          line-height: 1.4;
+        }
     }
 }

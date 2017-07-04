@@ -437,6 +437,10 @@ if($mainContainer.hasClass('page--about')) {
   aboutActions();
 }
 
+if($mainContainer.hasClass('page--insurance')) {
+  isuranceActions();
+}
+
 
 
 
