@@ -441,6 +441,10 @@ if($mainContainer.hasClass('page--insurance')) {
   isuranceActions();
 }
 
+if($mainContainer.hasClass('page--news')) {
+  newsActions();
+}
+
 
 
 

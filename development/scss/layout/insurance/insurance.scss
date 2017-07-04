@@ -56,15 +56,23 @@
   }
 
   .option-name {
-    display: inline-block;
+
     font-weight: 600;
     color: #333;
+    text-align: left;
+    @include media(">=640px"){
+        display: inline-block;
+    };
   }
 
   .option-desc {
       font-size: 15px;
+      @include media("<xx-small"){
+        font-size: 16px;
+      };
       margin-top: 10px;
       margin-bottom: 20px;
+      text-align: left;
   }
   .insurance-links a {
     display: inline-block;
@@ -90,6 +98,82 @@
       display: block;
       margin-top: 1em;
       color: #ddd;
+  }
+
+.accordion__title {
+  display: inline-block;
+}
+  /** toggler settings **/
+  .accordion__toggler {
+    display: inline-block;
+        margin-left: 5px;
+    &:after {
+      content: none;
+      display: none;
+    }
+  }
+
+  /** hard code **/
+  .accordion__item.active .accordion__heading {
+    background: #f4f4f4;
+  }
+
+  .accordion__item .accordion__heading:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 3px;
+      background: #ffba00;
+      transition: 0.3s cubic-bezier(0.71, 0.47, 0.22, 0.71);
+      transform: scaleX(0);
+      transform-origin: 0 0;
+  }
+
+  .accordion__item.active .accordion__heading:before {
+      transform: scaleY(1);
+  }
+
+  .accordion__item.active .accordion__toggler {
+      color: #ffba00;
+      transform: rotate(90deg);
+  }
+
+  .accordion__item .accordion__toggler {
+      transition: 0.3s cubic-bezier(0.71, 0.47, 0.22, 0.71);
+      transition-delay: 0.1s;
+  }
+
+  .accordion__heading {
+      background: #fbfbfb;
+      font-size: 18px;
+      margin: 6px 0 0;
+      &:hover {
+        background: #f1f1f1;
+      }
+  }
+
+  .accordion__content {
+      padding: 20px 0 20px 20px;
+  }
+
+  .accordion__item.active .accordion__content {
+      /* box-shadow: 3px 0px #ffba00 inset; */
+  }
+
+  .accordion__item {
+      margin-bottom: 5px;
+  }
+
+  .page.page--insurance .option-desc {
+      margin-top: 0;
+      margin-bottom: 0;
+      line-height: 1.375;
+  }
+
+  .accordion__title {
+      font-weight: 500;
   }
 
 }

@@ -145,6 +145,9 @@ var jsFilesSeparated = [
      paths.src.jsPagesDir + 'order-online.js',
      paths.src.jsPagesDir + 'passports-registration.js',
      paths.src.jsPagesDir + 'about.js',
+     paths.src.jsPagesDir + 'invites.js',
+     paths.src.jsPagesDir + 'insurance.js',
+     paths.src.jsPagesDir + 'news.js',
 
      /************ Common scripts **********/
           paths.src.jsdir + 'main.js',

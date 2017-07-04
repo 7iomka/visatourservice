@@ -14,5 +14,17 @@ console.log('is insurance')
 //   itemSelector: '.documents-list__grid-item',
 //   columnWidth: '.documents-list__grid-item'
 // });
+//
+
+  if($('.accordion').length) {
+    $('.accordion').each(function () {
+      var config = {
+        speed: 350,
+      };
+      $(this).accordion(config);
+
+    })
+  }
+
 
 }

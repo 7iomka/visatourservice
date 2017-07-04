@@ -13,8 +13,12 @@
         activeClass: 'active',
         speed: 400,
         collapse: true,
+        toggleText: false,
         togglerDefaultText: 'Expand',
-        togglerOpenedText: 'Roll up'
+        togglerOpenedText: 'Roll up',
+        toggleClass: false,
+        togglerOpenedClass: '',
+        togglerDefaultClass: '',
     }
 
     // This is the easiest way to have default options.
@@ -31,10 +35,22 @@
 
       /** Change text for toggler **/
       if($parentItem.hasClass(settings.activeClass)) {
-        $toggler.text(settings.togglerDefaultText);
+        if(settings.toggleText){
+          $toggler.text(settings.togglerDefaultText);
+        }
+        if(settings.toggleClass){
+          $toggler.removeClass(settings.togglerDefaultClass);
+          $toggler.addClass(settings.togglerOpenedClass);
+        }
       }
       else {
-        $toggler.text(settings.togglerOpenedText);
+        if(settings.toggleText){
+          $toggler.text(settings.togglerOpenedText);
+        }
+        if(settings.toggleClass){
+          $toggler.removeClass(settings.togglerOpenedClass);
+          $toggler.addClass(settings.togglerDefaultClass);
+        }
       }
 
       // for active item toggle class (for css animation of content inside panel)
@@ -48,7 +64,10 @@
         var $anotherItems = $(settings.classList.item + '.' + settings.activeClass, self).not($parentItem);
         $anotherItems.removeClass(settings.activeClass);
         $anotherItems.find(settings.classList.panel).slideToggle(settings.speed);
-        $anotherItems.find(settings.classList.toggler).text(settings.togglerDefaultText)
+        if(settings.toggleText){
+          $anotherItems.find(settings.classList.toggler).text(settings.togglerDefaultText)
+        }
+
       }
 
 
@@ -58,18 +77,18 @@
   };
 
   // default initialisation
-  $(function () {
-    if($('.accordion').length) {
-      $('.accordion').each(function () {
-        var config = {
-          speed: 350
-        };
-        if($(this).hasClass('accordion--collaps_false')) {
-          config.collapse = false;
-        }
-        $(this).accordion(config);
-
-      })
-    }
-  })
+  // $(function () {
+  //   if($('.accordion').length) {
+  //     $('.accordion').each(function () {
+  //       var config = {
+  //         speed: 350
+  //       };
+  //       if($(this).hasClass('accordion--collaps_false')) {
+  //         config.collapse = false;
+  //       }
+  //       $(this).accordion(config);
+  //
+  //     })
+  //   }
+  // })
 }(jQuery)); // Pass in jQUery object
