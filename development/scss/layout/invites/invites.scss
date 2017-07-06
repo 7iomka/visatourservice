@@ -2,22 +2,135 @@
 // This file contains all styles related or first used on page: invites
 // -----------------------------------------------------------------------------
 .page.page--invites {
-  // .parallax-image:after {
-  //     opacity: 0.7;
-  //         background: linear-gradient(45deg, rgba(43, 46, 56, 0.42), rgba(43, 70, 40, 0.81), rgba(0, 85, 176, 0.4));
-  // }
 
-// end for page
+  p {
+    line-height: 1.375;
+  }
+  .table {
+    max-width: 820px;
+  }
+  .accordion__contol {
+      max-width: 820px;
+      margin: 6px auto;
+  }
+  // common
+  .documents-set--icon--color-white .icons-set__item__icon {
+      color: white;
+      font-size: 1.2em;
+  }
+  .documents-set--icon--color-white .icons-set__item__icon-wrap {
+      width: 48px;
+      height: 48px;
+  }
+  .documents-set .icons-set__item__title {
+    font-weight: 500;
+}
+.icons-set__item__title a {
+  color: $blue-base1;
+  // text-decoration: underline;
 }
 
-// common
-// 
-// /** small page action **/
-// h3.page-action {
-//     font-size: 24px;
-//     color: $base-green;
-//     &:after {
-//       background-color: #e0e0e0;
-//       width: 120px;
-//     }
-// }
+  /**
+   * Nested accordion temp styles
+   */
+
+
+  .accordion__control--nested {
+      display: inline-block;
+      background: #fff6dd;
+      &:hover {
+        background: #ffeaaf;
+      }
+      .accordion__title {
+          border-bottom: 1px dashed;
+      }
+  }
+  .accordion__item--nested.active .accordion__control--nested {
+    background: #ffeaaf;
+    color: black;
+  }
+
+  .accordion__content--nested {
+      padding-left: 0;
+  }
+  .accordion__control--nested .accordion__title.atn {
+    color: $red_orange;
+
+}
+
+
+/** styles for active parent accordion **/
+.accordion__item--parent.active > .accordion__control {
+    background: #fff5ee;
+    box-shadow: 0 0 0 1px #ffba35 inset;
+    color: #574a29;
+}
+
+.accordion__item--parent.active > .accordion__panel > .accordion__content {
+    background: #fffcfa;
+    border: 1px solid #ffba35;
+    border-top-width: 0;
+    padding-right: 20px;
+}
+
+.accordion__icon {
+  display: inline-block;
+  vertical-align: middle;
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+.accordion__title {
+    vertical-align: middle;
+}
+
+
+}
+
+
+
+
+
+
+
+.invites {
+  &__row {
+    @include media(">=820px") {
+      margin: 0 75px;
+    };
+  }
+  &__annonce {
+      margin: 0 0 20px;
+
+      font-size: 18px;
+      border: 1px solid $blue-base1;
+      padding: 15px;
+      line-height: 1.375;
+      svg {
+          float: left;
+          margin: 5px;
+          margin-right: 15px;
+          width: 63px;
+          height: 60px;
+          fill: $blue-base1;
+      }
+  }
+  &__desc-intro {
+    line-height: 1.375;
+  }
+  &__table-anonce {
+    padding: 0 0 15px;
+    color: #3a1c1c;
+    // font-size: 18px;
+  }
+
+  &__btn-block {
+      background: #fafcff;
+      padding: 20px 15px;
+      border: 1px solid #e7e7e7;
+  }
+
+
+
+
+}

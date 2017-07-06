@@ -7,7 +7,7 @@ function isuranceActions(){
  * Go initialize VTS tabs component
  */
 
-console.log('is insurance')
+// console.log('is insurance')
 
 // $('.documents-list__grid').masonry({
 //   // options

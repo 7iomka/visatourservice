@@ -1,18 +1,39 @@
 // ----------------------------------------------------------------------------
-// Scripts for passports registration page
+// Scripts for invites page
 // ----------------------------------------------------------------------------
-// 
-// function passports_registrationActions(){
-// /**
-//  * Go initialize VTS tabs component
-//  */
 //
-// vtsTabs();
-//
-// // $('.documents-list__grid').masonry({
-// //   // options
-// //   itemSelector: '.documents-list__grid-item',
-// //   columnWidth: '.documents-list__grid-item'
-// // });
-//
-// }
+function invitesActions(){
+
+
+   if($('.accordion--parent').length) {
+     $('.accordion').not('.accordion--nested').each(function () {
+       var config = {
+         speed: 350,
+         classList: {
+           item: '.accordion__item--parent',
+           control: '.accordion__control--parent',
+           toggler: '.accordion__toggler--parent',
+           panel: '.accordion__panel--parent',
+         }
+       };
+       $(this).accordion(config);
+
+     });
+   }
+
+   if($('.accordion--nested')) {
+     $('.accordion--nested').each(function () {
+       var config = {
+         speed: 450,
+         classList: {
+           item: '.accordion__item--nested',
+           control: '.accordion__control--nested',
+           toggler: '.accordion__toggler--nested',
+           panel: '.accordion__panel--nested',
+         }
+       };
+       $(this).accordion(config);
+     });
+   }
+
+}

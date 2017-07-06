@@ -7,6 +7,34 @@
         background: #5a4a22;
         opacity: 0.3;
     }
+    .section-with-tabs {
+      @include media(">=x-small"){
+        margin-top: 70px;
+      };
+    }
+    /**
+     * Tabs mod
+     */
+    @include media(">=640px"){
+      .vts-tabs.vts-tabs--primary > .vts-tabs__control {
+           flex-grow: 1;
+           transition: 0.3s cubic-bezier(0.71, 0.47, 0.22, 0.71) all;
+           height: 50px;
+           &.active {
+               height: 60px;
+               line-height: 30px;
+           }
+       }
+
+       .vts-tabs.vts-tabs--primary {
+           display: flex;
+           table-layout: fixed;
+           align-items: flex-end;
+           width: 100%;
+           margin-top: -63px;
+           box-shadow: none;
+       }
+    };
 
     .post-module {
         position: relative;

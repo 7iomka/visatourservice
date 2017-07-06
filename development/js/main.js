@@ -444,6 +444,9 @@ if($mainContainer.hasClass('page--insurance')) {
 if($mainContainer.hasClass('page--news')) {
   newsActions();
 }
+if($mainContainer.hasClass('page--invites')) {
+  invitesActions();
+}
 
 
 

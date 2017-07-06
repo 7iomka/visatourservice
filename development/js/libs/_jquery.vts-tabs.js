@@ -63,10 +63,10 @@ function vtsTabs() {
       }
 
 
-
       // скрываем панель с внутренним таб-контентом (Например: взрослые / дети)
-      new TimelineMax().to($currentContentTabInnerPanel, 0.4, {
+      new TimelineMax().to('.vts-tabs__inner-panel', 0.2, {
         autoAlpha: 0,
+        x: -20,
         onComplete: function () {
 
           $currentContentTab.addClass('active').siblings().removeClass('active');
@@ -84,7 +84,9 @@ function vtsTabs() {
 
           new TimelineMax()
           .to($wrapper, 0.4, {height: h+primaryH})
-          .to($currentContentTabInnerPanel, 0.4,{autoAlpha: 1}, '-=0.3');
+          .fromTo($currentContentTabInnerPanel, 0.4, {x: 20},{x: 0, autoAlpha: 1}, '-=0.5');
+          //
+          // .to($currentContentTabInnerPanel, 0.4,{autoAlpha: 1}, '-=0.3');
       }});
 
 
