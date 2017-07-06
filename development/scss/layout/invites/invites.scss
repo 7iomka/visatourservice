@@ -2,7 +2,9 @@
 // This file contains all styles related or first used on page: invites
 // -----------------------------------------------------------------------------
 .page.page--invites {
-
+.page-action {
+  color: $blue-base1;
+}
   p {
     line-height: 1.375;
   }
@@ -29,35 +31,15 @@
   color: $blue-base1;
   // text-decoration: underline;
 }
-
-  /**
-   * Nested accordion temp styles
-   */
-
-
-  .accordion__control--nested {
-      display: inline-block;
-      background: #fff6dd;
-      &:hover {
-        background: #ffeaaf;
-      }
-      .accordion__title {
-          border-bottom: 1px dashed;
-      }
-  }
-  .accordion__item--nested.active .accordion__control--nested {
-    background: #ffeaaf;
-    color: black;
-  }
-
-  .accordion__content--nested {
-      padding-left: 0;
-  }
-  .accordion__control--nested .accordion__title.atn {
-    color: $red_orange;
-
+.accordion__heading {
+    background: #f7f7f7;
+    box-shadow: 0 0 0 1px rgb(73, 155, 183) inset;
 }
 
+.accordion__title {
+    font-weight: 600;
+    color: #0055b0;
+}
 
 /** styles for active parent accordion **/
 .accordion__item--parent.active > .accordion__control {
@@ -72,18 +54,6 @@
     border-top-width: 0;
     padding-right: 20px;
 }
-
-.accordion__icon {
-  display: inline-block;
-  vertical-align: middle;
-  height: 40px;
-  width: 40px;
-  margin-right: 10px;
-}
-.accordion__title {
-    vertical-align: middle;
-}
-
 
 }
 

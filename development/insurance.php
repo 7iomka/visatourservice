@@ -122,9 +122,9 @@
 
 							<div class="info-block__desc info-block--options text-justify" style="margin:0;">
 								<h3 class="page-action page-action--clean">Базовый вариант страховки <nobr>(достаточно для получения визы):</nobr></h3>
-								<ul class="accordion">
-									<li class="accordion__item">
-										<div class="option-name accordion__heading accordion__contol">
+								<ul class="accordion accordion--parent">
+									<li class="accordion__item accordion__item--parent">
+										<div class="option-name accordion__heading accordion__control">
 											<div class="accordion__title">Медицинское страхование</div>
 											<div class="accordion__toggler icon icon--arrow-right--flat"></div>
 										</div>
@@ -135,8 +135,8 @@
 											</div>
 										</div>
 									</li>
-									<li class="accordion__item">
-										<div class="option-name accordion__heading accordion__contol">
+									<li class="accordion__item accordion__item--parent">
+										<div class="option-name accordion__heading accordion__control">
 											<div class="accordion__title">Занятие спортом и активный отдых</div>
 											<div class="accordion__toggler icon icon--arrow-right--flat"></div>
 										</div>
@@ -149,9 +149,9 @@
 									</li>
 								</ul>
 								<h3 class="page-action">Дополнительно Вы можете приобрести другие опции страховки:</h3>
-								<ul class="accordion">
-									<li class="accordion__item">
-										<div class="option-name accordion__heading accordion__contol">
+								<ul class="accordion accordion--parent">
+									<li class="accordion__item accordion__item--parent">
+										<div class="option-name accordion__heading accordion__control">
 											<div class="accordion__title">Страхование багажа на время авиаперелета</div>
 											<div class="accordion__toggler icon icon--arrow-right--flat"></div>
 										</div>
@@ -162,8 +162,8 @@
 										</div>
 									</li>
 
-									<li class="accordion__item">
-										<div class="option-name accordion__heading accordion__contol">
+									<li class="accordion__item accordion__item--parent">
+										<div class="option-name accordion__heading accordion__control">
 											<div class="accordion__title">Страхование багажа в гостинице</div>
 											<div class="accordion__toggler icon icon--arrow-right--flat"></div>
 										</div>
@@ -173,8 +173,8 @@
 											</div>
 										</div>
 									</li>
-									<li class="accordion__item">
-										<div class="option-name accordion__heading accordion__contol">
+									<li class="accordion__item accordion__item--parent">
+										<div class="option-name accordion__heading accordion__control">
 											<div class="accordion__title">Страхование спортивного оборудования</div>
 											<div class="accordion__toggler icon icon--arrow-right--flat"></div>
 										</div>
@@ -185,8 +185,8 @@
 											</div>
 										</div>
 									</li>
-									<li class="accordion__item">
-										<div class="option-name accordion__heading accordion__contol">
+									<li class="accordion__item accordion__item--parent">
+										<div class="option-name accordion__heading accordion__control">
 											<div class="accordion__title">Страхование отмены поездки</div>
 											<div class="accordion__toggler icon icon--arrow-right--flat"></div>
 										</div>
@@ -197,8 +197,8 @@
 											</div>
 										</div>
 									</li>
-									<li class="accordion__item">
-										<div class="option-name accordion__heading accordion__contol">
+									<li class="accordion__item accordion__item--parent">
+										<div class="option-name accordion__heading accordion__control">
 											<div class="accordion__title">Страхование от несчастных случаев</div>
 											<div class="accordion__toggler icon icon--arrow-right--flat"></div>
 										</div>
@@ -208,8 +208,8 @@
 											</div>
 										</div>
 									</li>
-									<li class="accordion__item">
-										<div class="option-name accordion__heading accordion__contol">
+									<li class="accordion__item accordion__item--parent">
+										<div class="option-name accordion__heading accordion__control">
 											<div class="accordion__title">Страхование гражданской ответственности</div>
 											<div class="accordion__toggler icon icon--arrow-right--flat"></div>
 										</div>
@@ -219,8 +219,8 @@
 											</div>
 										</div>
 									</li>
-									<li class="accordion__item">
-										<div class="option-name accordion__heading accordion__contol">
+									<li class="accordion__item accordion__item--parent">
+										<div class="option-name accordion__heading accordion__control">
 											<div class="accordion__title">Задержка рейса</div>
 											<div class="accordion__toggler icon icon--arrow-right--flat"></div>
 										</div>
@@ -230,8 +230,8 @@
 											</div>
 										</div>
 									</li>
-									<li class="accordion__item">
-										<div class="option-name accordion__heading accordion__contol">
+									<li class="accordion__item accordion__item--parent">
+										<div class="option-name accordion__heading accordion__control">
 											<div class="accordion__title">Потеря документов и юридическая помощь</div>
 											<div class="accordion__toggler icon icon--arrow-right--flat"></div>
 										</div>

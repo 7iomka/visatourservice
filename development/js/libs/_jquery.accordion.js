@@ -6,7 +6,7 @@
         // These are the defaults.
         classList: {
           item: '.accordion__item',
-          control: '.accordion__contol',
+          control: '.accordion__control',
           toggler: '.accordion__toggler',
           panel: '.accordion__panel',
         },

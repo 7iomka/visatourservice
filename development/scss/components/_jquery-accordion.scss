@@ -161,3 +161,48 @@
     }
 
   }
+
+
+
+
+    /**
+     * Nested accordion temp styles
+     */
+
+
+    .accordion__control--nested {
+        display: inline-block;
+        background: #fff6dd;
+        &:hover {
+          background: #ffeaaf;
+        }
+        .accordion__title {
+            border-bottom: 1px dashed;
+        }
+    }
+    .accordion__item--nested.active .accordion__control--nested {
+      background: #ffeaaf;
+      color: black;
+    }
+
+    .accordion__content--nested {
+        padding-left: 0;
+    }
+    .accordion__control--nested .accordion__title.atn {
+      color: $red_orange;
+
+  }
+
+
+
+
+  .accordion__icon {
+    display: inline-block;
+    vertical-align: middle;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+  }
+  .accordion__title {
+      vertical-align: middle;
+  }
