@@ -14,12 +14,12 @@
 
 nav[role=navigation] {
   width: 100%;
-  transition: all 0.3s ease-out;
+  // transition: all 0.3s ease-out;
 
-  @include media("<large") {
-      overflow: hidden;
-      max-height: 0;
-  };
+  // @include media("<large") {
+  //     overflow: hidden;
+  //     max-height: 0;
+  // };
 }
 
 
@@ -104,9 +104,9 @@ nav[role=navigation] {
   .icon--mobile-arrow {
     display: none;
   }
-  .js nav[role=navigation] {
-    max-height: none;
-  }
+  // .js nav[role=navigation] {
+  //   max-height: none;
+  // }
 
 }
 
@@ -129,8 +129,12 @@ ul {
    @include media(">=large"){
      text-align: center;
    };
+   @include media("<large"){
+     display: none;
+   };
    &.active {
-        max-height: 500em;
+        // max-height: 500em;
+
    }
    &__list {
      display: flex;
@@ -189,6 +193,9 @@ ul {
 
      &.expanded &-icon {
          transform: rotate(-90deg);
+         @include media("<large"){
+           transform: rotate(-90deg) translateX(5px);
+         };
          color: #ffba00;
      }
     //  &.expanded .submenu {

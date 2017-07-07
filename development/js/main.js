@@ -5,8 +5,9 @@
 jQuery(document).ready(function($) {
   var $window = $(window),
       $body = $('body'),
-      isLessThen768 = false;
-      isLessThen960 = false;
+      isLessThen768 = false,
+      isLessThen960 = false,
+      isMoreThen1200 = false;
 
 
 
@@ -23,6 +24,10 @@ jQuery(document).ready(function($) {
   function maxWidthCss(max) {
       return Modernizr.mq('(max-width: ' + max + 'px)');
   }
+  // Modernizr min-width
+  function minWidthCss(min) {
+      return Modernizr.mq('(min-width: ' + min + 'px)');
+  }
 
 
   // ------------------------------------------------------------------
@@ -38,11 +43,18 @@ jQuery(document).ready(function($) {
     else {
       isLessThen768 = false;
     }
+
     if (maxWidthCss(959)) {
       isLessThen960 = true;
     }
     else {
       isLessThen960 = false;
+    }
+
+    if(minWidthCss(1200)){
+        isMoreThen1200 = true;
+    } else {
+        isMoreThen1200 = false;
     }
 
   }
@@ -74,13 +86,31 @@ jQuery(document).ready(function($) {
         $menuHamburger = $('.hamburger'),
         $menuLink = $menu.find('.menu__link');
 
+      var styleCache = false;
       // toggle hamburger
       $menuHamburger.click(function() {
         $menuHamburger.toggleClass('active');
-        $menu.toggleClass('active');
+        $menu.toggleClass('active').slideToggle(500);
         return false;
       });
 
+      $window.on('resize', $.throttle(250, toggleMenuState)).trigger('resize');
+      $window.on('orientationchange', toggleMenuState);
+
+      function toggleMenuState(){
+        if(isMoreThen1200) {
+          var updatedStyle = $menu.attr('style') ? $menu.attr('style') : false;
+          if(updatedStyle) {
+            styleCache = updatedStyle;
+          }
+          $menu.removeAttr('style');
+        } else {
+          if( styleCache && !$menu.attr('style') ){
+            $menu.attr('style', styleCache);
+          }
+
+        }
+      }
       var $menuItemIcon = $menu.find('.menu__item-icon');
 
 
@@ -111,7 +141,7 @@ jQuery(document).ready(function($) {
           }
         });
       }
-      
+
       $menuItemIcon.on('click', function () {
         var $menuItem = $(this).closest('.menu__item');
         var $submenu = $menuItem.find('.submenu');
