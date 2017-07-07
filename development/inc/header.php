@@ -7,7 +7,7 @@
     <meta name="keywords" content="создание и продвижение сайтов. реклама сайтов в яндекс директ" />
     <meta name="description" content="Агентство  интернет-маркетинга SEOSINTEZ. Создание сайтов любой тематики и сложности. SEO продвижение сайтов. Настройка и сопровождение рекламных кампаний в Яндекс Директ и Google AdWords" />
     <!-- <meta name=viewport content="width=device-width, initial-scale=1"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta content="yes" name="apple-mobile-web-app-capable">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -224,16 +224,51 @@
                   <!-- /Small screen logo in menu -->
 
                   <!-- Menu Items -->
-                  <nav id="menu" role="navigation" >
-              			<ul>
-              				<li class="menu__item"><a class="menu__link" href="/about.php">О компании</a><span class="icon icon--arrow-right--flat icon--mobile-arrow"></span></li>
-              				<li class="menu__item"><a class="menu__link" href="/visa-c.php">Виза С</a><span class="icon icon--arrow-right--flat icon--mobile-arrow"></span></li>
-              				<li class="menu__item"><a class="menu__link" href="/visa-d.php">Виза D</a><span class="icon icon--arrow-right--flat icon--mobile-arrow"></span></li>
-              				<li class="menu__item"><a class="menu__link" href="/services.php">Услуги</a><span class="icon icon--arrow-right--flat icon--mobile-arrow"></span></li>
-              				<li class="menu__item"><a class="menu__link" href="/franchising.php">Франчайзинг</a><span class="icon icon--arrow-right--flat icon--mobile-arrow"></span></li>
-              				<li class="menu__item"><a class="menu__link" href="/news.php">Новости</a><span class="icon icon--arrow-right--flat icon--mobile-arrow"></span></li>
-              				<li class="menu__item menu__item--last"><a class="menu__link" href="/contacts.php">Контакты</a><span class="icon icon--arrow-right--flat icon--mobile-arrow"></span></li>
+                  <nav class="menu" id="menu" role="navigation" >
+              			<ul class="menu__list">
+              				<li class="menu__item">
+                        <div class="menu__item-inner"><a class="menu__link" href="#!">Главная</a><span class="menu__item-icon icon icon--arrow-right--flat icon--mobile-arrow"></span>
+                        </div>
+                        <ul class="submenu" style="display: none;">
+                          <li class="submenu__item">
+                              <a class="submenu__link" href="#!">О компании</a>
+                          </li>
+                          <li class="submenu__item">
+                              <a class="submenu__link" href="#!">Прайс-лист</a>
+                          </li>
+                  				<li class="submenu__item">
+                            <a class="submenu__link" href="/franchising.php">Франчайзинг</a>
+                          </li>
+                        </ul>
+                      </li>
+              				<li class="menu__item"><a class="menu__link" href="#!">Краткосрочные визы</a></li>
+              				<li class="menu__item"><a class="menu__link" href="#!">Долгосрочные визы</a></li>
+
+              				<li class="menu__item">
+                        <div class="menu__item-inner"><a class="menu__link" href="#!">Услуги</a><span class="menu__item-icon icon icon--arrow-right--flat icon--mobile-arrow"></span>
+                        </div>
+                        <ul class="submenu" style="display: none;">
+                          <li class="submenu__item">
+                              <a class="submenu__link" href="#!">Оформление загранпаспортов</a>
+                          </li>
+                          <li class="submenu__item">
+                              <a class="submenu__link" href="#!">Приглашения для иностранцев в РФ</a>
+                          </li>
+                          <li class="submenu__item">
+                              <a class="submenu__link" href="#!">Бюро переводов</a>
+                          </li>
+                          <li class="submenu__item">
+                              <a class="submenu__link" href="#!">Страхование для визы онлайн</a>
+                          </li>
+                        </ul>
+                      </li>
+              				<li class="menu__item"><a class="menu__link" href="#!">Оформление визы онлайн</a></li>
+              				<li class="menu__item"><a class="menu__link" href="#!">Горящие туры</a></li>
+              				<li class="menu__item"><a class="menu__link" href="/news.php">Акции и новости</a></li>
+              				<li class="menu__item menu__item--last"><a class="menu__link" href="/contacts.php">Контакты</a></li>
               			</ul>
+                    <!-- <button class="menu__more btn btn--auto-width btn--yellow btn--no-ripples" count="1"><span></span><span class="menu__more-icon icon icon--arrow-right--flat"></span></button>
+                    <ul class='hidden-links hidden'></ul> -->
               		</nav>
                 <!-- /Menu Items -->
                 </div>

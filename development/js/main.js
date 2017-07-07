@@ -52,7 +52,9 @@ jQuery(document).ready(function($) {
   // ------------------------------------------------------------------
   // Wawes material effect initialization to all buttons
   // ------------------------------------------------------------------
-  Waves.attach('.btn', ['waves-circle', 'waves-float']);
+
+  Waves.attach($('.btn').not('.btn--no-ripples'), ['waves-circle', 'waves-float']);
+  // Waves.calm('.btn--no-ripples');
   Waves.init();
 
   // ------------------------------------------------------------------
@@ -66,11 +68,11 @@ jQuery(document).ready(function($) {
   // ----------------------------------------------------------------------------
   // On click show menu on small screen
 
-    $('body').addClass('js');
+      $('body').addClass('js');
       var $menu = $('#menu'),
         $nav = $("#header-nav"),
         $menuHamburger = $('.hamburger'),
-        $menuLink = $('.menu__item a', $menu);
+        $menuLink = $menu.find('.menu__link');
 
       // toggle hamburger
       $menuHamburger.click(function() {
@@ -78,6 +80,107 @@ jQuery(document).ready(function($) {
         $menu.toggleClass('active');
         return false;
       });
+
+      var $menuItemIcon = $menu.find('.menu__item-icon');
+
+
+
+      var $menuItem = $('.menu__item');
+      if (!Modernizr.touchevents) {
+        $menuItem.hover(function(){
+          var $submenu = $(this).find('.submenu');
+          if($submenu.length){
+            if($submenu.hasClass('expanded')){
+              $(this).removeClass('expanded');
+              $submenu.stop().slideUp();
+            } else {
+              $(this).addClass('expanded');
+              $submenu.stop().slideDown();
+            }
+          }
+        }, function(){
+          var $submenu = $(this).find('.submenu');
+          if($submenu.length){
+            if($submenu.hasClass('expanded')){
+              $(this).addClass('expanded');
+              $submenu.stop().slideDown();
+            } else {
+              $(this).removeClass('expanded');
+              $submenu.stop().slideUp();
+            }
+          }
+        });
+      }
+      
+      $menuItemIcon.on('click', function () {
+        var $menuItem = $(this).closest('.menu__item');
+        var $submenu = $menuItem.find('.submenu');
+        if($menuItem.hasClass('expanded')){
+          $menuItem.removeClass('expanded');
+          $submenu.stop().slideUp();
+        } else {
+          $menuItem.addClass('expanded');
+          $submenu.stop().slideDown();
+        }
+      });
+      /** Hide meny items one by items **/
+      // $(function() {
+      //
+      //   var $btn = $menu.find('.menu__more');
+      //   var $vlinks = $menu.find('.menu__list');
+      //   var $hlinks = $menu.find('.hidden-links');
+      //
+      //   var numOfItems = 0;
+      //   var totalSpace = 0;
+      //   var breakWidths = [];
+      //
+      //   // Get initial state
+      //   $vlinks.children().outerWidth(function(i, w) {
+      //     totalSpace += w;
+      //     numOfItems += 1;
+      //     breakWidths.push(totalSpace);
+      //   });
+      //
+      //   var availableSpace, numOfVisibleItems, requiredSpace;
+      //
+      //   function check() {
+      //
+      //     // Get instant state
+      //     availableSpace = $vlinks.width() - 10;
+      //     numOfVisibleItems = $vlinks.children().length;
+      //     requiredSpace = breakWidths[numOfVisibleItems - 1];
+      //
+      //     // There is not enought space
+      //     if (requiredSpace > availableSpace) {
+      //       $vlinks.children().last().prependTo($hlinks);
+      //       numOfVisibleItems -= 1;
+      //       check();
+      //       // There is more than enough space
+      //     } else if (availableSpace > breakWidths[numOfVisibleItems]) {
+      //       $hlinks.children().first().appendTo($vlinks);
+      //       numOfVisibleItems += 1;
+      //     }
+      //     // Update the button accordingly
+      //     $btn.attr("count", numOfItems - numOfVisibleItems);
+      //     if (numOfVisibleItems === numOfItems) {
+      //       $btn.addClass('hidden');
+      //     } else $btn.removeClass('hidden');
+      //
+      //     console.log(availableSpace, numOfVisibleItems, requiredSpace);
+      //   }
+      //
+      //   // Window listeners
+      //   $(window).resize(function() {
+      //     check();
+      //   }).trigger('resize');
+      //
+      //   $btn.on('click', function() {
+      //     $hlinks.toggleClass('hidden');
+      //   });
+      //
+      //
+      //
+      // });
 
       // // goToTarget
       // $menuLink.on('click', function (e) {

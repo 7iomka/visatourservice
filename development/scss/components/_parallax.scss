@@ -51,6 +51,7 @@
 /** settings for home **/
 .parallax-section--home {
   height: 720px;
+  z-index: auto;
 
   @include media("<tablet") {
     height: auto;
