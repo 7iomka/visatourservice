@@ -66,6 +66,7 @@ header.site-header {
           font-size: 11px;
           text-transform: uppercase;
           letter-spacing: 0.05em;
+          line-height: 1.2;
       }
 
       .logo__title-part--sep {
@@ -118,6 +119,7 @@ header.site-header {
     }
     .header-data__phone {
         font-weight: bold;
+        margin-top: 2px;
     }
 
     .header__icon {
@@ -128,6 +130,9 @@ header.site-header {
     .header-data__link {
         display: flex;
         align-items: center;
+        span {
+          color: #0558b2;
+        }
     }
 
   }
@@ -234,22 +239,34 @@ header.site-header {
       > div {
         padding: 5px 0;
       }
-
+    &__days {
+    font-size: 16px;
+    color: #333;
+    display: flex;
+    align-items: flex-start;
+    }
+    &__days-content {
+      margin-top: 5px;
+      margin-left: 15px;
+    }
     &__days-wrapper {
-        display: inline-block;
-        margin: 0 5px;
+      display: block;
+      line-height: 1.375;
+    }
+    &__days-prefix {
+       margin-bottom: 5px;
     }
     &__adress-days {
       display: inline-block;
     }
 
-    &__adress-hourds {
+    &__adress-hours {
       display: inline-block;
       white-space: nowrap;
     }
 
 
-    &__adress-days, &__adress-hourds {
+    &__adress-days, &__adress-hours {
       font-size: 0.9em;
     }
 
@@ -272,9 +289,14 @@ header.site-header {
 .header-data__item-content-action {
   position: relative;
     margin-left: 5px;
-    padding: 2px 2px 1px;
+    padding: 2px 0 1px;
     cursor: pointer;
     border-bottom: 1px solid rgba(0,0,0,0.12);
+    transition: 0.3s cubic-bezier(0.71, 0.47, 0.22, 0.71) border-color;
+    &:hover,
+    &--city {
+      border-bottom-color: transparent;
+    }
 }
 
 
@@ -299,6 +321,9 @@ a.header-data__link.header-data__geo:after {
 header.site-header .header-data .header__icon {
     color: #adadad;
     font-weight: 400;
+    &.icon--phone_number {
+      color: #393939;
+    }
 }
 
 .your-city,.cite-offices {
@@ -324,17 +349,19 @@ header.site-header .header-data .header-data__item {
 }
 
 .header-data .header-data__item--offices {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .header-locations__data {
     margin-top: 5px;
+    border-top: 1px dashed $yellow;
+    padding-top: 10px;
 }
 
 .header-data__item-content-action:before {
     content: "";
     position: absolute;
-    left: 0px;
+    left: -2px;
     top: -10%;
     width: 105%;
     height: 125%;
@@ -347,7 +374,8 @@ header.site-header .header-data .header-data__item {
     opacity: 0;
 }
 
-.header-data__item-content-action:hover:before {
+.header-data__item-content-action:hover:before,
+.header-data__item-content-action--city:before {
     transform: none;
     opacity: 1;
 }
@@ -370,6 +398,10 @@ header.site-header .header-data .header-data__item {
         font-weight: normal;
         margin: 0;
         line-height: 1.2;
+        strong {
+          font-size: 110%;
+           color: #0558b2;
+        }
     }
 
     &__action {
@@ -380,7 +412,7 @@ header.site-header .header-data .header-data__item {
         line-height: 1.375;
         font-size: 16px;
         text-decoration: underline;
-        color: #0028ff;
+        color: $blue-base1;
     }
 
     &__content {
@@ -397,26 +429,23 @@ header.site-header .header-data .header-data__item {
      color: #6b6b6b;
  }
 
- .header-office__days-prefix {
-     font-size: 16px;
-     color: #333;
- }
+
 
  .header-office__adress-days {
      color: #021684;
  }
 
- .header-office__adress-hourds {
-     color: #0011ff;
+ .header-office__adress-hours {
+     color: $blue-base1;
  }
 
 
  .header-office__days-outer {
      background: white;
      margin-bottom: 5px;
-     border-bottom: 1px dashed #ffba00;
+     border-bottom: 1px dashed $yellow;
  }
 
  .header-office {
-     border-top: 1px dashed #ffba00;
+     border-top: 1px dashed $yellow;
  }

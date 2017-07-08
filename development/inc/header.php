@@ -153,21 +153,41 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="col col--4-of-12 col--m-1-of-2 header-left">
+                    <div class="col col--4-of-12 col--m-1-of-2 header-left col--am">
                         <a class="logo logo--large" href="/">
                             <!-- <span class="logo__img"></span> -->
                             <span class="logo__icon"></span>
                             <span class="logo__title-wrapper">
                         <span class="logo__title-part logo__title-part--first">VisaTourService</span>
                             <span class="logo__title-part logo__title-part--sep"></span>
-                            <span class="logo__title-part logo__title-part--last">Федеральная сеть сервисно-визовых центров</span>
+                            <span class="logo__title-part logo__title-part--last">Федеральная сеть <br>сервисно-визовых центров</span>
                             </span>
                         </a>
                     </div>
-                    <div class="col col--4-of-12 col--m-1-of-2 header-center">
+                    <div class="col col--4-of-12 col--m-1-of-2 header-center col--am">
                         <div class="header-locations">
                             <div class="header-locations__icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 472 472" xml:space="preserve" width="75">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="70" id="Layer_1" x="0px" y="0px" viewBox="0 0 495.001 495.001" xml:space="preserve">
+                              <g>
+                              	<path style="fill: #4583c5;" d="M335.739,129.023c48.224,27.164,78.426,77.982,78.426,134.549c0,1.668-0.035,3.338-0.088,5.006   c14.325,0.746,27.726,5.04,39.343,12.015c0.491-5.655,0.745-11.343,0.745-17.021c0-39.647-11.856-77.798-34.287-110.326   c-19.039-27.61-44.538-49.604-74.329-64.263c0.001,0.131,0.005,0.261,0.005,0.392C345.554,103.199,342.119,116.848,335.739,129.023   z"></path>
+                              	<path style="fill: #e40c80;" d="M184.311,128.577c-6.238-12.073-9.587-25.552-9.587-39.202c0-0.299,0.008-0.595,0.011-0.893   c-31.605,15.351-58.585,39.082-77.89,68.508c14.089,1.893,27.102,7.23,38.158,15.14   C148.141,154.258,164.986,139.384,184.311,128.577z"></path>
+                              	<path style="fill: rgb(128, 187, 52);" d="M336.357,397.77c-23.25,13.363-49.437,20.354-76.744,20.354   c-58.637,0-111.779-33.017-137.971-84.868l-26.849,33.757c35.221,56.154,97.118,91.111,164.82,91.111   c36.187,0,70.819-9.758,101.228-28.369l-18.242-22.935C340.317,403.934,338.236,400.908,336.357,397.77z"></path>
+                              	<path style="fill: #ff5f8e;" d="M152.434,294.543c11.861-14.997,18.396-33.792,18.396-52.905c0-28.624-14.154-54.001-35.828-69.508   c-11.056-7.91-24.068-13.248-38.158-15.14c-3.74-0.502-7.554-0.767-11.43-0.767v53.573c17.553,0,31.842,14.281,31.842,31.842   c0,17.553-14.289,31.842-31.842,31.842v105.324l9.379-11.792l26.849-33.757L152.434,294.543z"></path>
+                              	<path style="fill:#D8D7DA;" d="M117.257,241.638c0-17.561-14.289-31.842-31.842-31.842v63.683   C102.968,273.48,117.257,259.191,117.257,241.638z"></path>
+                              	<path style="fill: #e40c80;" d="M85.415,273.48c-17.561,0-31.842-14.289-31.842-31.842c0-17.561,14.281-31.842,31.842-31.842   v-53.573C38.313,156.223,0,194.537,0,241.638c0,19.113,6.535,37.907,18.428,52.945l66.987,84.221V273.48z"></path>
+                              	<path style="fill:#FFFFFF;" d="M53.573,241.638c0,17.553,14.281,31.842,31.842,31.842v-63.683   C67.854,209.797,53.573,224.078,53.573,241.638z"></path>
+                              	<path style="fill: #138ec7;" d="M291.98,89.375c0,17.553-14.289,31.842-31.842,31.842v105.324l67.018-84.261   c3.282-4.15,6.14-8.599,8.581-13.257c6.38-12.175,9.815-25.824,9.815-39.648c0-0.131-0.004-0.261-0.005-0.392   c-0.212-46.922-38.447-85.023-85.41-85.023v53.573C277.692,57.534,291.98,71.815,291.98,89.375z"></path>
+                              	<path style="fill:#D8D7DA;" d="M291.98,89.375c0-17.561-14.289-31.842-31.842-31.842v63.683   C277.692,121.217,291.98,106.928,291.98,89.375z"></path>
+                              	<path style="fill: #0055b0;" d="M184.311,128.577c2.496,4.832,5.442,9.444,8.841,13.742l66.987,84.221V121.217   c-17.561,0-31.842-14.289-31.842-31.842c0-17.561,14.281-31.842,31.842-31.842V3.96c-46.803,0-84.922,37.831-85.404,84.522   c-0.003,0.298-0.011,0.594-0.011,0.893C174.724,103.025,178.074,116.505,184.311,128.577z"></path>
+                              	<path style="fill:#FFFFFF;" d="M228.297,89.375c0,17.553,14.281,31.842,31.842,31.842V57.534   C242.578,57.534,228.297,71.815,228.297,89.375z"></path>
+                              	<path style="fill: #80bb34;" d="M453.42,280.593c-11.617-6.975-25.018-11.269-39.343-12.015c-1.487-0.077-2.984-0.118-4.49-0.118   v53.573c17.553,0,31.842,14.281,31.842,31.842c0,17.553-14.289,31.842-31.842,31.842v105.324l67.018-84.261   c11.861-14.997,18.396-33.792,18.396-52.905C495.001,322.79,478.308,295.536,453.42,280.593z"></path>
+                              	<path style="fill:#D8D7DA;" d="M441.428,353.876c0-17.561-14.289-31.842-31.842-31.842v63.683   C427.139,385.717,441.428,371.428,441.428,353.876z"></path>
+                              	<path style="fill: #00a01a;" d="M377.745,353.876c0-17.561,14.281-31.842,31.842-31.842v-53.573   c-47.102,0-85.415,38.313-85.415,85.415c0,15.445,4.272,30.68,12.186,43.894c1.879,3.138,3.96,6.165,6.242,9.051l18.242,22.935   l48.745,61.286V385.717C392.026,385.717,377.745,371.428,377.745,353.876z"></path>
+                              	<path style="fill:#FFFFFF;" d="M377.745,353.876c0,17.553,14.281,31.842,31.842,31.842v-63.683   C392.026,322.034,377.745,336.315,377.745,353.876z"></path>
+                              </g>
+
+                              </svg>
+                                <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 472 472" xml:space="preserve" width="75">
                         <path style="fill: #ffba00;" d="M384,448.8c-24-24-72-78.4-72-108.8c0-40,32-72,72-72s72,32,72,72C456,370.4,408,424.8,384,448.8z   M384,292c-26.4,0-48,21.6-48,48s21.6,48,48,48s48-21.6,48-48S410.4,292,384,292z"></path>
                         <g>
                         	<path style="fill: #ffd461;" d="M336,340c0-26.4,21.6-48,48-48s48,21.6,48,48c0-40-21.6-72-48-72S336,300,336,340z"></path>
@@ -188,7 +208,7 @@
                         	<path style="fill: #2b2e38;" d="M82.4,217.6C79.2,214.4,0,139.2,0,92C0,43.2,39.2,4,88,4s88,39.2,88,88   c0,47.2-79.2,122.4-82.4,125.6c-1.6,1.6-3.2,2.4-5.6,2.4S84,219.2,82.4,217.6z M88,200.8c24-24,72-78.4,72-108.8c0-40-32-72-72-72   S16,52,16,92C16,123.2,64,176.8,88,200.8z"></path>
                         </g>
 
-                        </svg>
+                        </svg> -->
                             </div>
                             <div class="header-locations__content">
                                 <h3 class="header-locations__slogan">Более <strong>25 офисов</strong> <br>в городах РФ рядом с Вами</h3>
@@ -204,7 +224,7 @@
 
                                         <div class="header-data__item-content">
                                             <div class="your-city">Ваш город: </div>
-                                            <div class="header-data__item-content-action">
+                                            <div class="header-data__item-content-action header-data__item-content-action--city">
                                                 <a href="#" data-remodal-target="change_city" class="header-data__link header-data__geo"><i class="icon icon--pinpoint header__icon"></i><span>Новосибирск</span></a>
                                             </div>
                                         </div>
@@ -222,35 +242,64 @@
                         </div>
                     </div>
 
-                    <div class="col col--4-of-12 col--m-1-of-2 header-right">
-                      <div class="header-data-wrapper">
+                    <div class="col col--4-of-12 col--m-1-of-2 header-right col--am">
+                        <div class="header-data-wrapper">
                             <!-- begin header-data  (main data )-->
-                            <ul class="header-data header-data--phones" >
+                            <ul class="header-data header-data--phones">
 
                                 <li class="header-data__item">
                                     <div class="header-data__item-phones">
                                         <div class="header-data__item-phone">
-                                            <i class="icon icon--phone_number header__icon" style="color: #193dff;"></i>
-                                            <a href="tel:89237771166" class="header-data__link header-data__phone" style=" color:#193dff; ">8-923-777-11-66</a> </div>
+                                            <i class="icon icon--phone_number header__icon" style="color: #0558b2;"></i>
+                                            <a href="tel:89237771166" class="header-data__link header-data__phone" style=" color:#0558b2; ">8-923-777-11-66</a> </div>
                                         <div class="header-data__item-phone"><i class="icon icon--phone_number header__icon"></i><a href="tel:88002508777" class="header-data__link header-data__phone">8-800-250-87-77</a></div>
                                     </div>
                                 </li>
                             </ul>
                             <!-- end header-data (office data) -->
                             <div class="header-office">
-                                <div class="header-office__days-prefix">График работы:</div>
-
-                                <div class="header-office__days-outer"><div class="header-office__days-wrapper">
-                                    <div class="header-office__adress-days">Пн-Пт,</div>
-                                    <div class="header-office__adress-hourds">09<sup>00</sup>-18<sup>00</sup></div>
-                                </div><div class="header-office__days-wrapper" style=" margin-right: 0; ">
-                                    <div class="header-office__adress-days">Пн-Пт,</div>
-                                    <div class="header-office__adress-hourds">09<sup>00</sup>-18<sup>00</sup></div>
-                                </div></div>
-
-
-                            <div class="header-office__adress-moscow"><div style=" font-size: 14px; ">Наш главный офис в Москве: </div><div style=" font-size: 16px; ">ул. Шухова 14, стр.9</div></div></div>
-                        </div>
+                                <div class="header-office__days">
+                                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 435 435" xml:space="preserve" width="65" class="header-office__days-icon">
+                                    <g>
+                                    	<polygon style="fill: #00a01a;" points="343.333,42.5 343.333,97.5 303.333,97.5 303.333,42.5 217.5,42.5 217.5,142.5 435,142.5    435,42.5  "></polygon>
+                                    	<path style="fill: #e8edf0;" d="M217.5,202.5h30v60h-30v30h30v60h-30v60H315l0-120h120v-150H217.5V202.5z M277.5,202.5h60v60h-60   V202.5z"></path>
+                                    	<path style="fill: #9BC9FF;" d="M435,292.5l-60,60L435,292.5z"></path>
+                                    	<path style="fill: #f6f6f6;" d="M187.5,352.5v-60h30v-30h-30v-60h30v-60H0v270h217.5v-60H187.5z M157.5,352.5h-60v-60h60V352.5z    M157.5,262.5h-60v-60h60V262.5z"></path>
+                                    	<polygon style="fill: #80bb34;" points="217.5,42.5 131.667,42.5 131.667,102.5 91.667,102.5 91.667,42.5 0,42.5 0,142.5    217.5,142.5  "></polygon>
+                                    	<rect x="91.667" y="22.5" style="fill: #e8edf0;" width="40" height="80"></rect>
+                                    	<rect x="303.333" y="22.5" style="fill: #e8edf0;" width="40" height="75"></rect>
+                                    	<rect x="97.5" y="292.5" style="fill: #138ec7;" width="60" height="60"></rect>
+                                    	<rect x="187.5" y="292.5" style="fill: #138ec7;" width="60" height="60"></rect>
+                                    	<rect x="187.5" y="202.5" style="fill: #138ec7;" width="60" height="60"></rect>
+                                    	<rect x="277.5" y="202.5" style="fill: #e51182;" width="60" height="60"></rect>
+                                    	<rect x="97.5" y="202.5" style="fill: #80bb34;" width="60" height="60"></rect>
+                                    	<polygon style="fill: #c0cbd1;" points="315,412.5 435,292.5 315,292.5  "></polygon>
+                                    </g>
+                                    </svg>
+                                    <div class="header-office__days-content">
+                                        <div class="header-office__days-prefix">График работы: </div>
+                                        <div class="header-office__days-outer">
+                                            <div class="header-office__days-wrapper">
+                                                <div class="header-office__adress-days">Пн-Пт,</div>
+                                                <div class="header-office__adress-hours">09<sup>00</sup>-18<sup>00</sup></div>
+                                            </div>
+                                            <div class="header-office__days-wrapper">
+                                                <div class="header-office__adress-days">Сб-Вс,</div>
+                                                <div class="header-office__adress-hours">10<sup>00</sup>-16<sup>00</sup></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header-office__adress-moscow">
+                                    <div style=" font-size: 14px; ">Наш главный офис в Москве: </div>
+                                    <div style="font-size: 16px;margin-top: 5px;"><i class="icon icon--pinpoint header__icon" style=" color: #adadad;  margin-right: 5px;"></i><span style=" vertical-align: middle;">ул. Шухова 14, стр.9</span>
+                                    </div>
+                                    <div style=" margin-top: 5px; ">
+                                      <a href="mailto:info@visatourservice.ru" style="font-size: 16px;color: #6b6b6b;"><i class="icon icon--message" style=" font-weight: bold; margin-right: 5px; opacity: 0.8; "></i><span style=" vertical-align: middle;">info@visatourservice.ru</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
                     </div>
 
                 </div>
