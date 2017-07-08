@@ -233,8 +233,8 @@ header.site-header {
 
       text-align: right;
       border-top: 1px solid #ffb900;
-      margin-top: 5px;
-      padding-top: 5px;
+      margin-top: 15px;
+    // padding-top: 10px;
 
       > div {
         padding: 5px 0;
@@ -243,10 +243,14 @@ header.site-header {
     font-size: 16px;
     color: #333;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    position: relative;
+    top: 10px;
+      img {
+          width: 85px;
+      }
     }
     &__days-content {
-      margin-top: 5px;
       margin-left: 15px;
     }
     &__days-wrapper {
@@ -391,8 +395,14 @@ header.site-header .header-data .header-data__item {
  * Header locations
  */
 .header-locations {
+   &__block {
     display: flex;
     align-items: center;
+    &--bottom {
+        align-items: flex-end;
+    }
+  }
+
     &__slogan {
         font-size: 18px;
         font-weight: normal;
@@ -433,6 +443,7 @@ header.site-header .header-data .header-data__item {
 
  .header-office__adress-days {
      color: #021684;
+
  }
 
  .header-office__adress-hours {
@@ -441,9 +452,9 @@ header.site-header .header-data .header-data__item {
 
 
  .header-office__days-outer {
-     background: white;
-     margin-bottom: 5px;
-     border-bottom: 1px dashed $yellow;
+    //  background: white;
+    //  margin-bottom: 5px;
+    //  border-bottom: 1px dashed $yellow;
  }
 
  .header-office {

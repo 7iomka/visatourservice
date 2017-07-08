@@ -12,13 +12,49 @@
 				</ul>
 			</div>
 		</div>
+	<div class="header-section__wrapper">
 		<div class="header-section__content">
 			<h1 class="header-section__title header-section__title--with-flag">
-				<span class="header-section__icon-wrapper"><span title="Австрия" alt="Австрия" class="flag-icon flag-icon--at header-section__icon "></span></span>
-				<span class="header-section__title-text">Австрия</span>
-			</h1>
+			        <span class="header-section__icon-wrapper"><span title="Австрия" alt="Австрия" class="flag-icon flag-icon--at header-section__icon "></span></span>
+							<span class="header-section__title-text">Австрия</span>
+						</h1>
 			<div class="header-section__subtitle">Оформление краткосрочной визы</div>
+			<div class="header-section__utp-line">Решение самых сложных визовых вопросов в самые короткие сроки!</div>
 		</div>
+		<div class="utp-block-container">
+			<div class="utp-block">
+				<div class="utp-table">
+					<div class="utp-table__tr">
+						<div class="utp-table__td utp-table__td--number">1</div>
+						<div class="utp-table__td">
+							<div class="utp-desc">Подготовка документов <br>(проверка, заполнение, запись)</div>
+						</div>
+						<div class="utp-table__td utp-table__td--price">
+							<div class="utp-price"><span>1500</span> руб.</div>
+						</div>
+					</div>
+					<div class="utp-table__tr">
+						<div class="utp-table__td utp-table__td--number">2</div>
+						<div class="utp-table__td">
+							<div class="utp-desc">Оформление визы, личная подача</div>
+						</div>
+						<div class="utp-table__td">
+							<div class="utp-price"><span>3200</span> руб.</div>
+						</div>
+					</div>
+					<div class="utp-table__tr">
+						<div class="utp-table__td utp-table__td--number">3</div>
+						<div class="utp-table__td">
+							<div class="utp-desc">Оформление визы "под ключ" <br>без присутствия</div>
+						</div>
+						<div class="utp-table__td">
+							<div class="utp-price"><span>7000</span> руб.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	</div>
 	<div class="container">
 		<div class="row">

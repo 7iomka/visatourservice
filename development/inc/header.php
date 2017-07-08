@@ -150,7 +150,7 @@
     <div class="site-wrapper">
 
         <header class="site-header" id="home">
-            <div class="container">
+            <div class="container" style=" margin-bottom: 25px; ">
                 <div class="row">
 
                     <div class="col col--4-of-12 col--m-1-of-2 header-left col--am">
@@ -158,7 +158,7 @@
                             <!-- <span class="logo__img"></span> -->
                             <span class="logo__icon"></span>
                             <span class="logo__title-wrapper">
-                        <span class="logo__title-part logo__title-part--first">VisaTourService</span>
+                      <span class="logo__title-part logo__title-part--first">VisaTourService</span>
                             <span class="logo__title-part logo__title-part--sep"></span>
                             <span class="logo__title-part logo__title-part--last">Федеральная сеть <br>сервисно-визовых центров</span>
                             </span>
@@ -166,83 +166,129 @@
                     </div>
                     <div class="col col--4-of-12 col--m-1-of-2 header-center col--am">
                         <div class="header-locations">
-                            <div class="header-locations__icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="70" id="Layer_1" x="0px" y="0px" viewBox="0 0 495.001 495.001" xml:space="preserve">
-                              <g>
-                              	<path style="fill: #4583c5;" d="M335.739,129.023c48.224,27.164,78.426,77.982,78.426,134.549c0,1.668-0.035,3.338-0.088,5.006   c14.325,0.746,27.726,5.04,39.343,12.015c0.491-5.655,0.745-11.343,0.745-17.021c0-39.647-11.856-77.798-34.287-110.326   c-19.039-27.61-44.538-49.604-74.329-64.263c0.001,0.131,0.005,0.261,0.005,0.392C345.554,103.199,342.119,116.848,335.739,129.023   z"></path>
-                              	<path style="fill: #e40c80;" d="M184.311,128.577c-6.238-12.073-9.587-25.552-9.587-39.202c0-0.299,0.008-0.595,0.011-0.893   c-31.605,15.351-58.585,39.082-77.89,68.508c14.089,1.893,27.102,7.23,38.158,15.14   C148.141,154.258,164.986,139.384,184.311,128.577z"></path>
-                              	<path style="fill: rgb(128, 187, 52);" d="M336.357,397.77c-23.25,13.363-49.437,20.354-76.744,20.354   c-58.637,0-111.779-33.017-137.971-84.868l-26.849,33.757c35.221,56.154,97.118,91.111,164.82,91.111   c36.187,0,70.819-9.758,101.228-28.369l-18.242-22.935C340.317,403.934,338.236,400.908,336.357,397.77z"></path>
-                              	<path style="fill: #ff5f8e;" d="M152.434,294.543c11.861-14.997,18.396-33.792,18.396-52.905c0-28.624-14.154-54.001-35.828-69.508   c-11.056-7.91-24.068-13.248-38.158-15.14c-3.74-0.502-7.554-0.767-11.43-0.767v53.573c17.553,0,31.842,14.281,31.842,31.842   c0,17.553-14.289,31.842-31.842,31.842v105.324l9.379-11.792l26.849-33.757L152.434,294.543z"></path>
-                              	<path style="fill:#D8D7DA;" d="M117.257,241.638c0-17.561-14.289-31.842-31.842-31.842v63.683   C102.968,273.48,117.257,259.191,117.257,241.638z"></path>
-                              	<path style="fill: #e40c80;" d="M85.415,273.48c-17.561,0-31.842-14.289-31.842-31.842c0-17.561,14.281-31.842,31.842-31.842   v-53.573C38.313,156.223,0,194.537,0,241.638c0,19.113,6.535,37.907,18.428,52.945l66.987,84.221V273.48z"></path>
-                              	<path style="fill:#FFFFFF;" d="M53.573,241.638c0,17.553,14.281,31.842,31.842,31.842v-63.683   C67.854,209.797,53.573,224.078,53.573,241.638z"></path>
-                              	<path style="fill: #138ec7;" d="M291.98,89.375c0,17.553-14.289,31.842-31.842,31.842v105.324l67.018-84.261   c3.282-4.15,6.14-8.599,8.581-13.257c6.38-12.175,9.815-25.824,9.815-39.648c0-0.131-0.004-0.261-0.005-0.392   c-0.212-46.922-38.447-85.023-85.41-85.023v53.573C277.692,57.534,291.98,71.815,291.98,89.375z"></path>
-                              	<path style="fill:#D8D7DA;" d="M291.98,89.375c0-17.561-14.289-31.842-31.842-31.842v63.683   C277.692,121.217,291.98,106.928,291.98,89.375z"></path>
-                              	<path style="fill: #0055b0;" d="M184.311,128.577c2.496,4.832,5.442,9.444,8.841,13.742l66.987,84.221V121.217   c-17.561,0-31.842-14.289-31.842-31.842c0-17.561,14.281-31.842,31.842-31.842V3.96c-46.803,0-84.922,37.831-85.404,84.522   c-0.003,0.298-0.011,0.594-0.011,0.893C174.724,103.025,178.074,116.505,184.311,128.577z"></path>
-                              	<path style="fill:#FFFFFF;" d="M228.297,89.375c0,17.553,14.281,31.842,31.842,31.842V57.534   C242.578,57.534,228.297,71.815,228.297,89.375z"></path>
-                              	<path style="fill: #80bb34;" d="M453.42,280.593c-11.617-6.975-25.018-11.269-39.343-12.015c-1.487-0.077-2.984-0.118-4.49-0.118   v53.573c17.553,0,31.842,14.281,31.842,31.842c0,17.553-14.289,31.842-31.842,31.842v105.324l67.018-84.261   c11.861-14.997,18.396-33.792,18.396-52.905C495.001,322.79,478.308,295.536,453.42,280.593z"></path>
-                              	<path style="fill:#D8D7DA;" d="M441.428,353.876c0-17.561-14.289-31.842-31.842-31.842v63.683   C427.139,385.717,441.428,371.428,441.428,353.876z"></path>
-                              	<path style="fill: #00a01a;" d="M377.745,353.876c0-17.561,14.281-31.842,31.842-31.842v-53.573   c-47.102,0-85.415,38.313-85.415,85.415c0,15.445,4.272,30.68,12.186,43.894c1.879,3.138,3.96,6.165,6.242,9.051l18.242,22.935   l48.745,61.286V385.717C392.026,385.717,377.745,371.428,377.745,353.876z"></path>
-                              	<path style="fill:#FFFFFF;" d="M377.745,353.876c0,17.553,14.281,31.842,31.842,31.842v-63.683   C392.026,322.034,377.745,336.315,377.745,353.876z"></path>
-                              </g>
-
-                              </svg>
-                                <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 472 472" xml:space="preserve" width="75">
-                        <path style="fill: #ffba00;" d="M384,448.8c-24-24-72-78.4-72-108.8c0-40,32-72,72-72s72,32,72,72C456,370.4,408,424.8,384,448.8z   M384,292c-26.4,0-48,21.6-48,48s21.6,48,48,48s48-21.6,48-48S410.4,292,384,292z"></path>
+                            <div class="header-locations__block header-locations__block--top">
+                                <div class="header-locations__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 486.3 486.3" xml:space="preserve" width="65">
                         <g>
-                        	<path style="fill: #ffd461;" d="M336,340c0-26.4,21.6-48,48-48s48,21.6,48,48c0-40-21.6-72-48-72S336,300,336,340z"></path>
-                        	<path style="fill: #ffd461;" d="M384,388c-24.8,0-44.8-18.4-48-42.4c3.2,31.2,32.8,80.8,48,103.2c15.2-23.2,44.8-72,48-103.2   C428.8,369.6,408.8,388,384,388z"></path>
+                        <path style="fill: #80bb34;" d="M243.15,0v104.4c44.11,0,80,35.88,80,80c0,44.11-35.89,80-80,80v221.9l146.43-184.1   c26.29-33.25,40.19-73.21,40.19-115.58C429.77,83.72,346.05,0,243.15,0z"></path>
+                        <path style="fill: #ffffff;" d="M323.15,184.4c0-44.12-35.89-80-80-80v160C287.26,264.4,323.15,228.51,323.15,184.4z"></path>
+                        <path style="fill: #00a01a;" d="M163.15,184.4c0-44.12,35.89-80,80-80V0C140.25,0,56.53,83.72,56.53,186.62   c0,42.37,13.9,82.33,40.23,115.62L243.15,486.3V264.4C199.04,264.4,163.15,228.51,163.15,184.4z"></path>
+                        <path style="fill:#FFFFFF;" d="M163.15,184.4c0,44.11,35.89,80,80,80v-160C199.04,104.4,163.15,140.28,163.15,184.4z"></path>
                         </g>
-                        <path style="fill: #ffba00;" d="M88,200.8c-24-24-72-78.4-72-108.8c0-40,32-72,72-72s72,32,72,72C160,123.2,112,176.8,88,200.8z   M40,92c0,26.4,21.6,48,48,48s48-21.6,48-48s-21.6-48-48-48S40,65.6,40,92z"></path>
-                        <g>
-                        	<path style="fill: #ffd461;" d="M40,92c0-26.4,21.6-48,48-48s48,21.6,48,48c0-40-21.6-72-48-72S40,52,40,92z"></path>
-                        	<path style="fill: #ffd461;" d="M88,140c-24.8,0-44.8-18.4-48-42.4c3.2,31.2,32.8,80.8,48,103.2c15.2-23.2,44.8-72,48-103.2   C132.8,121.6,112.8,140,88,140z"></path>
-                        </g>
-                        <g>
-                        	<path style="fill: #393939;" d="M384,388c-26.4,0-48-21.6-48-48s21.6-48,48-48s48,21.6,48,48S410.4,388,384,388z M384,308   c-17.6,0-32,14.4-32,32s14.4,32,32,32s32-14.4,32-32S401.6,308,384,308z"></path>
-                        	<path style="fill: #2b2e38;" d="M378.4,465.6c-3.2-3.2-82.4-78.4-82.4-125.6c0-48.8,39.2-88,88-88s88,39.2,88,88   c0,47.2-79.2,122.4-82.4,125.6c-1.6,1.6-3.2,2.4-5.6,2.4S380,467.2,378.4,465.6z M312,340c0,31.2,48,84.8,72,108.8   c24-24,72-78.4,72-108.8c0-40-32-72-72-72S312,300,312,340z"></path>
-                        	<path style="fill: #2b2e38;" d="M248,204c26.4,0,48,21.6,48,48s-21.6,48-48,48v-16c17.6,0,32-14.4,32-32s-14.4-32-32-32H136v-16H248   z"></path>
-                        	<rect x="144" y="284" style="fill: #2b2e38;" width="80" height="16"></rect>
-                        	<path style="fill: #2b2e38;" d="M88,124c17.6,0,32-14.4,32-32s-14.4-32-32-32S56,74.4,56,92S70.4,124,88,124z M40,92   c0-26.4,21.6-48,48-48s48,21.6,48,48s-21.6,48-48,48S40,118.4,40,92z"></path>
-                        	<path style="fill: #2b2e38;" d="M24,332c0-26.4,21.6-48,48-48h56v16H72c-17.6,0-32,14.4-32,32s14.4,32,32,32h192v16H72   C45.6,380,24,358.4,24,332z"></path>
-                        	<path style="fill: #2b2e38;" d="M82.4,217.6C79.2,214.4,0,139.2,0,92C0,43.2,39.2,4,88,4s88,39.2,88,88   c0,47.2-79.2,122.4-82.4,125.6c-1.6,1.6-3.2,2.4-5.6,2.4S84,219.2,82.4,217.6z M88,200.8c24-24,72-78.4,72-108.8c0-40-32-72-72-72   S16,52,16,92C16,123.2,64,176.8,88,200.8z"></path>
-                        </g>
-
-                        </svg> -->
-                            </div>
-                            <div class="header-locations__content">
-                                <h3 class="header-locations__slogan">Более <strong>25 офисов</strong> <br>в городах РФ рядом с Вами</h3>
-                                <div class="header-locations__action"><a href="#!" class="header-locations__action-link">Показать все офисы</a></div>
-                                <div class="header-locations__data header-data">
-                                    <li class="header-data__item header-data__item--geo">
-                                        <div class="header-data__tooltip hidden">
-                                            <div class="drop-tooltip">
-                                                <p>Мы угадали<br>ваш регион?</p>
-                                                <div class="drop-tooltip__nav"><button class="btn btn--x-small btn--yellow header-data__geo-confirm waves-effect waves-circle waves-float">Да</button> <button data-remodal-target="change_city" class="btn btn--x-small btn--yellow header-data__geo-decline waves-effect waves-circle waves-float">Нет</button></div>
-                                            </div>
-                                        </div>
-
-                                        <div class="header-data__item-content">
-                                            <div class="your-city">Ваш город: </div>
-                                            <div class="header-data__item-content-action header-data__item-content-action--city">
-                                                <a href="#" data-remodal-target="change_city" class="header-data__link header-data__geo"><i class="icon icon--pinpoint header__icon"></i><span>Новосибирск</span></a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="header-data__item header-data__item--offices">
-                                        <div class="header-data__item-content">
-                                            <div class="cite-offices">Офисы в Вашем городе: </div>
-                                            <div class="header-data__item-content-action">
-                                                <a href="#" data-remodal-target="change_city" class="header-data__link header-data__geo header-data__link header-data__geo--office"><i class="icon icon--pinpoint header__icon"></i><span>ул. Горького д. 56а, оф.507</span></a>
-                                            </div>
-                                        </div>
-                                    </li>
+                          </svg>
                                 </div>
+                                <div class="header-locations__content">
+                                    <h3 class="header-locations__slogan">Более <strong>25 офисов</strong> <br>в городах РФ рядом с Вами</h3>
+                                    <div class="header-locations__action"><a href="#!" class="header-locations__action-link">Показать все офисы</a></div>
+
+                                </div>
+
                             </div>
+                            <div class="header-locations__block header-locations__block--bottom">
+                                <div class="header-locations__icon">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 440 440" style="" xml:space="preserve" width="70">
+                                <g id="XMLID_1338_">
+                                <g id="XMLID_1339_">
+                                  <rect id="XMLID_1340_" x="40" y="405" style="fill:#91DC5A;" width="360" height="35"></rect>
+                                </g>
+                                <g id="XMLID_1341_">
+                                  <rect id="XMLID_1342_" x="115" style="fill:#006C70;" width="210" height="440"></rect>
+                                </g>
+                                <g id="XMLID_1343_">
+                                  <rect id="XMLID_1344_" x="160" style="fill:#00A1A7;" width="120" height="440"></rect>
+                                </g>
+                                <g id="XMLID_1345_">
+                                  <rect id="XMLID_1346_" x="160" y="370" style="fill: #00D7DF;" width="120" height="70"></rect>
+                                </g>
+                                <g id="XMLID_1347_">
+                                  <g id="XMLID_1348_">
+                                    <rect id="XMLID_1349_" x="145" y="60" style="fill:#FFFFFF;" width="30" height="40"></rect>
+                                  </g>
+                                  <g id="XMLID_1350_">
+                                    <rect id="XMLID_1351_" x="205" y="60" style="fill:#FFFFFF;" width="30" height="40"></rect>
+                                  </g>
+                                  <g id="XMLID_1352_">
+                                    <rect id="XMLID_1353_" x="265" y="60" style="fill:#FFFFFF;" width="30" height="40"></rect>
+                                  </g>
+                                </g>
+                                <g id="XMLID_1354_">
+                                  <g id="XMLID_1355_">
+                                    <rect id="XMLID_1356_" x="145" y="130" style="fill:#FFFFFF;" width="30" height="40"></rect>
+                                  </g>
+                                  <g id="XMLID_1357_">
+                                    <rect id="XMLID_1358_" x="205" y="130" style="fill:#FFFFFF;" width="30" height="40"></rect>
+                                  </g>
+                                  <g id="XMLID_1359_">
+                                    <rect id="XMLID_1360_" x="265" y="130" style="fill:#FFFFFF;" width="30" height="40"></rect>
+                                  </g>
+                                </g>
+                                <g id="XMLID_1361_">
+                                  <g id="XMLID_1362_">
+                                    <rect id="XMLID_1363_" x="145" y="200" style="fill:#FFFFFF;" width="30" height="40"></rect>
+                                  </g>
+                                  <g id="XMLID_1364_">
+                                    <rect id="XMLID_1365_" x="205" y="200" style="fill:#FFFFFF;" width="30" height="40"></rect>
+                                  </g>
+                                  <g id="XMLID_1366_">
+                                    <rect id="XMLID_1367_" x="265" y="200" style="fill:#FFFFFF;" width="30" height="40"></rect>
+                                  </g>
+                                </g>
+                                <g id="XMLID_1368_">
+                                  <g id="XMLID_1369_">
+                                    <rect id="XMLID_1370_" x="145" y="270" style="fill:#FFFFFF;" width="30" height="40"></rect>
+                                  </g>
+                                  <g id="XMLID_1371_">
+                                    <rect id="XMLID_1372_" x="205" y="270" style="fill:#FFFFFF;" width="30" height="40"></rect>
+                                  </g>
+                                  <g id="XMLID_1373_">
+                                    <rect id="XMLID_1374_" x="265" y="270" style="fill:#FFFFFF;" width="30" height="40"></rect>
+                                  </g>
+                                </g>
+                                <g id="XMLID_1375_">
+                                  <g id="XMLID_1376_">
+                                    <rect id="XMLID_1377_" x="205" y="370" style="fill:#FFFFFF;" width="30" height="70"></rect>
+                                  </g>
+                                </g>
+                                </g>
+                                </svg>
+                                </div>
+                                <div class="header-locations__content">
+
+
+
+                                    <div class="header-locations__data header-data">
+                                        <li class="header-data__item header-data__item--geo">
+                                            <div class="header-data__tooltip hidden">
+                                                <div class="drop-tooltip">
+                                                    <p>Мы угадали<br>ваш регион?</p>
+                                                    <div class="drop-tooltip__nav"><button class="btn btn--x-small btn--yellow header-data__geo-confirm waves-effect waves-circle waves-float">Да</button> <button data-remodal-target="change_city" class="btn btn--x-small btn--yellow header-data__geo-decline waves-effect waves-circle waves-float">Нет</button></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="header-data__item-content">
+                                                <div class="your-city">Ваш город: </div>
+                                                <div class="header-data__item-content-action header-data__item-content-action--city">
+                                                    <a href="#" data-remodal-target="change_city" class="header-data__link header-data__geo"><i class="icon icon--pinpoint header__icon"></i><span>Новосибирск</span></a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header-data__item header-data__item--offices">
+                                            <div class="header-data__item-content">
+                                                <div class="cite-offices">Офисы в Вашем городе: </div>
+                                                <div class="header-data__item-content-action">
+                                                    <a href="#" data-remodal-target="change_city" class="header-data__link header-data__geo header-data__link header-data__geo--office"><i class="icon icon--pinpoint header__icon"></i><span>ул. Горького д. 56а, оф.507</span></a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </div>
+                                </div>
+
+                            </div>
+
                         </div>
                     </div>
 
-                    <div class="col col--4-of-12 col--m-1-of-2 header-right col--am">
+                    <div class="col col--4-of-12 col--m-1-of-2 header-right col--ab">
                         <div class="header-data-wrapper">
                             <!-- begin header-data  (main data )-->
                             <ul class="header-data header-data--phones">
@@ -259,23 +305,7 @@
                             <!-- end header-data (office data) -->
                             <div class="header-office">
                                 <div class="header-office__days">
-                                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 435 435" xml:space="preserve" width="65" class="header-office__days-icon">
-                                    <g>
-                                    	<polygon style="fill: #00a01a;" points="343.333,42.5 343.333,97.5 303.333,97.5 303.333,42.5 217.5,42.5 217.5,142.5 435,142.5    435,42.5  "></polygon>
-                                    	<path style="fill: #e8edf0;" d="M217.5,202.5h30v60h-30v30h30v60h-30v60H315l0-120h120v-150H217.5V202.5z M277.5,202.5h60v60h-60   V202.5z"></path>
-                                    	<path style="fill: #9BC9FF;" d="M435,292.5l-60,60L435,292.5z"></path>
-                                    	<path style="fill: #f6f6f6;" d="M187.5,352.5v-60h30v-30h-30v-60h30v-60H0v270h217.5v-60H187.5z M157.5,352.5h-60v-60h60V352.5z    M157.5,262.5h-60v-60h60V262.5z"></path>
-                                    	<polygon style="fill: #80bb34;" points="217.5,42.5 131.667,42.5 131.667,102.5 91.667,102.5 91.667,42.5 0,42.5 0,142.5    217.5,142.5  "></polygon>
-                                    	<rect x="91.667" y="22.5" style="fill: #e8edf0;" width="40" height="80"></rect>
-                                    	<rect x="303.333" y="22.5" style="fill: #e8edf0;" width="40" height="75"></rect>
-                                    	<rect x="97.5" y="292.5" style="fill: #138ec7;" width="60" height="60"></rect>
-                                    	<rect x="187.5" y="292.5" style="fill: #138ec7;" width="60" height="60"></rect>
-                                    	<rect x="187.5" y="202.5" style="fill: #138ec7;" width="60" height="60"></rect>
-                                    	<rect x="277.5" y="202.5" style="fill: #e51182;" width="60" height="60"></rect>
-                                    	<rect x="97.5" y="202.5" style="fill: #80bb34;" width="60" height="60"></rect>
-                                    	<polygon style="fill: #c0cbd1;" points="315,412.5 435,292.5 315,292.5  "></polygon>
-                                    </g>
-                                    </svg>
+                                    <img src="/img/icons/calendar.svg">
                                     <div class="header-office__days-content">
                                         <div class="header-office__days-prefix">График работы: </div>
                                         <div class="header-office__days-outer">
@@ -290,91 +320,91 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="header-office__adress-moscow">
+                                <div class="header-office__adress-moscow" style=" display: none; ">
                                     <div style=" font-size: 14px; ">Наш главный офис в Москве: </div>
                                     <div style="font-size: 16px;margin-top: 5px;"><i class="icon icon--pinpoint header__icon" style=" color: #adadad;  margin-right: 5px;"></i><span style=" vertical-align: middle;">ул. Шухова 14, стр.9</span>
                                     </div>
                                     <div style=" margin-top: 5px; ">
-                                      <a href="mailto:info@visatourservice.ru" style="font-size: 16px;color: #6b6b6b;"><i class="icon icon--message" style=" font-weight: bold; margin-right: 5px; opacity: 0.8; "></i><span style=" vertical-align: middle;">info@visatourservice.ru</span></a>
+                                        <a href="mailto:info@visatourservice.ru" style="font-size: 16px;color: #6b6b6b;"><i class="icon icon--message" style=" font-weight: bold; margin-right: 5px; opacity: 0.8; "></i><span style=" vertical-align: middle;">info@visatourservice.ru</span></a>
                                     </div>
                                 </div>
                             </div>
-                          </div>
+                        </div>
                     </div>
 
                 </div>
+    </div>
+    <div class="color-bar"></div>
+
+    <!-- Menu-->
+    <div id="header-nav">
+        <div class="container">
+            <!-- Small screen menu button -->
+            <div id="hamburger-icon" class="hamburger">
+                <div class="icon"></div>
+                <div class="hamburger-text">Меню</div>
             </div>
-            <div class="color-bar"></div>
+            <!-- /Small screen menu button -->
 
-            <!-- Menu-->
-            <div id="header-nav">
-                <div class="container">
-                    <!-- Small screen menu button -->
-                    <div id="hamburger-icon" class="hamburger">
-                        <div class="icon"></div>
-                        <div class="hamburger-text">Меню</div>
-                    </div>
-                    <!-- /Small screen menu button -->
-
-                    <!-- Small screen logo in menu -->
-                    <div class="small-logo">
-                        <a href="/" class="small-logo-link">
-                            <span class="logo__title">
+            <!-- Small screen logo in menu -->
+            <div class="small-logo">
+                <a href="/" class="small-logo-link">
+                    <span class="logo__title">
                         <!-- VisaTourService -->
                       </span>
-                        </a>
-                    </div>
-                    <!-- /Small screen logo in menu -->
-
-                    <!-- Menu Items -->
-                    <nav class="menu" id="menu" role="navigation">
-                        <ul class="menu__list">
-                            <li class="menu__item">
-                                <div class="menu__item-inner"><a class="menu__link" href="#!">Главная</a><span class="menu__item-icon icon icon--arrow-right--flat icon--mobile-arrow"></span>
-                                </div>
-                                <ul class="submenu" style="display: none;">
-                                    <li class="submenu__item">
-                                        <a class="submenu__link" href="#!">О компании</a>
-                                    </li>
-                                    <li class="submenu__item">
-                                        <a class="submenu__link" href="#!">Прайс-лист</a>
-                                    </li>
-                                    <li class="submenu__item">
-                                        <a class="submenu__link" href="/franchising.php">Франчайзинг</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="menu__item"><a class="menu__link" href="#!">Краткосрочные визы</a></li>
-                            <li class="menu__item"><a class="menu__link" href="#!">Долгосрочные визы</a></li>
-
-                            <li class="menu__item">
-                                <div class="menu__item-inner"><a class="menu__link" href="#!">Услуги</a><span class="menu__item-icon icon icon--arrow-right--flat icon--mobile-arrow"></span>
-                                </div>
-                                <ul class="submenu" style="display: none;">
-                                    <li class="submenu__item">
-                                        <a class="submenu__link" href="#!">Оформление загранпаспортов</a>
-                                    </li>
-                                    <li class="submenu__item">
-                                        <a class="submenu__link" href="#!">Приглашения для иностранцев в РФ</a>
-                                    </li>
-                                    <li class="submenu__item">
-                                        <a class="submenu__link" href="#!">Бюро переводов</a>
-                                    </li>
-                                    <li class="submenu__item">
-                                        <a class="submenu__link" href="#!">Страхование для визы онлайн</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="menu__item"><a class="menu__link" href="#!">Оформление визы онлайн</a></li>
-                            <li class="menu__item"><a class="menu__link" href="#!">Горящие туры</a></li>
-                            <li class="menu__item"><a class="menu__link" href="/news.php">Акции и новости</a></li>
-                            <li class="menu__item menu__item--last"><a class="menu__link" href="/contacts.php">Контакты</a></li>
-                        </ul>
-                        <!-- <button class="menu__more btn btn--auto-width btn--yellow btn--no-ripples" count="1"><span></span><span class="menu__more-icon icon icon--arrow-right--flat"></span></button>
-                    <ul class='hidden-links hidden'></ul> -->
-                    </nav>
-                    <!-- /Menu Items -->
-                </div>
+                </a>
             </div>
-            <!-- /Menu -->
-        </header>
+            <!-- /Small screen logo in menu -->
+
+            <!-- Menu Items -->
+            <nav class="menu" id="menu" role="navigation">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <div class="menu__item-inner"><a class="menu__link" href="#!">Главная</a><span class="menu__item-icon icon icon--arrow-right--flat icon--mobile-arrow"></span>
+                        </div>
+                        <ul class="submenu" style="display: none;">
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="#!">О компании</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="#!">Прайс-лист</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="/franchising.php">Франчайзинг</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="#!">Краткосрочные визы</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#!">Долгосрочные визы</a></li>
+
+                    <li class="menu__item">
+                        <div class="menu__item-inner"><a class="menu__link" href="#!">Услуги</a><span class="menu__item-icon icon icon--arrow-right--flat icon--mobile-arrow"></span>
+                        </div>
+                        <ul class="submenu" style="display: none;">
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="#!">Оформление загранпаспортов</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="#!">Приглашения для иностранцев в РФ</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="#!">Бюро переводов</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="#!">Страхование для визы онлайн</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="#!">Оформление визы онлайн</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#!">Горящие туры</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/news.php">Акции и новости</a></li>
+                    <li class="menu__item menu__item--last"><a class="menu__link" href="/contacts.php">Контакты</a></li>
+                </ul>
+                <!-- <button class="menu__more btn btn--auto-width btn--yellow btn--no-ripples" count="1"><span></span><span class="menu__more-icon icon icon--arrow-right--flat"></span></button>
+                    <ul class='hidden-links hidden'></ul> -->
+            </nav>
+            <!-- /Menu Items -->
+        </div>
+    </div>
+    <!-- /Menu -->
+    </header>
