@@ -2,67 +2,69 @@
 <main class="page page--about">
 
 	<div class="header-section header-section--with-banner parallax-section parallax-section--header">
-		<div class="parallax-image" style="background-image: url('img/pages/about.jpg');     background-repeat: no-repeat;
-    background-position: 50% 100%;"></div>
-	<div class="container">
-		<div class="breadcrumbs">
-			<ul>
-				<li><a href="/">Главная</a></li>
-				<li>О компании</li>
-			</ul>
-		</div>
-
-	</div>
-	<div class="header-section__content">
-		<h1 class="header-section__title">О Нас</h1>
-		<div class="about-stats">
+		<div class="header-section__wrapper">
+			<div class="parallax-image" style="background-image: url('img/pages/about.jpg');     background-repeat: no-repeat;
+			    background-position: 50% 100%;"></div>
 			<div class="container">
-				<div class="row">
-					<div class="col col--3-of-12 col--s-1-of-2 col--xs-1-of-1">
-						<div class="about-stats__item">
-							<div class="about-stats__item-counter">
-								<span class="about-stats__counter">2003</span>
-							</div>
-							<div class="about-stats__item-title">
-								Год основания компании
-							</div>
-						</div>
-					</div>
-					<div class="col col--3-of-12 col--s-1-of-2 col--xs-1-of-1">
-						<div class="about-stats__item">
-							<div class="about-stats__item-counter">
-								<span class="about-stats__counter">2014</span>
-							</div>
-							<div class="about-stats__item-title">
-								Год запуска франчайзинга
-							</div>
-						</div>
-					</div>
-					<div class="col col--3-of-12 col--s-1-of-2 col--xs-1-of-1">
-						<div class="about-stats__item">
-							<div class="about-stats__item-counter">
-								<span class="about-stats__counter">26</span>
-							</div>
-							<div class="about-stats__item-title">
-								Партнерских предприятий
-							</div>
-						</div>
-					</div>
-					<div class="col col--3-of-12 col--s-1-of-2 col--xs-1-of-1">
-						<div class="about-stats__item">
-							<div class="about-stats__item-counter">
-								<span class="about-stats__counter">2</span>
-							</div>
-							<div class="about-stats__item-title">
-								Собственных предприятий
-							</div>
-						</div>
-					</div>
+				<div class="breadcrumbs">
+					<ul>
+						<li><a href="/">Главная</a></li>
+						<li>О компании</li>
+					</ul>
+				</div>
 
+			</div>
+			<div class="header-section__content">
+				<h1 class="header-section__title">О Нас</h1>
+				<div class="about-stats">
+					<div class="container">
+						<div class="row">
+							<div class="col col--3-of-12 col--s-1-of-2 col--xs-1-of-1">
+								<div class="about-stats__item">
+									<div class="about-stats__item-counter">
+										<span class="about-stats__counter">2003</span>
+									</div>
+									<div class="about-stats__item-title">
+										Год основания компании
+									</div>
+								</div>
+							</div>
+							<div class="col col--3-of-12 col--s-1-of-2 col--xs-1-of-1">
+								<div class="about-stats__item">
+									<div class="about-stats__item-counter">
+										<span class="about-stats__counter">2014</span>
+									</div>
+									<div class="about-stats__item-title">
+										Год запуска франчайзинга
+									</div>
+								</div>
+							</div>
+							<div class="col col--3-of-12 col--s-1-of-2 col--xs-1-of-1">
+								<div class="about-stats__item">
+									<div class="about-stats__item-counter">
+										<span class="about-stats__counter">26</span>
+									</div>
+									<div class="about-stats__item-title">
+										Партнерских предприятий
+									</div>
+								</div>
+							</div>
+							<div class="col col--3-of-12 col--s-1-of-2 col--xs-1-of-1">
+								<div class="about-stats__item">
+									<div class="about-stats__item-counter">
+										<span class="about-stats__counter">2</span>
+									</div>
+									<div class="about-stats__item-title">
+										Собственных предприятий
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 	</div>
 
 

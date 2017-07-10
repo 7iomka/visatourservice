@@ -12,9 +12,11 @@
 			</div>
 
 		</div>
-		<div class="header-section__content">
-			<h1 class="header-section__title">Контакты</h1>
-      <div class="header-section__subtitle">VisaTourService</div>
+		<div class="header-section__wrapper">
+			<div class="header-section__content">
+				<h1 class="header-section__title">Контакты</h1>
+			      <div class="header-section__subtitle">VisaTourService</div>
+			</div>
 		</div>
 	</div>
 

@@ -21,22 +21,32 @@
         text-align: center;
     }
     .header-section__wrapper {
-        height: auto;
-        min-height: 400px;
-        max-width: 100%;
-        text-align: left;
-        margin: auto;
-        width: 1200px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        z-index: 1;
-        padding: 0 35px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 400px;
+      text-align: left;
+      margin: auto;
+      width: 1200px;
+      z-index: 1;
+      position: relative;
+      transform: none;
+      top: 0;
+      left: 0;
+      max-width: 100%;
+      max-width: calc(100% - 70px);
+      height: auto;
+      padding: 35px 0;
+      @include media("<960px"){
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+      };
     }
 
 
     .header-section__utp-line {
+      display: inline-block;
         margin-top: 15px;
         font-size: 18px;
         position: relative;
@@ -47,7 +57,10 @@
 
 
     .parallax-section--header {
-        height: 500px;
+        min-height: 500px;
+        @include media("<small"){
+              min-height: 30vw;
+        };
         background-size: cover;
     }
 
@@ -97,6 +110,8 @@
          text-align: right;
          z-index: 1;
          color: #ababab;
+    padding-left: 20px;
+    padding-right: 20px;
          ul {
            display: block;
             margin: 0;
@@ -133,24 +148,29 @@
 
      /** content **/
      .header-section--with-banner .header-section__content {
-         height: auto;
-         max-width: 100%;
-         text-align: left;
-         margin: auto;
-         width: 1200px;
-         padding: 0;
-         position: absolute;
-         top: 50%;
-         left: 50%;
-         transform: translate(-50%, -50%);
-         z-index: 1;
-         padding-left: 35px;
-         padding-right: 35px;
+            height: auto;
+            text-align: left;
+            left: 0;
+            z-index: 1;
+            position: relative;
+            transform: none;
+            padding-right: 35px;
+            @include media("<960px"){
+              padding-right: 0;
+              margin-bottom: 35px;
+            };
 
      }
 
 
     /** title **/
+
+    &--visa-c-country .header-section__title {
+      @include media("<x-large"){
+        font-size: 60px;
+        font-size: 7vw;
+      };
+    }
     .header-section__title {
         position: relative;
         margin-bottom: 20px;
@@ -186,6 +206,10 @@
             // margin-right: -0.24em;
             display: table-cell;
                 vertical-align: middle;
+                span {
+                  display: block;
+                  word-break: break-word;
+                }
         }
         &--with-flag {
           .header-section__title-text {
@@ -229,14 +253,13 @@
             .header-section__title-text {
                 display: block;
                 padding-top: 5px;
+
             }
 
             .header-section__icon {
-              position: absolute;
-              top: -50px;
-              left: 0;
-              margin-left: 0;
-              text-align: left;
+              &, &-wrapper {
+                display: block;
+              }
 
             }
         }

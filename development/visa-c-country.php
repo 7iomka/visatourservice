@@ -16,7 +16,7 @@
 		<div class="header-section__content">
 			<h1 class="header-section__title header-section__title--with-flag">
 			        <span class="header-section__icon-wrapper"><span title="Австрия" alt="Австрия" class="flag-icon flag-icon--at header-section__icon "></span></span>
-							<span class="header-section__title-text">Австрия</span>
+							<span class="header-section__title-text"><span style=" font-size: 1em; ">Австрия</span></span>
 						</h1>
 			<div class="header-section__subtitle">Оформление краткосрочной визы</div>
 			<div class="header-section__utp-line">Решение самых сложных визовых вопросов в самые короткие сроки!</div>
@@ -27,7 +27,7 @@
 					<div class="utp-table__tr">
 						<div class="utp-table__td utp-table__td--number">1</div>
 						<div class="utp-table__td">
-							<div class="utp-desc">Подготовка документов <br>(проверка, заполнение, запись)</div>
+							<div class="utp-desc"><strong>Подготовка документов</strong> <br><small>(проверка, заполнение, запись)</small></div>
 						</div>
 						<div class="utp-table__td utp-table__td--price">
 							<div class="utp-price"><span>1500</span> руб.</div>
@@ -36,7 +36,7 @@
 					<div class="utp-table__tr">
 						<div class="utp-table__td utp-table__td--number">2</div>
 						<div class="utp-table__td">
-							<div class="utp-desc">Оформление визы, личная подача</div>
+							<div class="utp-desc"><strong>Оформление визы</strong> <br><small>личная подача</small></div>
 						</div>
 						<div class="utp-table__td">
 							<div class="utp-price"><span>3200</span> руб.</div>
@@ -45,7 +45,7 @@
 					<div class="utp-table__tr">
 						<div class="utp-table__td utp-table__td--number">3</div>
 						<div class="utp-table__td">
-							<div class="utp-desc">Оформление визы "под ключ" <br>без присутствия</div>
+							<div class="utp-desc"><strong>Оформление визы "под ключ"</strong> <br><small>без присутствия</small></div>
 						</div>
 						<div class="utp-table__td">
 							<div class="utp-price"><span>7000</span> руб.</div>

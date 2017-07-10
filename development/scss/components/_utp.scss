@@ -1,14 +1,11 @@
 .utp-block-container {
     height: auto;
-    max-width: 100%;
     text-align: left;
-    width: 40%;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translate(0,-50%);
     z-index: 1;
-    padding: 0 35px;
+    position: relative;
+    @include media("<960px"){
+      margin-top: 35px;
+    };
 }
 
 
@@ -17,6 +14,12 @@
     padding: 10px;
     background: rgba(9, 9, 9, 0.35);
     color: white;
+    max-width: 480px;
+    margin-left: auto;
+    @include media("<960px"){
+        margin-left: 0;
+
+    };
 }
 
 
@@ -52,6 +55,9 @@
 
 .utp-desc {
     line-height: 1.2;
+    strong {
+        text-transform: uppercase;
+    }
 }
 
 .utp-table__tr:not(:last-child) {

@@ -78,16 +78,12 @@ header.site-header {
 
   }
 
-  .header-left,
-  .header-right {
-    vertical-align: middle;
-  }
+
   /** responsive align header parts **/
   .header-left {
     @include media("<640px") {
       width: 100%;
       margin-bottom: 20px;
-      text-align: center;
     };
   }
   .header-right {
@@ -213,6 +209,7 @@ header.site-header {
   &-data-wrapper {
     float: right;
     font-size: 18px;
+    padding-top: 4px;
   }
 
   &-data__item-phone {
@@ -230,11 +227,8 @@ header.site-header {
    */
 
   &-office {
-
-      text-align: right;
-      border-top: 1px solid #ffb900;
-      margin-top: 15px;
-    // padding-top: 10px;
+    display: flex;
+    justify-content: flex-end;
 
       > div {
         padding: 5px 0;
@@ -247,7 +241,7 @@ header.site-header {
     position: relative;
     top: 10px;
       img {
-          width: 85px;
+          width: 70px;
       }
     }
     &__days-content {
@@ -346,6 +340,7 @@ header.site-header .header-data .header-data__item {
 .header-data .header-data__item--offices .header-data__item-content {
     flex-direction: column;
     align-items: flex-start;
+   padding-bottom: 17px;
 }
 
 .header-data .header-data__item--offices .header-data__item-content-action {
@@ -354,23 +349,26 @@ header.site-header .header-data .header-data__item {
 
 .header-data .header-data__item--offices {
     margin-top: 20px;
+    border-top: 1px dashed #dedede;
+    padding-top: 15px;
 }
 
 .header-locations__data {
-    margin-top: 5px;
-    border-top: 1px dashed $yellow;
-    padding-top: 10px;
+   margin-top: 5px;
+    border-top: 1px dashed #dedede;
+    padding-top: 15px;
 }
 
 .header-data__item-content-action:before {
     content: "";
     position: absolute;
-    left: -2px;
-    top: -10%;
-    width: 105%;
-    height: 125%;
+    left: -5px;
+    top: -20%;
+    width: 112%;
+    height: 140%;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(222, 222, 222, 0.46);
     z-index: -1;
-    box-shadow: 4px 4px 0 rgba(45, 70, 104, 0.06), 0 0 0px 1px rgba(45, 70, 104, 0.06);
     background: white;
     transform: scaleY(0.8);
     transform-origin: 50% 50%;
@@ -386,7 +384,7 @@ header.site-header .header-data .header-data__item {
 
 
 .cite-offices {
-    color: #c5313d;
+    color: #ff1459;
     margin-bottom: 5px;
 }
 
@@ -420,7 +418,7 @@ header.site-header .header-data .header-data__item {
 
     &__action-link {
         line-height: 1.375;
-        font-size: 16px;
+        font-size: 15px;
         text-decoration: underline;
         color: $blue-base1;
     }
@@ -452,11 +450,212 @@ header.site-header .header-data .header-data__item {
 
 
  .header-office__days-outer {
-    //  background: white;
-    //  margin-bottom: 5px;
-    //  border-bottom: 1px dashed $yellow;
+
  }
 
- .header-office {
-     border-top: 1px dashed $yellow;
- }
+
+
+/** NEW STYLES **/
+.sublogo-container {
+    margin-top: 15px;
+}
+
+.badge img {
+    width: 245px;
+}
+
+.header-locations {
+    margin-top: 8px;
+}
+.header-locations__icon {
+    width: 70px;
+    text-align: center;
+}
+
+.header-locations__icon svg {
+    margin: auto;
+    margin-top: -10px;
+}
+
+.your-city {
+    color: #ff1459;
+    margin-right: 10px;
+}
+
+
+
+.header-search {
+    padding: 10px 0px;
+    width: 100%;
+}
+
+/** header search-form typehead **/
+
+.header-search {
+  .typeahead__container {
+    .header-search__input {
+      font-size: 18px;
+      /** placeholder stuff **/
+        &::-webkit-input-placeholder {
+           color: #999;
+           font-weight: 300;
+           opacity: 1;
+           @include media("<x-small") {
+              font-size: 16px;
+           };
+        }
+
+        &:-moz-placeholder {
+            color: #999;
+            font-weight: 300;
+            @include media("<x-small") {
+              font-size: 16px;
+            };
+        }
+
+        &:-ms-input-placeholder {
+            color: #999;
+            font-weight: 300;
+            @include media("<x-small") {
+              font-size: 16px;
+            };
+        }
+        /** end placeholder stuff **/
+    }
+  }
+
+  .typeahead__field .header-search__input {
+      height: 35px;
+      width: 195px;
+      margin-left: auto;
+      border-right: none;
+      font-size: 15px;
+      &:focus, &:active {
+        border-color: $yellow;
+      }
+  }
+
+  .typeahead__container {
+      margin-top: 25px;
+  }
+
+  .header-search__btn {
+      height: 35px;
+      font-size: 15px;
+      width: 45px;
+      background: $yellow;
+      border: none;
+      box-shadow: none;
+      &:hover, &:focus {
+        background-color: #ffc119;
+        border-color: $yellow;
+      }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+/** Шапка при разрешении < 1000px **/
+@include media("<medium"){
+  .header-data__item-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-data__item-content-action {
+      margin-left: 0;
+      margin-top: 10px;
+  }
+
+  .header-left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .header-locations {
+      display: flex;
+      align-items: flex-start;
+      margin-top: 15px;
+  }
+
+  .header-locations__data {
+      padding-top: 0;
+      border-top: 0;
+      margin-top: 0;
+  }
+
+  .header-locations__block--bottom {
+      align-items: flex-start;
+  }
+
+  .header-data .header-data__item--offices .header-data__item-content {
+      padding-bottom: 0;
+  }
+
+  .header-locations__block--bottom .header-locations__icon svg {
+      margin-top: 0;
+  }
+
+};
+
+
+
+@include media("<900px"){
+  .header-locations {
+    flex-direction: column;
+  }
+
+  .header-locations__block.header-locations__block--top {
+      margin-bottom: 15px;
+  }
+
+  .header-locations__block--bottom {
+      align-items: flex-end;
+  }
+
+  .header-data-wrapper {
+      padding-top: 9px;
+  }
+};
+@include media(">=640px", "<small"){
+  .header-left {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+};
+@include media("<small"){
+
+  .header-locations {
+      align-items: center;
+  }
+  .header-data-wrapper {
+    float: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .typeahead__field .header-search__input {
+      width: 100%;
+  }
+
+  .header-search {
+      max-width: 320px;
+  }
+  .header-search {
+      max-width: 320px;
+  }
+
+  .header-right, .header-center {
+      padding-top: 15px;
+  }
+
+
+};

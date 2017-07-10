@@ -2,21 +2,23 @@
 <main class="page page--insurance">
 
 	<div class="header-section header-section--with-banner parallax-section parallax-section--header">
-		<div class="parallax-image" style="background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-image: url('img/pages/insurance-bg.jpg');"></div>
-	<div class="container">
-		<div class="breadcrumbs">
-			<ul>
-				<li><a href="/">Главная</a></li>
-				<li>Оформление страховки</li>
-			</ul>
-		</div>
+		<div class="header-section__wrapper">
+			<div class="parallax-image" style="background-repeat: no-repeat;
+			    background-position: 50% 0;
+			    background-image: url('img/pages/insurance-bg.jpg');"></div>
+			<div class="container">
+				<div class="breadcrumbs">
+					<ul>
+						<li><a href="/">Главная</a></li>
+						<li>Оформление страховки</li>
+					</ul>
+				</div>
 
-	</div>
-	<div class="header-section__content">
-		<h1 class="header-section__title">Онлайн страхование для визы</h1>
-	</div>
+			</div>
+			<div class="header-section__content">
+				<h1 class="header-section__title">Онлайн страхование для визы</h1>
+			</div>
+		</div>
 	</div>
 	<div class="container">
 		<div class="row">

@@ -15,8 +15,10 @@
 		</div>
 
 	</div>
-	<div class="header-section__content">
-		<h1 class="header-section__title">Приглашение в Россию для оформления российской визы</h1>
+	<div class="header-section__wrapper">
+		<div class="header-section__content">
+			<h1 class="header-section__title">Приглашение в Россию для оформления российской визы</h1>
+		</div>
 	</div>
 	</div>
 	<div class="container page-container">

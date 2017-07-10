@@ -12,8 +12,10 @@
 			</div>
 
 		</div>
-		<div class="header-section__content">
-			<h1 class="header-section__title">Краткосрочные визы</h1>
+		<div class="header-section__wrapper">
+			<div class="header-section__content">
+				<h1 class="header-section__title">Краткосрочные визы</h1>
+			</div>
 		</div>
 	</div>
 	<div class="container">

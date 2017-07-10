@@ -4,7 +4,9 @@
 
 .page.page--news-item {
     .parallax-section {
-        height: 250px;
+        @include media(">=small"){
+          min-height: 250px;
+        };
     }
 
     .parallax-image {

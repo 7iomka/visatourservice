@@ -7,7 +7,7 @@
     <meta name="keywords" content="создание и продвижение сайтов. реклама сайтов в яндекс директ" />
     <meta name="description" content="Агентство  интернет-маркетинга SEOSINTEZ. Создание сайтов любой тематики и сложности. SEO продвижение сайтов. Настройка и сопровождение рекламных кампаний в Яндекс Директ и Google AdWords" />
     <!-- <meta name=viewport content="width=device-width, initial-scale=1"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta content="yes" name="apple-mobile-web-app-capable">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -150,32 +150,35 @@
     <div class="site-wrapper">
 
         <header class="site-header" id="home">
-            <div class="container" style=" margin-bottom: 25px; ">
+            <div class="container" style="margin-bottom: 20px;">
                 <div class="row">
 
-                    <div class="col col--4-of-12 col--m-1-of-2 header-left col--am">
+                    <div class="col col--4-of-12 col--m-1-of-1 col--s-1-of-1 header-left">
                         <a class="logo logo--large" href="/">
                             <!-- <span class="logo__img"></span> -->
                             <span class="logo__icon"></span>
                             <span class="logo__title-wrapper">
-                      <span class="logo__title-part logo__title-part--first">VisaTourService</span>
+                                <span class="logo__title-part logo__title-part--first">VisaTourService</span>
                             <span class="logo__title-part logo__title-part--sep"></span>
                             <span class="logo__title-part logo__title-part--last">Федеральная сеть <br>сервисно-визовых центров</span>
                             </span>
                         </a>
+                        <div class="sublogo-container">
+                            <div class="badge"><img src="/img/icons/badge.svg" width="245"></div>
+                        </div>
                     </div>
-                    <div class="col col--4-of-12 col--m-1-of-2 header-center col--am">
+                    <div class="col col--4-of-12 col--m-2-of-3 col--s-1-of-1 header-center">
                         <div class="header-locations">
                             <div class="header-locations__block header-locations__block--top">
                                 <div class="header-locations__icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 486.3 486.3" xml:space="preserve" width="65">
-                        <g>
-                        <path style="fill: #80bb34;" d="M243.15,0v104.4c44.11,0,80,35.88,80,80c0,44.11-35.89,80-80,80v221.9l146.43-184.1   c26.29-33.25,40.19-73.21,40.19-115.58C429.77,83.72,346.05,0,243.15,0z"></path>
-                        <path style="fill: #ffffff;" d="M323.15,184.4c0-44.12-35.89-80-80-80v160C287.26,264.4,323.15,228.51,323.15,184.4z"></path>
-                        <path style="fill: #00a01a;" d="M163.15,184.4c0-44.12,35.89-80,80-80V0C140.25,0,56.53,83.72,56.53,186.62   c0,42.37,13.9,82.33,40.23,115.62L243.15,486.3V264.4C199.04,264.4,163.15,228.51,163.15,184.4z"></path>
-                        <path style="fill:#FFFFFF;" d="M163.15,184.4c0,44.11,35.89,80,80,80v-160C199.04,104.4,163.15,140.28,163.15,184.4z"></path>
-                        </g>
-                          </svg>
+                            <g>
+                            <path style="fill: #148ec7;" d="M243.15,0v104.4c44.11,0,80,35.88,80,80c0,44.11-35.89,80-80,80v221.9l146.43-184.1   c26.29-33.25,40.19-73.21,40.19-115.58C429.77,83.72,346.05,0,243.15,0z"></path>
+                            <path style="fill: #ffffff;" d="M323.15,184.4c0-44.12-35.89-80-80-80v160C287.26,264.4,323.15,228.51,323.15,184.4z"></path>
+                            <path style="fill: #1077bc;" d="M163.15,184.4c0-44.12,35.89-80,80-80V0C140.25,0,56.53,83.72,56.53,186.62   c0,42.37,13.9,82.33,40.23,115.62L243.15,486.3V264.4C199.04,264.4,163.15,228.51,163.15,184.4z"></path>
+                            <path style="fill:#FFFFFF;" d="M163.15,184.4c0,44.11,35.89,80,80,80v-160C199.04,104.4,163.15,140.28,163.15,184.4z"></path>
+                            </g>
+                              </svg>
                                 </div>
                                 <div class="header-locations__content">
                                     <h3 class="header-locations__slogan">Более <strong>25 офисов</strong> <br>в городах РФ рядом с Вами</h3>
@@ -187,75 +190,72 @@
                             <div class="header-locations__block header-locations__block--bottom">
                                 <div class="header-locations__icon">
                                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 440 440" style="" xml:space="preserve" width="70">
-                                <g id="XMLID_1338_">
-                                <g id="XMLID_1339_">
-                                  <rect id="XMLID_1340_" x="40" y="405" style="fill:#91DC5A;" width="360" height="35"></rect>
-                                </g>
-                                <g id="XMLID_1341_">
-                                  <rect id="XMLID_1342_" x="115" style="fill:#006C70;" width="210" height="440"></rect>
-                                </g>
-                                <g id="XMLID_1343_">
-                                  <rect id="XMLID_1344_" x="160" style="fill:#00A1A7;" width="120" height="440"></rect>
-                                </g>
-                                <g id="XMLID_1345_">
-                                  <rect id="XMLID_1346_" x="160" y="370" style="fill: #00D7DF;" width="120" height="70"></rect>
-                                </g>
-                                <g id="XMLID_1347_">
-                                  <g id="XMLID_1348_">
-                                    <rect id="XMLID_1349_" x="145" y="60" style="fill:#FFFFFF;" width="30" height="40"></rect>
-                                  </g>
-                                  <g id="XMLID_1350_">
-                                    <rect id="XMLID_1351_" x="205" y="60" style="fill:#FFFFFF;" width="30" height="40"></rect>
-                                  </g>
-                                  <g id="XMLID_1352_">
-                                    <rect id="XMLID_1353_" x="265" y="60" style="fill:#FFFFFF;" width="30" height="40"></rect>
-                                  </g>
-                                </g>
-                                <g id="XMLID_1354_">
-                                  <g id="XMLID_1355_">
-                                    <rect id="XMLID_1356_" x="145" y="130" style="fill:#FFFFFF;" width="30" height="40"></rect>
-                                  </g>
-                                  <g id="XMLID_1357_">
-                                    <rect id="XMLID_1358_" x="205" y="130" style="fill:#FFFFFF;" width="30" height="40"></rect>
-                                  </g>
-                                  <g id="XMLID_1359_">
-                                    <rect id="XMLID_1360_" x="265" y="130" style="fill:#FFFFFF;" width="30" height="40"></rect>
-                                  </g>
-                                </g>
-                                <g id="XMLID_1361_">
-                                  <g id="XMLID_1362_">
-                                    <rect id="XMLID_1363_" x="145" y="200" style="fill:#FFFFFF;" width="30" height="40"></rect>
-                                  </g>
-                                  <g id="XMLID_1364_">
-                                    <rect id="XMLID_1365_" x="205" y="200" style="fill:#FFFFFF;" width="30" height="40"></rect>
-                                  </g>
-                                  <g id="XMLID_1366_">
-                                    <rect id="XMLID_1367_" x="265" y="200" style="fill:#FFFFFF;" width="30" height="40"></rect>
-                                  </g>
-                                </g>
-                                <g id="XMLID_1368_">
-                                  <g id="XMLID_1369_">
-                                    <rect id="XMLID_1370_" x="145" y="270" style="fill:#FFFFFF;" width="30" height="40"></rect>
-                                  </g>
-                                  <g id="XMLID_1371_">
-                                    <rect id="XMLID_1372_" x="205" y="270" style="fill:#FFFFFF;" width="30" height="40"></rect>
-                                  </g>
-                                  <g id="XMLID_1373_">
-                                    <rect id="XMLID_1374_" x="265" y="270" style="fill:#FFFFFF;" width="30" height="40"></rect>
-                                  </g>
-                                </g>
-                                <g id="XMLID_1375_">
-                                  <g id="XMLID_1376_">
-                                    <rect id="XMLID_1377_" x="205" y="370" style="fill:#FFFFFF;" width="30" height="70"></rect>
-                                  </g>
-                                </g>
-                                </g>
-                                </svg>
+                                      <g id="XMLID_1338_">
+                                      <g id="XMLID_1339_">
+                                        <rect id="XMLID_1340_" x="40" y="405" style="fill: #5ab8dc;" width="360" height="35"></rect>
+                                      </g>
+                                      <g id="XMLID_1341_">
+                                        <rect id="XMLID_1342_" x="115" style="fill: #1077bc;" width="210" height="440"></rect>
+                                      </g>
+                                      <g id="XMLID_1343_">
+                                        <rect id="XMLID_1344_" x="160" style="fill: #0079a7;" width="120" height="440"></rect>
+                                      </g>
+                                      <g id="XMLID_1345_">
+                                        <rect id="XMLID_1346_" x="160" y="370" style="fill: #00b6df;" width="120" height="70"></rect>
+                                      </g>
+                                      <g id="XMLID_1347_">
+                                        <g id="XMLID_1348_">
+                                          <rect id="XMLID_1349_" x="145" y="60" style="fill:#FFFFFF;" width="30" height="40"></rect>
+                                        </g>
+                                        <g id="XMLID_1350_">
+                                          <rect id="XMLID_1351_" x="205" y="60" style="fill:#FFFFFF;" width="30" height="40"></rect>
+                                        </g>
+                                        <g id="XMLID_1352_">
+                                          <rect id="XMLID_1353_" x="265" y="60" style="fill:#FFFFFF;" width="30" height="40"></rect>
+                                        </g>
+                                      </g>
+                                      <g id="XMLID_1354_">
+                                        <g id="XMLID_1355_">
+                                          <rect id="XMLID_1356_" x="145" y="130" style="fill:#FFFFFF;" width="30" height="40"></rect>
+                                        </g>
+                                        <g id="XMLID_1357_">
+                                          <rect id="XMLID_1358_" x="205" y="130" style="fill:#FFFFFF;" width="30" height="40"></rect>
+                                        </g>
+                                        <g id="XMLID_1359_">
+                                          <rect id="XMLID_1360_" x="265" y="130" style="fill:#FFFFFF;" width="30" height="40"></rect>
+                                        </g>
+                                      </g>
+                                      <g id="XMLID_1361_">
+                                        <g id="XMLID_1362_">
+                                          <rect id="XMLID_1363_" x="145" y="200" style="fill:#FFFFFF;" width="30" height="40"></rect>
+                                        </g>
+                                        <g id="XMLID_1364_">
+                                          <rect id="XMLID_1365_" x="205" y="200" style="fill:#FFFFFF;" width="30" height="40"></rect>
+                                        </g>
+                                        <g id="XMLID_1366_">
+                                          <rect id="XMLID_1367_" x="265" y="200" style="fill:#FFFFFF;" width="30" height="40"></rect>
+                                        </g>
+                                      </g>
+                                      <g id="XMLID_1368_">
+                                        <g id="XMLID_1369_">
+                                          <rect id="XMLID_1370_" x="145" y="270" style="fill:#FFFFFF;" width="30" height="40"></rect>
+                                        </g>
+                                        <g id="XMLID_1371_">
+                                          <rect id="XMLID_1372_" x="205" y="270" style="fill:#FFFFFF;" width="30" height="40"></rect>
+                                        </g>
+                                        <g id="XMLID_1373_">
+                                          <rect id="XMLID_1374_" x="265" y="270" style="fill:#FFFFFF;" width="30" height="40"></rect>
+                                        </g>
+                                      </g>
+                                      <g id="XMLID_1375_">
+                                        <g id="XMLID_1376_">
+                                          <rect id="XMLID_1377_" x="205" y="370" style="fill:#FFFFFF;" width="30" height="70"></rect>
+                                        </g>
+                                      </g>
+                                      </g>
+                                    </svg>
                                 </div>
                                 <div class="header-locations__content">
-
-
-
                                     <div class="header-locations__data header-data">
                                         <li class="header-data__item header-data__item--geo">
                                             <div class="header-data__tooltip hidden">
@@ -266,73 +266,94 @@
                                             </div>
 
                                             <div class="header-data__item-content">
-                                                <div class="your-city">Ваш город: </div>
-                                                <div class="header-data__item-content-action header-data__item-content-action--city">
-                                                    <a href="#" data-remodal-target="change_city" class="header-data__link header-data__geo"><i class="icon icon--pinpoint header__icon"></i><span>Новосибирск</span></a>
-                                                </div>
+                                                <div class="your-city" >Ваш город: </div>
+                                            <div class="header-data__item-content-action header-data__item-content-action--city">
+                                                <a href="#" data-remodal-target="change_city" class="header-data__link header-data__geo"><i class="icon icon--pinpoint header__icon"></i><span><strong>Новосибирск</strong></span></a>
                                             </div>
-                                        </li>
-                                        <li class="header-data__item header-data__item--offices">
-                                            <div class="header-data__item-content">
-                                                <div class="cite-offices">Офисы в Вашем городе: </div>
-                                                <div class="header-data__item-content-action">
-                                                    <a href="#" data-remodal-target="change_city" class="header-data__link header-data__geo header-data__link header-data__geo--office"><i class="icon icon--pinpoint header__icon"></i><span>ул. Горького д. 56а, оф.507</span></a>
-                                                </div>
-                                            </div>
-                                        </li>
                                     </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="col col--4-of-12 col--m-1-of-2 header-right col--ab">
-                        <div class="header-data-wrapper">
-                            <!-- begin header-data  (main data )-->
-                            <ul class="header-data header-data--phones">
-
-                                <li class="header-data__item">
-                                    <div class="header-data__item-phones">
-                                        <div class="header-data__item-phone">
-                                            <i class="icon icon--phone_number header__icon" style="color: #0558b2;"></i>
-                                            <a href="tel:89237771166" class="header-data__link header-data__phone" style=" color:#0558b2; ">8-923-777-11-66</a> </div>
-                                        <div class="header-data__item-phone"><i class="icon icon--phone_number header__icon"></i><a href="tel:88002508777" class="header-data__link header-data__phone">8-800-250-87-77</a></div>
-                                    </div>
-                                </li>
-                            </ul>
-                            <!-- end header-data (office data) -->
-                            <div class="header-office">
-                                <div class="header-office__days">
-                                    <img src="/img/icons/calendar.svg">
-                                    <div class="header-office__days-content">
-                                        <div class="header-office__days-prefix">График работы: </div>
-                                        <div class="header-office__days-outer">
-                                            <div class="header-office__days-wrapper">
-                                                <div class="header-office__adress-days">Пн-Пт,</div>
-                                                <div class="header-office__adress-hours">09<sup>00</sup>-18<sup>00</sup></div>
-                                            </div>
-                                            <div class="header-office__days-wrapper">
-                                                <div class="header-office__adress-days">Сб-Вс,</div>
-                                                <div class="header-office__adress-hours">10<sup>00</sup>-16<sup>00</sup></div>
-                                            </div>
+                                    </li>
+                                    <li class="header-data__item header-data__item--offices">
+                                        <div class="header-data__item-content">
+                                            <div class="cite-offices">Офисы в Вашем городе: </div>
+                                        <div class="header-data__item-content-action">
+                                            <a href="#" data-remodal-target="change_city" class="header-data__link header-data__geo header-data__link header-data__geo--office"><i class="icon icon--pinpoint header__icon"></i><span>ул. Горького д. 56а, оф.507</span></a>
                                         </div>
-                                    </div>
                                 </div>
-                                <div class="header-office__adress-moscow" style=" display: none; ">
-                                    <div style=" font-size: 14px; ">Наш главный офис в Москве: </div>
-                                    <div style="font-size: 16px;margin-top: 5px;"><i class="icon icon--pinpoint header__icon" style=" color: #adadad;  margin-right: 5px;"></i><span style=" vertical-align: middle;">ул. Шухова 14, стр.9</span>
-                                    </div>
-                                    <div style=" margin-top: 5px; ">
-                                        <a href="mailto:info@visatourservice.ru" style="font-size: 16px;color: #6b6b6b;"><i class="icon icon--message" style=" font-weight: bold; margin-right: 5px; opacity: 0.8; "></i><span style=" vertical-align: middle;">info@visatourservice.ru</span></a>
-                                    </div>
-                                </div>
+                                </li>
                             </div>
                         </div>
+
                     </div>
 
                 </div>
+            </div>
+
+            <div class="col col--4-of-12 col--m-1-of-3 col--s-1-of-1 header-right" >
+                <div class="header-data-wrapper">
+                    <!-- begin header-data  (main data )-->
+                    <ul class="header-data header-data--phones">
+
+                        <li class="header-data__item">
+                            <div class="header-data__item-phones">
+                                <div class="header-data__item-phone">
+                                    <i class="icon icon--phone_number header__icon" style="color: #0558b2;"></i>
+                                    <a href="tel:89237771166" class="header-data__link header-data__phone" style=" color:#0558b2; ">8-923-777-11-66</a> </div>
+                                <div class="header-data__item-phone"><i class="icon icon--phone_number header__icon"></i><a href="tel:88002508777" class="header-data__link header-data__phone">8-800-250-87-77</a></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- end header-data (office data) -->
+                    <div class="header-office">
+                        <div class="header-office__days">
+                            <img src="/img/icons/calendar.svg" width="70">
+                            <div class="header-office__days-content">
+                                <div class="header-office__days-prefix">График работы: </div>
+                                <div class="header-office__days-outer">
+                                    <div class="header-office__days-wrapper">
+                                        <div class="header-office__adress-days">Пн-Пт,</div>
+                                        <div class="header-office__adress-hours">09<sup>00</sup>-18<sup>00</sup></div>
+                                    </div>
+                                    <div class="header-office__days-wrapper">
+                                        <div class="header-office__adress-days">Сб-Вс,</div>
+                                        <div class="header-office__adress-hours">10<sup>00</sup>-16<sup>00</sup></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-office__adress-moscow" style=" display: none; ">
+                            <div style=" font-size: 14px; ">Наш главный офис в Москве: </div>
+                            <div style="font-size: 16px;margin-top: 5px;"><i class="icon icon--pinpoint header__icon" style=" color: #adadad;  margin-right: 5px;"></i><span style=" vertical-align: middle;">ул. Шухова 14, стр.9</span>
+                            </div>
+                            <div style=" margin-top: 5px; ">
+                                <a href="mailto:info@visatourservice.ru" style="font-size: 16px;color: #6b6b6b;"><i class="icon icon--message" style=" font-weight: bold; margin-right: 5px; opacity: 0.8; "></i><span style=" vertical-align: middle;">info@visatourservice.ru</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-search-container">
+                        <form class="header-search" name="visa-short__search-form">
+                            <div class="typeahead__container" style="
+  ">
+                                <div class="typeahead__field">
+                                    <span class="typeahead__query">
+                                       <span class="typeahead__cancel-button"></span>
+                                    <input class="header-search__input" name="visa-short__input" type="search" placeholder="Поиск по сайту ..." autocomplete="off" style="
+  ">
+                                        </span>
+                                        <span class="typeahead__button">
+                                       <button type="submit" class="btn header-search__btn waves-effect waves-circle waves-float" style="
+  ">
+                                           <i class="icon icon--search visa-short__btn-icon"></i>
+                                       </button>
+                                   </span>
+
+                                </div>
+                    </div>
+                    </form>
+                </div>
+    </div>
+    </div>
+
+    </div>
     </div>
     <div class="color-bar"></div>
 
@@ -350,8 +371,8 @@
             <div class="small-logo">
                 <a href="/" class="small-logo-link">
                     <span class="logo__title">
-                        <!-- VisaTourService -->
-                      </span>
+                            <!-- VisaTourService -->
+                          </span>
                 </a>
             </div>
             <!-- /Small screen logo in menu -->
@@ -362,7 +383,7 @@
                     <li class="menu__item">
                         <div class="menu__item-inner"><a class="menu__link" href="#!">Главная</a><span class="menu__item-icon icon icon--arrow-right--flat icon--mobile-arrow"></span>
                         </div>
-                        <ul class="submenu" style="display: none;">
+                        <ul class="submenu" style="height: 118px; padding-top: 10px; margin-top: 0px; padding-bottom: 10px; margin-bottom: 0px; display: none;">
                             <li class="submenu__item">
                                 <a class="submenu__link" href="#!">О компании</a>
                             </li>
@@ -380,7 +401,7 @@
                     <li class="menu__item">
                         <div class="menu__item-inner"><a class="menu__link" href="#!">Услуги</a><span class="menu__item-icon icon icon--arrow-right--flat icon--mobile-arrow"></span>
                         </div>
-                        <ul class="submenu" style="display: none;">
+                        <ul class="submenu" style="height: 151px; padding-top: 10px; margin-top: 0px; padding-bottom: 10px; margin-bottom: 0px; display: none;">
                             <li class="submenu__item">
                                 <a class="submenu__link" href="#!">Оформление загранпаспортов</a>
                             </li>
@@ -401,7 +422,7 @@
                     <li class="menu__item menu__item--last"><a class="menu__link" href="/contacts.php">Контакты</a></li>
                 </ul>
                 <!-- <button class="menu__more btn btn--auto-width btn--yellow btn--no-ripples" count="1"><span></span><span class="menu__more-icon icon icon--arrow-right--flat"></span></button>
-                    <ul class='hidden-links hidden'></ul> -->
+                        <ul class='hidden-links hidden'></ul> -->
             </nav>
             <!-- /Menu Items -->
         </div>
