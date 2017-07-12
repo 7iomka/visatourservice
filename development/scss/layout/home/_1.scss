@@ -11,7 +11,7 @@
  * content wrapper
  */
 .home-banner__content {
-  padding-top: 60px;
+  padding-top: 20px;
       position: relative;
 }
 
@@ -20,12 +20,20 @@
  */
 .site-title-wrapper {
     text-align: center;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.7) 15%, rgba(255, 255, 255, 0.7) 100%);
+  @include media(">=tablet"){
+    border-radius: 25px 25px 75px 75px/ 25px 25px 48px 48px;
+  };
 }
 
 .site-title {
     text-align: center;
     color: #393939;
     display: inline-block;
+    padding: 0 15px;
+  @include media(">=small"){
+      font-size: 75px;
+  };
 }
 
 .site-title__part {
@@ -40,14 +48,15 @@
 .site-title__subtitle {
     font-size: 25px;
     display: block;
-    text-align: right;
+    text-align: center;
+    margin-top: 15px;
+        color: #3b3b3b;
     @include media("<tablet") {
       font-size: 20px;
     };
     @include media("<x-small") {
-      font-size: 16px;
-      font-weight: normal;
-      margin-top: 5px;
+      font-size: 19px;
+      margin-top: 20px;
     };
 }
 
@@ -56,6 +65,9 @@
  */
  .home-banner__btn-wrapper {
     margin: 40px 0 110px;
+    @include media("<small"){
+      margin: 40px 0 70px;
+    };
  }
 .btn.home-banner__btn {
     box-shadow: 0 2px rgba(0,0,0,.3);
@@ -84,9 +96,9 @@
      width: 100%;
      @include media("<small") {
       height: 525px;
-      background-color: rgba(45, 66, 28, 0.59);
-      background: linear-gradient(to bottom, rgba(103, 75, 49, 0.16) 0%, rgba(103, 75, 49, 0.59) 25%, rgba(45, 66, 28, 0.59));
-       width: 100%;
+    //   background-color: rgba(45, 66, 28, 0.59);
+    //   background: linear-gradient(to bottom, rgba(103, 75, 49, 0.16) 0%, rgba(103, 75, 49, 0.59) 25%, rgba(45, 66, 28, 0.59));
+    //    width: 100%;
      };
  }
 

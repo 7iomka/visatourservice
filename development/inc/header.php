@@ -275,9 +275,12 @@
                                     <li class="header-data__item header-data__item--offices">
                                         <div class="header-data__item-content">
                                             <div class="cite-offices">Офисы в Вашем городе: </div>
-                                        <div class="header-data__item-content-action">
-                                            <a href="#" data-remodal-target="change_city" class="header-data__link header-data__geo header-data__link header-data__geo--office"><i class="icon icon--pinpoint header__icon"></i><span>ул. Горького д. 56а, оф.507</span></a>
-                                        </div>
+                                            <div class="header-data__item-content-action2">
+                                              <div class="SumoSelect office-select" tabindex="0"><select class="sumoselect site-form__selectbox header-data__geo header-data__select header-data__geo--office ">
+                                                    <option value="1"><span>ул. Горького д. 56а, оф.507</span></option>
+                                                    <option value="2"><span>Новосибирск ул. Горького д. 56а, оф.507</span></option>
+                                                  </select></div>
+                                              </div>
                                 </div>
                                 </li>
                             </div>

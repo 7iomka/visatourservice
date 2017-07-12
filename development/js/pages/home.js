@@ -7,13 +7,16 @@ function homeActions(scrollMagicController) {
      * parallaxHomeScene
      * @type {ScrollMagic}
      */
-    var parallaxHomeScene = new ScrollMagic.Scene({
-      triggerElement: '.parallax-section--home',
-      duration: "200%",
-      triggerHook: 1
-    })
-        .setTween('.parallax-section--home > .parallax-section__image', {y: "65%", ease: Linear.easeNone})
-        .addTo(scrollMagicController);
+     if(!Modernizr.touchevents){
+       var parallaxHomeScene = new ScrollMagic.Scene({
+         triggerElement: '.parallax-section--home',
+         duration: "200%",
+         triggerHook: 1
+       })
+           .setTween('.parallax-section--home > .parallax-section__image', {y: "65%", ease: Linear.easeNone})
+           .addTo(scrollMagicController);
+     }
+
 
 
     /**

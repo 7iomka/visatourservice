@@ -50,12 +50,10 @@
 
 /** settings for home **/
 .parallax-section--home {
-  height: 720px;
-  z-index: auto;
-
-  @include media("<tablet") {
-    height: auto;
+  @include media(">=tablet"){
+    min-height: 770px;
   };
+  z-index: auto;
 
   .parallax-section__image {
       background-size: auto;
@@ -72,6 +70,11 @@
         transform: none!important;
             top: auto!important;
       };
+
+      @at-root .touchevents & {
+        top: 0!important;
+        height: auto!important;
+      }
   }
 }
 

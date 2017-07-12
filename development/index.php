@@ -8,10 +8,9 @@
                   <div class="home-banner__content">
                     <div class="site-title-wrapper">
                       <h1 class="site-title">
-                        <span class="site-title__part yellow">Visa</span><!--
-                        --><span class="site-title__part">tour</span><!--
-                        --><span class="site-title__part">service</span>
-                        <span class="site-title__subtitle yellow">Федеральная сеть</span>
+                        <span class="site-title__part">Подготовка любых </span><!--
+                        --><span class="site-title__part yellow">визовых документов</span><!--
+                        --><span class="site-title__subtitle" > и срочное оформление виз в 75 стран мира от 1,5 часов</span>
                       </h1>
                     </div>
                     <div class="home-banner__btn-wrapper">

@@ -40,12 +40,7 @@
 			<div class="section-white-box padding-all">
 				<div class="section-row">
 					<div class="content-block">
-						<div class="col col--5-of-12 col--s-1-of-1 col--am">
-							<div class="text-center">
-								<img src="img/pages/translate-steps-img1.jpg" class="responsive-img" >
-							</div>
-						</div>
-						<div class="col col--7-of-12 col--s-1-of-1 col--am">
+						<div class="col col--6-of-12 col--s-1-of-1 col--am">
 							<h2 class="page-action">Как оформить заказ?</h2>
 							<h4 class="page-sub-action">Оформить заказ очень просто:</h4>
 							<div class="description">
@@ -57,6 +52,8 @@
 									<li class="list__item">Получите готовый документ</li>
 								</ol>
 							</div>
+						</div>
+						<div class="col col--6-of-12 col--s-1-of-1 col--am">
 							<h2 class="page-action">Как получить перевод?</h2>
 							<h4 class="page-sub-action">Способы получения перевода или иного документа:</h4>
 							<div class="description">
@@ -821,7 +818,7 @@
 												<div class="table-responsive-vertical">
 													<table class="table table-hover table-striped table-bordered table-create-apostyle">
 														<colgroup>
-															<col width="65%">
+															<col width="75%">
 														</colgroup>
 														<thead>
 															<tr>

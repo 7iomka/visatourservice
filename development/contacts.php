@@ -167,17 +167,22 @@
 							<div id="switcher" class="switcher">
 									<!--filial-district  -->
 									<div class="level level1 ">
-										<h3 class="page-action page-action--middle level-title">Наши филиалы</h3>
+											<h3 class="page-action page-action--middle level-title" style=" color: #B2276F; ">Главный офис</h3>
 											<ul>
-													<li><input type="radio" id="sub1" name="sub1">
-															<label for="sub1">Москва
-															<span class="filial-right">
+												<li>
+													<input type="radio" id="sub113" name="sub1">
+													<label for="sub113" style=" color: #B2276F; ">Москва
+														<span class="filial-right">
 															<span class="filial-num">1</span>
 															<span class="ic-arow-right">
 																<i class="icon icon--arrow-right--flat"></i>
 															</span>
-															</span></label>
-													</li>
+														</span>
+													</label>
+												</li>
+											</ul>
+											<h3 class="page-action page-action--middle level-title">Наши филиалы</h3>
+											<ul>
 													<li>
 														<input type="radio" id="sub2" name="sub1">
 														<label for="sub2">Иркутск
