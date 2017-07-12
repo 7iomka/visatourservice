@@ -74,7 +74,7 @@
 												<ul class="accordion accordion--nested">
 													<li class="accordion__item accordion__item--nested">
 														<div class="option-name accordion__heading accordion__control accordion__control--nested">
-															<img class="accordion__icon" src="/img/pages/invites/prices.svg" width="40" height="40" alt="Стоимость и сроки">
+															<img class="accordion__icon" src="/img/icons/prices.svg" width="40" height="40" alt="Стоимость и сроки">
 															<div class="accordion__title">Стоимость и сроки оформления </div>
 															<div class="accordion__toggler accordion__toggler--nested icon icon--arrow-right--flat"></div>
 														</div>
@@ -119,7 +119,7 @@
 												<ul class="accordion accordion--nested">
 													<li class="accordion__item accordion__item--nested">
 														<div class="option-name accordion__heading accordion__control accordion__control--nested">
-															<img class="accordion__icon" src="/img/pages/invites/docs.svg" width="40" height="40" alt="Необходимые документы" title="">
+															<img class="accordion__icon" src="/img/icons/docs.svg" width="40" height="40" alt="Необходимые документы" title="">
 															<div class="accordion__title">Необходимые документы:</div>
 															<div class="accordion__toggler accordion__toggler--nested icon icon--arrow-right--flat"></div>
 														</div>
@@ -170,7 +170,7 @@
 												<ul class="accordion accordion--nested">
 													<li class="accordion__item accordion__item--nested">
 														<div class="option-name accordion__heading accordion__control accordion__control--nested">
-															<img class="accordion__icon" src="/img/pages/invites/question.svg" width="40" height="40" alt="Как оформить приглашение" title="">
+															<img class="accordion__icon" src="/img/icons/question.svg" width="40" height="40" alt="Как оформить приглашение" title="">
 															<div class="accordion__title atn">Как оформить приглашение?</div>
 															<div class="accordion__toggler accordion__toggler--nested icon icon--arrow-right--flat"></div>
 														</div>
@@ -214,7 +214,7 @@
 												<ul class="accordion accordion--nested">
 													<li class="accordion__item accordion__item--nested">
 														<div class="option-name accordion__heading accordion__control accordion__control--nested">
-															<img class="accordion__icon" src="/img/pages/invites/prices.svg" width="40" height="40" alt="Стоимость и сроки">
+															<img class="accordion__icon" src="/img/icons/prices.svg" width="40" height="40" alt="Стоимость и сроки">
 															<div class="accordion__title">Стоимость и сроки оформления </div>
 															<div class="accordion__toggler accordion__toggler--nested icon icon--arrow-right--flat"></div>
 														</div>
@@ -276,7 +276,7 @@
 												<ul class="accordion accordion--nested">
 													<li class="accordion__item accordion__item--nested">
 														<div class="option-name accordion__heading accordion__control accordion__control--nested">
-															<img class="accordion__icon" src="/img/pages/invites/docs.svg" width="40" height="40" alt="Необходимые документы" title="">
+															<img class="accordion__icon" src="/img/icons/docs.svg" width="40" height="40" alt="Необходимые документы" title="">
 															<div class="accordion__title">Необходимые документы:</div>
 															<div class="accordion__toggler accordion__toggler--nested icon icon--arrow-right--flat"></div>
 														</div>
@@ -327,7 +327,7 @@
 												<ul class="accordion accordion--nested">
 													<li class="accordion__item accordion__item--nested">
 														<div class="option-name accordion__heading accordion__control accordion__control--nested">
-															<img class="accordion__icon" src="/img/pages/invites/question.svg" width="40" height="40" alt="Как оформить приглашение" title="">
+															<img class="accordion__icon" src="/img/icons/question.svg" width="40" height="40" alt="Как оформить приглашение" title="">
 															<div class="accordion__title atn">Как оформить приглашение?</div>
 															<div class="accordion__toggler accordion__toggler--nested icon icon--arrow-right--flat"></div>
 														</div>
@@ -369,7 +369,7 @@
 												<ul class="accordion accordion--nested">
 													<li class="accordion__item accordion__item--nested">
 														<div class="option-name accordion__heading accordion__control accordion__control--nested">
-															<img class="accordion__icon" src="/img/pages/invites/prices.svg" width="40" height="40" alt="Стоимость и сроки">
+															<img class="accordion__icon" src="/img/icons/prices.svg" width="40" height="40" alt="Стоимость и сроки">
 															<div class="accordion__title">Стоимость и сроки оформления </div>
 															<div class="accordion__toggler accordion__toggler--nested icon icon--arrow-right--flat"></div>
 														</div>
@@ -432,7 +432,7 @@
 												<ul class="accordion accordion--nested">
 													<li class="accordion__item accordion__item--nested">
 														<div class="option-name accordion__heading accordion__control accordion__control--nested">
-															<img class="accordion__icon" src="/img/pages/invites/docs.svg" width="40" height="40" alt="Необходимые документы" title="">
+															<img class="accordion__icon" src="/img/icons/docs.svg" width="40" height="40" alt="Необходимые документы" title="">
 															<div class="accordion__title">Необходимые документы:</div>
 															<div class="accordion__toggler accordion__toggler--nested icon icon--arrow-right--flat"></div>
 														</div>
@@ -483,7 +483,7 @@
 												<ul class="accordion accordion--nested">
 													<li class="accordion__item accordion__item--nested">
 														<div class="option-name accordion__heading accordion__control accordion__control--nested">
-															<img class="accordion__icon" src="/img/pages/invites/question.svg" width="40" height="40" alt="Как оформить приглашение" title="">
+															<img class="accordion__icon" src="/img/icons/question.svg" width="40" height="40" alt="Как оформить приглашение" title="">
 															<div class="accordion__title atn">Как оформить приглашение?</div>
 															<div class="accordion__toggler accordion__toggler--nested icon icon--arrow-right--flat"></div>
 														</div>
@@ -525,7 +525,7 @@
 													<ul class="accordion accordion--nested">
 														<li class="accordion__item accordion__item--nested">
 															<div class="option-name accordion__heading accordion__control accordion__control--nested">
-																<img class="accordion__icon" src="/img/pages/invites/prices.svg" width="40" height="40" alt="Стоимость и сроки">
+																<img class="accordion__icon" src="/img/icons/prices.svg" width="40" height="40" alt="Стоимость и сроки">
 																<div class="accordion__title">Стоимость и сроки оформления </div>
 																<div class="accordion__toggler accordion__toggler--nested icon icon--arrow-right--flat"></div>
 															</div>
@@ -588,7 +588,7 @@
 													<ul class="accordion accordion--nested">
 														<li class="accordion__item accordion__item--nested">
 															<div class="option-name accordion__heading accordion__control accordion__control--nested">
-																<img class="accordion__icon" src="/img/pages/invites/docs.svg" width="40" height="40" alt="Необходимые документы" title="">
+																<img class="accordion__icon" src="/img/icons/docs.svg" width="40" height="40" alt="Необходимые документы" title="">
 																<div class="accordion__title">Необходимые документы:</div>
 																<div class="accordion__toggler accordion__toggler--nested icon icon--arrow-right--flat"></div>
 															</div>
@@ -639,7 +639,7 @@
 													<ul class="accordion accordion--nested">
 														<li class="accordion__item accordion__item--nested">
 															<div class="option-name accordion__heading accordion__control accordion__control--nested">
-																<img class="accordion__icon" src="/img/pages/invites/question.svg" width="40" height="40" alt="Как оформить приглашение" title="">
+																<img class="accordion__icon" src="/img/icons/question.svg" width="40" height="40" alt="Как оформить приглашение" title="">
 																<div class="accordion__title atn">Как оформить приглашение?</div>
 																<div class="accordion__toggler accordion__toggler--nested icon icon--arrow-right--flat"></div>
 															</div>
@@ -677,7 +677,7 @@
 													<ul class="accordion accordion--nested">
 														<li class="accordion__item accordion__item--nested">
 															<div class="option-name accordion__heading accordion__control accordion__control--nested">
-																<img class="accordion__icon" src="/img/pages/invites/prices.svg" width="40" height="40" alt="Стоимость и сроки">
+																<img class="accordion__icon" src="/img/icons/prices.svg" width="40" height="40" alt="Стоимость и сроки">
 																<div class="accordion__title">Стоимость и сроки оформления </div>
 																<div class="accordion__toggler accordion__toggler--nested icon icon--arrow-right--flat"></div>
 															</div>
@@ -740,7 +740,7 @@
 													<ul class="accordion accordion--nested">
 														<li class="accordion__item accordion__item--nested">
 															<div class="option-name accordion__heading accordion__control accordion__control--nested">
-																<img class="accordion__icon" src="/img/pages/invites/docs.svg" width="40" height="40" alt="Необходимые документы" title="">
+																<img class="accordion__icon" src="/img/icons/docs.svg" width="40" height="40" alt="Необходимые документы" title="">
 																<div class="accordion__title">Необходимые документы:</div>
 																<div class="accordion__toggler accordion__toggler--nested icon icon--arrow-right--flat"></div>
 															</div>
@@ -791,7 +791,7 @@
 													<ul class="accordion accordion--nested">
 														<li class="accordion__item accordion__item--nested">
 															<div class="option-name accordion__heading accordion__control accordion__control--nested">
-																<img class="accordion__icon" src="/img/pages/invites/question.svg" width="40" height="40" alt="Как оформить приглашение" title="">
+																<img class="accordion__icon" src="/img/icons/question.svg" width="40" height="40" alt="Как оформить приглашение" title="">
 																<div class="accordion__title atn">Как оформить приглашение?</div>
 																<div class="accordion__toggler accordion__toggler--nested icon icon--arrow-right--flat"></div>
 															</div>
@@ -832,7 +832,7 @@
 													<ul class="accordion accordion--nested">
 														<li class="accordion__item accordion__item--nested">
 															<div class="option-name accordion__heading accordion__control accordion__control--nested">
-																<img class="accordion__icon" src="/img/pages/invites/prices.svg" width="40" height="40" alt="Стоимость и сроки">
+																<img class="accordion__icon" src="/img/icons/prices.svg" width="40" height="40" alt="Стоимость и сроки">
 																<div class="accordion__title">Стоимость и сроки оформления </div>
 																<div class="accordion__toggler accordion__toggler--nested icon icon--arrow-right--flat"></div>
 															</div>
@@ -868,7 +868,7 @@
 													<ul class="accordion accordion--nested">
 														<li class="accordion__item accordion__item--nested">
 															<div class="option-name accordion__heading accordion__control accordion__control--nested">
-																<img class="accordion__icon" src="/img/pages/invites/docs.svg" width="40" height="40" alt="Необходимые документы" title="">
+																<img class="accordion__icon" src="/img/icons/docs.svg" width="40" height="40" alt="Необходимые документы" title="">
 																<div class="accordion__title">Необходимые документы:</div>
 																<div class="accordion__toggler accordion__toggler--nested icon icon--arrow-right--flat"></div>
 															</div>

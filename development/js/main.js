@@ -580,6 +580,9 @@ if($mainContainer.hasClass('page--news')) {
 if($mainContainer.hasClass('page--invites')) {
   invitesActions();
 }
+if($mainContainer.hasClass('page--translate')) {
+  translateActions();
+}
 
 
 

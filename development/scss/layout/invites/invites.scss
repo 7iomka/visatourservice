@@ -62,45 +62,44 @@
 
 
 
+@mixin accordionContentBlueOrangeTheme($selector) {
+  .#{$selector}{
+    &__row {
+      @include media(">=820px") {
+        margin: 0 75px;
+      };
+    }
+    &__annonce {
+        margin: 0 0 20px;
 
-.invites {
-  &__row {
-    @include media(">=820px") {
-      margin: 0 75px;
-    };
-  }
-  &__annonce {
-      margin: 0 0 20px;
-
-      font-size: 18px;
-      border: 1px solid $blue-base1;
-      padding: 15px;
+        font-size: 18px;
+        border: 1px solid $blue-base1;
+        padding: 15px;
+        line-height: 1.375;
+        svg {
+            float: left;
+            margin: 5px;
+            margin-right: 15px;
+            width: 63px;
+            height: 60px;
+            fill: $blue-base1;
+        }
+    }
+    &__desc-intro {
       line-height: 1.375;
-      svg {
-          float: left;
-          margin: 5px;
-          margin-right: 15px;
-          width: 63px;
-          height: 60px;
-          fill: $blue-base1;
-      }
-  }
-  &__desc-intro {
-    line-height: 1.375;
-  }
-  &__table-anonce {
-    padding: 0 0 15px;
-    color: #3a1c1c;
-    // font-size: 18px;
-  }
+    }
+    &__table-anonce {
+      padding: 0 0 15px;
+      color: #3a1c1c;
+      // font-size: 18px;
+    }
 
-  &__btn-block {
-      background: #fafcff;
-      padding: 20px 15px;
-      border: 1px solid #e7e7e7;
-  }
+    &__btn-block {
+        background: #fafcff;
+        padding: 20px 15px;
+        border: 1px solid #e7e7e7;
+    }
 
-
-
-
+  } 
 }
+@include accordionContentBlueOrangeTheme('invites');
